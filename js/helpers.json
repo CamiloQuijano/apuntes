@@ -1,0 +1,1789 @@
+helpers = [
+    {
+        "title": "SQL",
+        "url": "documents\/SQL.md#sql",
+        "subnivels": [
+            {
+                "title": "Restablecer Autoincremental tabla a 1",
+                "url": "documents\/SQL.md#restablecer-autoincremental-tabla-a-1",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "CHECKIDENT"
+                ]
+            },
+            {
+                "title": "Identity_insert - Deshabilitar-Habilitar autoincremental columna primary",
+                "url": "documents\/SQL.md#identity_insert---deshabilitar-habilitar-autoincremental-columna-primary",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "Identity_insert"
+                ]
+            },
+            {
+                "title": "Len - Consultar por cantidad de caracteres",
+                "url": "documents\/SQL.md#len---consultar-por-cantidad-de-caracteres",
+                "subnivels": []
+            },
+            {
+                "title": "Datediff - Diferencias entre fechas - timestamp",
+                "url": "documents\/SQL.md#datediff---diferencias-entre-fechas---timestamp",
+                "subnivels": []
+            },
+            {
+                "title": "Rellenar de 0 a la izquierda",
+                "url": "documents\/SQL.md#rellenar-de-0-a-la-izquierda",
+                "subnivels": []
+            },
+            {
+                "title": "Extraer n\u00famero de string",
+                "url": "documents\/SQL.md#extraer-n%C3%BAmero-de-string",
+                "subnivels": []
+            },
+            {
+                "title": "Validar si una columna contiene un texto especifico charIndex",
+                "url": "documents\/SQL.md#validar-si-una-columna-contiene-un-texto-especifico-charindex",
+                "subnivels": []
+            },
+            {
+                "title": "select control null columnas numericas - isnull",
+                "url": "documents\/SQL.md#select-control-null-columnas-numericas---isnull",
+                "subnivels": []
+            },
+            {
+                "title": "Extraer informacion fecha - fecha actual",
+                "url": "documents\/SQL.md#extraer-informacion-fecha---fecha-actual",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "getdate",
+                    "YEAR",
+                    "MONTH",
+                    "DAY"
+                ]
+            },
+            {
+                "title": "Cambiar Formato Dinero",
+                "url": "documents\/SQL.md#cambiar-formato-dinero",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "FORMAT",
+                    "currency"
+                ]
+            },
+            {
+                "title": "Cambiar Formato fecha con format",
+                "url": "documents\/SQL.md#cambiar-formato-fecha-con-format",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "getdate",
+                    "FORMAT",
+                    "dd\/MM\/yyyy, hh:mm:ss"
+                ]
+            },
+            {
+                "title": "Cambiar Formato fecha con convert",
+                "url": "documents\/SQL.md#cambiar-formato-fecha-con-convert",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "getdate",
+                    "CONVERT"
+                ]
+            },
+            {
+                "title": "Incremetar o restar dias a una fecha",
+                "url": "documents\/SQL.md#incremetar-o-restar-dias-a-una-fecha",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "DATEADD",
+                    "SECOND",
+                    "MINUTE",
+                    "HOUR",
+                    "DAY"
+                ]
+            },
+            {
+                "title": "Validar contenido numerico de columna",
+                "url": "documents\/SQL.md#validar-contenido-numerico-de-columna",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "ISNUMERIC"
+                ]
+            },
+            {
+                "title": "Sp_help - Estructura de una tabla",
+                "url": "documents\/SQL.md#sp_help---estructura-de-una-tabla",
+                "subnivels": []
+            },
+            {
+                "title": "Sys tables - Consultar por nombres de tablas-vistas",
+                "url": "documents\/SQL.md#sys-tables---consultar-por-nombres-de-tablas-vistas",
+                "subnivels": []
+            },
+            {
+                "title": "Crear una tabla a partir de otra",
+                "url": "documents\/SQL.md#crear-una-tabla-a-partir-de-otra",
+                "subnivels": []
+            },
+            {
+                "title": "Crear una tabla temporal a partir de una consulta",
+                "url": "documents\/SQL.md#crear-una-tabla-temporal-a-partir-de-una-consulta",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "create",
+                    "temporal"
+                ]
+            },
+            {
+                "title": "Insertar registros de una tabla a otra",
+                "url": "documents\/SQL.md#insertar-registros-de-una-tabla-a-otra",
+                "subnivels": []
+            },
+            {
+                "title": "Select con CASE WHEN THEN ELSE END multiple",
+                "url": "documents\/SQL.md#select-con-case-when-then-else-end-multiple",
+                "subnivels": []
+            },
+            {
+                "title": "Alter table Column add-drop",
+                "url": "documents\/SQL.md#alter-table-column-add-drop",
+                "subnivels": []
+            },
+            {
+                "title": "Alter table Foreign key - Constraint",
+                "url": "documents\/SQL.md#alter-table-foreign-key---constraint",
+                "subnivels": []
+            },
+            {
+                "title": "Actualizar primary keys tabla",
+                "url": "documents\/SQL.md#actualizar-primary-keys-tabla",
+                "subnivels": []
+            },
+            {
+                "title": "Crear tabla",
+                "url": "documents\/SQL.md#crear-tabla",
+                "subnivels": []
+            },
+            {
+                "title": "Crear vistas",
+                "url": "documents\/SQL.md#crear-vistas",
+                "subnivels": []
+            },
+            {
+                "title": "Proceso SQL",
+                "url": "documents\/SQL.md#proceso-sql",
+                "subnivels": [
+                    {
+                        "title": "transaccion",
+                        "url": "documents\/SQL.md#transaccion",
+                        "subnivels": [],
+                        "tags": [
+                            "TRANSACTION",
+                            "BEGIN",
+                            "COMMIT",
+                            "ROLLBACK",
+                            "RAISERROR",
+                            "CONCAT",
+                            "Excepcion"
+                        ]
+                    },
+                    {
+                        "title": "Cursor",
+                        "url": "documents\/SQL.md#cursor",
+                        "subnivels": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Angular JS",
+        "url": "documents\/angular.md#angular-js",
+        "subnivels": [
+            {
+                "title": "Ejemplo Implementacion inicial angular js",
+                "url": "documents\/angular.md#ejemplo-implementacion-inicial-angular-js",
+                "subnivels": [],
+                "tags": [
+                    "angular.min.js",
+                    "libreria",
+                    "ng-app",
+                    "ng-controller",
+                    "ng-cloak",
+                    "$scope"
+                ]
+            },
+            {
+                "title": "filtros",
+                "url": "documents\/angular.md#filtros",
+                "subnivels": [
+                    {
+                        "title": "Filtro Formato Dinero",
+                        "url": "documents\/angular.md#filtro-formato-dinero",
+                        "subnivels": [],
+                        "tags": [
+                            "filters",
+                            "currency"
+                        ]
+                    },
+                    {
+                        "title": "filtros date - number",
+                        "url": "documents\/angular.md#filtros-date---number",
+                        "subnivels": [],
+                        "tags": [
+                            "filters",
+                            "date",
+                            "number"
+                        ]
+                    },
+                    {
+                        "title": "filtro rango (crear)",
+                        "url": "documents\/angular.md#filtro-rango-%28crear%29",
+                        "subnivels": [],
+                        "tags": [
+                            "angular",
+                            "filters",
+                            "range"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "atributos ng",
+                "url": "documents\/angular.md#atributos-ng",
+                "subnivels": [],
+                "tags": [
+                    "ng-app",
+                    "ng-controller",
+                    "ng-cloak"
+                ]
+            },
+            {
+                "title": "timeout",
+                "url": "documents\/angular.md#timeout",
+                "subnivels": []
+            },
+            {
+                "title": "Actualizar scope en JQUERY ($apply)",
+                "url": "documents\/angular.md#actualizar-scope-en-jquery-%28%24apply%29",
+                "subnivels": []
+            },
+            {
+                "title": "Estructura para datatable",
+                "url": "documents\/angular.md#estructura-para-datatable",
+                "subnivels": [
+                    {
+                        "title": "Descargar libreria",
+                        "url": "documents\/angular.md#descargar-libreria",
+                        "subnivels": [],
+                        "tags": [
+                            "angular",
+                            "datatable",
+                            "plugin"
+                        ]
+                    },
+                    {
+                        "title": "Implementaci\u00f3n en controlador",
+                        "url": "documents\/angular.md#implementaci%C3%B3n-en-controlador",
+                        "subnivels": [],
+                        "tags": [
+                            "angular",
+                            "mezclar",
+                            "unir",
+                            "extend",
+                            "objects",
+                            "options",
+                            "configuraciones"
+                        ]
+                    },
+                    {
+                        "title": "Peticion http - definicion data manual",
+                        "url": "documents\/angular.md#peticion-http---definicion-data-manual",
+                        "subnivels": [],
+                        "tags": [
+                            "angular",
+                            "$http",
+                            "param"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Peticion http - definicion desde evento del formulario",
+                "url": "documents\/angular.md#peticion-http---definicion-desde-evento-del-formulario",
+                "subnivels": [],
+                "tags": [
+                    "angular",
+                    "$http",
+                    "$event",
+                    "param",
+                    "currentTarget",
+                    "serialize"
+                ]
+            },
+            {
+                "title": "Envio formulario con JQUERY-AJAX con archivos",
+                "url": "documents\/angular.md#envio-formulario-con-jquery-ajax-con-archivos",
+                "subnivels": []
+            },
+            {
+                "title": "Estructura tabla HTML - angular - datatable - export excel",
+                "url": "documents\/angular.md#estructura-tabla-html---angular---datatable---export-excel",
+                "subnivels": []
+            },
+            {
+                "title": "Select options con flitro",
+                "url": "documents\/angular.md#select-options-con-flitro",
+                "subnivels": []
+            },
+            {
+                "title": "ng-repeat",
+                "url": "documents\/angular.md#ng-repeat",
+                "subnivels": [],
+                "tags": [
+                    "angular",
+                    "ng-repeat",
+                    "range"
+                ]
+            },
+            {
+                "title": "ng-options",
+                "url": "documents\/angular.md#ng-options",
+                "subnivels": [],
+                "tags": [
+                    "angular",
+                    "ng-options",
+                    "range"
+                ]
+            },
+            {
+                "title": "ng-styles",
+                "url": "documents\/angular.md#ng-styles",
+                "subnivels": []
+            },
+            {
+                "title": "Actualizar select2",
+                "url": "documents\/angular.md#actualizar-select2",
+                "subnivels": []
+            },
+            {
+                "title": "Event",
+                "url": "documents\/angular.md#event",
+                "subnivels": []
+            },
+            {
+                "title": "Checkbox - manejo jquery - angular",
+                "url": "documents\/angular.md#checkbox---manejo-jquery---angular",
+                "subnivels": [],
+                "tags": [
+                    "angular",
+                    "checkbox",
+                    "checked",
+                    "apply",
+                    "ng-cloak",
+                    "$scope"
+                ]
+            },
+            {
+                "title": "Implementaciones",
+                "url": "documents\/angular.md#implementaciones",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "Backbone",
+        "url": "documents\/backbone.md#backbone",
+        "subnivels": [
+            {
+                "title": "Implementar - documentacion",
+                "url": "documents\/backbone.md#implementar---documentacion",
+                "subnivels": []
+            },
+            {
+                "title": "Formato a numeros",
+                "url": "documents\/backbone.md#formato-a-numeros",
+                "subnivels": [],
+                "tags": [
+                    "backbone",
+                    "underscore",
+                    "js",
+                    "numberformat",
+                    "parceInt",
+                    "currency"
+                ]
+            },
+            {
+                "title": "Ejemplo Render con template",
+                "url": "documents\/backbone.md#ejemplo-render-con-template",
+                "subnivels": []
+            },
+            {
+                "title": "Ejemplo template",
+                "url": "documents\/backbone.md#ejemplo-template",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "Boostrap",
+        "url": "documents\/boostrap.md#boostrap",
+        "subnivels": [
+            {
+                "title": "Cortar palabras",
+                "url": "documents\/boostrap.md#cortar-palabras",
+                "subnivels": [],
+                "tags": [
+                    "boostrap",
+                    "class",
+                    "text-nowrap"
+                ]
+            },
+            {
+                "title": "Modal",
+                "url": "documents\/boostrap.md#modal",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "Librerias",
+        "url": "documents\/boostrap.md#librerias",
+        "subnivels": [
+            {
+                "title": "Font awesome",
+                "url": "documents\/boostrap.md#font-awesome",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "GIT",
+        "url": "documents\/git.md#git",
+        "subnivels": [
+            {
+                "title": "B\u00e1sicos",
+                "url": "documents\/git.md#b%C3%A1sicos",
+                "subnivels": []
+            },
+            {
+                "title": "Config - Configuraci\u00f3n Inicial",
+                "url": "documents\/git.md#config---configuraci%C3%B3n-inicial",
+                "subnivels": []
+            },
+            {
+                "title": "Alias - Configurar",
+                "url": "documents\/git.md#alias---configurar",
+                "subnivels": []
+            },
+            {
+                "title": "Logs - Consultar registro (Historial de consignaciones)",
+                "url": "documents\/git.md#logs---consultar-registro-%28historial-de-consignaciones%29",
+                "subnivels": []
+            },
+            {
+                "title": "Diff - Comparaciones",
+                "url": "documents\/git.md#diff---comparaciones",
+                "subnivels": []
+            },
+            {
+                "title": "Add - Agregar archivos al escenario",
+                "url": "documents\/git.md#add---agregar-archivos-al-escenario",
+                "subnivels": []
+            },
+            {
+                "title": "Commit - Consignaciones al repositorio",
+                "url": "documents\/git.md#commit---consignaciones-al-repositorio",
+                "subnivels": []
+            },
+            {
+                "title": "Push Pull - Subir y bajar consignaciones del repositorio central",
+                "url": "documents\/git.md#push-pull---subir-y-bajar-consignaciones-del-repositorio-central",
+                "subnivels": []
+            },
+            {
+                "title": "Remote - Conexiones con repositorios remotos",
+                "url": "documents\/git.md#remote---conexiones-con-repositorios-remotos",
+                "subnivels": []
+            },
+            {
+                "title": "Reset Checkout - Revertir cambios en las consignaciones locales",
+                "url": "documents\/git.md#reset-checkout---revertir-cambios-en-las-consignaciones-locales",
+                "subnivels": []
+            },
+            {
+                "title": "Branch - Ramas",
+                "url": "documents\/git.md#branch---ramas",
+                "subnivels": []
+            },
+            {
+                "title": "Tags - Etiquetas Versiones",
+                "url": "documents\/git.md#tags---etiquetas-versiones",
+                "subnivels": []
+            },
+            {
+                "title": "Rm - Eliminar archivos",
+                "url": "documents\/git.md#rm---eliminar-archivos",
+                "subnivels": []
+            },
+            {
+                "title": "Key SSH para conexion al repositorio",
+                "url": "documents\/git.md#key-ssh-para-conexion-al-repositorio",
+                "subnivels": []
+            },
+            {
+                "title": "Conexi\u00f3n SSH Github",
+                "url": "documents\/git.md#conexi%C3%B3n-ssh-github",
+                "subnivels": []
+            },
+            {
+                "title": "Estructura ejemplo CONFIGGIT",
+                "url": "documents\/git.md#estructura-ejemplo-configgit",
+                "subnivels": []
+            },
+            {
+                "title": "Crear proyecto de estructura existente",
+                "url": "documents\/git.md#crear-proyecto-de-estructura-existente",
+                "subnivels": []
+            },
+            {
+                "title": "Guias de ejemplo",
+                "url": "documents\/git.md#guias-de-ejemplo",
+                "subnivels": [
+                    {
+                        "title": "Clonar un repositorio",
+                        "url": "documents\/git.md#clonar-un-repositorio",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Consignar cambios",
+                        "url": "documents\/git.md#consignar-cambios",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Subir commits a repositorio remoto",
+                        "url": "documents\/git.md#subir-commits-a-repositorio-remoto",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ramas - Ejemplo creaci\u00f3n, consignaci\u00f3n de cambios y subida",
+                        "url": "documents\/git.md#ramas---ejemplo-creaci%C3%B3n%2C-consignaci%C3%B3n-de-cambios-y-subida",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ramas - Descargar del repositorio remoto que no existe en mi repositorio local",
+                        "url": "documents\/git.md#ramas---descargar-del-repositorio-remoto-que-no-existe-en-mi-repositorio-local",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ramas - Descargar cambios de la rama principal a la rama de trabajo",
+                        "url": "documents\/git.md#ramas---descargar-cambios-de-la-rama-principal-a-la-rama-de-trabajo",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ramas Subir cambios de la rama de trabajo a la rama principal master",
+                        "url": "documents\/git.md#ramas-subir-cambios-de-la-rama-de-trabajo-a-la-rama-principal-master",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Revertir un cambio puntual",
+                        "url": "documents\/git.md#revertir-un-cambio-puntual",
+                        "subnivels": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "GLOSARIO",
+        "url": "documents\/glosary.md#glosario",
+        "subnivels": [
+            {
+                "title": "Listado",
+                "url": "documents\/glosary.md#listado",
+                "subnivels": []
+            },
+            {
+                "title": "ERP (Enterprise Resource Planning)",
+                "url": "documents\/glosary.md#erp-%28enterprise-resource-planning%29",
+                "subnivels": []
+            },
+            {
+                "title": "CRM (Customer relationship management)",
+                "url": "documents\/glosary.md#crm-%28customer-relationship-management%29",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "JS",
+        "url": "documents\/js.md#js",
+        "subnivels": [
+            {
+                "title": "FUNCIONES GENERALES",
+                "url": "documents\/js.md#funciones-generales",
+                "subnivels": [
+                    {
+                        "title": "Try catch en JS",
+                        "url": "documents\/js.md#try-catch-en-js",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "try",
+                            "catch"
+                        ]
+                    },
+                    {
+                        "title": "redireccionar - recargar - validar url si finaliza en un texto especifico",
+                        "url": "documents\/js.md#redireccionar---recargar---validar-url-si-finaliza-en-un-texto-especifico",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "reload",
+                            "location",
+                            "href",
+                            "endsWith"
+                        ]
+                    },
+                    {
+                        "title": "abrir ventana",
+                        "url": "documents\/js.md#abrir-ventana",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "window",
+                            "open"
+                        ]
+                    },
+                    {
+                        "title": "JS date fecha actual, primer y ultimo d\u00eda del mes",
+                        "url": "documents\/js.md#js-date-fecha-actual%2C-primer-y-ultimo-d%C3%ADa-del-mes",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "new",
+                            "date",
+                            "first",
+                            "last",
+                            "current"
+                        ]
+                    },
+                    {
+                        "title": "Unificar dos objetos en uno",
+                        "url": "documents\/js.md#unificar-dos-objetos-en-uno",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "mezclar",
+                            "unir",
+                            "extend",
+                            "objects"
+                        ]
+                    },
+                    {
+                        "title": "Unir elementos de un object",
+                        "url": "documents\/js.md#unir-elementos-de-un-object",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "join",
+                            "implode",
+                            "array"
+                        ]
+                    },
+                    {
+                        "title": "Agregar elemento a un array",
+                        "url": "documents\/js.md#agregar-elemento-a-un-array",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "array",
+                            "push"
+                        ]
+                    },
+                    {
+                        "title": "Eliminar elemento de un array",
+                        "url": "documents\/js.md#eliminar-elemento-de-un-array",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "array",
+                            "push"
+                        ]
+                    },
+                    {
+                        "title": "Setear variable a formato float - quitar decimales",
+                        "url": "documents\/js.md#setear-variable-a-formato-float---quitar-decimales",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "parseFloat",
+                            "format",
+                            "numero"
+                        ]
+                    },
+                    {
+                        "title": "Setear variable a formato entero - quita decimales",
+                        "url": "documents\/js.md#setear-variable-a-formato-entero---quita-decimales",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "parseInt",
+                            "format",
+                            "numero"
+                        ]
+                    },
+                    {
+                        "title": "Validar si una variables es un numero isNan",
+                        "url": "documents\/js.md#validar-si-una-variables-es-un-numero-isnan",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "setTimeOut",
+                        "url": "documents\/js.md#settimeout",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "setInterval intervalos",
+                        "url": "documents\/js.md#setinterval-intervalos",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "JSON - pasar de json a string stringify",
+                        "url": "documents\/js.md#json---pasar-de-json-a-string-stringify",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "JSON - pasar de string a json parse",
+                        "url": "documents\/js.md#json---pasar-de-string-a-json-parse",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Date",
+                        "url": "documents\/js.md#date",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Date unix",
+                        "url": "documents\/js.md#date-unix",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Date validar si una fecha es mayor a otra",
+                        "url": "documents\/js.md#date-validar-si-una-fecha-es-mayor-a-otra",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "alert",
+                        "url": "documents\/js.md#alert",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "console log",
+                        "url": "documents\/js.md#console-log",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "variables var const array",
+                        "url": "documents\/js.md#variables-var-const-array",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Condicionales",
+                        "url": "documents\/js.md#condicionales",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Iteracion For",
+                        "url": "documents\/js.md#iteracion-for",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Iteracion While",
+                        "url": "documents\/js.md#iteracion-while",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Iteracion Do While",
+                        "url": "documents\/js.md#iteracion-do-while",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Switch",
+                        "url": "documents\/js.md#switch",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Funciones",
+                        "url": "documents\/js.md#funciones",
+                        "subnivels": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "JQUERY",
+        "url": "documents\/js.md#jquery",
+        "subnivels": [
+            {
+                "title": "Acceder a informacion de formulario",
+                "url": "documents\/js.md#acceder-a-informacion-de-formulario",
+                "subnivels": [],
+                "tags": [
+                    "js",
+                    "serialize",
+                    "serializeArray",
+                    "serializeObject"
+                ]
+            },
+            {
+                "title": "eventos - funcion y tipo funcion tipo flecha con attributos de parametros",
+                "url": "documents\/js.md#eventos---funcion-y-tipo-funcion-tipo-flecha-con-attributos-de-parametros",
+                "subnivels": []
+            },
+            {
+                "title": "eventos - on",
+                "url": "documents\/js.md#eventos---on",
+                "subnivels": []
+            },
+            {
+                "title": "Animacion scroll",
+                "url": "documents\/js.md#animacion-scroll",
+                "subnivels": []
+            },
+            {
+                "title": "Datepicker",
+                "url": "documents\/js.md#datepicker",
+                "subnivels": [
+                    {
+                        "title": "Datepicker - estructura y establecer fecha actual",
+                        "url": "documents\/js.md#datepicker---estructura-y-establecer-fecha-actual",
+                        "subnivels": [],
+                        "tags": [
+                            "datepicker",
+                            "fecha",
+                            "actual"
+                        ]
+                    },
+                    {
+                        "title": "Datepicker - estructura y establecer fecha de d\u00eda inicial del mes actual",
+                        "url": "documents\/js.md#datepicker---estructura-y-establecer-fecha-de-d%C3%ADa-inicial-del-mes-actual",
+                        "subnivels": [],
+                        "tags": [
+                            "datepicker",
+                            "estructura",
+                            "fecha",
+                            "inicial",
+                            "mes"
+                        ]
+                    },
+                    {
+                        "title": "Datepicker - control entre fecha Inicial y final",
+                        "url": "documents\/js.md#datepicker---control-entre-fecha-inicial-y-final",
+                        "subnivels": []
+                    }
+                ],
+                "tags": [
+                    "datepicker",
+                    "documentacion"
+                ]
+            },
+            {
+                "title": "Reiniciar Form reset",
+                "url": "documents\/js.md#reiniciar-form-reset",
+                "subnivels": []
+            },
+            {
+                "title": "Reiniciar Select2 change",
+                "url": "documents\/js.md#reiniciar-select2-change",
+                "subnivels": []
+            },
+            {
+                "title": "Evento al cerrar el modal",
+                "url": "documents\/js.md#evento-al-cerrar-el-modal",
+                "subnivels": []
+            },
+            {
+                "title": "request http ajax simple",
+                "url": "documents\/js.md#request-http-ajax-simple",
+                "subnivels": []
+            },
+            {
+                "title": "datetimepicker",
+                "url": "documents\/js.md#datetimepicker",
+                "subnivels": []
+            },
+            {
+                "title": "Envio formulario con JQUERY-AJAX con archivos",
+                "url": "documents\/js.md#envio-formulario-con-jquery-ajax-con-archivos",
+                "subnivels": []
+            },
+            {
+                "title": "Deshabilitar boton submit o elementos formulario",
+                "url": "documents\/js.md#deshabilitar-boton-submit-o-elementos-formulario",
+                "subnivels": [
+                    {
+                        "title": "Deshabilitar boton submit al enviar formulario",
+                        "url": "documents\/js.md#deshabilitar-boton-submit-al-enviar-formulario",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "form",
+                            "submit",
+                            "disabled"
+                        ]
+                    },
+                    {
+                        "title": "Deshabilitar elementos del formulario",
+                        "url": "documents\/js.md#deshabilitar-elementos-del-formulario",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "disabled",
+                            "prop"
+                        ]
+                    },
+                    {
+                        "title": "Descheckar checkbox",
+                        "url": "documents\/js.md#descheckar-checkbox",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "checkbox",
+                            "checked",
+                            "prop"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Validar checkbox si esta checkeado",
+                "url": "documents\/js.md#validar-checkbox-si-esta-checkeado",
+                "subnivels": [],
+                "tags": [
+                    "js",
+                    "checkbox",
+                    "checked",
+                    "is"
+                ]
+            },
+            {
+                "title": "LOCALSTORAGE",
+                "url": "documents\/js.md#localstorage",
+                "subnivels": []
+            },
+            {
+                "title": "JAlert",
+                "url": "documents\/js.md#jalert",
+                "subnivels": [
+                    {
+                        "title": "jalert con btn de aceptar y callback",
+                        "url": "documents\/js.md#jalert-con-btn-de-aceptar-y-callback",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Datatable",
+                "url": "documents\/js.md#datatable",
+                "subnivels": [
+                    {
+                        "title": "Implementacion",
+                        "url": "documents\/js.md#implementacion",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Configuraciones por defecto del datatable",
+                        "url": "documents\/js.md#configuraciones-por-defecto-del-datatable",
+                        "subnivels": [],
+                        "tags": [
+                            "datatable",
+                            "options",
+                            "language",
+                            "settings",
+                            "responsive"
+                        ]
+                    },
+                    {
+                        "title": "Configuraciones por defecto para botones de exportacion",
+                        "url": "documents\/js.md#configuraciones-por-defecto-para-botones-de-exportacion",
+                        "subnivels": [],
+                        "tags": [
+                            "datatable",
+                            "options",
+                            "language",
+                            "settings",
+                            "excel",
+                            "copy",
+                            "excludeExport",
+                            "dtFormatText"
+                        ]
+                    },
+                    {
+                        "title": "Datatables responsive",
+                        "url": "documents\/js.md#datatables-responsive",
+                        "subnivels": [],
+                        "tags": [
+                            "datatable",
+                            "response",
+                            "all",
+                            "desktop"
+                        ]
+                    },
+                    {
+                        "title": "Datatables compacta",
+                        "url": "documents\/js.md#datatables-compacta",
+                        "subnivels": [],
+                        "tags": [
+                            "datatable",
+                            "compact"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "CKEditor 4",
+                "url": "documents\/js.md#ckeditor-4",
+                "subnivels": [],
+                "tags": [
+                    "js",
+                    "plugins",
+                    "wysiwyg",
+                    "CKEDITOR"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Linux",
+        "url": "documents\/linux.md#linux",
+        "subnivels": [
+            {
+                "title": "Comandos Carpeta \/ Archivos",
+                "url": "documents\/linux.md#comandos-carpeta--archivos",
+                "subnivels": []
+            },
+            {
+                "title": "Comandos Procesos",
+                "url": "documents\/linux.md#comandos-procesos",
+                "subnivels": []
+            },
+            {
+                "title": "Atajos al escribir comandos",
+                "url": "documents\/linux.md#atajos-al-escribir-comandos",
+                "subnivels": []
+            },
+            {
+                "title": "Comandos Informaci\u00f3n del sistema",
+                "url": "documents\/linux.md#comandos-informaci%C3%B3n-del-sistema",
+                "subnivels": []
+            },
+            {
+                "title": "Comandos Permisos",
+                "url": "documents\/linux.md#comandos-permisos",
+                "subnivels": []
+            },
+            {
+                "title": "Instalar sublime3",
+                "url": "documents\/linux.md#instalar-sublime3",
+                "subnivels": []
+            },
+            {
+                "title": "LINUX INCLUIR VIRTUAL HOST",
+                "url": "documents\/linux.md#linux-incluir-virtual-host",
+                "subnivels": []
+            },
+            {
+                "title": "ELIMINAR CACHE DE ELASTIC CACHE DE AWS (exclusivamente cache)",
+                "url": "documents\/linux.md#eliminar-cache-de-elastic-cache-de-aws-%28exclusivamente-cache%29",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "Markdown",
+        "url": "documents\/markdown.md#markdown",
+        "subnivels": [
+            {
+                "title": "Projecto helpers",
+                "url": "documents\/markdown.md#projecto-helpers",
+                "subnivels": []
+            },
+            {
+                "title": "Estructura",
+                "url": "documents\/markdown.md#estructura",
+                "subnivels": []
+            },
+            {
+                "title": "Imprimir C\u00f3digo",
+                "url": "documents\/markdown.md#imprimir-c%C3%B3digo",
+                "subnivels": []
+            },
+            {
+                "title": "Listas",
+                "url": "documents\/markdown.md#listas",
+                "subnivels": []
+            },
+            {
+                "title": "Formato Texto",
+                "url": "documents\/markdown.md#formato-texto",
+                "subnivels": []
+            },
+            {
+                "title": "Tablas",
+                "url": "documents\/markdown.md#tablas",
+                "subnivels": []
+            },
+            {
+                "title": "Im\u00e1genes",
+                "url": "documents\/markdown.md#im%C3%A1genes",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "PHP",
+        "url": "documents\/php.md#php",
+        "subnivels": [
+            {
+                "title": "Configuaciones - Php.ini",
+                "url": "documents\/php.md#configuaciones---php.ini",
+                "subnivels": []
+            },
+            {
+                "title": "Establecer Configuraciones tiempo ejecuci\u00f3n memoria limite",
+                "url": "documents\/php.md#establecer-configuraciones-tiempo-ejecuci%C3%B3n-memoria-limite",
+                "subnivels": []
+            },
+            {
+                "title": "Imprimir variables - arreglos - json",
+                "url": "documents\/php.md#imprimir-variables---arreglos---json",
+                "subnivels": []
+            },
+            {
+                "title": "Tipo de peticion get post put",
+                "url": "documents\/php.md#tipo-de-peticion-get-post-put",
+                "subnivels": []
+            },
+            {
+                "title": "Acceder a data asignada en ROW",
+                "url": "documents\/php.md#acceder-a-data-asignada-en-row",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "addi",
+                    "input",
+                    "post",
+                    "data"
+                ]
+            },
+            {
+                "title": "Redireccionar",
+                "url": "documents\/php.md#redireccionar",
+                "subnivels": []
+            },
+            {
+                "title": "Sesion - iniciar - asignar - eliminar",
+                "url": "documents\/php.md#sesion---iniciar---asignar---eliminar",
+                "subnivels": [
+                    {
+                        "title": "Buscar key en arreglo",
+                        "url": "documents\/php.md#buscar-key-en-arreglo",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "array",
+                            "array_search",
+                            "array_column"
+                        ]
+                    },
+                    {
+                        "title": "Quitar elementos vacios de un arreglo",
+                        "url": "documents\/php.md#quitar-elementos-vacios-de-un-arreglo",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "array",
+                            "array_filter"
+                        ]
+                    },
+                    {
+                        "title": "Cantidad de caracteres variable string",
+                        "url": "documents\/php.md#cantidad-de-caracteres-variable-string",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "strlen",
+                            "longitud"
+                        ]
+                    },
+                    {
+                        "title": "Recortar palabras",
+                        "url": "documents\/php.md#recortar-palabras",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "substr"
+                        ]
+                    },
+                    {
+                        "title": "Buscar texto despues de un caractes especifico",
+                        "url": "documents\/php.md#buscar-texto-despues-de-un-caractes-especifico",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "strstr"
+                        ]
+                    },
+                    {
+                        "title": "Remplazar texto",
+                        "url": "documents\/php.md#remplazar-texto",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "replace",
+                            "str_replace"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Rellenar palabra con caracteres a la derecha-izquierda str_pad",
+                "url": "documents\/php.md#rellenar-palabra-con-caracteres-a-la-derecha-izquierda-str_pad",
+                "subnivels": []
+            },
+            {
+                "title": "Validar variable boleana",
+                "url": "documents\/php.md#validar-variable-boleana",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "filter_var",
+                    "FILTER_VALIDATE_BOOLEAN"
+                ]
+            },
+            {
+                "title": "Setear variable string a entero",
+                "url": "documents\/php.md#setear-variable-string-a-entero",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "intval"
+                ]
+            },
+            {
+                "title": "Setear variable string a decimal",
+                "url": "documents\/php.md#setear-variable-string-a-decimal",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "floatval"
+                ]
+            },
+            {
+                "title": "Validar si una variable es decimal",
+                "url": "documents\/php.md#validar-si-una-variable-es-decimal",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "is_float"
+                ]
+            },
+            {
+                "title": "Redondear un numero",
+                "url": "documents\/php.md#redondear-un-numero",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "round",
+                    "PHP_ROUND_HALF_UP",
+                    "PHP_ROUND_HALF_DOWN",
+                    "PHP_ROUND_HALF_EVEN",
+                    "PHP_ROUND_HALF_ODD"
+                ]
+            },
+            {
+                "title": "switch case break",
+                "url": "documents\/php.md#switch-case-break",
+                "subnivels": []
+            },
+            {
+                "title": "Iteracion",
+                "url": "documents\/php.md#iteracion",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "for"
+                ]
+            },
+            {
+                "title": "Funciones",
+                "url": "documents\/php.md#funciones",
+                "subnivels": [
+                    {
+                        "title": "Sumar valores de una columna especifica",
+                        "url": "documents\/php.md#sumar-valores-de-una-columna-especifica",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "array_reduce"
+                        ]
+                    },
+                    {
+                        "title": "Crear datetime y modificar en X tiempo",
+                        "url": "documents\/php.md#crear-datetime-y-modificar-en-x-tiempo",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Validaci\u00f3n estructura fechas datetime diff createFromFormat",
+                        "url": "documents\/php.md#validaci%C3%B3n-estructura-fechas-datetime-diff-createfromformat",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "string to xml",
+                        "url": "documents\/php.md#string-to-xml",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "throw new Exception - Excepciones",
+                "url": "documents\/php.md#throw-new-exception---excepciones",
+                "subnivels": []
+            },
+            {
+                "title": "mb_strtoupper - Texto en mayuscula",
+                "url": "documents\/php.md#mb_strtoupper---texto-en-mayuscula",
+                "subnivels": []
+            },
+            {
+                "title": "implode Unir elementos de un arreglo",
+                "url": "documents\/php.md#implode-unir-elementos-de-un-arreglo",
+                "subnivels": []
+            },
+            {
+                "title": "explode convertir  variable string en array",
+                "url": "documents\/php.md#explode-convertir--variable-string-en-array",
+                "subnivels": [
+                    {
+                        "title": "strip_tags Eliminar contenido html-php en variables",
+                        "url": "documents\/php.md#strip_tags-eliminar-contenido-html-php-en-variables",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Crear archivo JSON partiendo de array php",
+                        "url": "documents\/php.md#crear-archivo-json-partiendo-de-array-php",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Crear archivo PLANO txt - csv fputcsv",
+                        "url": "documents\/php.md#crear-archivo-plano-txt---csv-fputcsv",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "PHP Excel",
+                "url": "documents\/php.md#php-excel",
+                "subnivels": [
+                    {
+                        "title": "Exportar excel cvs con numeros grandes formato texto",
+                        "url": "documents\/php.md#exportar-excel-cvs-con-numeros-grandes-formato-texto",
+                        "subnivels": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "PHP Codeigniter",
+        "url": "documents\/phpCodeigniter.md#php-codeigniter",
+        "subnivels": [
+            {
+                "title": "Funciones generales die | version | profile",
+                "url": "documents\/phpCodeigniter.md#funciones-generales-die-%7C-version-%7C-profile",
+                "subnivels": []
+            },
+            {
+                "title": "Transacciones",
+                "url": "documents\/phpCodeigniter.md#transacciones",
+                "subnivels": [
+                    {
+                        "title": "trans_begin",
+                        "url": "documents\/phpCodeigniter.md#trans_begin",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "trans_start",
+                        "url": "documents\/phpCodeigniter.md#trans_start",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "SQL Builder",
+                "url": "documents\/phpCodeigniter.md#sql-builder",
+                "subnivels": [
+                    {
+                        "title": "Identity_insert - Deshabilitar-Habilitar autoincremental columna primary",
+                        "url": "documents\/phpCodeigniter.md#identity_insert---deshabilitar-habilitar-autoincremental-columna-primary",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ejemplo group_start en consultar",
+                        "url": "documents\/phpCodeigniter.md#ejemplo-group_start-en-consultar",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ejemplo like en consultar",
+                        "url": "documents\/phpCodeigniter.md#ejemplo-like-en-consultar",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ejemplo no like en consultar",
+                        "url": "documents\/phpCodeigniter.md#ejemplo-no-like-en-consultar",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "delete",
+                        "url": "documents\/phpCodeigniter.md#delete",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Insert batch",
+                        "url": "documents\/phpCodeigniter.md#insert-batch",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Update",
+                        "url": "documents\/phpCodeigniter.md#update",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Update batch",
+                        "url": "documents\/phpCodeigniter.md#update-batch",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ejemplo query limit - group - like - join",
+                        "url": "documents\/phpCodeigniter.md#ejemplo-query-limit---group---like---join",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ejemplo query sencilla order_by - join",
+                        "url": "documents\/phpCodeigniter.md#ejemplo-query-sencilla-order_by---join",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Descargar archivo - force_download",
+                "url": "documents\/phpCodeigniter.md#descargar-archivo---force_download",
+                "subnivels": []
+            },
+            {
+                "title": "Cargar archivos a amazon S3 - control de descarga con try catch",
+                "url": "documents\/phpCodeigniter.md#cargar-archivos-a-amazon-s3---control-de-descarga-con-try-catch",
+                "subnivels": []
+            },
+            {
+                "title": "Ejemplo Controlador con control try-catch y retorno json",
+                "url": "documents\/phpCodeigniter.md#ejemplo-controlador-con-control-try-catch-y-retorno-json",
+                "subnivels": [],
+                "tags": [
+                    "try",
+                    "catch",
+                    "controller",
+                    "documentacion",
+                    "json"
+                ]
+            },
+            {
+                "title": "Implementacion PWA Codeigniter",
+                "url": "documents\/phpCodeigniter.md#implementacion-pwa-codeigniter",
+                "subnivels": [
+                    {
+                        "title": "Manifest | Service Worker",
+                        "url": "documents\/phpCodeigniter.md#manifest-%7C-service-worker",
+                        "subnivels": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "PWA Aplicaciones Web Progresivas",
+        "url": "documents\/pwa.md#pwa-aplicaciones-web-progresivas",
+        "subnivels": [
+            {
+                "title": "Tipos de Aplicaciones",
+                "url": "documents\/pwa.md#tipos-de-aplicaciones",
+                "subnivels": []
+            },
+            {
+                "title": "Services Workers",
+                "url": "documents\/pwa.md#services-workers",
+                "subnivels": [
+                    {
+                        "title": "Borrar cache de service Workers",
+                        "url": "documents\/pwa.md#borrar-cache-de-service-workers",
+                        "subnivels": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Menu",
+        "url": "documents\/reactJS.md#menu",
+        "subnivels": []
+    },
+    {
+        "title": "REACT JS",
+        "url": "documents\/reactJS.md#react-js",
+        "subnivels": [
+            {
+                "title": "HERRAMIENTAS SUGERIDAS",
+                "url": "documents\/reactJS.md#herramientas-sugeridas",
+                "subnivels": []
+            },
+            {
+                "title": "INICIAR SPA",
+                "url": "documents\/reactJS.md#iniciar-spa",
+                "subnivels": []
+            },
+            {
+                "title": "INICIAR MPA",
+                "url": "documents\/reactJS.md#iniciar-mpa",
+                "subnivels": []
+            },
+            {
+                "title": "COMPONENTES",
+                "url": "documents\/reactJS.md#componentes",
+                "subnivels": [
+                    {
+                        "title": "Estructura componentes",
+                        "url": "documents\/reactJS.md#estructura-componentes",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Escritura de componente",
+                        "url": "documents\/reactJS.md#escritura-de-componente",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ejemplo SPA",
+                        "url": "documents\/reactJS.md#ejemplo-spa",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ejemplo MPA",
+                        "url": "documents\/reactJS.md#ejemplo-mpa",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Simular carga de datos",
+                        "url": "documents\/reactJS.md#simular-carga-de-datos",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "PROPS",
+                "url": "documents\/reactJS.md#props",
+                "subnivels": [
+                    {
+                        "title": "Basicos",
+                        "url": "documents\/reactJS.md#basicos",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Objectos",
+                        "url": "documents\/reactJS.md#objectos",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Arreglos",
+                        "url": "documents\/reactJS.md#arreglos",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Funciones",
+                        "url": "documents\/reactJS.md#funciones",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Funciones con parametros",
+                        "url": "documents\/reactJS.md#funciones-con-parametros",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Im\u00e1genes SVG",
+                        "url": "documents\/reactJS.md#im%C3%A1genes-svg",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Implementar Boostrap",
+                        "url": "documents\/reactJS.md#implementar-boostrap",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "useState",
+                        "url": "documents\/reactJS.md#usestate",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "useEffect",
+                        "url": "documents\/reactJS.md#useeffect",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Eventos",
+                        "url": "documents\/reactJS.md#eventos",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "PropsTypes",
+                        "url": "documents\/reactJS.md#propstypes",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "DefaultTypes",
+                        "url": "documents\/reactJS.md#defaulttypes",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Paso a producci\u00f3n",
+                "url": "documents\/reactJS.md#paso-a-producci%C3%B3n",
+                "subnivels": []
+            },
+            {
+                "title": "React Routes",
+                "url": "documents\/reactJS.md#react-routes",
+                "subnivels": []
+            },
+            {
+                "title": "Ejemplo",
+                "url": "documents\/reactJS.md#ejemplo",
+                "subnivels": []
+            },
+            {
+                "title": "Proyectos con c\u00f3digo Ejemplo",
+                "url": "documents\/reactJS.md#proyectos-con-c%C3%B3digo-ejemplo",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "Typescript",
+        "url": "documents\/typescript.md#typescript",
+        "subnivels": [
+            {
+                "title": "Instalar typescript",
+                "url": "documents\/typescript.md#instalar-typescript",
+                "subnivels": []
+            },
+            {
+                "title": "Ejemplos",
+                "url": "documents\/typescript.md#ejemplos",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "Underscore",
+        "url": "documents\/underscore.md#underscore",
+        "subnivels": [
+            {
+                "title": "Sumar valores de un array",
+                "url": "documents\/underscore.md#sumar-valores-de-un-array",
+                "subnivels": [],
+                "tags": [
+                    "underscore",
+                    "js",
+                    "reduce"
+                ]
+            },
+            {
+                "title": "Array column en JS",
+                "url": "documents\/underscore.md#array-column-en-js",
+                "subnivels": [],
+                "tags": [
+                    "underscore",
+                    "js",
+                    "pluck"
+                ]
+            },
+            {
+                "title": "Iterar arreglo objetos",
+                "url": "documents\/underscore.md#iterar-arreglo-objetos",
+                "subnivels": [],
+                "tags": [
+                    "underscore",
+                    "js",
+                    "each"
+                ]
+            },
+            {
+                "title": "Buscar ultimo index por atributo",
+                "url": "documents\/underscore.md#buscar-ultimo-index-por-atributo",
+                "subnivels": [],
+                "tags": [
+                    "underscore",
+                    "js",
+                    "findLastIndex"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Underscore.string",
+        "url": "documents\/underscore.md#underscore.string",
+        "subnivels": []
+    },
+    {
+        "title": "Wamp",
+        "url": "documents\/wamp.md#wamp",
+        "subnivels": [
+            {
+                "title": "Versiones de wamp",
+                "url": "documents\/wamp.md#versiones-de-wamp",
+                "subnivels": []
+            },
+            {
+                "title": "Error Access to XMLHttpRequest has been blocked by CORS policy",
+                "url": "documents\/wamp.md#error-access-to-xmlhttprequest-has-been-blocked-by-cors-policy",
+                "subnivels": []
+            },
+            {
+                "title": "Error Header",
+                "url": "documents\/wamp.md#error-header",
+                "subnivels": []
+            },
+            {
+                "title": "Error Forbidden",
+                "url": "documents\/wamp.md#error-forbidden",
+                "subnivels": []
+            },
+            {
+                "title": "Error Aranque apache por puerto 80 ocupado",
+                "url": "documents\/wamp.md#error-aranque-apache-por-puerto-80-ocupado",
+                "subnivels": [],
+                "tags": [
+                    "wamp",
+                    "80"
+                ]
+            }
+        ]
+    }
+]

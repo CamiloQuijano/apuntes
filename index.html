@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+		<div class="container">
+		
+            <!-- Acceso ejecutar proceso -->
+            <div class="row float-right">
+                <a href="process/index" target="_blank"> Actualizar </a>
+            </div>
+			<br>
+            
+			<div class="row">
+                
+                <!-- Menú principal -->
+				<div class="col-lg-3 mt-3 d-none d-sm-block">
+                    <!-- Buscador -->
+					<div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1"> 
+                              <i class="fa fa-search" aria-hidden="true"></i>
+                          </span>
+                        </div>
+                        <input id="searchPrimaryMenu" type="text" class="form-control" placeholder="Buscar..." aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+                    
+                    <ul id="menuprimary" class="p-0"></ul>
+				</div>
+				<div class="col-lg-9 mt-3">
+					
+					<!-- Buscador -->
+					<div class="input-group mb-3">
+					  <div class="input-group-prepend">
+						<span class="input-group-text" id="basic-addon1"> 
+                            <i class="fa fa-search" aria-hidden="true"></i>
+						</span>
+					  </div>
+					  <input id="searchMenu" type="text" class="form-control" placeholder="Buscar..." aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+					
+					<!-- Estructura menu -->
+					<ul id="menu"></ul>
+					<div id="searchNoResults" style="display:none"> No existen coincidencias en la búsqueda</div>
+
+				</div>
+				
+			</div>
+		</div>
+		
+		<!-- Tmpl de Menu principal -->
+		<script type="text/template" id="helpersMenuPrimaryTemplate">
+			<ul class="list-inline">
+				<li class="filtertype" data-id="ALL"> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Todos </li>
+				<% _.each(data.helpers, function(helper, key) { %>
+                    <% if(helper) { %>
+                        <li class="filtertype" data-id="<%= key %>">
+                            <a href="<%= helper.url %>"> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> </a>
+                            <%= helper.title %>
+                        </li>
+                    <% } %>
+				<% }) %>
+			</ul>
+		</script>
+		
+		<!-- Tmpl de Menu general -->
+		<script type="text/template" id="helpersTemplate">
+			<div>
+				<% _.each(data.helpers, function(helper, key) { %>
+					<li class="menu" id="menuId<%= key %>">
+						<a href="<%= helper.url %>"> <%= helper.title %> </a>
+						<ul class="submenu" id="menuSub<%= key %>"> 
+							<% _.each(helper.subnivels, function(helpern2, keyn2) { %>
+								<li class="menu" id="menuId<%= key %>-<%= keyn2 %>">
+									<a href="<%= helpern2.url %>"> <%= helpern2.title %> </a>
+									<% _.each(helpern2.tags, function(tagn2) { %>
+										<span class="badge badge-info" style="font-size:x-small"><%= tagn2 %></span>
+									<% }) %>
+									<ul class="submenu" id="menuSub<%= key %>-<%= keyn2 %>"> 
+										<% _.each(helpern2.subnivels, function(helpern3, keyn3) { %>
+											<li class="menu" id="menuId<%= key %>-<%= keyn2 %>-<%= keyn3 %>">
+												<a href="<%= helpern3.url %>"> <%= helpern3.title %> </a>
+												<% _.each(helpern3.tags, function(tagn3) { %>
+													<span class="badge badge-info" style="font-size:x-small"><%= tagn3 %></span>
+												<% }) %>
+											</li>
+										<% }) %>
+									</ul>
+								</li>
+							<% }) %>
+						</ul>
+						</ul>
+					</li>
+				<% }) %>
+
+			</div>
+		</script>
+			
+		<hr>
+		Idea manejo helpers:  
+		<a href="https://bootstrap-datepicker.readthedocs.io/en/latest/index.html"> Documentación datapicker</a>
+		<hr>
+			
+			
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.11.0/underscore-min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js"></script>
+		<script type="text/javascript" src="js/search.js"></script>
+		<script type="text/javascript" src="js/helpers.json?t=1"></script>
+		<script>
+            $(document).ready(function(){
+                search.init({
+                    helpers: helpers
+                });
+            });
+		</script>
+	</body>
+</html>
