@@ -20,11 +20,6 @@
 	SET IDENTITY_INSERT NombreTabla OFF;	// Habilitar
 ```
 
-## Len - Consultar por cantidad de caracteres
-```sql
-	select * from crm_cliente where LEN(tel2) >= '11'
-```	
-
 ## Datediff - Diferencias entre fechas - timestamp
 ```sql	
 	SELECT *
@@ -38,10 +33,30 @@
 	SELECT REPLACE(STR('20', 3), SPACE(1), '0');
 ```
 
+## Len - Consultar por cantidad de caracteres
+```sql
+	select * from crm_cliente where LEN(tel2) >= '11'
+```	
+
+## Substring - Extraer texto
+###### Tags: `SQL` `SUBSTRING`
+```sql	
+	SELECT SUBSTRING('SQLTest', 1, 3) AS ExtractString; 	// SQLTe
+```
+
 ## Extraer número de string
+###### Tags: `SQL` `SUBSTRING`
 ```sql	
 	SELECT SUBSTRING('CVD1329', PATINDEX('%[0-9]%', 'CVD1329'), LEN('CVD1329'))
 ```
+
+## Texto a mayuscula minuscula
+###### Tags: `SQL` `LOWER` `UPPER`
+```sql	
+	SELECT LOWER('SQL Example');		// sql example
+	SELECT UPPER('SQL Example');		// SQL EXAMPLE
+```
+
 
 ## Validar si una columna contiene un texto especifico charIndex
 ```sql	
@@ -59,10 +74,10 @@
 ## Extraer informacion fecha - fecha actual
 ###### Tags: `SQL` `getdate` `YEAR` `MONTH` `DAY`
 ```sql	
-SELECT getdate()			-- 2021-05-19 19:03:06.663
-SELECT YEAR(GetDate())		-- 2021
-SELECT MONTH(GetDate())		-- 5
-SELECT DAY(GetDate())		-- 19
+	SELECT getdate()  			-- Fecha Completa: 2021-05-19 19:03:06.663
+	SELECT YEAR(GetDate())		-- Año: 2021
+	SELECT MONTH(GetDate())   	-- Mes: 5
+	SELECT DAY(GetDate()) 		-- Día: 19
 ```
 
 ## Cambiar Formato Dinero
@@ -93,7 +108,7 @@ Keys para formatos de fechas
 
 Ejemplos implementados 
 ```sql	
-	select FORMAT(getdate(), 'yyyy/MM/dd') as date 				-- 2020/09/09
+	SELECT FORMAT(getdate(), 'yyyy/MM/dd') as date 				-- 2020/09/09
 	SELECT FORMAT(getdate(), 'dd/MM/yyyy') as date 				-- 21/03/2018
 	SELECT FORMAT(getdate(), 'dd/MM/yyyy, hh:mm:ss') as date   	-- 21/03/2018, 11:36:14
 	SELECT FORMAT(getdate(), 'dddd, MMMM, yyyy') as date   		-- Miercoles, mayo 2021
@@ -101,8 +116,8 @@ Ejemplos implementados
 	SELECT FORMAT(getdate(), 'MM.dd.yy') as date   				-- 03.21.18
 	SELECT FORMAT(getdate(), 'MM-dd-yy') as date	   			-- 03-21-18
 	SELECT FORMAT(getdate(), 'hh:mm:ss tt ') as date   			-- 11:36:14 AM (AM/PM no found)
-	select FORMAT(getdate(), 'MM/dd/yyyy hh:mm:s tt') 	 		-- 05/19/2021 03:12:34 
-	SELECT Format(getdate(), 'hh:mm tt') 				  		-- returns 02:07 PM (AM/PM no found)
+	SELECT FORMAT(getdate(), 'MM/dd/yyyy hh:mm:s tt') 	 		-- 05/19/2021 03:12:34 
+	SELECT FORMAT(getdate(), 'hh:mm tt') 				  		-- returns 02:07 PM (AM/PM no found)
 ```
 
 
@@ -113,6 +128,7 @@ Ejemplos implementados
 	SELECT CONVERT(VARCHAR(50), fechaDesde, 103)   	-- Formato 09/09/2020
 	SELECT CONVERT(VARCHAR(50), getdate(), 121)		-- Formato 2020-09-09 17:59:04.387
 	SELECT CONVERT(VARCHAR(50), getdate(), 103)		-- Formato 09/09/2020
+	SELECT CONVERT(VARCHAR(50), fecCrea, 20)   		-- Formato 2021-10-29 08:55:02
 ```
 
 ## Incremetar o restar dias a una fecha
@@ -161,25 +177,34 @@ Ejemplos implementados
 	FROM SINGES.."inv_Item_homologo" where id = 0
 ```
 
-## Crear una tabla temporal a partir de una consulta
-###### Tags: `SQL` `create` `temporal`
+## Crear una tabla temporal - validar existencia previa
+###### Tags: `SQL` `create` `table` `temporal` `OBJECT_ID`
 ```sql
+	IF OBJECT_ID('tempdb.dbo.#tabletemp', 'U') IS NOT NULL DROP TABLE #tabletemp;
+	Create table #tabletemp (item VARCHAR(25), costo MONEY, cantidad int);
+```
+
+## Crear una tabla temporal a partir de una consulta - validar existencia previa
+###### Tags: `SQL` `create` `table` `temporal`
+```sql
+	IF OBJECT_ID('tempdb.dbo.#nombretablatemporal', 'U') IS NOT NULL DROP TABLE #nombretablatemporal;
 	SELECT campo1, campo2
 	INTO #nombretablatemporal
 	FROM inv_Seriales
 ```
 
+
 ## Insertar registros de una tabla a otra
 ```sql
-	SET IDENTITY_INSERT cf_productoPrecio ON
-	INSERT INTO cf_productoPrecio (id, idProducto, descripcion, estado, usuario, ip)
-	select id, idProducto, descripcion, estado, usuario, ip from singes..cf_productoPrecio
-	SET IDENTITY_INSERT cf_productoPrecio OFF
+	SET IDENTITY_INSERT tablaProductosDos ON
+	INSERT INTO tablaProductosDos (id, idProducto, descripcion, estado)
+	select id, idProducto, descripcion, estado FROM tablaProductosUno
+	SET IDENTITY_INSERT tablaProductosDos OFF
 	
-	// Ejemplo 2
-	INSERT INTO inv_consecsuc (cod_suc, cod_con, des_con, num_ini, car_con, num_act, fec_res) 
-	SELECT cod_suc, '212', 'Asignación DTH', '1', car_con, lon_con, '01/01/1990'  
-	FROM inv_consecsuc WHERE cod_con = '010';
+	// Ejemplo 2 con cambio de valores y filtro
+	INSERT INTO inv_consecsuc (sucursal, descripcion, fec_res) 
+	SELECT sucursal, 'Doc Test', '01/01/1990' 
+	FROM tablaConsecutivos WHERE sucursal = '010';
 ```	
 
 ## Select con CASE WHEN THEN ELSE END multiple
@@ -333,4 +358,34 @@ Ejemplos implementados
 	CLOSE serialesCursor;  
 	DEALLOCATE serialesCursor;
 		
+```
+
+
+## SQL - Errores
+
+## Error en JOB - Conversion failed when converting date
+
+Error completo:  
+***Executed as user: NT AUTHORITY\NETWORK SERVICE. Conversion failed when converting date and/or time from character string. 
+[SQLSTATE 22007] (Error 241).  The step failed.***
+
+Solución:
+1. Se sugiere parar lógica a Procedimiento almacenado
+2. Se llama en job el proceso almacenado
+
+
+## Error intercalacion
+###### Tags: `COLLATE` `SQL_Latin1_General_CP1_CI_AS` `Modern_Spanish_CI_AS`
+
+Error completo:  
+No se puede resolver el conflicto de intercalación entre "SQL_Latin1_General_CP1_CI_AS" y "Modern_Spanish_CI_AS" de la operación equal to.
+
+Solución:
+1. A columna que realiza join incluir COLLATE
+
+```sql
+CREATE TABLE #CORREOS_VALIDAR (
+	id int NOT NULL IDENTITY(1,1) PRIMARY KEY, 
+	correo VARCHAR(80) COLLATE DATABASE_DEFAULT,
+);
 ```

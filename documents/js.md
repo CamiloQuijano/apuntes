@@ -333,57 +333,6 @@ Es similar al while, pero se ejecuta la primera condición asi no cumpla el whil
 	suma(10, 5);
 ```
 	
-
-# JQUERY
-
-## Acceder a informacion de formulario
-###### Tags: `js` `serialize` `serializeArray` `serializeObject`
-
-```js	
-	$(event.currentTarget).serialize();
-	// searhEHGroupId=1&searhEHStatus=2&searchEHDateInit=3
-	
-    $(event.currentTarget).serializeArray();
-	// [ 0: {name: "searhEHGroupId", value: "1"} 1: {name: "searhEHStatus", value: "2"} 2: {name: "searchEHDateInit", value: "3"} ]
-	
-    $(event.currentTarget).serializeObject();
-	// { searhEHGroupId: "1", searhEHStatus: "2", searchEHDateInit: "3"}
-	
-```
-
-
-## eventos - funcion y tipo funcion tipo flecha con attributos de parametros
-
-```js	
-	// Declaración función común y corriente
-	// Se accede a la info como $(this).serialize();
-	jQuery('#clickme1').on('click',function() {
-		console.log('Se ha pinchado: ',jQuery(this).attr('id'));
-	});
-
-	// Declaración función de flechas
-	// Se accede a la info como $(e.currentTarget).serialize();
-	jQuery('#clickme2').on('click',(e) => {
-		console.log('Se ha pinchado: ',jQuery(e.currentTarget).attr('id'));
-	});
-```
-
-
-## eventos - on
-
-
-```js	
-	// 1. Elemento padre | 2. Evento | 3. Elemento que genera evento | 4. Función
-	$('.modalDetailsShopcartContent').on('submit','.removeShopCart', (e) => {
-		console.log('Evento ON submit');
-	});
-```
-
-## Animacion scroll 
-```js	
-	// Animación a elemento específico
-	$("html, body").animate({ scrollTop: $('#documentsContractsContent').offset().top - 50 }, 1000);
-```
 	
 ## Datepicker 
 ###### Tags: `datepicker` `documentacion`
@@ -950,4 +899,34 @@ Renderizar plugin en textarea
 Asignar valor plugin wysiwyg a textarea previo a envio via ajax
 ```js
 	$('#catContent').val(CKEDITOR.instances.catContent.getData());
+```
+
+
+## Moments - plugin para manejo de fechas
+###### Tags: `js` `plugins` `moments`
+
+https://momentjs.com/docs/
+
+
+
+### Validar diferencias entre fechas
+
+```js
+	var dateInitDT = false;
+	var dateEndDT = false;
+	var dateInit = '28/03/2021 20:00';
+	if(dateInit) {
+		dateInitDT = moment(dateInit, 'DD/MM/YYYY HH:mm');
+	}
+
+	var dateEnd = 28/03/2021 21:00);
+	if(dateEnd) {
+		dateEndDT = moment(dateEnd, 'DD/MM/YYYY HH:mm');
+	}
+
+	if(dateInit && dateEndDT) {
+		console.log(dateEndDT.diff(dateInit, 'days')) 		// 0
+		console.log(dateEndDT.diff(dateInit, 'hours'))		// 1
+		console.log(dateEndDT.diff(dateInit, 'minutes'))  	// 60
+	}
 ```

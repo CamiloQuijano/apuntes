@@ -115,9 +115,17 @@ Eliminará del arreglo null, ceros, string vacios.
 ```	
 
 
+### Buscar palabra o caracter en variable de texto 
+###### Tags: `php` `strpos` 
+```php
+	echo strpos("I love php, I love php too!","X");		// FALSE
+	echo strpos("I love php, I love php too!","php");	// 7
+	echo strpos("I love php, I love php too!","I");		// 0
+```
+
+
 ### Buscar texto despues de un caractes especifico
 ###### Tags: `php` `strstr` 
-
 ```php
     $email = 'name@example.com';
 
@@ -129,7 +137,6 @@ Eliminará del arreglo null, ceros, string vacios.
     $user = strstr($email, '@', true); // Desde PHP 5.3.0
     echo $user; // mostrará name
 ```	
-
 
 ### Remplazar texto
 ###### Tags: `php` `replace` `str_replace`
@@ -227,6 +234,19 @@ Pasar valor a float, entero en caso de no tener decimales
 ```
 
 
+## Validar si una variable es numerica
+###### Tags: `php` `is_numeric`
+```php
+	is_numeric(32) 			// True
+	is_numeric('32')   		// True
+	is_numeric(0)  			// True
+	is_numeric(32.5)   		// True
+	is_numeric(true)   		// False
+	is_numeric(null)   		// False
+	is_numeric('abc')  		// False
+```
+
+
 ## Redondear un numero
 ###### Tags: `php` `round` `PHP_ROUND_HALF_UP` `PHP_ROUND_HALF_DOWN` `PHP_ROUND_HALF_EVEN` `PHP_ROUND_HALF_ODD`
 
@@ -318,17 +338,52 @@ Documentación: https://www.php.net/manual/es/function.round.php
 	$umbralProductsUnits = array_reduce($umbralDb, function($v1, $v2){ return $v1+$v2['unitsWeek']; }, 0 );
 ```
 
-### Crear datetime y modificar en X tiempo 
+### Fechas
+###### Tags: `php` `date` 
+
+Documentación:  
+https://www.php.net/manual/es/function.date.php  
+
 ```php		
-	$dateDocument = new DateTime($docHead['fecCrea']);
-	$dateDocument->modify("2 hour");
-	print_R($dateDocument);
+	date('d/m/Y');  						// 02/11/2021
+	date("F j, Y, g:i a");                  // March 10, 2001, 5:16 pm
+	date("m.d.y");                          // 03.10.01
+	date("j, n, Y");                        // 10, 3, 2001
+	date("Ymd");                            // 20010310
+	date('h-i-s, j-m-y, it is w Day');      // 05-16-18, 10-03-01, 1631 1618 6 Satpm01
+	date('\i\t \i\s \t\h\e jS \d\a\y.');    // it is the 10th day.
+	date("D M j G:i:s T Y");                // Sat Mar 10 17:16:18 MST 2001
+	date('H:m:s \m \i\s\ \m\o\n\t\h');      // 17:03:18 m is month
+	date("H:i:s");                          // 17:16:18
+	date("Y-m-d H:i:s");                    // 2001-03-10 17:16:18 (el formato DATETIME de MySQL)
 ```
 
-### Validación estructura fechas datetime diff createFromFormat
+### Fecha y Hora - modificar horas
+###### Tags: `php` `datetime` `modify`
+```php		
+	$dateDocument = new DateTime($docHead['fecCrea']);		// 2022-01-12 05:45:39.064809
+	$dateDocument->modify("2 hour");						// 2022-01-12 07:45:39.064809
+```
+
+### Crear fecha a partir de formato 
+###### Tags: `php` `datetime` `createFromFormat`
 
 Documentación:  
 https://www.php.net/manual/es/datetime.createfromformat.php  
+
+```php
+	// Fecha formato 16/09/2021
+	$dateInitdt = DateTime::createFromFormat('d/m/Y', $dateInitFormat);
+	
+	// Fecha formato 16/09/20 ([y] minúscula)
+	$datetimeInit = DateTime::createFromFormat('d/m/y', $dateInit);
+	
+	// Fecha Formato 21/01/2021 15:20 (Horas y minutos) H=Formato 24horas
+	$dateInitdt = DateTime::createFromFormat('d/m/Y H:i', $dateInit);
+```
+
+### Diferencia entre fechas
+###### Tags: `php` `datetime` `createFromFormat` `diff`
 
 ```php
 	$dateInitdt = DateTime::createFromFormat('d/m/Y', $dateInitFormat);
@@ -356,12 +411,22 @@ https://www.php.net/manual/es/datetime.createfromformat.php
 	throw new Exception("Histórico Grupo: Error formato fecha Final"); 
 ```
 
-## mb_strtoupper - Texto en mayuscula
+## Texto en mayuscula con caracteres especiales
+###### Tags: `php` `mb_strtoupper`
 ```php
 	$str = "Mary Had A Little Lamb and She LOVED It So";
 	$str = mb_strtoupper($str);
 	echo $str; // Imprime MARY HAD A LITTLE LAMB AND SHE LOVED IT SO
 ```
+
+## Texto en minuscula con caracteres especiales
+###### Tags: `php` `mb_strtolower`
+```php
+	$str = "Ejemplo ñ test á";
+	$str = mb_strtolower($str);
+	echo $str; // ejemplo ñ test á
+```
+
 
 ## implode Unir elementos de un arreglo
 ```php

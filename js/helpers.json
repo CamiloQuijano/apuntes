@@ -22,11 +22,6 @@ helpers = [
                 ]
             },
             {
-                "title": "Len - Consultar por cantidad de caracteres",
-                "url": "documents\/SQL.md#len---consultar-por-cantidad-de-caracteres",
-                "subnivels": []
-            },
-            {
                 "title": "Datediff - Diferencias entre fechas - timestamp",
                 "url": "documents\/SQL.md#datediff---diferencias-entre-fechas---timestamp",
                 "subnivels": []
@@ -37,9 +32,37 @@ helpers = [
                 "subnivels": []
             },
             {
+                "title": "Len - Consultar por cantidad de caracteres",
+                "url": "documents\/SQL.md#len---consultar-por-cantidad-de-caracteres",
+                "subnivels": []
+            },
+            {
+                "title": "Substring - Extraer texto",
+                "url": "documents\/SQL.md#substring---extraer-texto",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "SUBSTRING"
+                ]
+            },
+            {
                 "title": "Extraer n\u00famero de string",
                 "url": "documents\/SQL.md#extraer-n%C3%BAmero-de-string",
-                "subnivels": []
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "SUBSTRING"
+                ]
+            },
+            {
+                "title": "Texto a mayuscula minuscula",
+                "url": "documents\/SQL.md#texto-a-mayuscula-minuscula",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "LOWER",
+                    "UPPER"
+                ]
             },
             {
                 "title": "Validar si una columna contiene un texto especifico charIndex",
@@ -132,12 +155,25 @@ helpers = [
                 "subnivels": []
             },
             {
-                "title": "Crear una tabla temporal a partir de una consulta",
-                "url": "documents\/SQL.md#crear-una-tabla-temporal-a-partir-de-una-consulta",
+                "title": "Crear una tabla temporal - validar existencia previa",
+                "url": "documents\/SQL.md#crear-una-tabla-temporal---validar-existencia-previa",
                 "subnivels": [],
                 "tags": [
                     "SQL",
                     "create",
+                    "table",
+                    "temporal",
+                    "OBJECT_ID"
+                ]
+            },
+            {
+                "title": "Crear una tabla temporal a partir de una consulta - validar existencia previa",
+                "url": "documents\/SQL.md#crear-una-tabla-temporal-a-partir-de-una-consulta---validar-existencia-previa",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "create",
+                    "table",
                     "temporal"
                 ]
             },
@@ -199,6 +235,26 @@ helpers = [
                         "url": "documents\/SQL.md#cursor",
                         "subnivels": []
                     }
+                ]
+            },
+            {
+                "title": "SQL - Errores",
+                "url": "documents\/SQL.md#sql---errores",
+                "subnivels": []
+            },
+            {
+                "title": "Error en JOB - Conversion failed when converting date",
+                "url": "documents\/SQL.md#error-en-job---conversion-failed-when-converting-date",
+                "subnivels": []
+            },
+            {
+                "title": "Error intercalacion",
+                "url": "documents\/SQL.md#error-intercalacion",
+                "subnivels": [],
+                "tags": [
+                    "COLLATE",
+                    "SQL_Latin1_General_CP1_CI_AS",
+                    "Modern_Spanish_CI_AS"
                 ]
             }
         ]
@@ -437,6 +493,16 @@ helpers = [
         "url": "documents\/boostrap.md#boostrap",
         "subnivels": [
             {
+                "title": "Implementar",
+                "url": "documents\/boostrap.md#implementar",
+                "subnivels": [],
+                "tags": [
+                    "boostrap",
+                    "libreria",
+                    "instalar"
+                ]
+            },
+            {
                 "title": "Cortar palabras",
                 "url": "documents\/boostrap.md#cortar-palabras",
                 "subnivels": [],
@@ -460,7 +526,12 @@ helpers = [
             {
                 "title": "Font awesome",
                 "url": "documents\/boostrap.md#font-awesome",
-                "subnivels": []
+                "subnivels": [],
+                "tags": [
+                    "fontawesome",
+                    "libreria",
+                    "instalar"
+                ]
             }
         ]
     },
@@ -619,6 +690,163 @@ helpers = [
                 "title": "CRM (Customer relationship management)",
                 "url": "documents\/glosary.md#crm-%28customer-relationship-management%29",
                 "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "HTML",
+        "url": "documents\/html.md#html",
+        "subnivels": [
+            {
+                "title": "Deshabilitar autocompletar en form",
+                "url": "documents\/html.md#deshabilitar-autocompletar-en-form",
+                "subnivels": []
+            },
+            {
+                "title": "Formulario - submit por fuera del form",
+                "url": "documents\/html.md#formulario---submit-por-fuera-del-form",
+                "subnivels": [],
+                "tags": [
+                    "html",
+                    "form",
+                    "submit"
+                ]
+            },
+            {
+                "title": "Formulario - submit con imagen",
+                "url": "documents\/html.md#formulario---submit-con-imagen",
+                "subnivels": [],
+                "tags": [
+                    "html",
+                    "form",
+                    "submit",
+                    "img"
+                ]
+            },
+            {
+                "title": "Asignar rol de un elemento a otro",
+                "url": "documents\/html.md#asignar-rol-de-un-elemento-a-otro",
+                "subnivels": []
+            },
+            {
+                "title": "formulario file accept",
+                "url": "documents\/html.md#formulario-file-accept",
+                "subnivels": []
+            },
+            {
+                "title": "video",
+                "url": "documents\/html.md#video",
+                "subnivels": [],
+                "tags": [
+                    "html",
+                    "video",
+                    "source"
+                ]
+            },
+            {
+                "title": "Head Importar JS",
+                "url": "documents\/html.md#head-importar-js",
+                "subnivels": []
+            },
+            {
+                "title": "Head metatags",
+                "url": "documents\/html.md#head-metatags",
+                "subnivels": [],
+                "tags": [
+                    "html",
+                    "meta",
+                    "tags"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "JQUERY",
+        "url": "documents\/jquery.md#jquery",
+        "subnivels": [
+            {
+                "title": "Acceder a informacion de formulario",
+                "url": "documents\/jquery.md#acceder-a-informacion-de-formulario",
+                "subnivels": [],
+                "tags": [
+                    "jquery",
+                    "serialize",
+                    "serializeArray",
+                    "serializeObject"
+                ]
+            },
+            {
+                "title": "Ejemplo funcion normal y funcion tipo flecha con parametros",
+                "url": "documents\/jquery.md#ejemplo-funcion-normal-y-funcion-tipo-flecha-con-parametros",
+                "subnivels": [],
+                "tags": [
+                    "jquery",
+                    "event",
+                    "function"
+                ]
+            },
+            {
+                "title": "evento para control de contenido dinamico",
+                "url": "documents\/jquery.md#evento-para-control-de-contenido-dinamico",
+                "subnivels": [],
+                "tags": [
+                    "jquery",
+                    "event",
+                    "on"
+                ]
+            },
+            {
+                "title": "evento para control de cambios",
+                "url": "documents\/jquery.md#evento-para-control-de-cambios",
+                "subnivels": [],
+                "tags": [
+                    "jquery",
+                    "event",
+                    "change",
+                    "prop",
+                    "checked"
+                ]
+            },
+            {
+                "title": "Animacion para moverse a un elemento",
+                "url": "documents\/jquery.md#animacion-para-moverse-a-un-elemento",
+                "subnivels": [],
+                "tags": [
+                    "jquery",
+                    "event",
+                    "animate",
+                    "scroll"
+                ]
+            },
+            {
+                "title": "Select",
+                "url": "documents\/jquery.md#select",
+                "subnivels": [
+                    {
+                        "title": "Ocultar una opcion especifica",
+                        "url": "documents\/jquery.md#ocultar-una-opcion-especifica",
+                        "subnivels": [],
+                        "tags": [
+                            "jquery",
+                            "select",
+                            "hide"
+                        ]
+                    },
+                    {
+                        "title": "Seleccionar una opcion",
+                        "url": "documents\/jquery.md#seleccionar-una-opcion",
+                        "subnivels": [],
+                        "tags": [
+                            "jquery",
+                            "select",
+                            "selected",
+                            "val"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "jquery"
+                ]
             }
         ]
     },
@@ -826,38 +1054,6 @@ helpers = [
                         "subnivels": []
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "title": "JQUERY",
-        "url": "documents\/js.md#jquery",
-        "subnivels": [
-            {
-                "title": "Acceder a informacion de formulario",
-                "url": "documents\/js.md#acceder-a-informacion-de-formulario",
-                "subnivels": [],
-                "tags": [
-                    "js",
-                    "serialize",
-                    "serializeArray",
-                    "serializeObject"
-                ]
-            },
-            {
-                "title": "eventos - funcion y tipo funcion tipo flecha con attributos de parametros",
-                "url": "documents\/js.md#eventos---funcion-y-tipo-funcion-tipo-flecha-con-attributos-de-parametros",
-                "subnivels": []
-            },
-            {
-                "title": "eventos - on",
-                "url": "documents\/js.md#eventos---on",
-                "subnivels": []
-            },
-            {
-                "title": "Animacion scroll",
-                "url": "documents\/js.md#animacion-scroll",
-                "subnivels": []
             },
             {
                 "title": "Datepicker",
@@ -1059,6 +1255,22 @@ helpers = [
                     "wysiwyg",
                     "CKEDITOR"
                 ]
+            },
+            {
+                "title": "Moments - plugin para manejo de fechas",
+                "url": "documents\/js.md#moments---plugin-para-manejo-de-fechas",
+                "subnivels": [
+                    {
+                        "title": "Validar diferencias entre fechas",
+                        "url": "documents\/js.md#validar-diferencias-entre-fechas",
+                        "subnivels": []
+                    }
+                ],
+                "tags": [
+                    "js",
+                    "plugins",
+                    "moments"
+                ]
             }
         ]
     },
@@ -1235,6 +1447,15 @@ helpers = [
                         ]
                     },
                     {
+                        "title": "Buscar palabra o caracter en variable de texto",
+                        "url": "documents\/php.md#buscar-palabra-o-caracter-en-variable-de-texto",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "strpos"
+                        ]
+                    },
+                    {
                         "title": "Buscar texto despues de un caractes especifico",
                         "url": "documents\/php.md#buscar-texto-despues-de-un-caractes-especifico",
                         "subnivels": [],
@@ -1298,6 +1519,15 @@ helpers = [
                 ]
             },
             {
+                "title": "Validar si una variable es numerica",
+                "url": "documents\/php.md#validar-si-una-variable-es-numerica",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "is_numeric"
+                ]
+            },
+            {
                 "title": "Redondear un numero",
                 "url": "documents\/php.md#redondear-un-numero",
                 "subnivels": [],
@@ -1338,14 +1568,44 @@ helpers = [
                         ]
                     },
                     {
-                        "title": "Crear datetime y modificar en X tiempo",
-                        "url": "documents\/php.md#crear-datetime-y-modificar-en-x-tiempo",
-                        "subnivels": []
+                        "title": "Fechas",
+                        "url": "documents\/php.md#fechas",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "date"
+                        ]
                     },
                     {
-                        "title": "Validaci\u00f3n estructura fechas datetime diff createFromFormat",
-                        "url": "documents\/php.md#validaci%C3%B3n-estructura-fechas-datetime-diff-createfromformat",
-                        "subnivels": []
+                        "title": "Fecha y Hora - modificar horas",
+                        "url": "documents\/php.md#fecha-y-hora---modificar-horas",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "datetime",
+                            "modify"
+                        ]
+                    },
+                    {
+                        "title": "Crear fecha a partir de formato",
+                        "url": "documents\/php.md#crear-fecha-a-partir-de-formato",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "datetime",
+                            "createFromFormat"
+                        ]
+                    },
+                    {
+                        "title": "Diferencia entre fechas",
+                        "url": "documents\/php.md#diferencia-entre-fechas",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "datetime",
+                            "createFromFormat",
+                            "diff"
+                        ]
                     },
                     {
                         "title": "string to xml",
@@ -1360,9 +1620,22 @@ helpers = [
                 "subnivels": []
             },
             {
-                "title": "mb_strtoupper - Texto en mayuscula",
-                "url": "documents\/php.md#mb_strtoupper---texto-en-mayuscula",
-                "subnivels": []
+                "title": "Texto en mayuscula con caracteres especiales",
+                "url": "documents\/php.md#texto-en-mayuscula-con-caracteres-especiales",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "mb_strtoupper"
+                ]
+            },
+            {
+                "title": "Texto en minuscula con caracteres especiales",
+                "url": "documents\/php.md#texto-en-minuscula-con-caracteres-especiales",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "mb_strtolower"
+                ]
             },
             {
                 "title": "implode Unir elementos de un arreglo",
@@ -1750,6 +2023,133 @@ helpers = [
         "title": "Underscore.string",
         "url": "documents\/underscore.md#underscore.string",
         "subnivels": []
+    },
+    {
+        "title": "Vue",
+        "url": "documents\/vue.md#vue",
+        "subnivels": [
+            {
+                "title": "Comandos",
+                "url": "documents\/vue.md#comandos",
+                "subnivels": [],
+                "tags": [
+                    "vue",
+                    "console",
+                    "install",
+                    "run",
+                    "serve",
+                    "build",
+                    "create"
+                ]
+            },
+            {
+                "title": "Crear proyecto e inicializarlo",
+                "url": "documents\/vue.md#crear-proyecto-e-inicializarlo",
+                "subnivels": [],
+                "tags": [
+                    "vue",
+                    "console",
+                    "install",
+                    "run",
+                    "serve",
+                    "build",
+                    "create"
+                ]
+            },
+            {
+                "title": "Estructura de un proyecto",
+                "url": "documents\/vue.md#estructura-de-un-proyecto",
+                "subnivels": [],
+                "tags": [
+                    "vue",
+                    "project",
+                    "structure"
+                ]
+            },
+            {
+                "title": "Estructura base de un componente",
+                "url": "documents\/vue.md#estructura-base-de-un-componente",
+                "subnivels": [],
+                "tags": [
+                    "vue",
+                    "structure",
+                    "component"
+                ]
+            },
+            {
+                "title": "Iterar arreglo",
+                "url": "documents\/vue.md#iterar-arreglo",
+                "subnivels": [],
+                "tags": [
+                    "vue",
+                    "for"
+                ]
+            },
+            {
+                "title": "Paso de parametros entre componentes",
+                "url": "documents\/vue.md#paso-de-parametros-entre-componentes",
+                "subnivels": [],
+                "tags": [
+                    "vue",
+                    "components"
+                ]
+            },
+            {
+                "title": "Imprimir contenido dinamico en atributos",
+                "url": "documents\/vue.md#imprimir-contenido-dinamico-en-atributos",
+                "subnivels": [],
+                "tags": [
+                    "vue",
+                    "components",
+                    "attr",
+                    "src"
+                ]
+            },
+            {
+                "title": "Asignar clase dependiendo de variable",
+                "url": "documents\/vue.md#asignar-clase-dependiendo-de-variable",
+                "subnivels": [],
+                "tags": [
+                    "vue",
+                    "components",
+                    "attr",
+                    "print",
+                    "if",
+                    "class"
+                ]
+            },
+            {
+                "title": "Evento Click - Ejemplo aplicar filtro",
+                "url": "documents\/vue.md#evento-click---ejemplo-aplicar-filtro",
+                "subnivels": [],
+                "tags": [
+                    "vue",
+                    "components",
+                    "event",
+                    "click"
+                ]
+            },
+            {
+                "title": "v-model - Pasar parametro input de template a script",
+                "url": "documents\/vue.md#v-model---pasar-parametro-input-de-template-a-script",
+                "subnivels": [],
+                "tags": [
+                    "vue",
+                    "v-model",
+                    "keyup"
+                ]
+            },
+            {
+                "title": "proyecto rick y morty",
+                "url": "documents\/vue.md#proyecto-rick-y-morty",
+                "subnivels": [],
+                "tags": [
+                    "vue",
+                    "project",
+                    "netlify"
+                ]
+            }
+        ]
     },
     {
         "title": "Wamp",
