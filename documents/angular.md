@@ -1,4 +1,7 @@
-﻿[`Volver`](../index.html)
+<div class="tip" markdown="1">Have **fun!**</div>
+
+
+[`Volver`](../index.html)
 
 # Angular JS
 
