@@ -66,7 +66,7 @@ Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. dat
 ### Filtro Formato Dinero
 ###### Tags: `filters` `currency`
 
-```js
+```angular
 	{{ 10000 | currency : "" : 0 }}           // 10,000
 	[[ 10000 | currency : '$' : 0 ]]          // $10,000 
 	[[ 10000 | currency : '$' : 2 ]]          // $10,000.00 
