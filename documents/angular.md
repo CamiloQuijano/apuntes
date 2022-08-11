@@ -50,7 +50,7 @@ Descargar:
 	</div>
 ```
 
-Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. datatables|charts
+Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. datatables, charts, etc.
 
 ```javascript
 	angular
