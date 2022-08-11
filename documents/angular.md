@@ -20,8 +20,8 @@ Patron de diseño : MVVM (Módelo, Vista, Vista-Modelo)
 	])
 	.config(["$interpolateProvider", function($interpolateProvider){
 			$interpolateProvider
-				.startSymbol('{{')
-				.endSymbol('}}');
+				.startSymbol('[[')
+				.endSymbol(']]');
 		}]);
 	})();
 ```
@@ -67,22 +67,22 @@ Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. dat
 ###### Tags: `filters` `currency`
 
 ```html
-	{{10000 | currency : "" : 0}}           // 10,000
-	{{10000 | currency : '$' : 0}}          // $10,000 
-	{{10000 | currency : '$' : 2}}          // $10,000.00 
-	{{10000 | currency : 'Rs.' : 2}}        // Rs.10,000.00
-	{{10000 | currency : 'USD $' : 2}}      // USD $10,000.00
-	{{10000 | currency : '#' : 3}}          // #10,000.000
-	{{10000 | currency : 'ANYTHING: ' : 5}} // ANYTHING: 10,000.00000
+	[[ 10000 | currency : "" : 0 ]]           // 10,000
+	[[ 10000 | currency : '$' : 0 ]]          // $10,000 
+	[[ 10000 | currency : '$' : 2 ]]          // $10,000.00 
+	[[ 10000 | currency : 'Rs.' : 2 ]]        // Rs.10,000.00
+	[[ 10000 | currency : 'USD $' : 2 ]]      // USD $10,000.00
+	[[ 10000 | currency : '#' : 3 ]]          // #10,000.000
+	[[ 10000 | currency : 'ANYTHING: ' : 5 ]] // ANYTHING: 10,000.00000
 ```
 
 ### filtros date - number
 ###### Tags: `filters` `date` `number`
 
 ```html
-	{{ doc.date|date:'dd/MM/yyyy' }}			// Formato Fecha 
-	{{val | number}}							// Formato número sin decimales
-	{{val | number:2 }} 						// Formato número indicando cantidad de decimales
+	[[  doc.date|date:'dd/MM/yyyy' ]]			// Formato Fecha 
+	[[ val | number ]]							// Formato número sin decimales
+	[[ val | number:2 ]] 						// Formato número indicando cantidad de decimales
 ```	
 
 ### filtro rango (crear)
