@@ -80,9 +80,9 @@ Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. dat
 ###### Tags: `filters` `date` `number`
 
 ```html
-	[[  doc.date|date:'dd/MM/yyyy' ]]			// Formato Fecha 
-	[[ val | number ]]							// Formato número sin decimales
-	[[ val | number:2 ]] 						// Formato número indicando cantidad de decimales
+	[[ doc.date|date:'dd/MM/yyyy' ]]			// Formato Fecha 
+	[[ val | number ]]					// Formato número sin decimales
+	[[ val | number:2 ]] 					// Formato número indicando cantidad de decimales
 ```	
 
 ### filtro rango (crear)
