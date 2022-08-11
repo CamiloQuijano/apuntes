@@ -1,8 +1,3 @@
-<div class="tip" markdown="1">Have **fun!**</div>
-<div class="tip" markdown=1>Have **fun!**</div>
-<span style="display:block" class="note">It **works!**</span>
-
-
 [`Volver`](../index.html)
 
 # Angular JS
