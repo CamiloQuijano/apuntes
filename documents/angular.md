@@ -66,7 +66,7 @@ Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. dat
 ### Filtro Formato Dinero
 ###### Tags: `filters` `currency`
 
-```html
+```js
 	[[ 10000 | currency : "" : 0 ]]           // 10,000
 	[[ 10000 | currency : '$' : 0 ]]          // $10,000 
 	[[ 10000 | currency : '$' : 2 ]]          // $10,000.00 
@@ -79,10 +79,10 @@ Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. dat
 ### filtros date - number
 ###### Tags: `filters` `date` `number`
 
-```html
-	[[ doc.date|date:'dd/MM/yyyy' ]]			// Formato Fecha 
-	[[ val | number ]]					// Formato número sin decimales
-	[[ val | number:2 ]] 					// Formato número indicando cantidad de decimales
+```js
+	[[ doc.date|date:'dd/MM/yyyy' ]]	// Formato Fecha 
+	[[ val | number ]]			// Formato número sin decimales
+	[[ val | number:2 ]] 			// Formato número indicando cantidad de decimales
 ```	
 
 ### filtro rango (crear)
@@ -115,7 +115,7 @@ Uso
 
 ```js
 	ng-app  		// Nombre aplicación general
-	ng-contoller	// Nombre Controlador
+	ng-contoller		// Nombre Controlador
 	ng-cloak		// Para no mostrar estructura angular al cargar la vista | clase (d-none ó ng-cloak)
 ```
 
