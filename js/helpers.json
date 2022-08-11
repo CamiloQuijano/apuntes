@@ -1,11 +1,11 @@
 helpers = [
     {
         "title": "SQL",
-        "url": "documents\/SQL.md#sql",
+        "url": "documents\/SQL.html#sql",
         "subnivels": [
             {
                 "title": "Restablecer Autoincremental tabla a 1",
-                "url": "documents\/SQL.md#restablecer-autoincremental-tabla-a-1",
+                "url": "documents\/SQL.html#restablecer-autoincremental-tabla-a-1",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -14,7 +14,7 @@ helpers = [
             },
             {
                 "title": "Identity_insert - Deshabilitar-Habilitar autoincremental columna primary",
-                "url": "documents\/SQL.md#identity_insert---deshabilitar-habilitar-autoincremental-columna-primary",
+                "url": "documents\/SQL.html#identity_insert---deshabilitar-habilitar-autoincremental-columna-primary",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -23,22 +23,22 @@ helpers = [
             },
             {
                 "title": "Datediff - Diferencias entre fechas - timestamp",
-                "url": "documents\/SQL.md#datediff---diferencias-entre-fechas---timestamp",
+                "url": "documents\/SQL.html#datediff---diferencias-entre-fechas---timestamp",
                 "subnivels": []
             },
             {
                 "title": "Rellenar de 0 a la izquierda",
-                "url": "documents\/SQL.md#rellenar-de-0-a-la-izquierda",
+                "url": "documents\/SQL.html#rellenar-de-0-a-la-izquierda",
                 "subnivels": []
             },
             {
                 "title": "Len - Consultar por cantidad de caracteres",
-                "url": "documents\/SQL.md#len---consultar-por-cantidad-de-caracteres",
+                "url": "documents\/SQL.html#len---consultar-por-cantidad-de-caracteres",
                 "subnivels": []
             },
             {
                 "title": "Substring - Extraer texto",
-                "url": "documents\/SQL.md#substring---extraer-texto",
+                "url": "documents\/SQL.html#substring---extraer-texto",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -47,7 +47,7 @@ helpers = [
             },
             {
                 "title": "Extraer n\u00famero de string",
-                "url": "documents\/SQL.md#extraer-n%C3%BAmero-de-string",
+                "url": "documents\/SQL.html#extraer-n%C3%BAmero-de-string",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -56,7 +56,7 @@ helpers = [
             },
             {
                 "title": "Texto a mayuscula minuscula",
-                "url": "documents\/SQL.md#texto-a-mayuscula-minuscula",
+                "url": "documents\/SQL.html#texto-a-mayuscula-minuscula",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -66,17 +66,17 @@ helpers = [
             },
             {
                 "title": "Validar si una columna contiene un texto especifico charIndex",
-                "url": "documents\/SQL.md#validar-si-una-columna-contiene-un-texto-especifico-charindex",
+                "url": "documents\/SQL.html#validar-si-una-columna-contiene-un-texto-especifico-charindex",
                 "subnivels": []
             },
             {
                 "title": "select control null columnas numericas - isnull",
-                "url": "documents\/SQL.md#select-control-null-columnas-numericas---isnull",
+                "url": "documents\/SQL.html#select-control-null-columnas-numericas---isnull",
                 "subnivels": []
             },
             {
                 "title": "Extraer informacion fecha - fecha actual",
-                "url": "documents\/SQL.md#extraer-informacion-fecha---fecha-actual",
+                "url": "documents\/SQL.html#extraer-informacion-fecha---fecha-actual",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -88,7 +88,7 @@ helpers = [
             },
             {
                 "title": "Cambiar Formato Dinero",
-                "url": "documents\/SQL.md#cambiar-formato-dinero",
+                "url": "documents\/SQL.html#cambiar-formato-dinero",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -98,7 +98,7 @@ helpers = [
             },
             {
                 "title": "Cambiar Formato fecha con format",
-                "url": "documents\/SQL.md#cambiar-formato-fecha-con-format",
+                "url": "documents\/SQL.html#cambiar-formato-fecha-con-format",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -109,7 +109,7 @@ helpers = [
             },
             {
                 "title": "Cambiar Formato fecha con convert",
-                "url": "documents\/SQL.md#cambiar-formato-fecha-con-convert",
+                "url": "documents\/SQL.html#cambiar-formato-fecha-con-convert",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -119,7 +119,7 @@ helpers = [
             },
             {
                 "title": "Incremetar o restar dias a una fecha",
-                "url": "documents\/SQL.md#incremetar-o-restar-dias-a-una-fecha",
+                "url": "documents\/SQL.html#incremetar-o-restar-dias-a-una-fecha",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -132,7 +132,7 @@ helpers = [
             },
             {
                 "title": "Validar contenido numerico de columna",
-                "url": "documents\/SQL.md#validar-contenido-numerico-de-columna",
+                "url": "documents\/SQL.html#validar-contenido-numerico-de-columna",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -141,22 +141,22 @@ helpers = [
             },
             {
                 "title": "Sp_help - Estructura de una tabla",
-                "url": "documents\/SQL.md#sp_help---estructura-de-una-tabla",
+                "url": "documents\/SQL.html#sp_help---estructura-de-una-tabla",
                 "subnivels": []
             },
             {
                 "title": "Sys tables - Consultar por nombres de tablas-vistas",
-                "url": "documents\/SQL.md#sys-tables---consultar-por-nombres-de-tablas-vistas",
+                "url": "documents\/SQL.html#sys-tables---consultar-por-nombres-de-tablas-vistas",
                 "subnivels": []
             },
             {
                 "title": "Crear una tabla a partir de otra",
-                "url": "documents\/SQL.md#crear-una-tabla-a-partir-de-otra",
+                "url": "documents\/SQL.html#crear-una-tabla-a-partir-de-otra",
                 "subnivels": []
             },
             {
                 "title": "Crear una tabla temporal - validar existencia previa",
-                "url": "documents\/SQL.md#crear-una-tabla-temporal---validar-existencia-previa",
+                "url": "documents\/SQL.html#crear-una-tabla-temporal---validar-existencia-previa",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -168,7 +168,7 @@ helpers = [
             },
             {
                 "title": "Crear una tabla temporal a partir de una consulta - validar existencia previa",
-                "url": "documents\/SQL.md#crear-una-tabla-temporal-a-partir-de-una-consulta---validar-existencia-previa",
+                "url": "documents\/SQL.html#crear-una-tabla-temporal-a-partir-de-una-consulta---validar-existencia-previa",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -179,46 +179,46 @@ helpers = [
             },
             {
                 "title": "Insertar registros de una tabla a otra",
-                "url": "documents\/SQL.md#insertar-registros-de-una-tabla-a-otra",
+                "url": "documents\/SQL.html#insertar-registros-de-una-tabla-a-otra",
                 "subnivels": []
             },
             {
                 "title": "Select con CASE WHEN THEN ELSE END multiple",
-                "url": "documents\/SQL.md#select-con-case-when-then-else-end-multiple",
+                "url": "documents\/SQL.html#select-con-case-when-then-else-end-multiple",
                 "subnivels": []
             },
             {
                 "title": "Alter table Column add-drop",
-                "url": "documents\/SQL.md#alter-table-column-add-drop",
+                "url": "documents\/SQL.html#alter-table-column-add-drop",
                 "subnivels": []
             },
             {
                 "title": "Alter table Foreign key - Constraint",
-                "url": "documents\/SQL.md#alter-table-foreign-key---constraint",
+                "url": "documents\/SQL.html#alter-table-foreign-key---constraint",
                 "subnivels": []
             },
             {
                 "title": "Actualizar primary keys tabla",
-                "url": "documents\/SQL.md#actualizar-primary-keys-tabla",
+                "url": "documents\/SQL.html#actualizar-primary-keys-tabla",
                 "subnivels": []
             },
             {
                 "title": "Crear tabla",
-                "url": "documents\/SQL.md#crear-tabla",
+                "url": "documents\/SQL.html#crear-tabla",
                 "subnivels": []
             },
             {
                 "title": "Crear vistas",
-                "url": "documents\/SQL.md#crear-vistas",
+                "url": "documents\/SQL.html#crear-vistas",
                 "subnivels": []
             },
             {
                 "title": "Proceso SQL",
-                "url": "documents\/SQL.md#proceso-sql",
+                "url": "documents\/SQL.html#proceso-sql",
                 "subnivels": [
                     {
                         "title": "transaccion",
-                        "url": "documents\/SQL.md#transaccion",
+                        "url": "documents\/SQL.html#transaccion",
                         "subnivels": [],
                         "tags": [
                             "TRANSACTION",
@@ -232,24 +232,24 @@ helpers = [
                     },
                     {
                         "title": "Cursor",
-                        "url": "documents\/SQL.md#cursor",
+                        "url": "documents\/SQL.html#cursor",
                         "subnivels": []
                     }
                 ]
             },
             {
                 "title": "SQL - Errores",
-                "url": "documents\/SQL.md#sql---errores",
+                "url": "documents\/SQL.html#sql---errores",
                 "subnivels": []
             },
             {
                 "title": "Error en JOB - Conversion failed when converting date",
-                "url": "documents\/SQL.md#error-en-job---conversion-failed-when-converting-date",
+                "url": "documents\/SQL.html#error-en-job---conversion-failed-when-converting-date",
                 "subnivels": []
             },
             {
                 "title": "Error intercalacion",
-                "url": "documents\/SQL.md#error-intercalacion",
+                "url": "documents\/SQL.html#error-intercalacion",
                 "subnivels": [],
                 "tags": [
                     "COLLATE",
@@ -261,11 +261,11 @@ helpers = [
     },
     {
         "title": "Angular JS",
-        "url": "documents\/angular.md#angular-js",
+        "url": "documents\/angular.html#angular-js",
         "subnivels": [
             {
                 "title": "Ejemplo Implementacion inicial angular js",
-                "url": "documents\/angular.md#ejemplo-implementacion-inicial-angular-js",
+                "url": "documents\/angular.html#ejemplo-implementacion-inicial-angular-js",
                 "subnivels": [],
                 "tags": [
                     "angular.min.js",
@@ -278,11 +278,11 @@ helpers = [
             },
             {
                 "title": "filtros",
-                "url": "documents\/angular.md#filtros",
+                "url": "documents\/angular.html#filtros",
                 "subnivels": [
                     {
                         "title": "Filtro Formato Dinero",
-                        "url": "documents\/angular.md#filtro-formato-dinero",
+                        "url": "documents\/angular.html#filtro-formato-dinero",
                         "subnivels": [],
                         "tags": [
                             "filters",
@@ -291,7 +291,7 @@ helpers = [
                     },
                     {
                         "title": "filtros date - number",
-                        "url": "documents\/angular.md#filtros-date---number",
+                        "url": "documents\/angular.html#filtros-date---number",
                         "subnivels": [],
                         "tags": [
                             "filters",
@@ -301,7 +301,7 @@ helpers = [
                     },
                     {
                         "title": "filtro rango (crear)",
-                        "url": "documents\/angular.md#filtro-rango-%28crear%29",
+                        "url": "documents\/angular.html#filtro-rango-%28crear%29",
                         "subnivels": [],
                         "tags": [
                             "angular",
@@ -313,7 +313,7 @@ helpers = [
             },
             {
                 "title": "atributos ng",
-                "url": "documents\/angular.md#atributos-ng",
+                "url": "documents\/angular.html#atributos-ng",
                 "subnivels": [],
                 "tags": [
                     "ng-app",
@@ -323,21 +323,21 @@ helpers = [
             },
             {
                 "title": "timeout",
-                "url": "documents\/angular.md#timeout",
+                "url": "documents\/angular.html#timeout",
                 "subnivels": []
             },
             {
                 "title": "Actualizar scope en JQUERY ($apply)",
-                "url": "documents\/angular.md#actualizar-scope-en-jquery-%28%24apply%29",
+                "url": "documents\/angular.html#actualizar-scope-en-jquery-%28%24apply%29",
                 "subnivels": []
             },
             {
                 "title": "Estructura para datatable",
-                "url": "documents\/angular.md#estructura-para-datatable",
+                "url": "documents\/angular.html#estructura-para-datatable",
                 "subnivels": [
                     {
                         "title": "Descargar libreria",
-                        "url": "documents\/angular.md#descargar-libreria",
+                        "url": "documents\/angular.html#descargar-libreria",
                         "subnivels": [],
                         "tags": [
                             "angular",
@@ -347,7 +347,7 @@ helpers = [
                     },
                     {
                         "title": "Implementaci\u00f3n en controlador",
-                        "url": "documents\/angular.md#implementaci%C3%B3n-en-controlador",
+                        "url": "documents\/angular.html#implementaci%C3%B3n-en-controlador",
                         "subnivels": [],
                         "tags": [
                             "angular",
@@ -361,7 +361,7 @@ helpers = [
                     },
                     {
                         "title": "Peticion http - definicion data manual",
-                        "url": "documents\/angular.md#peticion-http---definicion-data-manual",
+                        "url": "documents\/angular.html#peticion-http---definicion-data-manual",
                         "subnivels": [],
                         "tags": [
                             "angular",
@@ -373,7 +373,7 @@ helpers = [
             },
             {
                 "title": "Peticion http - definicion desde evento del formulario",
-                "url": "documents\/angular.md#peticion-http---definicion-desde-evento-del-formulario",
+                "url": "documents\/angular.html#peticion-http---definicion-desde-evento-del-formulario",
                 "subnivels": [],
                 "tags": [
                     "angular",
@@ -386,22 +386,22 @@ helpers = [
             },
             {
                 "title": "Envio formulario con JQUERY-AJAX con archivos",
-                "url": "documents\/angular.md#envio-formulario-con-jquery-ajax-con-archivos",
+                "url": "documents\/angular.html#envio-formulario-con-jquery-ajax-con-archivos",
                 "subnivels": []
             },
             {
                 "title": "Estructura tabla HTML - angular - datatable - export excel",
-                "url": "documents\/angular.md#estructura-tabla-html---angular---datatable---export-excel",
+                "url": "documents\/angular.html#estructura-tabla-html---angular---datatable---export-excel",
                 "subnivels": []
             },
             {
                 "title": "Select options con flitro",
-                "url": "documents\/angular.md#select-options-con-flitro",
+                "url": "documents\/angular.html#select-options-con-flitro",
                 "subnivels": []
             },
             {
                 "title": "ng-repeat",
-                "url": "documents\/angular.md#ng-repeat",
+                "url": "documents\/angular.html#ng-repeat",
                 "subnivels": [],
                 "tags": [
                     "angular",
@@ -411,7 +411,7 @@ helpers = [
             },
             {
                 "title": "ng-options",
-                "url": "documents\/angular.md#ng-options",
+                "url": "documents\/angular.html#ng-options",
                 "subnivels": [],
                 "tags": [
                     "angular",
@@ -421,22 +421,22 @@ helpers = [
             },
             {
                 "title": "ng-styles",
-                "url": "documents\/angular.md#ng-styles",
+                "url": "documents\/angular.html#ng-styles",
                 "subnivels": []
             },
             {
                 "title": "Actualizar select2",
-                "url": "documents\/angular.md#actualizar-select2",
+                "url": "documents\/angular.html#actualizar-select2",
                 "subnivels": []
             },
             {
                 "title": "Event",
-                "url": "documents\/angular.md#event",
+                "url": "documents\/angular.html#event",
                 "subnivels": []
             },
             {
                 "title": "Checkbox - manejo jquery - angular",
-                "url": "documents\/angular.md#checkbox---manejo-jquery---angular",
+                "url": "documents\/angular.html#checkbox---manejo-jquery---angular",
                 "subnivels": [],
                 "tags": [
                     "angular",
@@ -449,23 +449,23 @@ helpers = [
             },
             {
                 "title": "Implementaciones",
-                "url": "documents\/angular.md#implementaciones",
+                "url": "documents\/angular.html#implementaciones",
                 "subnivels": []
             }
         ]
     },
     {
         "title": "Backbone",
-        "url": "documents\/backbone.md#backbone",
+        "url": "documents\/backbone.html#backbone",
         "subnivels": [
             {
                 "title": "Implementar - documentacion",
-                "url": "documents\/backbone.md#implementar---documentacion",
+                "url": "documents\/backbone.html#implementar---documentacion",
                 "subnivels": []
             },
             {
                 "title": "Formato a numeros",
-                "url": "documents\/backbone.md#formato-a-numeros",
+                "url": "documents\/backbone.html#formato-a-numeros",
                 "subnivels": [],
                 "tags": [
                     "backbone",
@@ -478,23 +478,23 @@ helpers = [
             },
             {
                 "title": "Ejemplo Render con template",
-                "url": "documents\/backbone.md#ejemplo-render-con-template",
+                "url": "documents\/backbone.html#ejemplo-render-con-template",
                 "subnivels": []
             },
             {
                 "title": "Ejemplo template",
-                "url": "documents\/backbone.md#ejemplo-template",
+                "url": "documents\/backbone.html#ejemplo-template",
                 "subnivels": []
             }
         ]
     },
     {
         "title": "Boostrap",
-        "url": "documents\/boostrap.md#boostrap",
+        "url": "documents\/boostrap.html#boostrap",
         "subnivels": [
             {
                 "title": "Implementar",
-                "url": "documents\/boostrap.md#implementar",
+                "url": "documents\/boostrap.html#implementar",
                 "subnivels": [],
                 "tags": [
                     "boostrap",
@@ -504,7 +504,7 @@ helpers = [
             },
             {
                 "title": "Cortar palabras",
-                "url": "documents\/boostrap.md#cortar-palabras",
+                "url": "documents\/boostrap.html#cortar-palabras",
                 "subnivels": [],
                 "tags": [
                     "boostrap",
@@ -514,18 +514,18 @@ helpers = [
             },
             {
                 "title": "Modal",
-                "url": "documents\/boostrap.md#modal",
+                "url": "documents\/boostrap.html#modal",
                 "subnivels": []
             }
         ]
     },
     {
         "title": "Librerias",
-        "url": "documents\/boostrap.md#librerias",
+        "url": "documents\/boostrap.html#librerias",
         "subnivels": [
             {
                 "title": "Font awesome",
-                "url": "documents\/boostrap.md#font-awesome",
+                "url": "documents\/boostrap.html#font-awesome",
                 "subnivels": [],
                 "tags": [
                     "fontawesome",
@@ -537,135 +537,135 @@ helpers = [
     },
     {
         "title": "GIT",
-        "url": "documents\/git.md#git",
+        "url": "documents\/git.html#git",
         "subnivels": [
             {
                 "title": "B\u00e1sicos",
-                "url": "documents\/git.md#b%C3%A1sicos",
+                "url": "documents\/git.html#b%C3%A1sicos",
                 "subnivels": []
             },
             {
                 "title": "Config - Configuraci\u00f3n Inicial",
-                "url": "documents\/git.md#config---configuraci%C3%B3n-inicial",
+                "url": "documents\/git.html#config---configuraci%C3%B3n-inicial",
                 "subnivels": []
             },
             {
                 "title": "Alias - Configurar",
-                "url": "documents\/git.md#alias---configurar",
+                "url": "documents\/git.html#alias---configurar",
                 "subnivels": []
             },
             {
                 "title": "Logs - Consultar registro (Historial de consignaciones)",
-                "url": "documents\/git.md#logs---consultar-registro-%28historial-de-consignaciones%29",
+                "url": "documents\/git.html#logs---consultar-registro-%28historial-de-consignaciones%29",
                 "subnivels": []
             },
             {
                 "title": "Diff - Comparaciones",
-                "url": "documents\/git.md#diff---comparaciones",
+                "url": "documents\/git.html#diff---comparaciones",
                 "subnivels": []
             },
             {
                 "title": "Add - Agregar archivos al escenario",
-                "url": "documents\/git.md#add---agregar-archivos-al-escenario",
+                "url": "documents\/git.html#add---agregar-archivos-al-escenario",
                 "subnivels": []
             },
             {
                 "title": "Commit - Consignaciones al repositorio",
-                "url": "documents\/git.md#commit---consignaciones-al-repositorio",
+                "url": "documents\/git.html#commit---consignaciones-al-repositorio",
                 "subnivels": []
             },
             {
                 "title": "Push Pull - Subir y bajar consignaciones del repositorio central",
-                "url": "documents\/git.md#push-pull---subir-y-bajar-consignaciones-del-repositorio-central",
+                "url": "documents\/git.html#push-pull---subir-y-bajar-consignaciones-del-repositorio-central",
                 "subnivels": []
             },
             {
                 "title": "Remote - Conexiones con repositorios remotos",
-                "url": "documents\/git.md#remote---conexiones-con-repositorios-remotos",
+                "url": "documents\/git.html#remote---conexiones-con-repositorios-remotos",
                 "subnivels": []
             },
             {
                 "title": "Reset Checkout - Revertir cambios en las consignaciones locales",
-                "url": "documents\/git.md#reset-checkout---revertir-cambios-en-las-consignaciones-locales",
+                "url": "documents\/git.html#reset-checkout---revertir-cambios-en-las-consignaciones-locales",
                 "subnivels": []
             },
             {
                 "title": "Branch - Ramas",
-                "url": "documents\/git.md#branch---ramas",
+                "url": "documents\/git.html#branch---ramas",
                 "subnivels": []
             },
             {
                 "title": "Tags - Etiquetas Versiones",
-                "url": "documents\/git.md#tags---etiquetas-versiones",
+                "url": "documents\/git.html#tags---etiquetas-versiones",
                 "subnivels": []
             },
             {
                 "title": "Rm - Eliminar archivos",
-                "url": "documents\/git.md#rm---eliminar-archivos",
+                "url": "documents\/git.html#rm---eliminar-archivos",
                 "subnivels": []
             },
             {
                 "title": "Key SSH para conexion al repositorio",
-                "url": "documents\/git.md#key-ssh-para-conexion-al-repositorio",
+                "url": "documents\/git.html#key-ssh-para-conexion-al-repositorio",
                 "subnivels": []
             },
             {
                 "title": "Conexi\u00f3n SSH Github",
-                "url": "documents\/git.md#conexi%C3%B3n-ssh-github",
+                "url": "documents\/git.html#conexi%C3%B3n-ssh-github",
                 "subnivels": []
             },
             {
                 "title": "Estructura ejemplo CONFIGGIT",
-                "url": "documents\/git.md#estructura-ejemplo-configgit",
+                "url": "documents\/git.html#estructura-ejemplo-configgit",
                 "subnivels": []
             },
             {
                 "title": "Crear proyecto de estructura existente",
-                "url": "documents\/git.md#crear-proyecto-de-estructura-existente",
+                "url": "documents\/git.html#crear-proyecto-de-estructura-existente",
                 "subnivels": []
             },
             {
                 "title": "Guias de ejemplo",
-                "url": "documents\/git.md#guias-de-ejemplo",
+                "url": "documents\/git.html#guias-de-ejemplo",
                 "subnivels": [
                     {
                         "title": "Clonar un repositorio",
-                        "url": "documents\/git.md#clonar-un-repositorio",
+                        "url": "documents\/git.html#clonar-un-repositorio",
                         "subnivels": []
                     },
                     {
                         "title": "Consignar cambios",
-                        "url": "documents\/git.md#consignar-cambios",
+                        "url": "documents\/git.html#consignar-cambios",
                         "subnivels": []
                     },
                     {
                         "title": "Subir commits a repositorio remoto",
-                        "url": "documents\/git.md#subir-commits-a-repositorio-remoto",
+                        "url": "documents\/git.html#subir-commits-a-repositorio-remoto",
                         "subnivels": []
                     },
                     {
                         "title": "Ramas - Ejemplo creaci\u00f3n, consignaci\u00f3n de cambios y subida",
-                        "url": "documents\/git.md#ramas---ejemplo-creaci%C3%B3n%2C-consignaci%C3%B3n-de-cambios-y-subida",
+                        "url": "documents\/git.html#ramas---ejemplo-creaci%C3%B3n%2C-consignaci%C3%B3n-de-cambios-y-subida",
                         "subnivels": []
                     },
                     {
                         "title": "Ramas - Descargar del repositorio remoto que no existe en mi repositorio local",
-                        "url": "documents\/git.md#ramas---descargar-del-repositorio-remoto-que-no-existe-en-mi-repositorio-local",
+                        "url": "documents\/git.html#ramas---descargar-del-repositorio-remoto-que-no-existe-en-mi-repositorio-local",
                         "subnivels": []
                     },
                     {
                         "title": "Ramas - Descargar cambios de la rama principal a la rama de trabajo",
-                        "url": "documents\/git.md#ramas---descargar-cambios-de-la-rama-principal-a-la-rama-de-trabajo",
+                        "url": "documents\/git.html#ramas---descargar-cambios-de-la-rama-principal-a-la-rama-de-trabajo",
                         "subnivels": []
                     },
                     {
                         "title": "Ramas Subir cambios de la rama de trabajo a la rama principal master",
-                        "url": "documents\/git.md#ramas-subir-cambios-de-la-rama-de-trabajo-a-la-rama-principal-master",
+                        "url": "documents\/git.html#ramas-subir-cambios-de-la-rama-de-trabajo-a-la-rama-principal-master",
                         "subnivels": []
                     },
                     {
                         "title": "Revertir un cambio puntual",
-                        "url": "documents\/git.md#revertir-un-cambio-puntual",
+                        "url": "documents\/git.html#revertir-un-cambio-puntual",
                         "subnivels": []
                     }
                 ]
@@ -674,37 +674,37 @@ helpers = [
     },
     {
         "title": "GLOSARIO",
-        "url": "documents\/glosary.md#glosario",
+        "url": "documents\/glosary.html#glosario",
         "subnivels": [
             {
                 "title": "Listado",
-                "url": "documents\/glosary.md#listado",
+                "url": "documents\/glosary.html#listado",
                 "subnivels": []
             },
             {
                 "title": "ERP (Enterprise Resource Planning)",
-                "url": "documents\/glosary.md#erp-%28enterprise-resource-planning%29",
+                "url": "documents\/glosary.html#erp-%28enterprise-resource-planning%29",
                 "subnivels": []
             },
             {
                 "title": "CRM (Customer relationship management)",
-                "url": "documents\/glosary.md#crm-%28customer-relationship-management%29",
+                "url": "documents\/glosary.html#crm-%28customer-relationship-management%29",
                 "subnivels": []
             }
         ]
     },
     {
         "title": "HTML",
-        "url": "documents\/html.md#html",
+        "url": "documents\/html.html#html",
         "subnivels": [
             {
                 "title": "Deshabilitar autocompletar en form",
-                "url": "documents\/html.md#deshabilitar-autocompletar-en-form",
+                "url": "documents\/html.html#deshabilitar-autocompletar-en-form",
                 "subnivels": []
             },
             {
                 "title": "Formulario - submit por fuera del form",
-                "url": "documents\/html.md#formulario---submit-por-fuera-del-form",
+                "url": "documents\/html.html#formulario---submit-por-fuera-del-form",
                 "subnivels": [],
                 "tags": [
                     "html",
@@ -714,7 +714,7 @@ helpers = [
             },
             {
                 "title": "Formulario - submit con imagen",
-                "url": "documents\/html.md#formulario---submit-con-imagen",
+                "url": "documents\/html.html#formulario---submit-con-imagen",
                 "subnivels": [],
                 "tags": [
                     "html",
@@ -725,17 +725,17 @@ helpers = [
             },
             {
                 "title": "Asignar rol de un elemento a otro",
-                "url": "documents\/html.md#asignar-rol-de-un-elemento-a-otro",
+                "url": "documents\/html.html#asignar-rol-de-un-elemento-a-otro",
                 "subnivels": []
             },
             {
                 "title": "formulario file accept",
-                "url": "documents\/html.md#formulario-file-accept",
+                "url": "documents\/html.html#formulario-file-accept",
                 "subnivels": []
             },
             {
                 "title": "video",
-                "url": "documents\/html.md#video",
+                "url": "documents\/html.html#video",
                 "subnivels": [],
                 "tags": [
                     "html",
@@ -745,12 +745,12 @@ helpers = [
             },
             {
                 "title": "Head Importar JS",
-                "url": "documents\/html.md#head-importar-js",
+                "url": "documents\/html.html#head-importar-js",
                 "subnivels": []
             },
             {
                 "title": "Head metatags",
-                "url": "documents\/html.md#head-metatags",
+                "url": "documents\/html.html#head-metatags",
                 "subnivels": [],
                 "tags": [
                     "html",
@@ -762,11 +762,11 @@ helpers = [
     },
     {
         "title": "JQUERY",
-        "url": "documents\/jquery.md#jquery",
+        "url": "documents\/jquery.html#jquery",
         "subnivels": [
             {
                 "title": "Acceder a informacion de formulario",
-                "url": "documents\/jquery.md#acceder-a-informacion-de-formulario",
+                "url": "documents\/jquery.html#acceder-a-informacion-de-formulario",
                 "subnivels": [],
                 "tags": [
                     "jquery",
@@ -777,7 +777,7 @@ helpers = [
             },
             {
                 "title": "Ejemplo funcion normal y funcion tipo flecha con parametros",
-                "url": "documents\/jquery.md#ejemplo-funcion-normal-y-funcion-tipo-flecha-con-parametros",
+                "url": "documents\/jquery.html#ejemplo-funcion-normal-y-funcion-tipo-flecha-con-parametros",
                 "subnivels": [],
                 "tags": [
                     "jquery",
@@ -787,7 +787,7 @@ helpers = [
             },
             {
                 "title": "evento para control de contenido dinamico",
-                "url": "documents\/jquery.md#evento-para-control-de-contenido-dinamico",
+                "url": "documents\/jquery.html#evento-para-control-de-contenido-dinamico",
                 "subnivels": [],
                 "tags": [
                     "jquery",
@@ -797,7 +797,7 @@ helpers = [
             },
             {
                 "title": "evento para control de cambios",
-                "url": "documents\/jquery.md#evento-para-control-de-cambios",
+                "url": "documents\/jquery.html#evento-para-control-de-cambios",
                 "subnivels": [],
                 "tags": [
                     "jquery",
@@ -809,7 +809,7 @@ helpers = [
             },
             {
                 "title": "Animacion para moverse a un elemento",
-                "url": "documents\/jquery.md#animacion-para-moverse-a-un-elemento",
+                "url": "documents\/jquery.html#animacion-para-moverse-a-un-elemento",
                 "subnivels": [],
                 "tags": [
                     "jquery",
@@ -820,11 +820,11 @@ helpers = [
             },
             {
                 "title": "Select",
-                "url": "documents\/jquery.md#select",
+                "url": "documents\/jquery.html#select",
                 "subnivels": [
                     {
                         "title": "Ocultar una opcion especifica",
-                        "url": "documents\/jquery.md#ocultar-una-opcion-especifica",
+                        "url": "documents\/jquery.html#ocultar-una-opcion-especifica",
                         "subnivels": [],
                         "tags": [
                             "jquery",
@@ -834,7 +834,7 @@ helpers = [
                     },
                     {
                         "title": "Seleccionar una opcion",
-                        "url": "documents\/jquery.md#seleccionar-una-opcion",
+                        "url": "documents\/jquery.html#seleccionar-una-opcion",
                         "subnivels": [],
                         "tags": [
                             "jquery",
@@ -852,15 +852,15 @@ helpers = [
     },
     {
         "title": "JS",
-        "url": "documents\/js.md#js",
+        "url": "documents\/js.html#js",
         "subnivels": [
             {
                 "title": "FUNCIONES GENERALES",
-                "url": "documents\/js.md#funciones-generales",
+                "url": "documents\/js.html#funciones-generales",
                 "subnivels": [
                     {
                         "title": "Try catch en JS",
-                        "url": "documents\/js.md#try-catch-en-js",
+                        "url": "documents\/js.html#try-catch-en-js",
                         "subnivels": [],
                         "tags": [
                             "js",
@@ -870,7 +870,7 @@ helpers = [
                     },
                     {
                         "title": "redireccionar - recargar - validar url si finaliza en un texto especifico",
-                        "url": "documents\/js.md#redireccionar---recargar---validar-url-si-finaliza-en-un-texto-especifico",
+                        "url": "documents\/js.html#redireccionar---recargar---validar-url-si-finaliza-en-un-texto-especifico",
                         "subnivels": [],
                         "tags": [
                             "js",
@@ -882,7 +882,7 @@ helpers = [
                     },
                     {
                         "title": "abrir ventana",
-                        "url": "documents\/js.md#abrir-ventana",
+                        "url": "documents\/js.html#abrir-ventana",
                         "subnivels": [],
                         "tags": [
                             "js",
@@ -892,7 +892,7 @@ helpers = [
                     },
                     {
                         "title": "JS date fecha actual, primer y ultimo d\u00eda del mes",
-                        "url": "documents\/js.md#js-date-fecha-actual%2C-primer-y-ultimo-d%C3%ADa-del-mes",
+                        "url": "documents\/js.html#js-date-fecha-actual%2C-primer-y-ultimo-d%C3%ADa-del-mes",
                         "subnivels": [],
                         "tags": [
                             "js",
@@ -905,7 +905,7 @@ helpers = [
                     },
                     {
                         "title": "Unificar dos objetos en uno",
-                        "url": "documents\/js.md#unificar-dos-objetos-en-uno",
+                        "url": "documents\/js.html#unificar-dos-objetos-en-uno",
                         "subnivels": [],
                         "tags": [
                             "js",
@@ -917,7 +917,7 @@ helpers = [
                     },
                     {
                         "title": "Unir elementos de un object",
-                        "url": "documents\/js.md#unir-elementos-de-un-object",
+                        "url": "documents\/js.html#unir-elementos-de-un-object",
                         "subnivels": [],
                         "tags": [
                             "js",
@@ -928,7 +928,7 @@ helpers = [
                     },
                     {
                         "title": "Agregar elemento a un array",
-                        "url": "documents\/js.md#agregar-elemento-a-un-array",
+                        "url": "documents\/js.html#agregar-elemento-a-un-array",
                         "subnivels": [],
                         "tags": [
                             "js",
@@ -938,7 +938,7 @@ helpers = [
                     },
                     {
                         "title": "Eliminar elemento de un array",
-                        "url": "documents\/js.md#eliminar-elemento-de-un-array",
+                        "url": "documents\/js.html#eliminar-elemento-de-un-array",
                         "subnivels": [],
                         "tags": [
                             "js",
@@ -948,7 +948,7 @@ helpers = [
                     },
                     {
                         "title": "Setear variable a formato float - quitar decimales",
-                        "url": "documents\/js.md#setear-variable-a-formato-float---quitar-decimales",
+                        "url": "documents\/js.html#setear-variable-a-formato-float---quitar-decimales",
                         "subnivels": [],
                         "tags": [
                             "js",
@@ -959,7 +959,7 @@ helpers = [
                     },
                     {
                         "title": "Setear variable a formato entero - quita decimales",
-                        "url": "documents\/js.md#setear-variable-a-formato-entero---quita-decimales",
+                        "url": "documents\/js.html#setear-variable-a-formato-entero---quita-decimales",
                         "subnivels": [],
                         "tags": [
                             "js",
@@ -970,98 +970,98 @@ helpers = [
                     },
                     {
                         "title": "Validar si una variables es un numero isNan",
-                        "url": "documents\/js.md#validar-si-una-variables-es-un-numero-isnan",
+                        "url": "documents\/js.html#validar-si-una-variables-es-un-numero-isnan",
                         "subnivels": []
                     },
                     {
                         "title": "setTimeOut",
-                        "url": "documents\/js.md#settimeout",
+                        "url": "documents\/js.html#settimeout",
                         "subnivels": []
                     },
                     {
                         "title": "setInterval intervalos",
-                        "url": "documents\/js.md#setinterval-intervalos",
+                        "url": "documents\/js.html#setinterval-intervalos",
                         "subnivels": []
                     },
                     {
                         "title": "JSON - pasar de json a string stringify",
-                        "url": "documents\/js.md#json---pasar-de-json-a-string-stringify",
+                        "url": "documents\/js.html#json---pasar-de-json-a-string-stringify",
                         "subnivels": []
                     },
                     {
                         "title": "JSON - pasar de string a json parse",
-                        "url": "documents\/js.md#json---pasar-de-string-a-json-parse",
+                        "url": "documents\/js.html#json---pasar-de-string-a-json-parse",
                         "subnivels": []
                     },
                     {
                         "title": "Date",
-                        "url": "documents\/js.md#date",
+                        "url": "documents\/js.html#date",
                         "subnivels": []
                     },
                     {
                         "title": "Date unix",
-                        "url": "documents\/js.md#date-unix",
+                        "url": "documents\/js.html#date-unix",
                         "subnivels": []
                     },
                     {
                         "title": "Date validar si una fecha es mayor a otra",
-                        "url": "documents\/js.md#date-validar-si-una-fecha-es-mayor-a-otra",
+                        "url": "documents\/js.html#date-validar-si-una-fecha-es-mayor-a-otra",
                         "subnivels": []
                     },
                     {
                         "title": "alert",
-                        "url": "documents\/js.md#alert",
+                        "url": "documents\/js.html#alert",
                         "subnivels": []
                     },
                     {
                         "title": "console log",
-                        "url": "documents\/js.md#console-log",
+                        "url": "documents\/js.html#console-log",
                         "subnivels": []
                     },
                     {
                         "title": "variables var const array",
-                        "url": "documents\/js.md#variables-var-const-array",
+                        "url": "documents\/js.html#variables-var-const-array",
                         "subnivels": []
                     },
                     {
                         "title": "Condicionales",
-                        "url": "documents\/js.md#condicionales",
+                        "url": "documents\/js.html#condicionales",
                         "subnivels": []
                     },
                     {
                         "title": "Iteracion For",
-                        "url": "documents\/js.md#iteracion-for",
+                        "url": "documents\/js.html#iteracion-for",
                         "subnivels": []
                     },
                     {
                         "title": "Iteracion While",
-                        "url": "documents\/js.md#iteracion-while",
+                        "url": "documents\/js.html#iteracion-while",
                         "subnivels": []
                     },
                     {
                         "title": "Iteracion Do While",
-                        "url": "documents\/js.md#iteracion-do-while",
+                        "url": "documents\/js.html#iteracion-do-while",
                         "subnivels": []
                     },
                     {
                         "title": "Switch",
-                        "url": "documents\/js.md#switch",
+                        "url": "documents\/js.html#switch",
                         "subnivels": []
                     },
                     {
                         "title": "Funciones",
-                        "url": "documents\/js.md#funciones",
+                        "url": "documents\/js.html#funciones",
                         "subnivels": []
                     }
                 ]
             },
             {
                 "title": "Datepicker",
-                "url": "documents\/js.md#datepicker",
+                "url": "documents\/js.html#datepicker",
                 "subnivels": [
                     {
                         "title": "Datepicker - estructura y establecer fecha actual",
-                        "url": "documents\/js.md#datepicker---estructura-y-establecer-fecha-actual",
+                        "url": "documents\/js.html#datepicker---estructura-y-establecer-fecha-actual",
                         "subnivels": [],
                         "tags": [
                             "datepicker",
@@ -1071,7 +1071,7 @@ helpers = [
                     },
                     {
                         "title": "Datepicker - estructura y establecer fecha de d\u00eda inicial del mes actual",
-                        "url": "documents\/js.md#datepicker---estructura-y-establecer-fecha-de-d%C3%ADa-inicial-del-mes-actual",
+                        "url": "documents\/js.html#datepicker---estructura-y-establecer-fecha-de-d%C3%ADa-inicial-del-mes-actual",
                         "subnivels": [],
                         "tags": [
                             "datepicker",
@@ -1083,7 +1083,7 @@ helpers = [
                     },
                     {
                         "title": "Datepicker - control entre fecha Inicial y final",
-                        "url": "documents\/js.md#datepicker---control-entre-fecha-inicial-y-final",
+                        "url": "documents\/js.html#datepicker---control-entre-fecha-inicial-y-final",
                         "subnivels": []
                     }
                 ],
@@ -1094,41 +1094,41 @@ helpers = [
             },
             {
                 "title": "Reiniciar Form reset",
-                "url": "documents\/js.md#reiniciar-form-reset",
+                "url": "documents\/js.html#reiniciar-form-reset",
                 "subnivels": []
             },
             {
                 "title": "Reiniciar Select2 change",
-                "url": "documents\/js.md#reiniciar-select2-change",
+                "url": "documents\/js.html#reiniciar-select2-change",
                 "subnivels": []
             },
             {
                 "title": "Evento al cerrar el modal",
-                "url": "documents\/js.md#evento-al-cerrar-el-modal",
+                "url": "documents\/js.html#evento-al-cerrar-el-modal",
                 "subnivels": []
             },
             {
                 "title": "request http ajax simple",
-                "url": "documents\/js.md#request-http-ajax-simple",
+                "url": "documents\/js.html#request-http-ajax-simple",
                 "subnivels": []
             },
             {
                 "title": "datetimepicker",
-                "url": "documents\/js.md#datetimepicker",
+                "url": "documents\/js.html#datetimepicker",
                 "subnivels": []
             },
             {
                 "title": "Envio formulario con JQUERY-AJAX con archivos",
-                "url": "documents\/js.md#envio-formulario-con-jquery-ajax-con-archivos",
+                "url": "documents\/js.html#envio-formulario-con-jquery-ajax-con-archivos",
                 "subnivels": []
             },
             {
                 "title": "Deshabilitar boton submit o elementos formulario",
-                "url": "documents\/js.md#deshabilitar-boton-submit-o-elementos-formulario",
+                "url": "documents\/js.html#deshabilitar-boton-submit-o-elementos-formulario",
                 "subnivels": [
                     {
                         "title": "Deshabilitar boton submit al enviar formulario",
-                        "url": "documents\/js.md#deshabilitar-boton-submit-al-enviar-formulario",
+                        "url": "documents\/js.html#deshabilitar-boton-submit-al-enviar-formulario",
                         "subnivels": [],
                         "tags": [
                             "js",
@@ -1139,7 +1139,7 @@ helpers = [
                     },
                     {
                         "title": "Deshabilitar elementos del formulario",
-                        "url": "documents\/js.md#deshabilitar-elementos-del-formulario",
+                        "url": "documents\/js.html#deshabilitar-elementos-del-formulario",
                         "subnivels": [],
                         "tags": [
                             "js",
@@ -1149,7 +1149,7 @@ helpers = [
                     },
                     {
                         "title": "Descheckar checkbox",
-                        "url": "documents\/js.md#descheckar-checkbox",
+                        "url": "documents\/js.html#descheckar-checkbox",
                         "subnivels": [],
                         "tags": [
                             "js",
@@ -1162,7 +1162,7 @@ helpers = [
             },
             {
                 "title": "Validar checkbox si esta checkeado",
-                "url": "documents\/js.md#validar-checkbox-si-esta-checkeado",
+                "url": "documents\/js.html#validar-checkbox-si-esta-checkeado",
                 "subnivels": [],
                 "tags": [
                     "js",
@@ -1173,32 +1173,32 @@ helpers = [
             },
             {
                 "title": "LOCALSTORAGE",
-                "url": "documents\/js.md#localstorage",
+                "url": "documents\/js.html#localstorage",
                 "subnivels": []
             },
             {
                 "title": "JAlert",
-                "url": "documents\/js.md#jalert",
+                "url": "documents\/js.html#jalert",
                 "subnivels": [
                     {
                         "title": "jalert con btn de aceptar y callback",
-                        "url": "documents\/js.md#jalert-con-btn-de-aceptar-y-callback",
+                        "url": "documents\/js.html#jalert-con-btn-de-aceptar-y-callback",
                         "subnivels": []
                     }
                 ]
             },
             {
                 "title": "Datatable",
-                "url": "documents\/js.md#datatable",
+                "url": "documents\/js.html#datatable",
                 "subnivels": [
                     {
                         "title": "Implementacion",
-                        "url": "documents\/js.md#implementacion",
+                        "url": "documents\/js.html#implementacion",
                         "subnivels": []
                     },
                     {
                         "title": "Configuraciones por defecto del datatable",
-                        "url": "documents\/js.md#configuraciones-por-defecto-del-datatable",
+                        "url": "documents\/js.html#configuraciones-por-defecto-del-datatable",
                         "subnivels": [],
                         "tags": [
                             "datatable",
@@ -1210,7 +1210,7 @@ helpers = [
                     },
                     {
                         "title": "Configuraciones por defecto para botones de exportacion",
-                        "url": "documents\/js.md#configuraciones-por-defecto-para-botones-de-exportacion",
+                        "url": "documents\/js.html#configuraciones-por-defecto-para-botones-de-exportacion",
                         "subnivels": [],
                         "tags": [
                             "datatable",
@@ -1225,7 +1225,7 @@ helpers = [
                     },
                     {
                         "title": "Datatables responsive",
-                        "url": "documents\/js.md#datatables-responsive",
+                        "url": "documents\/js.html#datatables-responsive",
                         "subnivels": [],
                         "tags": [
                             "datatable",
@@ -1236,7 +1236,7 @@ helpers = [
                     },
                     {
                         "title": "Datatables compacta",
-                        "url": "documents\/js.md#datatables-compacta",
+                        "url": "documents\/js.html#datatables-compacta",
                         "subnivels": [],
                         "tags": [
                             "datatable",
@@ -1247,7 +1247,7 @@ helpers = [
             },
             {
                 "title": "CKEditor 4",
-                "url": "documents\/js.md#ckeditor-4",
+                "url": "documents\/js.html#ckeditor-4",
                 "subnivels": [],
                 "tags": [
                     "js",
@@ -1258,11 +1258,11 @@ helpers = [
             },
             {
                 "title": "Moments - plugin para manejo de fechas",
-                "url": "documents\/js.md#moments---plugin-para-manejo-de-fechas",
+                "url": "documents\/js.html#moments---plugin-para-manejo-de-fechas",
                 "subnivels": [
                     {
                         "title": "Validar diferencias entre fechas",
-                        "url": "documents\/js.md#validar-diferencias-entre-fechas",
+                        "url": "documents\/js.html#validar-diferencias-entre-fechas",
                         "subnivels": []
                     }
                 ],
@@ -1276,118 +1276,118 @@ helpers = [
     },
     {
         "title": "Linux",
-        "url": "documents\/linux.md#linux",
+        "url": "documents\/linux.html#linux",
         "subnivels": [
             {
                 "title": "Comandos Carpeta \/ Archivos",
-                "url": "documents\/linux.md#comandos-carpeta--archivos",
+                "url": "documents\/linux.html#comandos-carpeta--archivos",
                 "subnivels": []
             },
             {
                 "title": "Comandos Procesos",
-                "url": "documents\/linux.md#comandos-procesos",
+                "url": "documents\/linux.html#comandos-procesos",
                 "subnivels": []
             },
             {
                 "title": "Atajos al escribir comandos",
-                "url": "documents\/linux.md#atajos-al-escribir-comandos",
+                "url": "documents\/linux.html#atajos-al-escribir-comandos",
                 "subnivels": []
             },
             {
                 "title": "Comandos Informaci\u00f3n del sistema",
-                "url": "documents\/linux.md#comandos-informaci%C3%B3n-del-sistema",
+                "url": "documents\/linux.html#comandos-informaci%C3%B3n-del-sistema",
                 "subnivels": []
             },
             {
                 "title": "Comandos Permisos",
-                "url": "documents\/linux.md#comandos-permisos",
+                "url": "documents\/linux.html#comandos-permisos",
                 "subnivels": []
             },
             {
                 "title": "Instalar sublime3",
-                "url": "documents\/linux.md#instalar-sublime3",
+                "url": "documents\/linux.html#instalar-sublime3",
                 "subnivels": []
             },
             {
                 "title": "LINUX INCLUIR VIRTUAL HOST",
-                "url": "documents\/linux.md#linux-incluir-virtual-host",
+                "url": "documents\/linux.html#linux-incluir-virtual-host",
                 "subnivels": []
             },
             {
                 "title": "ELIMINAR CACHE DE ELASTIC CACHE DE AWS (exclusivamente cache)",
-                "url": "documents\/linux.md#eliminar-cache-de-elastic-cache-de-aws-%28exclusivamente-cache%29",
+                "url": "documents\/linux.html#eliminar-cache-de-elastic-cache-de-aws-%28exclusivamente-cache%29",
                 "subnivels": []
             }
         ]
     },
     {
         "title": "Markdown",
-        "url": "documents\/markdown.md#markdown",
+        "url": "documents\/markdown.html#markdown",
         "subnivels": [
             {
                 "title": "Projecto helpers",
-                "url": "documents\/markdown.md#projecto-helpers",
+                "url": "documents\/markdown.html#projecto-helpers",
                 "subnivels": []
             },
             {
                 "title": "Estructura",
-                "url": "documents\/markdown.md#estructura",
+                "url": "documents\/markdown.html#estructura",
                 "subnivels": []
             },
             {
                 "title": "Imprimir C\u00f3digo",
-                "url": "documents\/markdown.md#imprimir-c%C3%B3digo",
+                "url": "documents\/markdown.html#imprimir-c%C3%B3digo",
                 "subnivels": []
             },
             {
                 "title": "Listas",
-                "url": "documents\/markdown.md#listas",
+                "url": "documents\/markdown.html#listas",
                 "subnivels": []
             },
             {
                 "title": "Formato Texto",
-                "url": "documents\/markdown.md#formato-texto",
+                "url": "documents\/markdown.html#formato-texto",
                 "subnivels": []
             },
             {
                 "title": "Tablas",
-                "url": "documents\/markdown.md#tablas",
+                "url": "documents\/markdown.html#tablas",
                 "subnivels": []
             },
             {
                 "title": "Im\u00e1genes",
-                "url": "documents\/markdown.md#im%C3%A1genes",
+                "url": "documents\/markdown.html#im%C3%A1genes",
                 "subnivels": []
             }
         ]
     },
     {
         "title": "PHP",
-        "url": "documents\/php.md#php",
+        "url": "documents\/php.html#php",
         "subnivels": [
             {
                 "title": "Configuaciones - Php.ini",
-                "url": "documents\/php.md#configuaciones---php.ini",
+                "url": "documents\/php.html#configuaciones---php.ini",
                 "subnivels": []
             },
             {
                 "title": "Establecer Configuraciones tiempo ejecuci\u00f3n memoria limite",
-                "url": "documents\/php.md#establecer-configuraciones-tiempo-ejecuci%C3%B3n-memoria-limite",
+                "url": "documents\/php.html#establecer-configuraciones-tiempo-ejecuci%C3%B3n-memoria-limite",
                 "subnivels": []
             },
             {
                 "title": "Imprimir variables - arreglos - json",
-                "url": "documents\/php.md#imprimir-variables---arreglos---json",
+                "url": "documents\/php.html#imprimir-variables---arreglos---json",
                 "subnivels": []
             },
             {
                 "title": "Tipo de peticion get post put",
-                "url": "documents\/php.md#tipo-de-peticion-get-post-put",
+                "url": "documents\/php.html#tipo-de-peticion-get-post-put",
                 "subnivels": []
             },
             {
                 "title": "Acceder a data asignada en ROW",
-                "url": "documents\/php.md#acceder-a-data-asignada-en-row",
+                "url": "documents\/php.html#acceder-a-data-asignada-en-row",
                 "subnivels": [],
                 "tags": [
                     "php",
@@ -1399,16 +1399,16 @@ helpers = [
             },
             {
                 "title": "Redireccionar",
-                "url": "documents\/php.md#redireccionar",
+                "url": "documents\/php.html#redireccionar",
                 "subnivels": []
             },
             {
                 "title": "Sesion - iniciar - asignar - eliminar",
-                "url": "documents\/php.md#sesion---iniciar---asignar---eliminar",
+                "url": "documents\/php.html#sesion---iniciar---asignar---eliminar",
                 "subnivels": [
                     {
                         "title": "Buscar key en arreglo",
-                        "url": "documents\/php.md#buscar-key-en-arreglo",
+                        "url": "documents\/php.html#buscar-key-en-arreglo",
                         "subnivels": [],
                         "tags": [
                             "php",
@@ -1419,7 +1419,7 @@ helpers = [
                     },
                     {
                         "title": "Quitar elementos vacios de un arreglo",
-                        "url": "documents\/php.md#quitar-elementos-vacios-de-un-arreglo",
+                        "url": "documents\/php.html#quitar-elementos-vacios-de-un-arreglo",
                         "subnivels": [],
                         "tags": [
                             "php",
@@ -1429,7 +1429,7 @@ helpers = [
                     },
                     {
                         "title": "Cantidad de caracteres variable string",
-                        "url": "documents\/php.md#cantidad-de-caracteres-variable-string",
+                        "url": "documents\/php.html#cantidad-de-caracteres-variable-string",
                         "subnivels": [],
                         "tags": [
                             "php",
@@ -1439,7 +1439,7 @@ helpers = [
                     },
                     {
                         "title": "Recortar palabras",
-                        "url": "documents\/php.md#recortar-palabras",
+                        "url": "documents\/php.html#recortar-palabras",
                         "subnivels": [],
                         "tags": [
                             "php",
@@ -1448,7 +1448,7 @@ helpers = [
                     },
                     {
                         "title": "Buscar palabra o caracter en variable de texto",
-                        "url": "documents\/php.md#buscar-palabra-o-caracter-en-variable-de-texto",
+                        "url": "documents\/php.html#buscar-palabra-o-caracter-en-variable-de-texto",
                         "subnivels": [],
                         "tags": [
                             "php",
@@ -1457,7 +1457,7 @@ helpers = [
                     },
                     {
                         "title": "Buscar texto despues de un caractes especifico",
-                        "url": "documents\/php.md#buscar-texto-despues-de-un-caractes-especifico",
+                        "url": "documents\/php.html#buscar-texto-despues-de-un-caractes-especifico",
                         "subnivels": [],
                         "tags": [
                             "php",
@@ -1466,7 +1466,7 @@ helpers = [
                     },
                     {
                         "title": "Remplazar texto",
-                        "url": "documents\/php.md#remplazar-texto",
+                        "url": "documents\/php.html#remplazar-texto",
                         "subnivels": [],
                         "tags": [
                             "php",
@@ -1478,12 +1478,12 @@ helpers = [
             },
             {
                 "title": "Rellenar palabra con caracteres a la derecha-izquierda str_pad",
-                "url": "documents\/php.md#rellenar-palabra-con-caracteres-a-la-derecha-izquierda-str_pad",
+                "url": "documents\/php.html#rellenar-palabra-con-caracteres-a-la-derecha-izquierda-str_pad",
                 "subnivels": []
             },
             {
                 "title": "Validar variable boleana",
-                "url": "documents\/php.md#validar-variable-boleana",
+                "url": "documents\/php.html#validar-variable-boleana",
                 "subnivels": [],
                 "tags": [
                     "php",
@@ -1493,7 +1493,7 @@ helpers = [
             },
             {
                 "title": "Setear variable string a entero",
-                "url": "documents\/php.md#setear-variable-string-a-entero",
+                "url": "documents\/php.html#setear-variable-string-a-entero",
                 "subnivels": [],
                 "tags": [
                     "php",
@@ -1502,7 +1502,7 @@ helpers = [
             },
             {
                 "title": "Setear variable string a decimal",
-                "url": "documents\/php.md#setear-variable-string-a-decimal",
+                "url": "documents\/php.html#setear-variable-string-a-decimal",
                 "subnivels": [],
                 "tags": [
                     "php",
@@ -1511,7 +1511,7 @@ helpers = [
             },
             {
                 "title": "Validar si una variable es decimal",
-                "url": "documents\/php.md#validar-si-una-variable-es-decimal",
+                "url": "documents\/php.html#validar-si-una-variable-es-decimal",
                 "subnivels": [],
                 "tags": [
                     "php",
@@ -1520,7 +1520,7 @@ helpers = [
             },
             {
                 "title": "Validar si una variable es numerica",
-                "url": "documents\/php.md#validar-si-una-variable-es-numerica",
+                "url": "documents\/php.html#validar-si-una-variable-es-numerica",
                 "subnivels": [],
                 "tags": [
                     "php",
@@ -1529,7 +1529,7 @@ helpers = [
             },
             {
                 "title": "Redondear un numero",
-                "url": "documents\/php.md#redondear-un-numero",
+                "url": "documents\/php.html#redondear-un-numero",
                 "subnivels": [],
                 "tags": [
                     "php",
@@ -1542,12 +1542,12 @@ helpers = [
             },
             {
                 "title": "switch case break",
-                "url": "documents\/php.md#switch-case-break",
+                "url": "documents\/php.html#switch-case-break",
                 "subnivels": []
             },
             {
                 "title": "Iteracion",
-                "url": "documents\/php.md#iteracion",
+                "url": "documents\/php.html#iteracion",
                 "subnivels": [],
                 "tags": [
                     "php",
@@ -1556,11 +1556,11 @@ helpers = [
             },
             {
                 "title": "Funciones",
-                "url": "documents\/php.md#funciones",
+                "url": "documents\/php.html#funciones",
                 "subnivels": [
                     {
                         "title": "Sumar valores de una columna especifica",
-                        "url": "documents\/php.md#sumar-valores-de-una-columna-especifica",
+                        "url": "documents\/php.html#sumar-valores-de-una-columna-especifica",
                         "subnivels": [],
                         "tags": [
                             "php",
@@ -1569,7 +1569,7 @@ helpers = [
                     },
                     {
                         "title": "Fechas",
-                        "url": "documents\/php.md#fechas",
+                        "url": "documents\/php.html#fechas",
                         "subnivels": [],
                         "tags": [
                             "php",
@@ -1578,7 +1578,7 @@ helpers = [
                     },
                     {
                         "title": "Fecha y Hora - modificar horas",
-                        "url": "documents\/php.md#fecha-y-hora---modificar-horas",
+                        "url": "documents\/php.html#fecha-y-hora---modificar-horas",
                         "subnivels": [],
                         "tags": [
                             "php",
@@ -1588,7 +1588,7 @@ helpers = [
                     },
                     {
                         "title": "Crear fecha a partir de formato",
-                        "url": "documents\/php.md#crear-fecha-a-partir-de-formato",
+                        "url": "documents\/php.html#crear-fecha-a-partir-de-formato",
                         "subnivels": [],
                         "tags": [
                             "php",
@@ -1598,7 +1598,7 @@ helpers = [
                     },
                     {
                         "title": "Diferencia entre fechas",
-                        "url": "documents\/php.md#diferencia-entre-fechas",
+                        "url": "documents\/php.html#diferencia-entre-fechas",
                         "subnivels": [],
                         "tags": [
                             "php",
@@ -1609,19 +1609,19 @@ helpers = [
                     },
                     {
                         "title": "string to xml",
-                        "url": "documents\/php.md#string-to-xml",
+                        "url": "documents\/php.html#string-to-xml",
                         "subnivels": []
                     }
                 ]
             },
             {
                 "title": "throw new Exception - Excepciones",
-                "url": "documents\/php.md#throw-new-exception---excepciones",
+                "url": "documents\/php.html#throw-new-exception---excepciones",
                 "subnivels": []
             },
             {
                 "title": "Texto en mayuscula con caracteres especiales",
-                "url": "documents\/php.md#texto-en-mayuscula-con-caracteres-especiales",
+                "url": "documents\/php.html#texto-en-mayuscula-con-caracteres-especiales",
                 "subnivels": [],
                 "tags": [
                     "php",
@@ -1630,7 +1630,7 @@ helpers = [
             },
             {
                 "title": "Texto en minuscula con caracteres especiales",
-                "url": "documents\/php.md#texto-en-minuscula-con-caracteres-especiales",
+                "url": "documents\/php.html#texto-en-minuscula-con-caracteres-especiales",
                 "subnivels": [],
                 "tags": [
                     "php",
@@ -1639,37 +1639,37 @@ helpers = [
             },
             {
                 "title": "implode Unir elementos de un arreglo",
-                "url": "documents\/php.md#implode-unir-elementos-de-un-arreglo",
+                "url": "documents\/php.html#implode-unir-elementos-de-un-arreglo",
                 "subnivels": []
             },
             {
                 "title": "explode convertir  variable string en array",
-                "url": "documents\/php.md#explode-convertir--variable-string-en-array",
+                "url": "documents\/php.html#explode-convertir--variable-string-en-array",
                 "subnivels": [
                     {
                         "title": "strip_tags Eliminar contenido html-php en variables",
-                        "url": "documents\/php.md#strip_tags-eliminar-contenido-html-php-en-variables",
+                        "url": "documents\/php.html#strip_tags-eliminar-contenido-html-php-en-variables",
                         "subnivels": []
                     },
                     {
                         "title": "Crear archivo JSON partiendo de array php",
-                        "url": "documents\/php.md#crear-archivo-json-partiendo-de-array-php",
+                        "url": "documents\/php.html#crear-archivo-json-partiendo-de-array-php",
                         "subnivels": []
                     },
                     {
                         "title": "Crear archivo PLANO txt - csv fputcsv",
-                        "url": "documents\/php.md#crear-archivo-plano-txt---csv-fputcsv",
+                        "url": "documents\/php.html#crear-archivo-plano-txt---csv-fputcsv",
                         "subnivels": []
                     }
                 ]
             },
             {
                 "title": "PHP Excel",
-                "url": "documents\/php.md#php-excel",
+                "url": "documents\/php.html#php-excel",
                 "subnivels": [
                     {
                         "title": "Exportar excel cvs con numeros grandes formato texto",
-                        "url": "documents\/php.md#exportar-excel-cvs-con-numeros-grandes-formato-texto",
+                        "url": "documents\/php.html#exportar-excel-cvs-con-numeros-grandes-formato-texto",
                         "subnivels": []
                     }
                 ]
@@ -1678,98 +1678,98 @@ helpers = [
     },
     {
         "title": "PHP Codeigniter",
-        "url": "documents\/phpCodeigniter.md#php-codeigniter",
+        "url": "documents\/phpCodeigniter.html#php-codeigniter",
         "subnivels": [
             {
                 "title": "Funciones generales die | version | profile",
-                "url": "documents\/phpCodeigniter.md#funciones-generales-die-%7C-version-%7C-profile",
+                "url": "documents\/phpCodeigniter.html#funciones-generales-die-%7C-version-%7C-profile",
                 "subnivels": []
             },
             {
                 "title": "Transacciones",
-                "url": "documents\/phpCodeigniter.md#transacciones",
+                "url": "documents\/phpCodeigniter.html#transacciones",
                 "subnivels": [
                     {
                         "title": "trans_begin",
-                        "url": "documents\/phpCodeigniter.md#trans_begin",
+                        "url": "documents\/phpCodeigniter.html#trans_begin",
                         "subnivels": []
                     },
                     {
                         "title": "trans_start",
-                        "url": "documents\/phpCodeigniter.md#trans_start",
+                        "url": "documents\/phpCodeigniter.html#trans_start",
                         "subnivels": []
                     }
                 ]
             },
             {
                 "title": "SQL Builder",
-                "url": "documents\/phpCodeigniter.md#sql-builder",
+                "url": "documents\/phpCodeigniter.html#sql-builder",
                 "subnivels": [
                     {
                         "title": "Identity_insert - Deshabilitar-Habilitar autoincremental columna primary",
-                        "url": "documents\/phpCodeigniter.md#identity_insert---deshabilitar-habilitar-autoincremental-columna-primary",
+                        "url": "documents\/phpCodeigniter.html#identity_insert---deshabilitar-habilitar-autoincremental-columna-primary",
                         "subnivels": []
                     },
                     {
                         "title": "Ejemplo group_start en consultar",
-                        "url": "documents\/phpCodeigniter.md#ejemplo-group_start-en-consultar",
+                        "url": "documents\/phpCodeigniter.html#ejemplo-group_start-en-consultar",
                         "subnivels": []
                     },
                     {
                         "title": "Ejemplo like en consultar",
-                        "url": "documents\/phpCodeigniter.md#ejemplo-like-en-consultar",
+                        "url": "documents\/phpCodeigniter.html#ejemplo-like-en-consultar",
                         "subnivels": []
                     },
                     {
                         "title": "Ejemplo no like en consultar",
-                        "url": "documents\/phpCodeigniter.md#ejemplo-no-like-en-consultar",
+                        "url": "documents\/phpCodeigniter.html#ejemplo-no-like-en-consultar",
                         "subnivels": []
                     },
                     {
                         "title": "delete",
-                        "url": "documents\/phpCodeigniter.md#delete",
+                        "url": "documents\/phpCodeigniter.html#delete",
                         "subnivels": []
                     },
                     {
                         "title": "Insert batch",
-                        "url": "documents\/phpCodeigniter.md#insert-batch",
+                        "url": "documents\/phpCodeigniter.html#insert-batch",
                         "subnivels": []
                     },
                     {
                         "title": "Update",
-                        "url": "documents\/phpCodeigniter.md#update",
+                        "url": "documents\/phpCodeigniter.html#update",
                         "subnivels": []
                     },
                     {
                         "title": "Update batch",
-                        "url": "documents\/phpCodeigniter.md#update-batch",
+                        "url": "documents\/phpCodeigniter.html#update-batch",
                         "subnivels": []
                     },
                     {
                         "title": "Ejemplo query limit - group - like - join",
-                        "url": "documents\/phpCodeigniter.md#ejemplo-query-limit---group---like---join",
+                        "url": "documents\/phpCodeigniter.html#ejemplo-query-limit---group---like---join",
                         "subnivels": []
                     },
                     {
                         "title": "Ejemplo query sencilla order_by - join",
-                        "url": "documents\/phpCodeigniter.md#ejemplo-query-sencilla-order_by---join",
+                        "url": "documents\/phpCodeigniter.html#ejemplo-query-sencilla-order_by---join",
                         "subnivels": []
                     }
                 ]
             },
             {
                 "title": "Descargar archivo - force_download",
-                "url": "documents\/phpCodeigniter.md#descargar-archivo---force_download",
+                "url": "documents\/phpCodeigniter.html#descargar-archivo---force_download",
                 "subnivels": []
             },
             {
                 "title": "Cargar archivos a amazon S3 - control de descarga con try catch",
-                "url": "documents\/phpCodeigniter.md#cargar-archivos-a-amazon-s3---control-de-descarga-con-try-catch",
+                "url": "documents\/phpCodeigniter.html#cargar-archivos-a-amazon-s3---control-de-descarga-con-try-catch",
                 "subnivels": []
             },
             {
                 "title": "Ejemplo Controlador con control try-catch y retorno json",
-                "url": "documents\/phpCodeigniter.md#ejemplo-controlador-con-control-try-catch-y-retorno-json",
+                "url": "documents\/phpCodeigniter.html#ejemplo-controlador-con-control-try-catch-y-retorno-json",
                 "subnivels": [],
                 "tags": [
                     "try",
@@ -1781,11 +1781,11 @@ helpers = [
             },
             {
                 "title": "Implementacion PWA Codeigniter",
-                "url": "documents\/phpCodeigniter.md#implementacion-pwa-codeigniter",
+                "url": "documents\/phpCodeigniter.html#implementacion-pwa-codeigniter",
                 "subnivels": [
                     {
                         "title": "Manifest | Service Worker",
-                        "url": "documents\/phpCodeigniter.md#manifest-%7C-service-worker",
+                        "url": "documents\/phpCodeigniter.html#manifest-%7C-service-worker",
                         "subnivels": []
                     }
                 ]
@@ -1794,20 +1794,20 @@ helpers = [
     },
     {
         "title": "PWA Aplicaciones Web Progresivas",
-        "url": "documents\/pwa.md#pwa-aplicaciones-web-progresivas",
+        "url": "documents\/pwa.html#pwa-aplicaciones-web-progresivas",
         "subnivels": [
             {
                 "title": "Tipos de Aplicaciones",
-                "url": "documents\/pwa.md#tipos-de-aplicaciones",
+                "url": "documents\/pwa.html#tipos-de-aplicaciones",
                 "subnivels": []
             },
             {
                 "title": "Services Workers",
-                "url": "documents\/pwa.md#services-workers",
+                "url": "documents\/pwa.html#services-workers",
                 "subnivels": [
                     {
                         "title": "Borrar cache de service Workers",
-                        "url": "documents\/pwa.md#borrar-cache-de-service-workers",
+                        "url": "documents\/pwa.html#borrar-cache-de-service-workers",
                         "subnivels": []
                     }
                 ]
@@ -1816,170 +1816,170 @@ helpers = [
     },
     {
         "title": "Menu",
-        "url": "documents\/reactJS.md#menu",
+        "url": "documents\/reactJS.html#menu",
         "subnivels": []
     },
     {
         "title": "REACT JS",
-        "url": "documents\/reactJS.md#react-js",
+        "url": "documents\/reactJS.html#react-js",
         "subnivels": [
             {
                 "title": "HERRAMIENTAS SUGERIDAS",
-                "url": "documents\/reactJS.md#herramientas-sugeridas",
+                "url": "documents\/reactJS.html#herramientas-sugeridas",
                 "subnivels": []
             },
             {
                 "title": "INICIAR SPA",
-                "url": "documents\/reactJS.md#iniciar-spa",
+                "url": "documents\/reactJS.html#iniciar-spa",
                 "subnivels": []
             },
             {
                 "title": "INICIAR MPA",
-                "url": "documents\/reactJS.md#iniciar-mpa",
+                "url": "documents\/reactJS.html#iniciar-mpa",
                 "subnivels": []
             },
             {
                 "title": "COMPONENTES",
-                "url": "documents\/reactJS.md#componentes",
+                "url": "documents\/reactJS.html#componentes",
                 "subnivels": [
                     {
                         "title": "Estructura componentes",
-                        "url": "documents\/reactJS.md#estructura-componentes",
+                        "url": "documents\/reactJS.html#estructura-componentes",
                         "subnivels": []
                     },
                     {
                         "title": "Escritura de componente",
-                        "url": "documents\/reactJS.md#escritura-de-componente",
+                        "url": "documents\/reactJS.html#escritura-de-componente",
                         "subnivels": []
                     },
                     {
                         "title": "Ejemplo SPA",
-                        "url": "documents\/reactJS.md#ejemplo-spa",
+                        "url": "documents\/reactJS.html#ejemplo-spa",
                         "subnivels": []
                     },
                     {
                         "title": "Ejemplo MPA",
-                        "url": "documents\/reactJS.md#ejemplo-mpa",
+                        "url": "documents\/reactJS.html#ejemplo-mpa",
                         "subnivels": []
                     },
                     {
                         "title": "Simular carga de datos",
-                        "url": "documents\/reactJS.md#simular-carga-de-datos",
+                        "url": "documents\/reactJS.html#simular-carga-de-datos",
                         "subnivels": []
                     }
                 ]
             },
             {
                 "title": "PROPS",
-                "url": "documents\/reactJS.md#props",
+                "url": "documents\/reactJS.html#props",
                 "subnivels": [
                     {
                         "title": "Basicos",
-                        "url": "documents\/reactJS.md#basicos",
+                        "url": "documents\/reactJS.html#basicos",
                         "subnivels": []
                     },
                     {
                         "title": "Objectos",
-                        "url": "documents\/reactJS.md#objectos",
+                        "url": "documents\/reactJS.html#objectos",
                         "subnivels": []
                     },
                     {
                         "title": "Arreglos",
-                        "url": "documents\/reactJS.md#arreglos",
+                        "url": "documents\/reactJS.html#arreglos",
                         "subnivels": []
                     },
                     {
                         "title": "Funciones",
-                        "url": "documents\/reactJS.md#funciones",
+                        "url": "documents\/reactJS.html#funciones",
                         "subnivels": []
                     },
                     {
                         "title": "Funciones con parametros",
-                        "url": "documents\/reactJS.md#funciones-con-parametros",
+                        "url": "documents\/reactJS.html#funciones-con-parametros",
                         "subnivels": []
                     },
                     {
                         "title": "Im\u00e1genes SVG",
-                        "url": "documents\/reactJS.md#im%C3%A1genes-svg",
+                        "url": "documents\/reactJS.html#im%C3%A1genes-svg",
                         "subnivels": []
                     },
                     {
                         "title": "Implementar Boostrap",
-                        "url": "documents\/reactJS.md#implementar-boostrap",
+                        "url": "documents\/reactJS.html#implementar-boostrap",
                         "subnivels": []
                     },
                     {
                         "title": "useState",
-                        "url": "documents\/reactJS.md#usestate",
+                        "url": "documents\/reactJS.html#usestate",
                         "subnivels": []
                     },
                     {
                         "title": "useEffect",
-                        "url": "documents\/reactJS.md#useeffect",
+                        "url": "documents\/reactJS.html#useeffect",
                         "subnivels": []
                     },
                     {
                         "title": "Eventos",
-                        "url": "documents\/reactJS.md#eventos",
+                        "url": "documents\/reactJS.html#eventos",
                         "subnivels": []
                     },
                     {
                         "title": "PropsTypes",
-                        "url": "documents\/reactJS.md#propstypes",
+                        "url": "documents\/reactJS.html#propstypes",
                         "subnivels": []
                     },
                     {
                         "title": "DefaultTypes",
-                        "url": "documents\/reactJS.md#defaulttypes",
+                        "url": "documents\/reactJS.html#defaulttypes",
                         "subnivels": []
                     }
                 ]
             },
             {
                 "title": "Paso a producci\u00f3n",
-                "url": "documents\/reactJS.md#paso-a-producci%C3%B3n",
+                "url": "documents\/reactJS.html#paso-a-producci%C3%B3n",
                 "subnivels": []
             },
             {
                 "title": "React Routes",
-                "url": "documents\/reactJS.md#react-routes",
+                "url": "documents\/reactJS.html#react-routes",
                 "subnivels": []
             },
             {
                 "title": "Ejemplo",
-                "url": "documents\/reactJS.md#ejemplo",
+                "url": "documents\/reactJS.html#ejemplo",
                 "subnivels": []
             },
             {
                 "title": "Proyectos con c\u00f3digo Ejemplo",
-                "url": "documents\/reactJS.md#proyectos-con-c%C3%B3digo-ejemplo",
+                "url": "documents\/reactJS.html#proyectos-con-c%C3%B3digo-ejemplo",
                 "subnivels": []
             }
         ]
     },
     {
         "title": "Typescript",
-        "url": "documents\/typescript.md#typescript",
+        "url": "documents\/typescript.html#typescript",
         "subnivels": [
             {
                 "title": "Instalar typescript",
-                "url": "documents\/typescript.md#instalar-typescript",
+                "url": "documents\/typescript.html#instalar-typescript",
                 "subnivels": []
             },
             {
                 "title": "Ejemplos",
-                "url": "documents\/typescript.md#ejemplos",
+                "url": "documents\/typescript.html#ejemplos",
                 "subnivels": []
             }
         ]
     },
     {
         "title": "Underscore",
-        "url": "documents\/underscore.md#underscore",
+        "url": "documents\/underscore.html#underscore",
         "subnivels": [
             {
                 "title": "Sumar valores de un array",
-                "url": "documents\/underscore.md#sumar-valores-de-un-array",
+                "url": "documents\/underscore.html#sumar-valores-de-un-array",
                 "subnivels": [],
                 "tags": [
                     "underscore",
@@ -1989,7 +1989,7 @@ helpers = [
             },
             {
                 "title": "Array column en JS",
-                "url": "documents\/underscore.md#array-column-en-js",
+                "url": "documents\/underscore.html#array-column-en-js",
                 "subnivels": [],
                 "tags": [
                     "underscore",
@@ -1999,7 +1999,7 @@ helpers = [
             },
             {
                 "title": "Iterar arreglo objetos",
-                "url": "documents\/underscore.md#iterar-arreglo-objetos",
+                "url": "documents\/underscore.html#iterar-arreglo-objetos",
                 "subnivels": [],
                 "tags": [
                     "underscore",
@@ -2009,7 +2009,7 @@ helpers = [
             },
             {
                 "title": "Buscar ultimo index por atributo",
-                "url": "documents\/underscore.md#buscar-ultimo-index-por-atributo",
+                "url": "documents\/underscore.html#buscar-ultimo-index-por-atributo",
                 "subnivels": [],
                 "tags": [
                     "underscore",
@@ -2021,16 +2021,16 @@ helpers = [
     },
     {
         "title": "Underscore.string",
-        "url": "documents\/underscore.md#underscore.string",
+        "url": "documents\/underscore.html#underscore.string",
         "subnivels": []
     },
     {
         "title": "Vue",
-        "url": "documents\/vue.md#vue",
+        "url": "documents\/vue.html#vue",
         "subnivels": [
             {
                 "title": "Comandos",
-                "url": "documents\/vue.md#comandos",
+                "url": "documents\/vue.html#comandos",
                 "subnivels": [],
                 "tags": [
                     "vue",
@@ -2044,7 +2044,7 @@ helpers = [
             },
             {
                 "title": "Crear proyecto e inicializarlo",
-                "url": "documents\/vue.md#crear-proyecto-e-inicializarlo",
+                "url": "documents\/vue.html#crear-proyecto-e-inicializarlo",
                 "subnivels": [],
                 "tags": [
                     "vue",
@@ -2058,7 +2058,7 @@ helpers = [
             },
             {
                 "title": "Estructura de un proyecto",
-                "url": "documents\/vue.md#estructura-de-un-proyecto",
+                "url": "documents\/vue.html#estructura-de-un-proyecto",
                 "subnivels": [],
                 "tags": [
                     "vue",
@@ -2068,7 +2068,7 @@ helpers = [
             },
             {
                 "title": "Estructura base de un componente",
-                "url": "documents\/vue.md#estructura-base-de-un-componente",
+                "url": "documents\/vue.html#estructura-base-de-un-componente",
                 "subnivels": [],
                 "tags": [
                     "vue",
@@ -2078,7 +2078,7 @@ helpers = [
             },
             {
                 "title": "Iterar arreglo",
-                "url": "documents\/vue.md#iterar-arreglo",
+                "url": "documents\/vue.html#iterar-arreglo",
                 "subnivels": [],
                 "tags": [
                     "vue",
@@ -2087,7 +2087,7 @@ helpers = [
             },
             {
                 "title": "Paso de parametros entre componentes",
-                "url": "documents\/vue.md#paso-de-parametros-entre-componentes",
+                "url": "documents\/vue.html#paso-de-parametros-entre-componentes",
                 "subnivels": [],
                 "tags": [
                     "vue",
@@ -2096,7 +2096,7 @@ helpers = [
             },
             {
                 "title": "Imprimir contenido dinamico en atributos",
-                "url": "documents\/vue.md#imprimir-contenido-dinamico-en-atributos",
+                "url": "documents\/vue.html#imprimir-contenido-dinamico-en-atributos",
                 "subnivels": [],
                 "tags": [
                     "vue",
@@ -2107,7 +2107,7 @@ helpers = [
             },
             {
                 "title": "Asignar clase dependiendo de variable",
-                "url": "documents\/vue.md#asignar-clase-dependiendo-de-variable",
+                "url": "documents\/vue.html#asignar-clase-dependiendo-de-variable",
                 "subnivels": [],
                 "tags": [
                     "vue",
@@ -2120,7 +2120,7 @@ helpers = [
             },
             {
                 "title": "Evento Click - Ejemplo aplicar filtro",
-                "url": "documents\/vue.md#evento-click---ejemplo-aplicar-filtro",
+                "url": "documents\/vue.html#evento-click---ejemplo-aplicar-filtro",
                 "subnivels": [],
                 "tags": [
                     "vue",
@@ -2131,7 +2131,7 @@ helpers = [
             },
             {
                 "title": "v-model - Pasar parametro input de template a script",
-                "url": "documents\/vue.md#v-model---pasar-parametro-input-de-template-a-script",
+                "url": "documents\/vue.html#v-model---pasar-parametro-input-de-template-a-script",
                 "subnivels": [],
                 "tags": [
                     "vue",
@@ -2141,7 +2141,7 @@ helpers = [
             },
             {
                 "title": "proyecto rick y morty",
-                "url": "documents\/vue.md#proyecto-rick-y-morty",
+                "url": "documents\/vue.html#proyecto-rick-y-morty",
                 "subnivels": [],
                 "tags": [
                     "vue",
@@ -2153,31 +2153,31 @@ helpers = [
     },
     {
         "title": "Wamp",
-        "url": "documents\/wamp.md#wamp",
+        "url": "documents\/wamp.html#wamp",
         "subnivels": [
             {
                 "title": "Versiones de wamp",
-                "url": "documents\/wamp.md#versiones-de-wamp",
+                "url": "documents\/wamp.html#versiones-de-wamp",
                 "subnivels": []
             },
             {
                 "title": "Error Access to XMLHttpRequest has been blocked by CORS policy",
-                "url": "documents\/wamp.md#error-access-to-xmlhttprequest-has-been-blocked-by-cors-policy",
+                "url": "documents\/wamp.html#error-access-to-xmlhttprequest-has-been-blocked-by-cors-policy",
                 "subnivels": []
             },
             {
                 "title": "Error Header",
-                "url": "documents\/wamp.md#error-header",
+                "url": "documents\/wamp.html#error-header",
                 "subnivels": []
             },
             {
                 "title": "Error Forbidden",
-                "url": "documents\/wamp.md#error-forbidden",
+                "url": "documents\/wamp.html#error-forbidden",
                 "subnivels": []
             },
             {
                 "title": "Error Aranque apache por puerto 80 ocupado",
-                "url": "documents\/wamp.md#error-aranque-apache-por-puerto-80-ocupado",
+                "url": "documents\/wamp.html#error-aranque-apache-por-puerto-80-ocupado",
                 "subnivels": [],
                 "tags": [
                     "wamp",

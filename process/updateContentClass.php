@@ -11,8 +11,9 @@ class updateContentClass {
      * Iniciar proceso
      * @author Camilo Quijano <camiloquijano31@hotmail.com>
      * @date 07/10/2020
+     * @param {string} Tipo de enlazamiento en menu (html|md)
      */
-    public function initProcess() {
+    public function initProcess($ext = 'md') {
         
         // Listado de archivos
         $files = scandir('../documents'); //ruta actual
@@ -24,6 +25,8 @@ class updateContentClass {
             // Validar archivo
             if(!$this->_validatePathFile($pathFile)) { continue; }
             $contentFile = file ("../documents/$pathFile");
+            
+            $pathFile = ($ext == 'html') ? str_replace('.md', '.html', $pathFile) : $pathFile;
             echo "<h3>$pathFile...</h3>";
 
             /**
@@ -136,7 +139,7 @@ class updateContentClass {
         $title = trim(str_replace('#', '', $textLine));
         $auxUrl = str_replace('/', '', mb_strtolower($title)); 
         $url = str_replace(['+', '/'], ['-', ''], urlencode($auxUrl));
-	
+		
         return [
             'title' => $title,
             'url' => ($pathFile) ? "documents/$pathFile#$url" : '',
