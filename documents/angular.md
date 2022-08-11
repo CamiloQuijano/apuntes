@@ -39,11 +39,11 @@ Descargar:
 [`Descargar 1.5 min.js`](libraries/angular1.5.min.zip)  - Sugerida  
 [`Descargar 1.8 min.js`](libraries/angular1.8.min.zip)  
 
-```angular
+
+```html
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 	<div ng-app="reloadApp" ng-cloak>
 		<div ng-controller="ReportController">
-			{{ content $scope }}
 			{{ holamundo }}
 		</div>
 	</div>
