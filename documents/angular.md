@@ -20,8 +20,8 @@ Patron de diseño : MVVM (Módelo, Vista, Vista-Modelo)
 	])
 	.config(["$interpolateProvider", function($interpolateProvider){
 			$interpolateProvider
-				.startSymbol('[[')
-				.endSymbol(']]');
+				.startSymbol('{{')
+				.endSymbol('}}');
 		}]);
 	})();
 ```
