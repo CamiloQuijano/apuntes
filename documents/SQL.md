@@ -109,16 +109,16 @@ Keys para formatos de fechas
 
 Ejemplos implementados 
 ```sql	
-	SELECT FORMAT(getdate(), 'yyyy/MM/dd') as date            -- 2020/09/09
-	SELECT FORMAT(getdate(), 'dd/MM/yyyy') as date            -- 21/03/2018
-	SELECT FORMAT(getdate(), 'dd/MM/yyyy, hh:mm:ss') as date  -- 21/03/2018, 11:36:14
-	SELECT FORMAT(getdate(), 'dddd, MMMM, yyyy') as date      -- Miercoles, mayo 2021
-	SELECT FORMAT(getdate(), 'MMM dd yyyy') as date           -- Mar 21 2018 | May, 19 2021
-	SELECT FORMAT(getdate(), 'MM.dd.yy') as date              -- 03.21.18
-	SELECT FORMAT(getdate(), 'MM-dd-yy') as date              -- 03-21-18
-	SELECT FORMAT(getdate(), 'hh:mm:ss tt ') as date          -- 11:36:14 AM (AM/PM no found)
-	SELECT FORMAT(getdate(), 'MM/dd/yyyy hh:mm:s tt')         -- 05/19/2021 03:12:34 
-	SELECT FORMAT(getdate(), 'hh:mm tt')                      -- returns 02:07 PM (AM/PM no found)
+	SELECT FORMAT(getdate(), 'yyyy/MM/dd') as date               -- 2020/09/09
+	SELECT FORMAT(getdate(), 'dd/MM/yyyy') as date               -- 21/03/2018
+	SELECT FORMAT(getdate(), 'dd/MM/yyyy, hh:mm:ss') as date     -- 21/03/2018, 11:36:14
+	SELECT FORMAT(getdate(), 'dddd, MMMM, yyyy') as date         -- Miercoles, mayo 2021
+	SELECT FORMAT(getdate(), 'MMM dd yyyy') as date              -- Mar 21 2018 | May, 19 2021
+	SELECT FORMAT(getdate(), 'MM.dd.yy') as date                 -- 03.21.18
+	SELECT FORMAT(getdate(), 'MM-dd-yy') as date                 -- 03-21-18
+	SELECT FORMAT(getdate(), 'hh:mm:ss tt ') as date             -- 11:36:14 AM (AM/PM no found)
+	SELECT FORMAT(getdate(), 'MM/dd/yyyy hh:mm:s tt')            -- 05/19/2021 03:12:34 
+	SELECT FORMAT(getdate(), 'hh:mm tt')                         -- returns 02:07 PM (AM/PM no found)
 ```
 
 
@@ -126,21 +126,21 @@ Ejemplos implementados
 ###### Tags: `SQL` `getdate` `CONVERT`
 
 ```sql	
-	SELECT CONVERT(VARCHAR(50), fechaDesde, 103)   		-- Formato 09/09/2020
-	SELECT CONVERT(VARCHAR(50), getdate(), 121)		-- Formato 2020-09-09 17:59:04.387
-	SELECT CONVERT(VARCHAR(50), getdate(), 103)		-- Formato 09/09/2020
-	SELECT CONVERT(VARCHAR(50), fecCrea, 20)   		-- Formato 2021-10-29 08:55:02
+	SELECT CONVERT(VARCHAR(50), fechaDesde, 103)            -- Formato 09/09/2020
+	SELECT CONVERT(VARCHAR(50), getdate(), 121)             -- Formato 2020-09-09 17:59:04.387
+	SELECT CONVERT(VARCHAR(50), getdate(), 103)             -- Formato 09/09/2020
+	SELECT CONVERT(VARCHAR(50), fecCrea, 20)                -- Formato 2021-10-29 08:55:02
 ```
 
 ## Incremetar o restar dias a una fecha
 ###### Tags: `SQL` `DATEADD` `SECOND` `MINUTE` `HOUR` `DAY`
 ```sql
-	SELECT DATEADD(SECOND, 1, fecCrea)			-- Incremental 1 segundo a la columna fecCrea
-	SELECT DATEADD(MINUTE, 1, fecCrea)			-- Incremental 1 minuto a la columna fecCrea
-	SELECT DATEADD(HOUR, 1, fecCrea)  			-- Incremental 1 hora a la columna fecCrea
-	SELECT DATEADD(DAY, 1, fecCrea)   			-- Incremental 1 dia a la columna fecCrea
-	SELECT DATEADD(DAY, -1, fecCrea)      			-- Resta 1 dia a la columna fecCrea
-	SELECT DATEADD(DAY, -1, getdate())			-- Resta 1 dia a la fecha actual
+	SELECT DATEADD(SECOND, 1, fecCrea)      		-- Incremental 1 segundo a la columna fecCrea
+	SELECT DATEADD(MINUTE, 1, fecCrea)      		-- Incremental 1 minuto a la columna fecCrea
+	SELECT DATEADD(HOUR, 1, fecCrea)        		-- Incremental 1 hora a la columna fecCrea
+	SELECT DATEADD(DAY, 1, fecCrea)         		-- Incremental 1 dia a la columna fecCrea
+	SELECT DATEADD(DAY, -1, fecCrea)        		-- Resta 1 dia a la columna fecCrea
+	SELECT DATEADD(DAY, -1, getdate())      		-- Resta 1 dia a la fecha actual
 ```
 
 ## Validar contenido numerico de columna
