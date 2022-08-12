@@ -87,9 +87,9 @@ Al texto en Markdown puedes añadirle formato como **negrita** o *cursiva* de un
 Para escapar colmillas dobles para lenguajes como angular, vue o backbone use las instrucciones RAW y ENDRAW
 
 ```javascript
-	{% raw %}
-	{ % raw % } {{ holamundo }} { % endraw % }
-	{% endraw %}
+{% raw %}
+{ % raw % } {{ holamundo }} { % endraw % }
+{% endraw %}
 ```
 
 ## Projecto helpers
