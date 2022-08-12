@@ -17,8 +17,8 @@
 (ON=>Deshabilitar | OFF=>Habilitar)
 
 ```sql
-	SET IDENTITY_INSERT NombreTabla ON; 	// Deshabilitar
-	SET IDENTITY_INSERT NombreTabla OFF;	// Habilitar
+	SET IDENTITY_INSERT NombreTabla ON; 	-- Deshabilitar
+	SET IDENTITY_INSERT NombreTabla OFF;	-- Habilitar
 ```
 
 ## Datediff - Diferencias entre fechas - timestamp
@@ -42,7 +42,7 @@
 ## Substring - Extraer texto
 ###### Tags: `SQL` `SUBSTRING`
 ```sql	
-	SELECT SUBSTRING('SQLTest', 1, 3) AS ExtractString; 	// SQLTe
+	SELECT SUBSTRING('SQLTest', 1, 3) AS ExtractString; 	-- SQLTe
 ```
 
 ## Extraer número de string
@@ -54,8 +54,8 @@
 ## Texto a mayuscula minuscula
 ###### Tags: `SQL` `LOWER` `UPPER`
 ```sql	
-	SELECT LOWER('SQL Example');		// sql example
-	SELECT UPPER('SQL Example');		// SQL EXAMPLE
+	SELECT LOWER('SQL Example');		-- sql example
+	SELECT UPPER('SQL Example');		-- SQL EXAMPLE
 ```
 
 
