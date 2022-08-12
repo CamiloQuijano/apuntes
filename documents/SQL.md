@@ -92,7 +92,7 @@
 
 Keys para formatos de fechas 
 ```html
-	FORMATO   	DESCRIPCIÓN    			SALIDA
+	FORMATO   	DESCRIPCIÓN    		        SALIDA
 	dd     		Día del mes    	        	(01 to 31)  
 	dddd  		Nombre día del mes      	(Miercoles)  
 	MM    		Número mes     	        	(01 to 12)  
@@ -111,13 +111,13 @@ Ejemplos implementados
 ```sql	
 	SELECT FORMAT(getdate(), 'yyyy/MM/dd') as date 				-- 2020/09/09
 	SELECT FORMAT(getdate(), 'dd/MM/yyyy') as date 				-- 21/03/2018
-	SELECT FORMAT(getdate(), 'dd/MM/yyyy, hh:mm:ss') as date		-- 21/03/2018, 11:36:14
-	SELECT FORMAT(getdate(), 'dddd, MMMM, yyyy') as date   	        	-- Miercoles, mayo 2021
+	SELECT FORMAT(getdate(), 'dd/MM/yyyy, hh:mm:ss') as date        	-- 21/03/2018, 11:36:14
+	SELECT FORMAT(getdate(), 'dddd, MMMM, yyyy') as date    		-- Miercoles, mayo 2021
 	SELECT FORMAT(getdate(), 'MMM dd yyyy') as date				-- Mar 21 2018 | May, 19 2021
 	SELECT FORMAT(getdate(), 'MM.dd.yy') as date   				-- 03.21.18
 	SELECT FORMAT(getdate(), 'MM-dd-yy') as date   				-- 03-21-18
-	SELECT FORMAT(getdate(), 'hh:mm:ss tt ') as date       	        	-- 11:36:14 AM (AM/PM no found)
-	SELECT FORMAT(getdate(), 'MM/dd/yyyy hh:mm:s tt')      	        	-- 05/19/2021 03:12:34 
+	SELECT FORMAT(getdate(), 'hh:mm:ss tt ') as date       	       		-- 11:36:14 AM (AM/PM no found)
+	SELECT FORMAT(getdate(), 'MM/dd/yyyy hh:mm:s tt')      	    	   	-- 05/19/2021 03:12:34 
 	SELECT FORMAT(getdate(), 'hh:mm tt')   	        			-- returns 02:07 PM (AM/PM no found)
 ```
 
