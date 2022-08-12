@@ -1,3 +1,5 @@
+{% raw %}
+
 [`Volver`](../index.html)
 
 # Angular JS
@@ -44,11 +46,12 @@ Descargar:
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 	<div ng-app="reloadApp" ng-cloak>
 		<div ng-controller="ReportController">
-			[[ holamundo ]]
-			[[ content $scope ]]
+			{{ holamundo }}
+			{{ content $scope }}
 		</div>
 	</div>
 ```
+
 
 Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. datatables, charts, etc.
 
@@ -67,22 +70,22 @@ Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. dat
 ###### Tags: `filters` `currency`
 
 ```js
-	[[ 10000 | currency : "" : 0 ]]           	// 10,000
-	[[ 10000 | currency : '$' : 0 ]]          	// $10,000 
-	[[ 10000 | currency : '$' : 2 ]]          	// $10,000.00 
-	[[ 10000 | currency : 'Rs.' : 2 ]]        	// Rs.10,000.00
-	[[ 10000 | currency : 'USD $' : 2 ]]      	// USD $10,000.00
-	[[ 10000 | currency : '#' : 3 ]]          	// #10,000.000
-	[[ 10000 | currency : 'ANYTHING: ' : 5 ]] 	// ANYTHING: 10,000.00000
+	{{ 10000 | currency : "" : 0 }}           	// 10,000
+	{{ 10000 | currency : '$' : 0 }}          	// $10,000 
+	{{ 10000 | currency : '$' : 2 }}          	// $10,000.00 
+	{{ 10000 | currency : 'Rs.' : 2 }}        	// Rs.10,000.00
+	{{ 10000 | currency : 'USD $' : 2 }}      	// USD $10,000.00
+	{{ 10000 | currency : '#' : 3 }}          	// #10,000.000
+	{{ 10000 | currency : 'ANYTHING: ' : 5 }} 	// ANYTHING: 10,000.00000
 ```
 
 ### filtros date - number
 ###### Tags: `filters` `date` `number`
 
 ```js
-	[[ doc.date|date:'dd/MM/yyyy' ]]	// Formato Fecha 
-	[[ val | number ]]			// Formato número sin decimales
-	[[ val | number:2 ]] 			// Formato número indicando cantidad de decimales
+	{{ doc.date|date:'dd/MM/yyyy' }}	// Formato Fecha 
+	{{ val | number }}			// Formato número sin decimales
+	{{ val | number:2 }} 			// Formato número indicando cantidad de decimales
 ```	
 
 ### filtro rango (crear)
@@ -464,3 +467,5 @@ Capturar información de Formulario HTML para envío por angular
 Altactic: Notificaciones
 Channeldir: Notificaciones y Chat
 app.js →  Principal
+
+{% endraw %}
