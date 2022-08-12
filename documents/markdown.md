@@ -2,18 +2,6 @@
 
 # Markdown
 
-## Projecto helpers
-
-Para la ejecución del proyecto es necesario: 
-
-	- Descargar extensión Markdown Viewer 3.9
-		- En compiler 
-			- seleccionar 'remark'
-			- checkear 'gfm'
-		- Content
-			- descheckear 'scroll'
-
-
 ## Estructura
 
 ```html
@@ -93,3 +81,30 @@ Al texto en Markdown puedes añadirle formato como **negrita** o *cursiva* de un
 
 [img1]: https://4.bp.blogspot.com/-cSRif2Hy-No/U-vU2kvfTiI/AAAAAAAAG8E/EAAPAphQvwo/a400/chrome_ico.png "Título alternativo"
 [img2]: https://www.vozidea.com/wp-content/uploads/2013/03/Chrome-icono.3d.png "Título alternativo 2"
+
+
+## Espapar comillas o corchetes dobles
+###### Tags: `angular` `backbone` `vue`
+
+```javascript
+    {% raw %}
+
+        {% raw %}
+        ```javascript	
+            {{ holamundo }}
+            {% holamundo %}
+        ```
+        {% endraw %}
+    {% endraw %}
+```
+
+## Projecto helpers
+
+Para la ejecución del proyecto es necesario: 
+
+	- Descargar extensión Markdown Viewer 3.9
+		- En compiler 
+			- seleccionar 'remark'
+			- checkear 'gfm'
+		- Content
+			- descheckear 'scroll'
