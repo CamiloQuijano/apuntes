@@ -1,4 +1,4 @@
-﻿[`Volver`](../index.html)
+[`Volver`](../index.html)
 
 # Markdown
 
@@ -18,11 +18,9 @@
 Javascript
 ```javascript
 	```javascript	
-		function fancyAlert(arg) {
-		  if(arg) {
-			$.facebox({div:'#foo'})
-		  }
-		}
+		$(document).ready(function(){
+			alert('abc');
+	 	});
 	```
 	
 	$(document).ready(function(){
@@ -86,12 +84,12 @@ Al texto en Markdown puedes añadirle formato como **negrita** o *cursiva* de un
 ## Espapar comillas o corchetes dobles
 ###### Tags: `angular` `backbone` `vue` `raw` `endraw`
 
-Para espacar colmillas dobles para lenguajes como angular, vue o backbone use las instrucciones RAW y ENDRAW
+Para escapar colmillas dobles para lenguajes como angular, vue o backbone use las instrucciones RAW y ENDRAW
 
 ```javascript
 	{% raw %}
-    		{ % raw % } {{ holamundo }} { % endraw % }
-	    {% endraw %}
+	{ % raw % } {{ holamundo }} { % endraw % }
+	{% endraw %}
 ```
 
 ## Projecto helpers
