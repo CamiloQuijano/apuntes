@@ -1,3 +1,4 @@
+{% raw %}
 [`Volver`](../index.html)
 
 # Angular JS
@@ -41,7 +42,6 @@ Descargar:
 
 
 ```html
-	{% raw %}
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 	<div ng-app="reloadApp" ng-cloak>
 		<div ng-controller="ReportController">
@@ -49,7 +49,6 @@ Descargar:
 			{{ content $scope }}
 		</div>
 	</div>
-	{% endraw %}
 ```
 
 
@@ -467,3 +466,5 @@ Capturar información de Formulario HTML para envío por angular
 Altactic: Notificaciones
 Channeldir: Notificaciones y Chat
 app.js →  Principal
+
+{% endraw %}
