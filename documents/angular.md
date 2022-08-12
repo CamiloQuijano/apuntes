@@ -4,27 +4,29 @@
 
 # Angular JS
 
-Documentación angular1	https://angularjs.org/  
-Documentación angular2	https://angular.io/docs/ts/latest/
+[`Documentación angular 1`](https://angularjs.org/)
+[`Documentación angular 2`](https://angular.io/docs/ts/latest/)
 
-Aplicación completa – parecido a node , amd(asynchronous Module Definition) forma de estructura (arquitectura del framework) inicial de todos los archivos.
-
-Patron de diseño : MVVM (Módelo, Vista, Vista-Modelo)
+- Aplicación completa – parecido a node , 
+- amd(asynchronous Module Definition) forma de estructura 
+- (arquitectura del framework) inicial de todos los archivos.
+- Patron de diseño : MVVM (Módelo, Vista, Vista-Modelo)
 
 ```javascript
 	(function () {
-	angular.module('angular-app', [ // Nombre aplicación
-		'ngRoute', // Paquete de control de rutas – Altactic no se usa, channeldir si.
-		'angular-app.controllers', // Importación de secciones , mismo nombre asignado en achivo de controllers.js
-		'angular-app.directives',
-		'angular-app.filters',
-		'angular-app.services'
-	])
-	.config(["$interpolateProvider", function($interpolateProvider){
-			$interpolateProvider
-				.startSymbol('[[')
-				.endSymbol(']]');
-		}]);
+		angular
+			.module('angular-app', [ // Nombre aplicación
+				'ngRoute', // Paquete de control de rutas – Altactic no se usa, channeldir si.
+				'angular-app.controllers', // Importación de secciones , mismo nombre asignado en achivo de controllers.js
+				'angular-app.directives',
+				'angular-app.filters',
+				'angular-app.services'
+			])
+			.config(["$interpolateProvider", function($interpolateProvider){
+				$interpolateProvider
+					.startSymbol('[[')
+					.endSymbol(']]');
+			}]);
 	})();
 ```
 
@@ -104,12 +106,15 @@ Implementar filtro de Rangos
 				return input;
 			};
 		})
-		.controller("issuanceController" ...
+		.controller('issuanceController', ['$scope', ($scope) => {
+				$scope.holamundo = 'Contenido variable';
+			}
+		]);
 ```
 
 Uso 
 ```html
-	ng-repeat="n in [] | range:100"
+	<div ng-repeat="n in [] | range:100" ></div>
 ```	
 
 
@@ -118,7 +123,7 @@ Uso
 
 ```js
 	ng-app  		// Nombre aplicación general
-	ng-contoller		// Nombre Controlador
+	ng-contoller	// Nombre Controlador
 	ng-cloak		// Para no mostrar estructura angular al cargar la vista | clase (d-none ó ng-cloak)
 ```
 
@@ -131,13 +136,11 @@ Uso
 	angular
 		.module('reloadApp', ['datatables'])
 		.controller('initControllerList', ['$scope', '$timeout', ($scope, $timeout) => {
-
 			$timeout(() => {
 				$scope.formChangeStatus.typeId = 2;
 			}, 5000) 
 	]);
 ```
-
 
 
 ## Actualizar scope en JQUERY ($apply)
@@ -161,7 +164,7 @@ Descargar:
 
 Incluir en sección de scripts del template 
 ```html
-	<!-- datatables jquery -->
+    <!-- datatables jquery -->
     <link href="<?php echo base_url('resources/plugins/datatables/media/css/jquery.dataTables.css') ?>" rel="stylesheet" type="text/css">
     <script src="<?php echo base_url('resources/plugins/datatables/media/js/jquery.dataTables.js') ?>" type="text/javascript" language="javascript"></script>
     <script src="<?php echo base_url('resources/plugins/datatables/extensions/Buttons/js/dataTables.buttons.min.js'); ?>"></script>
