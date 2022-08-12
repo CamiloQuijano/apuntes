@@ -88,7 +88,7 @@ Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. dat
 ```js
 	{{ doc.date|date:'dd/MM/yyyy' }}	// Formato Fecha 
 	{{ val | number }}			// Formato número sin decimales
-	{{ val | number:2 }} 			// Formato número indicando cantidad de decimales
+	{{ val | number:2 }}			// Formato número indicando cantidad de decimales
 ```	
 
 ### filtro rango (crear)
@@ -123,8 +123,8 @@ Uso
 ###### Tags: `ng-app` `ng-controller` `ng-cloak`
 
 ```js
-	ng-app  		// Nombre aplicación general
-	ng-contoller	// Nombre Controlador
+	ng-app			// Nombre aplicación general
+	ng-contoller		// Nombre Controlador
 	ng-cloak		// Para no mostrar estructura angular al cargar la vista | clase (d-none ó ng-cloak)
 ```
 
