@@ -90,9 +90,11 @@ Para espacar colmillas dobles para lenguajes como angular, vue o backbone use la
 
 ```javascript
     {% raw %}
+    	{ % raw % }
         ```javascript	
             {{ holamundo }}
         ```
+	{ % endraw % }
     {% endraw %}
 ```
 
