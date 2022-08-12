@@ -169,11 +169,11 @@ Ejemplos implementados
 	
 ## Crear una tabla a partir de otra
 ```sql
-	// Con información
+	-- Con información
 	SELECT * INTO WEB_TMP_CARGUE_jecruz 
 	FROM WEB_TMP_CARGUE_lfrodriguez;
 
-	// Sin Información
+	-- Sin Información
 	SELECT * INTO "inv_Item_homologo" 
 	FROM SINGES.."inv_Item_homologo" where id = 0
 ```
@@ -202,7 +202,7 @@ Ejemplos implementados
 	select id, idProducto, descripcion, estado FROM tablaProductosUno
 	SET IDENTITY_INSERT tablaProductosDos OFF
 	
-	// Ejemplo 2 con cambio de valores y filtro
+	-- Ejemplo 2 con cambio de valores y filtro
 	INSERT INTO inv_consecsuc (sucursal, descripcion, fec_res) 
 	SELECT sucursal, 'Doc Test', '01/01/1990' 
 	FROM tablaConsecutivos WHERE sucursal = '010';
