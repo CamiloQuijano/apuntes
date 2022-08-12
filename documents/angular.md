@@ -1,3 +1,4 @@
+<style> body { tab-size: 4; } </style>
 {% raw %}
 
 [`Volver`](../index.html)
