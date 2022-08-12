@@ -84,7 +84,9 @@ Al texto en Markdown puedes añadirle formato como **negrita** o *cursiva* de un
 
 
 ## Espapar comillas o corchetes dobles
-###### Tags: `angular` `backbone` `vue`
+###### Tags: `angular` `backbone` `vue` `raw` `endraw`
+
+Para espacar colmillas dobles para lenguajes como angular, vue o backbone use las instrucciones RAW y ENDRAW
 
 ```javascript
     {% raw %}
