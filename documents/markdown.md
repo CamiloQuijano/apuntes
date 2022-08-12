@@ -5,13 +5,13 @@
 ## Estructura
 
 ```html
-	Titulos: 			 # Titulo
+	Titulos: 		 # Titulo
 	Encabezado 1:		 ## Encabezado 1
 	Encabezado 2:		 ### Encabezado 2
-	Negrita:			  **texto en negrita**
-	Cursiva:			  *texto en cursiva*
-	Enlaces:			  [texto enlace](http://abc.com)
-	Imagenes:			 ![texto si URL imagen esta rota](http://magen.jpg)
+	Negrita:		 **texto en negrita**
+	Cursiva:		 *texto en cursiva*
+	Enlaces:		 [texto enlace](http://abc.com)
+	Imagenes:		 ![texto si URL imagen esta rota](http://magen.jpg)
 ```
 
 ## Imprimir Código
@@ -89,13 +89,9 @@ Al texto en Markdown puedes añadirle formato como **negrita** o *cursiva* de un
 Para espacar colmillas dobles para lenguajes como angular, vue o backbone use las instrucciones RAW y ENDRAW
 
 ```javascript
-    {% raw %}
-    	{ % raw % }
-        ```javascript	
-            {{ holamundo }}
-        ```
-	{ % endraw % }
-    {% endraw %}
+	{% raw %}
+    		{ % raw % } {{ holamundo }} { % endraw % }
+	    {% endraw %}
 ```
 
 ## Projecto helpers
