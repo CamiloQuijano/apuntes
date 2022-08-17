@@ -4,7 +4,7 @@
 
 ## Comandos Basicos
 ```bash
-    git help                              		-- Ayuda
+    git help                              		Ayuda
     git init                              		Inicializa la carpeta donde este el promtuario como un repositorio git
     git clone <url>                       		Clonar repositorio remoto en local
     git status                            		Verifica los cambios sin consignar al escenario
@@ -86,8 +86,7 @@
 
 ## Push Pull - Subir y bajar consignaciones del repositorio central
 ```bash
-	git push -u origin master   	Subir cambios consignados al repositorio remoto. "origin" se refiere al nombre de la conexion con el 
-									repositorio central y "master" es el nombre del branch
+	git push -u origin master   	Subir cambios consignados al repositorio remoto. "origin" se refiere al nombre de la conexion con el repositorio central y "master" es el nombre del branch
 	git pull                    	Bajar los cambios desde el repositorio remoto
 	git fetch                   	Bajar los cambios desde el repositorio remoto sin mezclar los archivos
 ``` 
@@ -100,10 +99,7 @@
     git remote set-url origin <ssh_url> <https_url>     	Cambiar la url del repositorio remoto por la ruta para conexion con ssh
     git remote -v                                       	Verificar todos los remotos registrados, Se pueden tener muchos remotos, generalmente el de pruebas, producción y el de seguridad
     git remote r <nombre>                               	Eliminar un remoto
-    git remote show origin                              	Muestra:
-																Ramas remotas
-																Ramas locales y con cuales remotas mapean o fusionan
-																Ramas locales que referencian a las remotas para push
+    git remote show origin                              	Muestra: Ramas remotas, Ramas locales y con cuales remotas mapean o fusionan y Ramas locales que referencian a las remotas para push
 ``` 	
 
 ## Reset Checkout - Revertir cambios en las consignaciones locales
@@ -233,58 +229,58 @@ diferente, reemplace id_rsa en el comando con el nombre de su archivo de clave p
 
 ### Clonar un repositorio
 ```bash
-    git clone //192.168.90.100/htdocs/git_repository/test_git.git 	Descarga el repositorio en la carpeta donde este ubicado
-    git pull  														Descarga estructura adicional del repositorio (ramas, tags)
+    git clone //192.168.90.100/htdocs/git_repository/test_git.git   	Descarga el repositorio en la carpeta donde este ubicado
+    git pull                                                        	Descarga estructura adicional del repositorio (ramas, tags)
 ``` 
 
 ### Consignar cambios
 ```bash
-    git add .  									Prepara todos los archivos para ser consignados
-    git commit -m "Descripción de los cambios" 	Se realiza la consignacióngi clo de los cambios realizados en el repositorio local
-    git log	    								Ver listado de consignaciones
+    git add .                                    	Prepara todos los archivos para ser consignados
+    git commit -m "Descripción de los cambios"   	Se realiza la consignacióngi clo de los cambios realizados en el repositorio local
+    git log                                      	Ver listado de consignaciones
 ``` 
 
 ### Subir commits a repositorio remoto
 ```bash
-    git pull origin master								Descargar primero posibles cambios cargados por otros
-    git status											Ver estado de los cambios
-    Resolver conflictos   								Si exiten conflictos deben resolverse manualmente
-    git commit -m "Mensaje de solución de conflictos" 	Se consignan los cambios realizados para solucionar los conflictos
-    git push origin master								Se sube al repositorio remoto
+    git pull origin master                              	Descargar primero posibles cambios cargados por otros
+    git status                                          	Ver estado de los cambios
+    Resolver conflictos                                 	Si exiten conflictos deben resolverse manualmente
+    git commit -m "Mensaje de solución de conflictos"   	Se consignan los cambios realizados para solucionar los conflictos
+    git push origin master                              	Se sube al repositorio remoto
 ``` 
 
 ### Ramas - Ejemplo creacion, consignacion de cambios y subida
 ```bash
-    git branch <nombre-rama>					Crea una rama
-    git checkout <nombre-rama>  				Apunta el directorio de trabajo a la rama
-    git add .   								Prepara todos los archivos para ser consignados en la rama
-    git commit -m "Descripción"     			Se realiza la consignación de los cambios realizados en la rama del repositorio local
-    git push origin <nombre-rama>   			Sube al repositorio remoto las consignaciones de la rama. Si la rama no existe en el repositorio centra se crea automaticamente
+    git branch <nombre-rama>            	Crea una rama
+    git checkout <nombre-rama>          	Apunta el directorio de trabajo a la rama
+    git add .                           	Prepara todos los archivos para ser consignados en la rama
+    git commit -m "Descripción"         	Se realiza la consignación de los cambios realizados en la rama del repositorio local
+    git push origin <nombre-rama>       	Sube al repositorio remoto las consignaciones de la rama. Si la rama no existe en el repositorio centra se crea automaticamente
 ``` 
 
 ### Ramas - Descargar del repositorio remoto que no existe en mi repositorio local
 ```bash
-    git checkout master						Asegurarse de estar en la rama master
-    git branch -r  							Ver referencias a ramas en el repositorio remoto
-    git pull   	    						Actualizar rama principal y descargar referencias de las ramas que estan en el repositorio remoto
-    git checkout -t origin/<nombre-rama>   	Moverse a la rama descargada
+    git checkout master                     	Asegurarse de estar en la rama master
+    git branch -r                           	Ver referencias a ramas en el repositorio remoto
+    git pull                                	Actualizar rama principal y descargar referencias de las ramas que estan en el repositorio remoto
+    git checkout -t origin/<nombre-rama>    	Moverse a la rama descargada
 ``` 
 
 ### Ramas - Descargar cambios de la rama principal a la rama de trabajo
 ```bash
-    git checkout master									Moverse a la rama principal
-    git pull origin master 								Descargar los posibles cambios
-    git checkout <nombre-rama>     						Moverse a la rama en la que se esta trabajando
-    git merge master   									Mezclar la rama principal a la rama en la que se esta trabajando
-    Solucionar posibles conflictos    	 				Si exiten conflictos deben resolverse manualmente
-    git commit -m "Mensaje de solución de conflictos"  	Se consignan los cambios realizados para solucionar los conflictos
+    git checkout master                                 	Moverse a la rama principal
+    git pull origin master                              	Descargar los posibles cambios
+    git checkout <nombre-rama>                          	Moverse a la rama en la que se esta trabajando
+    git merge master                                    	Mezclar la rama principal a la rama en la que se esta trabajando
+    Solucionar posibles conflictos                      	Si exiten conflictos deben resolverse manualmente
+    git commit -m "Mensaje de solución de conflictos"   	Se consignan los cambios realizados para solucionar los conflictos
 ``` 
 
 ### Ramas Subir cambios de la rama de trabajo a la rama principal master
 ```bash
-    git checkout master								Moverse a la rama principal
-    git merge <nombre-rama>							Mezclar la rama de trabajo a master
-    git push origin master 							Subir al repositorio remoto
+    git checkout master           	Moverse a la rama principal
+    git merge <nombre-rama>       	Mezclar la rama de trabajo a master
+    git push origin master        	Subir al repositorio remoto
 ``` 
 
 ### Revertir un cambio puntual
