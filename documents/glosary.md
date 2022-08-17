@@ -23,7 +23,7 @@
 
 --- 
 
-## ERP (Enterprise Resource Planning)
+## ERP - Enterprise Resource Planning
 
 	- Planificación de recursos empresariales (Software de administración)
 	- Estos programas se hacen cargo de distintas operaciones internas de una empresa, desde producción a 
@@ -32,7 +32,7 @@
 
 --- 
 	
-## CRM (Customer relationship management)
+## CRM - Customer relationship management
 
 	- La gestión de relaciones con los clientes
 	- Permiten a una empresa administrar y analizar sus propias interacciones con sus clientes pasados, 
