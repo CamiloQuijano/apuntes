@@ -86,9 +86,9 @@
 
 ## Push Pull - Subir y bajar consignaciones del repositorio central
 ```bash
-	git push -u origin master   	Subir cambios consignados al repositorio remoto. "origin" se refiere al nombre de la conexion con el repositorio central y "master" es el nombre del branch
-	git pull                    	Bajar los cambios desde el repositorio remoto
-	git fetch                   	Bajar los cambios desde el repositorio remoto sin mezclar los archivos
+    git push -u origin master   	Subir cambios consignados al repositorio remoto. "origin" se refiere al nombre de la conexion con el repositorio central y "master" es el nombre del branch
+    git pull                    	Bajar los cambios desde el repositorio remoto
+    git fetch                   	Bajar los cambios desde el repositorio remoto sin mezclar los archivos
 ``` 
 
 ## Remote - Conexiones con repositorios remotos
@@ -143,7 +143,7 @@
 
 ## Tags con autor
 ```bash
-	git for-each-ref --format '%(refname) %09 %(taggerdate) %(subject) %(taggeremail)' refs/tags  --sort=taggerdate
+    git for-each-ref --format '%(refname) %09 %(taggerdate) %(subject) %(taggeremail)' refs/tags  --sort=taggerdate
 ```
 
 ## Rm - Eliminar archivos
