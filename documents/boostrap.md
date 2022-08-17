@@ -83,3 +83,5 @@ Implementación:
 	<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
 	<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
 ```
+
+<style> body { tab-size: 4; } </style>
