@@ -2,14 +2,12 @@
 
 # Backbone
 
-Tutorial:
-http://alfonsomarin.com/backbonejs/
-
 ## Implementar - documentacion
 
-Documentación:    
-https://backbonejs.org/  
+[`Tutorial`](http://alfonsomarin.com/backbonejs/)
 
+[`Documentación`](https://backbonejs.org/)
+  
 [`Descargar librería`](libraries/backbone-min.zip)  
 
 Implementación:  
@@ -168,3 +166,6 @@ se usa parseInt, para en caso de que el formato del número sea string
 Implementaciones:
 - Altactic: Módulo tareas y chat
 - Channeldir: Publicaciones, likes, comentarios, feedback, favoritos
+
+
+<style> body { tab-size: 4; } </style>
