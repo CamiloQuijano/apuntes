@@ -152,6 +152,14 @@ Ejemplos implementados
 	SELECT ISNUMERIC(112.5)			-- 1
 ```
 
+## Redondear un numero
+###### Tags: `SQL` `ISNUMERIC`
+```sql
+	ROUND(748.58, -1)   		-- 750.00
+	ROUND(748.58, -2)   		-- 700.00
+	ROUND(748.58, -3)   		-- ERROR - No es posible redondear a esta precisión
+```
+
 ## Sp_help - Estructura de una tabla
 ```sql
 	SP_HELP portal_mantenimientoHardwareTipo; 
@@ -208,7 +216,9 @@ Ejemplos implementados
 	FROM tablaConsecutivos WHERE sucursal = '010';
 ```	
 
-## Select con CASE WHEN THEN ELSE END multiple
+## Select con CASE WHEN multiple
+###### Tags: `SELECT` `CASE` `WHEN` `THEN` `END`
+
 ```sql
 	SELECT 
 		grc.codsuc, gr.sucursal, gr.descGrupo, gr.unidades unidadesSucursal, 
@@ -226,6 +236,17 @@ Ejemplos implementados
 	JOIN com_grupoComision grc on grc.id = gr.sucursal
 	ORDER by codigo
 ```
+
+## Orden registros a partir de CASE WHEN multiple
+###### Tags: `ORDER` `CASE` `WHEN` `THEN` `END`
+
+```sql
+	SELECT * 
+	FROM exampletable
+	WHERE col1 = 1
+	ORDER BY col1, CASE WHEN col2 in ('X', 'Y', 'Z' ) THEN 0 ELSE 1 END
+```
+
 
 ## Alter table Column add-drop
 
@@ -260,7 +281,7 @@ Ejemplos implementados
 	DROP CONSTRAINT UQ__portal_m__298336B621DEBDAB;
 ```
 
-## Actualizar primary keys tabla
+## Actualizar primary keys tabla - llave compuesta
 ```sql		
 	-- Primero se consulta como se llama
 	SP_HELP cf_record_contratos_claro 
@@ -361,6 +382,15 @@ Ejemplos implementados
 		
 ```
 
+### Consultar y guardar cantidad de registros
+###### Tags: `ROWCOUNT` `CURSOR`
+
+```sql
+	DECLARE @rowsDocumentsRel int = 0
+	DECLARE documentsRelacionados CURSOR FOR   
+	SELECT * FROM inv_cabezaDocumentoRelacionado WHERE cabezaId = @idcabeza;
+	SET @rowsDocumentsRel = @@ROWCOUNT;
+```
 
 ## SQL - Errores
 
