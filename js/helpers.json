@@ -540,13 +540,13 @@ helpers = [
         "url": "documents\/git.html#git",
         "subnivels": [
             {
-                "title": "B\u00e1sicos",
-                "url": "documents\/git.html#b%C3%A1sicos",
+                "title": "Comandos Basicos",
+                "url": "documents\/git.html#comandos-basicos",
                 "subnivels": []
             },
             {
-                "title": "Config - Configuraci\u00f3n Inicial",
-                "url": "documents\/git.html#config---configuraci%C3%B3n-inicial",
+                "title": "Config - Configuracion Inicial",
+                "url": "documents\/git.html#config---configuracion-inicial",
                 "subnivels": []
             },
             {
@@ -555,8 +555,8 @@ helpers = [
                 "subnivels": []
             },
             {
-                "title": "Logs - Consultar registro (Historial de consignaciones)",
-                "url": "documents\/git.html#logs---consultar-registro-%28historial-de-consignaciones%29",
+                "title": "Logs - Consultar registro - Historial de consignaciones",
+                "url": "documents\/git.html#logs---consultar-registro---historial-de-consignaciones",
                 "subnivels": []
             },
             {
@@ -600,6 +600,11 @@ helpers = [
                 "subnivels": []
             },
             {
+                "title": "Tags con autor",
+                "url": "documents\/git.html#tags-con-autor",
+                "subnivels": []
+            },
+            {
                 "title": "Rm - Eliminar archivos",
                 "url": "documents\/git.html#rm---eliminar-archivos",
                 "subnivels": []
@@ -610,8 +615,8 @@ helpers = [
                 "subnivels": []
             },
             {
-                "title": "Conexi\u00f3n SSH Github",
-                "url": "documents\/git.html#conexi%C3%B3n-ssh-github",
+                "title": "Conexion SSH Github",
+                "url": "documents\/git.html#conexion-ssh-github",
                 "subnivels": []
             },
             {
@@ -644,8 +649,8 @@ helpers = [
                         "subnivels": []
                     },
                     {
-                        "title": "Ramas - Ejemplo creaci\u00f3n, consignaci\u00f3n de cambios y subida",
-                        "url": "documents\/git.html#ramas---ejemplo-creaci%C3%B3n%2C-consignaci%C3%B3n-de-cambios-y-subida",
+                        "title": "Ramas - Ejemplo creacion, consignacion de cambios y subida",
+                        "url": "documents\/git.html#ramas---ejemplo-creacion%2C-consignacion-de-cambios-y-subida",
                         "subnivels": []
                     },
                     {
@@ -682,13 +687,13 @@ helpers = [
                 "subnivels": []
             },
             {
-                "title": "ERP (Enterprise Resource Planning)",
-                "url": "documents\/glosary.html#erp-%28enterprise-resource-planning%29",
+                "title": "ERP - Enterprise Resource Planning",
+                "url": "documents\/glosary.html#erp---enterprise-resource-planning",
                 "subnivels": []
             },
             {
-                "title": "CRM (Customer relationship management)",
-                "url": "documents\/glosary.html#crm-%28customer-relationship-management%29",
+                "title": "CRM - Customer relationship management",
+                "url": "documents\/glosary.html#crm---customer-relationship-management",
                 "subnivels": []
             }
         ]
@@ -1325,11 +1330,6 @@ helpers = [
         "url": "documents\/markdown.html#markdown",
         "subnivels": [
             {
-                "title": "Projecto helpers",
-                "url": "documents\/markdown.html#projecto-helpers",
-                "subnivels": []
-            },
-            {
                 "title": "Estructura",
                 "url": "documents\/markdown.html#estructura",
                 "subnivels": []
@@ -1358,6 +1358,55 @@ helpers = [
                 "title": "Im\u00e1genes",
                 "url": "documents\/markdown.html#im%C3%A1genes",
                 "subnivels": []
+            },
+            {
+                "title": "Espapar comillas o corchetes dobles",
+                "url": "documents\/markdown.html#espapar-comillas-o-corchetes-dobles",
+                "subnivels": [],
+                "tags": [
+                    "angular",
+                    "backbone",
+                    "vue",
+                    "raw",
+                    "endraw"
+                ]
+            },
+            {
+                "title": "Projecto helpers",
+                "url": "documents\/markdown.html#projecto-helpers",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "MySQL",
+        "url": "documents\/mySQL.html#mysql",
+        "subnivels": [
+            {
+                "title": "Alter Table - Actualizar Columna MySQL",
+                "url": "documents\/mySQL.html#alter-table---actualizar-columna-mysql",
+                "subnivels": [],
+                "tags": [
+                    "mysql",
+                    "ALTER",
+                    "TABLE",
+                    "MODIFY",
+                    "ADD",
+                    "DROP",
+                    "COLUMN"
+                ]
+            },
+            {
+                "title": "Crear tabla",
+                "url": "documents\/mySQL.html#crear-tabla",
+                "subnivels": [],
+                "tags": [
+                    "mysql",
+                    "CREATE",
+                    "TABLE",
+                    "CURRENT_TIMESTAMP",
+                    "AUTO_INCREMENT"
+                ]
             }
         ]
     },
