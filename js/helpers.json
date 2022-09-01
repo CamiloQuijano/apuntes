@@ -140,6 +140,15 @@ helpers = [
                 ]
             },
             {
+                "title": "Redondear un numero",
+                "url": "documents\/SQL.html#redondear-un-numero",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "ISNUMERIC"
+                ]
+            },
+            {
                 "title": "Sp_help - Estructura de una tabla",
                 "url": "documents\/SQL.html#sp_help---estructura-de-una-tabla",
                 "subnivels": []
@@ -183,9 +192,28 @@ helpers = [
                 "subnivels": []
             },
             {
-                "title": "Select con CASE WHEN THEN ELSE END multiple",
-                "url": "documents\/SQL.html#select-con-case-when-then-else-end-multiple",
-                "subnivels": []
+                "title": "Select con CASE WHEN multiple",
+                "url": "documents\/SQL.html#select-con-case-when-multiple",
+                "subnivels": [],
+                "tags": [
+                    "SELECT",
+                    "CASE",
+                    "WHEN",
+                    "THEN",
+                    "END"
+                ]
+            },
+            {
+                "title": "Orden registros a partir de CASE WHEN multiple",
+                "url": "documents\/SQL.html#orden-registros-a-partir-de-case-when-multiple",
+                "subnivels": [],
+                "tags": [
+                    "ORDER",
+                    "CASE",
+                    "WHEN",
+                    "THEN",
+                    "END"
+                ]
             },
             {
                 "title": "Alter table Column add-drop",
@@ -198,8 +226,8 @@ helpers = [
                 "subnivels": []
             },
             {
-                "title": "Actualizar primary keys tabla",
-                "url": "documents\/SQL.html#actualizar-primary-keys-tabla",
+                "title": "Actualizar primary keys tabla - llave compuesta",
+                "url": "documents\/SQL.html#actualizar-primary-keys-tabla---llave-compuesta",
                 "subnivels": []
             },
             {
@@ -234,6 +262,15 @@ helpers = [
                         "title": "Cursor",
                         "url": "documents\/SQL.html#cursor",
                         "subnivels": []
+                    },
+                    {
+                        "title": "Consultar y guardar cantidad de registros",
+                        "url": "documents\/SQL.html#consultar-y-guardar-cantidad-de-registros",
+                        "subnivels": [],
+                        "tags": [
+                            "ROWCOUNT",
+                            "CURSOR"
+                        ]
                     }
                 ]
             },
@@ -531,6 +568,30 @@ helpers = [
                     "fontawesome",
                     "libreria",
                     "instalar"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Excel",
+        "url": "documents\/excel.html#excel",
+        "subnivels": [
+            {
+                "title": "Pasar fecha a texto - cambiar fecha",
+                "url": "documents\/excel.html#pasar-fecha-a-texto---cambiar-fecha",
+                "subnivels": [],
+                "tags": [
+                    "excel",
+                    "TEXTO"
+                ]
+            },
+            {
+                "title": "Concatenar textos",
+                "url": "documents\/excel.html#concatenar-textos",
+                "subnivels": [],
+                "tags": [
+                    "excel",
+                    "CONCATENAR"
                 ]
             }
         ]
