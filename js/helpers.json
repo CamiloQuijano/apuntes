@@ -577,12 +577,23 @@ helpers = [
         "url": "documents\/excel.html#excel",
         "subnivels": [
             {
-                "title": "Pasar fecha a texto - cambiar fecha",
-                "url": "documents\/excel.html#pasar-fecha-a-texto---cambiar-fecha",
+                "title": "Cambiar formato texto",
+                "url": "documents\/excel.html#cambiar-formato-texto",
                 "subnivels": [],
                 "tags": [
                     "excel",
-                    "TEXTO"
+                    "mayusc",
+                    "minusc",
+                    "nompopio"
+                ]
+            },
+            {
+                "title": "Cambiar formato fechas - pasar a texto",
+                "url": "documents\/excel.html#cambiar-formato-fechas---pasar-a-texto",
+                "subnivels": [],
+                "tags": [
+                    "excel",
+                    "texto"
                 ]
             },
             {
