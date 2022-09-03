@@ -60,13 +60,13 @@
 ###### Tags: `js` `mezclar` `unir` `extend` `objects`
 ```js
     var object1 = { 
-            apple: 0, 
-            banana: { weight: 52, price: 100 }, 
-            cherry: 97 
+        apple: 0, 
+        banana: { weight: 52, price: 100 }, 
+        cherry: 97 
     };
     var object2 = { 
-            banana: { price: 200 }, 
-            durian: 100 
+        banana: { price: 200 }, 
+        durian: 100 
     };
 
     $.extend( object1, object2 ); // Mezcla objeto2 en el objeto1
@@ -294,7 +294,7 @@ Es similar al while, pero se ejecuta la primera condición asi no cumpla el whil
 ```js	
     var i = 0;
     do {
-            console.log(i);
+        console.log(i);
     }
     while(i<5);
 
@@ -367,9 +367,9 @@ Es similar al while, pero se ejecuta la primera condición asi no cumpla el whil
     var dateNow = new Date();
     var firstDay = new Date(dateNow.getFullYear(), dateNow.getMonth(), 1);
     $('#searchDocDateInit').datepicker({
-            autoclose: true,
-            clearBtn: true,
-            todayHighlight: true
+        autoclose: true,
+        clearBtn: true,
+        todayHighlight: true
     }).datepicker("setDate", firstDay);
 ```
 ### Datepicker - control entre fecha Inicial y final
@@ -676,7 +676,7 @@ Implementación funcion success
 
 ### Implementacion
 
-[`Descargar`](https://datatables.net/download/) 
+[`Descargar`](https://datatables.net/download/)  
 [`Descargar librería Sencilla`](jquery/datatablesSimple.zip)  
 [`Descargar librería Completa - buttons - responsive`](jquery/datatablesComplete.zip)
 
@@ -777,7 +777,8 @@ Implementación funcion success
      * Configuracion de Botones de exportar de datatable excel|copy por default 
      * @description IMPORTANTE Exportar a excel
      *      incluir clase excludeExport en TH para omitir en exportación
-     *      incluir clase dtFormatText en TD para formato de números a texto (bug de números grandes - excel los vuelve cientificos y redondea al final)
+     *      incluir clase dtFormatText en TD para formato de números a texto 
+     *      (bug de números grandes - excel los vuelve cientificos y redondea al final)
      * @param {string} title de excel a generar 
      * @returns {object} configuraciones para descargar excel | copiar portapapeles 
      */
