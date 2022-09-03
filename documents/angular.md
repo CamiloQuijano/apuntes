@@ -1,4 +1,4 @@
-<style> body { tab-size: 4; } </style>
+
 {% raw %}
 
 [`Volver`](../index.html)
@@ -473,3 +473,5 @@ Channeldir: Notificaciones y Chat
 app.js →  Principal
 
 {% endraw %}
+
+    
