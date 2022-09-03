@@ -72,8 +72,7 @@
 ## Head metatags
 ###### Tags: `html` `meta` `tags`
 
-Documentación  
-https://www.w3schools.com/tags/tag_meta.asp
+[`Documentación`](https://www.w3schools.com/tags/tag_meta.asp) 
 
 ```html
     <head>

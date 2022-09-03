@@ -6,14 +6,14 @@
 ###### Tags: `jquery` `serialize` `serializeArray` `serializeObject`
 
 ```js	
-	$(event.currentTarget).serialize();
-	// searhEHGroupId=1&searhEHStatus=2&searchEHDateInit=3
+    $(event.currentTarget).serialize();
+    // searhEHGroupId=1&searhEHStatus=2&searchEHDateInit=3
 	
     $(event.currentTarget).serializeArray();
-	// [ 0: {name: "searhEHGroupId", value: "1"} 1: {name: "searhEHStatus", value: "2"} 2: {name: "searchEHDateInit", value: "3"} ]
+    // [ 0: {name: "searhEHGroupId", value: "1"} 1: {name: "searhEHStatus", value: "2"} 2: {name: "searchEHDateInit", value: "3"} ]
 	
     $(event.currentTarget).serializeObject();
-	// { searhEHGroupId: "1", searhEHStatus: "2", searchEHDateInit: "3"}
+    // { searhEHGroupId: "1", searhEHStatus: "2", searchEHDateInit: "3"}
 	
 ```
 
@@ -22,17 +22,17 @@
 ###### Tags: `jquery` `event` `function`
 
 ```js	
-	// Declaración función normal
-	// Se accede a la info como $(this).serialize();
-	jQuery('#clickme1').on('click',function() {
-		console.log('Se ha pinchado: ',jQuery(this).attr('id'));
-	});
+    // Declaración función normal
+    // Se accede a la info como $(this).serialize();
+    jQuery('#clickme1').on('click',function() {
+            console.log('Se ha pinchado: ',jQuery(this).attr('id'));
+    });
 
-	// Declaración función de tipo flechas
-	// Se accede a la info como $(e.currentTarget).serialize();
-	jQuery('#clickme2').on('click',(e) => {
-		console.log('Se ha pinchado: ',jQuery(e.currentTarget).attr('id'));
-	});
+    // Declaración función de tipo flechas
+    // Se accede a la info como $(e.currentTarget).serialize();
+    jQuery('#clickme2').on('click',(e) => {
+            console.log('Se ha pinchado: ',jQuery(e.currentTarget).attr('id'));
+    });
 ```
 
 
@@ -40,10 +40,10 @@
 ###### Tags: `jquery` `event` `on`
 
 ```js	
-	// 1. Elemento padre | 2. Evento | 3. Elemento que genera evento | 4. Función
-	$('.modalDetailsShopcartContent').on('submit','.removeShopCart', (e) => {
-		console.log('Evento ON submit');
-	});
+    // 1. Elemento padre | 2. Evento | 3. Elemento que genera evento | 4. Función
+    $('.modalDetailsShopcartContent').on('submit','.removeShopCart', (e) => {
+        console.log('Evento ON submit');
+    });
 ```
 
 
@@ -51,11 +51,11 @@
 ###### Tags: `jquery` `event` `change` `prop` `checked`
 
 ```js	
-	$('#myCheckbox').change(function () {
-		if ($(this).prop("checked")) {
-			console.log('is checked');
-		}
-	});
+    $('#myCheckbox').change(function () {
+        if ($(this).prop("checked")) {
+            console.log('is checked');
+        }
+    });
 ```
 
 
@@ -63,8 +63,8 @@
 ###### Tags: `jquery` `event` `animate` `scroll`
 
 ```js	
-	// Animación a elemento específico
-	$("html, body").animate({ scrollTop: $('#documentsContractsContent').offset().top - 50 }, 1000);
+    // Animación a elemento específico
+    $("html, body").animate({ scrollTop: $('#documentsContractsContent').offset().top - 50 }, 1000);
 ```
 
 
@@ -75,14 +75,14 @@
 ###### Tags: `jquery` `select` `hide`
 
 ```js	
-	$("#selectid option[value=" + title + "]").hide();
-	$("#selectid option[value=5]").hide();
+    $("#selectid option[value=" + title + "]").hide();
+    $("#selectid option[value=5]").hide();
 ```
 
 ### Seleccionar una opcion
 ###### Tags: `jquery` `select` `selected` `val`
 
 ```js	
-	$("#forpag").val('0');
-	$("#forpag option[value='0']").attr('selected', true);
+    $("#forpag").val('0');
+    $("#forpag option[value='0']").attr('selected', true);
 ```
