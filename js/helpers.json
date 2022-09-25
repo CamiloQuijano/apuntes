@@ -1936,11 +1936,6 @@ helpers = [
         ]
     },
     {
-        "title": "Menu",
-        "url": "documents\/reactJS.html#menu",
-        "subnivels": []
-    },
-    {
         "title": "REACT JS",
         "url": "documents\/reactJS.html#react-js",
         "subnivels": [
@@ -2076,6 +2071,10 @@ helpers = [
                 "url": "documents\/reactJS.html#proyectos-con-c%C3%B3digo-ejemplo",
                 "subnivels": []
             }
+        ],
+        "tags": [
+            "curso",
+            "menu"
         ]
     },
     {

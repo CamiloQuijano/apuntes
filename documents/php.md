@@ -2,28 +2,27 @@
 
 # PHP
 
-Descargar versiones de PHP  
-https://windows.php.net/download/#php-5.4
+- [`Descargar versiones de PHP`](https://windows.php.net/download/#php-5.4)
 
 ## Configuaciones - Php.ini 
 
 ```php
-upload_max_filesize 		 Peso máximo de archivos a subir
-post_max_size				Peso máximo de archivos a subir por POST 
+	upload_max_filesize         // Peso máximo de archivos a subir
+	post_max_size               // Peso máximo de archivos a subir por POST 
 ```
 
 ## Establecer Configuraciones tiempo ejecución memoria limite
 ```php
-	ini_set("max_execution_time", 8500); 						// Mas tiempo para ejecución
-	ini_set("memory_limit", "6048M"); 							// Mas memoria
-	ini_set('pdo_sqlsrv.client_buffer_max_kb_size','1024288');  // Buffer (pdo_sqlsrv): En Bytes 1024288 == 1GB
-	ini_set('sqlsrv.ClientBufferMaxKBSize','1024288');          // Buffer (sqlsrv): En Bytes 1024288 == 1GB
+	ini_set("max_execution_time", 8500);                        	// Mas tiempo para ejecución
+	ini_set("memory_limit", "6048M");                           	// Mas memoria
+	ini_set('pdo_sqlsrv.client_buffer_max_kb_size','1024288');  	// Buffer (pdo_sqlsrv): En Bytes 1024288 == 1GB
+	ini_set('sqlsrv.ClientBufferMaxKBSize','1024288');          	// Buffer (sqlsrv): En Bytes 1024288 == 1GB
 ```
 
 ## Imprimir variables - arreglos - json
 ```php
-	log_message('error', "response ::: ".json_encode($_POST));  	    // Log de array 
-	var_export($array)  												// Imprimir array	
+	log_message('error', "response ::: ".json_encode($_POST));      // Log de array 
+	var_export($array)                                              // Imprimir array	
 ```
 
 ## Tipo de peticion get post put
@@ -43,7 +42,7 @@ Forma de acceder a información por row (caso ADDI)
 ## Redireccionar
 ```php
 	header('Location: index.php');
-    die();
+	die();
 ```
 
 ## Sesion - iniciar - asignar - eliminar 
@@ -64,9 +63,9 @@ A partir de la versión 5.3.0, devuelve **null** si se le pasan parámetros inv�
 Para búsqueda key en array **uni-dimencional**
 ```php
 	$array = array(0 => 'azul', 1 => 'rojo', 2 => 'verde', 3 => 'rojo');
-	$clave = array_search('verde', $array); // $clave = 2;
-	$clave = array_search('rojo', $array);  // $clave = 1;
-	$clave = array_search('cafe', $array);  // $clave = null;
+	$clave = array_search('verde', $array); 	// $clave = 2;
+	$clave = array_search('rojo', $array);  	// $clave = 1;
+	$clave = array_search('cafe', $array);  	// $clave = null;
 ```
 
 Para búsqueda key en array **by-dimencional**
@@ -106,21 +105,21 @@ Eliminará del arreglo null, ceros, string vacios.
 ###### Tags: `php` `substr` 
 
 ```php
-	echo substr('abcdef', 1, 3); // bcd 							// Recortar palabras - bcd
-	echo substr('abcdef', 0, 4); // abcd							// Recortar palabras - abcd
-	echo substr('abcdef', -1, 1); // f  							// Recortar palabras - f
-	echo substr("abcdef", 0, -1); // "abcde"						// Recortar palabras - abcde
-	echo substr("abcdef", 2, -1); // "cde"  						// Recortar palabras - cde
-	echo substr($_SERVER['SERVER_NAME'], 0, 20);					// Recortar palabras - IP hasta 20 caractéres
+	substr('abcdef', 1, 3);                    // bcd
+	substr('abcdef', 0, 4);                    // abcd
+	substr('abcdef', -1, 1);                   // f
+	substr("abcdef", 0, -1);                   // "abcde"
+	substr("abcdef", 2, -1);                   // "cde"
+	substr($_SERVER['SERVER_NAME'], 0, 20);    // IP hasta 20 caractéres
 ```	
 
 
 ### Buscar palabra o caracter en variable de texto 
 ###### Tags: `php` `strpos` 
 ```php
-	echo strpos("I love php, I love php too!","X");		// FALSE
-	echo strpos("I love php, I love php too!","php");	// 7
-	echo strpos("I love php, I love php too!","I");		// 0
+	strpos("I love php, I love php too!","X");		// FALSE
+	strpos("I love php, I love php too!","php");	// 7
+	strpos("I love php, I love php too!","I");		// 0
 ```
 
 
@@ -159,11 +158,11 @@ Eliminará del arreglo null, ceros, string vacios.
 ## Rellenar palabra con caracteres a la derecha-izquierda str_pad
 ```php
 	$input = "Alien";
-	echo str_pad($input, 10);                      // produces "Alien     "
-	echo str_pad($input, 10, "-=", STR_PAD_LEFT);  // produces "-=-=-Alien"
-	echo str_pad($input, 10, "_", STR_PAD_BOTH);   // produces "__Alien___"
-	echo str_pad($input,  6, "___");               // produces "Alien_"
-	echo str_pad($input,  3, "*");                 // produces "Alien"
+	echo str_pad($input, 10);                      // "Alien     "
+	echo str_pad($input, 10, "-=", STR_PAD_LEFT);  // "-=-=-Alien"
+	echo str_pad($input, 10, "_", STR_PAD_BOTH);   // "__Alien___"
+	echo str_pad($input,  6, "___");               // "Alien_"
+	echo str_pad($input,  3, "*");                 // "Alien"
 ```
 
 ## Validar variable boleana
@@ -172,15 +171,15 @@ Eliminará del arreglo null, ceros, string vacios.
 Validar variable boleana, asi venga en texto true false
 
 ```php
-	filter_var('on', FILTER_VALIDATE_BOOLEAN);		// true
-	filter_var('true', FILTER_VALIDATE_BOOLEAN);  	// true
-	filter_var('1', FILTER_VALIDATE_BOOLEAN); 		// true
-	filter_var(1, FILTER_VALIDATE_BOOLEAN);   		// true
-	filter_var('yes', FILTER_VALIDATE_BOOLEAN);   	// true
-	filter_var('off', FILTER_VALIDATE_BOOLEAN);   	// false
-	filter_var('false', FILTER_VALIDATE_BOOLEAN); 	// false
-	filter_var('0', FILTER_VALIDATE_BOOLEAN); 		// false
-	filter_var(0, FILTER_VALIDATE_BOOLEAN);   		// false
+	filter_var('on', FILTER_VALIDATE_BOOLEAN);      // true
+	filter_var('true', FILTER_VALIDATE_BOOLEAN);    // true
+	filter_var('1', FILTER_VALIDATE_BOOLEAN);       // true
+	filter_var(1, FILTER_VALIDATE_BOOLEAN);         // true
+	filter_var('yes', FILTER_VALIDATE_BOOLEAN);     // true
+	filter_var('off', FILTER_VALIDATE_BOOLEAN);     // false
+	filter_var('false', FILTER_VALIDATE_BOOLEAN);   // false
+	filter_var('0', FILTER_VALIDATE_BOOLEAN);       // false
+	filter_var(0, FILTER_VALIDATE_BOOLEAN);         // false
 ```
 
 
@@ -191,23 +190,23 @@ Devuelve el valor integer de una var, con la especificada base para la conversi�
 No debería ser usado en objetos, si es usado emitirá un error de nivel E_NOTICE y devolverá 1.
 
 ```php
-	echo intval(42);                      // 42
-	echo intval(4.2);                     // 4
-	echo intval('42');                    // 42
-	echo intval('+42');                   // 42
-	echo intval('-42');                   // -42
-	echo intval(042);                     // 34
-	echo intval('042');                   // 42
-	echo intval(1e10);                    // 1410065408
-	echo intval('1e10');                  // 1
-	echo intval(0x1A);                    // 26
-	echo intval(42000000);                // 42000000
-	echo intval(420000000000000000000);   // 0
-	echo intval('420000000000000000000'); // 2147483647
-	echo intval(42, 8);                   // 42
-	echo intval('42', 8);                 // 34
-	echo intval(array());                 // 0
-	echo intval(array('foo', 'bar'));     // 1
+	intval(42);                      // 42
+	intval(4.2);                     // 4
+	intval('42');                    // 42
+	intval('+42');                   // 42
+	intval('-42');                   // -42
+	intval(042);                     // 34
+	intval('042');                   // 42
+	intval(1e10);                    // 1410065408
+	intval('1e10');                  // 1
+	intval(0x1A);                    // 26
+	intval(42000000);                // 42000000
+	intval(420000000000000000000);   // 0
+	intval('420000000000000000000'); // 2147483647
+	intval(42, 8);                   // 42
+	intval('42', 8);                 // 34
+	intval(array());                 // 0
+	intval(array('foo', 'bar'));     // 1
 ```
 
 
@@ -237,13 +236,13 @@ Pasar valor a float, entero en caso de no tener decimales
 ## Validar si una variable es numerica
 ###### Tags: `php` `is_numeric`
 ```php
-	is_numeric(32) 			// True
-	is_numeric('32')   		// True
-	is_numeric(0)  			// True
-	is_numeric(32.5)   		// True
-	is_numeric(true)   		// False
-	is_numeric(null)   		// False
-	is_numeric('abc')  		// False
+    is_numeric(32) 			// True
+    is_numeric('32')   		// True
+    is_numeric(0)  			// True
+    is_numeric(32.5)   		// True
+    is_numeric(true)   		// False
+    is_numeric(null)   		// False
+    is_numeric('abc')  		// False
 ```
 
 
@@ -341,11 +340,10 @@ Documentación: https://www.php.net/manual/es/function.round.php
 ### Fechas
 ###### Tags: `php` `date` 
 
-Documentación:  
-https://www.php.net/manual/es/function.date.php  
+- [`Documentación`](https://www.php.net/manual/es/function.date.php)  
 
 ```php		
-	date('d/m/Y');  						// 02/11/2021
+	date('d/m/Y');                          // 02/11/2021
 	date("F j, Y, g:i a");                  // March 10, 2001, 5:16 pm
 	date("m.d.y");                          // 03.10.01
 	date("j, n, Y");                        // 10, 3, 2001
@@ -361,15 +359,15 @@ https://www.php.net/manual/es/function.date.php
 ### Fecha y Hora - modificar horas
 ###### Tags: `php` `datetime` `modify`
 ```php		
-	$dateDocument = new DateTime($docHead['fecCrea']);		// 2022-01-12 05:45:39.064809
-	$dateDocument->modify("2 hour");						// 2022-01-12 07:45:39.064809
+	$dateDocument = new DateTime($docHead['fecCrea']);      // 2022-01-12 05:45:39.064809
+	$dateDocument->modify("2 hour");                        // 2022-01-12 07:45:39.064809
 ```
 
 ### Crear fecha a partir de formato 
 ###### Tags: `php` `datetime` `createFromFormat`
 
-Documentación:  
-https://www.php.net/manual/es/datetime.createfromformat.php  
+- [`Documentación`](https://www.php.net/manual/es/datetime.createfromformat.php)  
+  
 
 ```php
 	// Fecha formato 16/09/2021
@@ -529,3 +527,5 @@ Al exportar a excel sea por csv o directamente de la librería, para números gr
 ```php
 	'Serial' => $valor['serie']."\t",
 ```
+
+<style> body { tab-size: 4; } </style>
