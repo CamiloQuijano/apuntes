@@ -2,10 +2,8 @@
 
 # Underscore
 
-Documentación
-https://underscorejs.org/  
-
-[`Descargar librería`](libraries/underscore-min.zip)  
+- [Documentación](https://underscorejs.org/)  
+- [`Descargar librería`](libraries/underscore-min.zip)  
 
 Implementación:  
 ```html
@@ -63,10 +61,9 @@ devolviendo el índice más cercano al final donde pasa la prueba de verdad del 
 
 # Underscore.string
 
-Documentación
-https://gabceb.github.io/underscore.string.site/  
+- [Documentación](https://gabceb.github.io/underscore.string.site/)  
+- [`Descargar librería`](libraries/underscore.string.min.zip)  
 
-[`Descargar librería`](libraries/underscore.string.min.zip)  
 
 Unificar underscore con underscore.string - Implementación:   
 ```html

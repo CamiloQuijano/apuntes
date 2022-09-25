@@ -79,7 +79,8 @@ Tener en cuenta:
 		npx create-react-app nombre-app
 	```
 
-- El comando generará la siguiente estructura
+- El comando generará la siguiente estructura  
+
   | Directorio-Archivo | Descripcion |
   | ------------------ | --------------------------------------------------------------------------------------- |
   | node*modules | Dependencias, con \_yarn install* se reinstalan todas |

@@ -6,11 +6,11 @@
 ## Comandos
 ###### Tags: `vue` `console` `install` `run` `serve` `build` `create`
 ```bash
-	npm install -g @vue/cli  			// Instalación npm
-	yarn global add @vue/clie			// Instalación yarn
-	vue create my-project				// Crear proyecto (Nombre en minúscula)
-	npm run serve						// Iniciar servidor
-	npm run build						// Paso a producción
+	npm install -g @vue/cli             // Instalación npm
+	yarn global add @vue/clie           // Instalación yarn
+	vue create my-project               // Crear proyecto (Nombre en minúscula)
+	npm run serve                       // Iniciar servidor
+	npm run build                       // Paso a producción
 ```
 
 
@@ -231,9 +231,9 @@ Store -> action
 ## proyecto rick y morty
 ###### Tags: `vue` `project` `netlify`
 
-**CURSO**: https://www.udemy.com/course/vue-3-composition-api-vuex-api-rest-rick-and-morty/  
-**APIREST RICK AND MORTY**: https://rickandmortyapi.com/  
-**PROD NETLIFY** https://rickandmortyvuecq.netlify.app  
+**CURSO**: [Link Curso](https://www.udemy.com/course/vue-3-composition-api-vuex-api-rest-rick-and-morty/)
+**APIREST RICK AND MORTY**: [Link API](https://rickandmortyapi.com/)
+**PROD NETLIFY** [Link Prueba](https://rickandmortyvuecq.netlify.app)
 **GITHUB**: git@github.com:CamiloQuijano/rickandmorty-vue.git  
 **DESCARGAR**: [Bajar proyecto](./projects/rickandmorty-vue.zip) 
 
@@ -254,3 +254,5 @@ Instalar dependencias e iniciar server
 
 Subir cambios a producción en netlify
 - [Validar paso a paso](./github.md#subir-a-produccion-de-repositorio-github-a-netlify) 
+
+<style> body { tab-size: 4; } </style>
