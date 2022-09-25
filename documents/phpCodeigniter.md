@@ -135,6 +135,20 @@ https://codeigniter.com/userguide3/database/query_builder.html
     }
 ```
 
+### Update - con base en valor en db
+```php
+	private function _updateWithValueDB($idAsset, $set) {
+        $this->db
+                ->where('id', $idAsset)
+                ->set('intentos', 'intentos + 1', false)
+                ->update($this->_tableExtraHours, $set);
+
+        $error = $this->db->error(); 
+        if ($error['message']) { throw new Exception($error['message'].' class:'.__CLASS__.' line:'.__LINE__); }
+        return $this->db->insert_id(); 
+    }
+```
+
 ### Update batch
 ```php
     /**
