@@ -231,11 +231,11 @@ Store -> action
 ## proyecto rick y morty
 ###### Tags: `vue` `project` `netlify`
 
-**CURSO**: [Link Curso](https://www.udemy.com/course/vue-3-composition-api-vuex-api-rest-rick-and-morty/)
-**APIREST RICK AND MORTY**: [Link API](https://rickandmortyapi.com/)
-**PROD NETLIFY** [Link Prueba](https://rickandmortyvuecq.netlify.app)
+**CURSO**: [Link Curso](https://www.udemy.com/course/vue-3-composition-api-vuex-api-rest-rick-and-morty/)  
+**APIREST RICK AND MORTY**: [Link API](https://rickandmortyapi.com/)  
+**PROD NETLIFY** [Link Prueba](https://rickandmortyvuecq.netlify.app)  
 **GITHUB**: git@github.com:CamiloQuijano/rickandmorty-vue.git  
-**DESCARGAR**: [Bajar proyecto](./projects/rickandmorty-vue.zip) 
+**DESCARGAR**: [Bajar proyecto](./projects/rickandmorty-vue.zip)  
 
 Necesario para aplicación  
 - Instalar nodejs  	
