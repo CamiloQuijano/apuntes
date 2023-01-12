@@ -5,13 +5,13 @@
 ## Estructura
 
 ```html
-	Titulos: 		 # Titulo
-	Encabezado 1:		 ## Encabezado 1
-	Encabezado 2:		 ### Encabezado 2
-	Negrita:		 **texto en negrita**
-	Cursiva:		 *texto en cursiva*
-	Enlaces:		 [texto enlace](http://abc.com)
-	Imagenes:		 ![texto si URL imagen esta rota](http://magen.jpg)
+	Titulos:         # Titulo
+	Encabezado 1     ## Encabezado 1
+	Encabezado 2:    ### Encabezado 2
+	Negrita:         **texto en negrita**
+	Cursiva:         *texto en cursiva*
+	Enlaces:         [texto enlace](http://abc.com)
+	Imagenes:        ![texto si URL imagen esta rota](http://magen.jpg)
 ```
 
 ## Imprimir Código
@@ -102,3 +102,6 @@ Para la ejecución del proyecto es necesario:
 			- checkear 'gfm'
 		- Content
 			- descheckear 'scroll'
+
+
+<style> body { tab-size: 4; } </style>

@@ -5,12 +5,12 @@
 ## Funciones generales die | version | profile 
 
 ```php
-	log_message("error","QUERY ::: ".$this->db->last_query());  		// Log de últma consulta
-	log_message('error', "response ::: ".json_encode($_POST));  	    // Log de array 
-	die($this->db->last_query());   									// Imprimir última consulta (matar proceso)
-	echo $this->db->last_query()."<hr/>";   							// Imprimir última consulta
-	echo CI_VERSION 													// Versión codeigniter
-	$this->output->enable_profiler(TRUE);   							// Habilitar profiler de codeigniter 
+	log_message("error","QUERY ::: ".$this->db->last_query());          // Log de últma consulta
+	log_message('error', "response ::: ".json_encode($_POST));          // Log de array 
+	die($this->db->last_query());                                       // Imprimir última consulta (matar proceso)
+	echo $this->db->last_query()."<hr/>";                               // Imprimir última consulta
+	echo CI_VERSION                                                     // Versión codeigniter
+	$this->output->enable_profiler(TRUE);                               // Habilitar profiler de codeigniter 
 ```
 
 ## Transacciones
@@ -90,16 +90,16 @@ https://codeigniter.com/userguide3/database/query_builder.html
 
 ### Ejemplo like en consultar
 ```php
-	$builder->like('title', 'match', 'before'); // Produces: WHERE `title` LIKE '%match' ESCAPE '!'
-	$builder->like('title', 'match', 'after');  // Produces: WHERE `title` LIKE 'match%' ESCAPE '!'
-	$builder->like('title', 'match', 'both');   // Produces: WHERE `title` LIKE '%match%' ESCAPE '!'
+	$builder->like('title', 'match', 'before');      // Produces: WHERE `title` LIKE '%match' ESCAPE '!'
+	$builder->like('title', 'match', 'after');       // Produces: WHERE `title` LIKE 'match%' ESCAPE '!'
+	$builder->like('title', 'match', 'both');        // Produces: WHERE `title` LIKE '%match%' ESCAPE '!'
 ```
 
 ### Ejemplo no like en consultar
 ```php
-	$builder->not_like('title', 'match', 'before'); // Produces: WHERE `title` NOT LIKE '%match' ESCAPE '!'
-	$builder->not_like('title', 'match', 'after');  // Produces: WHERE `title` NOT LIKE 'match%' ESCAPE '!'
-	$builder->not_like('title', 'match', 'both');   // Produces: WHERE `title` NOT LIKE '%match%' ESCAPE '!'
+	$builder->not_like('title', 'match', 'before');    // Produces: WHERE `title` NOT LIKE '%match' ESCAPE '!'
+	$builder->not_like('title', 'match', 'after');     // Produces: WHERE `title` NOT LIKE 'match%' ESCAPE '!'
+	$builder->not_like('title', 'match', 'both');      // Produces: WHERE `title` NOT LIKE '%match%' ESCAPE '!'
 ```
 
 ### delete
@@ -110,7 +110,7 @@ https://codeigniter.com/userguide3/database/query_builder.html
 
 ### Insert batch
 ```php
-	/**
+    /**
      * Insertar un registro Multiples 
      * @param Array $table Nombre de la tabla
      * @param Array $data Arreglo de arreglos con datos para inserción
@@ -127,7 +127,7 @@ https://codeigniter.com/userguide3/database/query_builder.html
 
 ### Update
 ```php
-	/**
+    /**
      * Actualizar Hora Extra
      * @param Array $data Arreglo de arreglos con datos para inserción
      * @return int Id de último registro creado
@@ -137,6 +137,20 @@ https://codeigniter.com/userguide3/database/query_builder.html
                 ->where('id', $idAsset)
                 ->update($this->_tableExtraHours, $set);
         
+        $error = $this->db->error(); 
+        if ($error['message']) { throw new Exception($error['message'].' class:'.__CLASS__.' line:'.__LINE__); }
+        return $this->db->insert_id(); 
+    }
+```
+
+### Update - con base en valor en db
+```php
+	private function _updateWithValueDB($idAsset, $set) {
+        $this->db
+                ->where('id', $idAsset)
+                ->set('intentos', 'intentos + 1', false)
+                ->update($this->_tableExtraHours, $set);
+
         $error = $this->db->error(); 
         if ($error['message']) { throw new Exception($error['message'].' class:'.__CLASS__.' line:'.__LINE__); }
         return $this->db->insert_id(); 
@@ -163,7 +177,7 @@ https://codeigniter.com/userguide3/database/query_builder.html
 
 ### Ejemplo query limit - group - like - join
 ```php
-	/**
+    /**
      * Consultar los items NO SERIALIZADOS (código|descripción) para AUTOCOMPLETAR
      * @author Camilo Quijano <liderdesarrollo@singularcom.com>
      * @date 24/09/2020
@@ -238,12 +252,12 @@ Controlador que recibe la solicitud:
             force_download($file['name'], $file['content']);
         } catch (Exception $exc) {
 		
-			// Opción 1: Indicar que generó error con código de 404
+            // Opción 1: Indicar que generó error con código de 404
             //header('Content-Disposition: attachment; filename="errorDescarga.txt"');
-			//http_response_code(404);
+            //http_response_code(404);
 			
-			// Opción 2: Descargar un archivo que en su contenido venga el mensaje del error
-			//header('Content-Disposition: attachment; filename="errorDescarga.txt"');
+            // Opción 2: Descargar un archivo que en su contenido venga el mensaje del error
+            //header('Content-Disposition: attachment; filename="errorDescarga.txt"');
             $messageException = ($exc->getMessage()) ? $exc->getMessage() : 'Ocurrio un error en la solicitud. Intente de nuevo, en caso de persistir el error contactese con el administrador';
             echo $messageException;
         }
@@ -274,7 +288,7 @@ Logica descarga archivo de aws - s3:
 ###### Tags: `try` `catch` `controller` `documentacion` `json`
 
 ```php
-	/**
+    /**
      * Estructura Listado de productos
      * @author Camilo Quijano <camiloquijano31@hotmail.com>
      * @date 09/05/2021

@@ -1,6 +1,9 @@
 ﻿[`Volver`](../index.html)
 
-# Menu
+# REACT JS
+###### Tags: `curso` `menu`
+
+Libreria JavaScript OpenSource diseñada para crear interfaz de usuarios
 
 - [`React`](#React-JS)
 	- [Herramientas Sugeridas](#herramientas-sugeridas) 
@@ -30,26 +33,20 @@
 - [`React Routes`](#React-Routes)
 
 
-# REACT JS
-
-Libreria JavaScript OpenSource diseñada para crear interfaz de usuarios
-
 ## HERRAMIENTAS SUGERIDAS
 
 [`Menu`](#)
 
 - **Visual Studio Code**: Ide de desarrollo
-- **nodeJS**: https://nodejs.org/dist/latest-v10.x/
+- **nodeJS**: [`descargar`](https://nodejs.org/dist/latest-v10.x/)
 
 - **React Developer Tools (Extensión Chrome)**:
 
-      	Inspectos de elementos -> Componentes.
+	- Inspectos de elementos -> Componentes.  
+	- Mostrara la estructura de componentes del proyecto.  
+	- Al darle click a componente específico - Muestra los props del componente  
 
-      	Mostrara la estructura de componentes del proyecto.
-
-      	Al darle click a componente específico - Muestra los props del componente
-
-- **Yarn - npm**: Empaquetador de código https://classic.yarnpkg.com/es-ES/
+- **Yarn - npm**: Empaquetador de código [`descargar`](https://classic.yarnpkg.com/es-ES/)
 
 	Descargar .msi e instalar 
 	
@@ -78,11 +75,12 @@ Tener en cuenta:
 
 - nombre-app no puede tener mayúsculas
 
-      	```console
-      	npx create-react-app nombre-app
-      	```
+	```bash
+		npx create-react-app nombre-app
+	```
 
-- El comando generará la siguiente estructura
+- El comando generará la siguiente estructura  
+
   | Directorio-Archivo | Descripcion |
   | ------------------ | --------------------------------------------------------------------------------------- |
   | node*modules | Dependencias, con \_yarn install* se reinstalan todas |
@@ -103,26 +101,26 @@ Tener en cuenta llamar las siguientes librerias
 - adicionalmente en el script **language="text/babel"**
 
 ```html
-<div id="appReact"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.production.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
-<script type="text/babel" src="app.js"></script>
+	<div id="appReact"></div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.production.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+	<script type="text/babel" src="app.js"></script>
 ```
 
 ```javascript
-class MyApp extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1 className="text"> HOLAMUNDO {this.props.name} </h1>
-      </div>
-    );
-  }
-}
+	class MyApp extends React.Component {
+	  render() {
+		return (
+		  <div>
+			<h1 className="text"> HOLAMUNDO {this.props.name} </h1>
+		  </div>
+		);
+	  }
+	}
 
-// document.getElementById("appReact")      // Más Rápido que  document.querySelector("#appReact")
-ReactDOM.render(<MyApp name="Camilo" />, document.getElementById("appReact"));
+	// document.getElementById("appReact")      // Más Rápido que  document.querySelector("#appReact")
+	ReactDOM.render(<MyApp name="Camilo" />, document.getElementById("appReact"));
 ```
 
 ## COMPONENTES
@@ -233,70 +231,68 @@ ReactDOM.render(<MyApp name="Camilo" />, document.getElementById("appReact"));
 
 - JXS y EcmaScript ES6 (Sugerido)
 
-	````javascript
-		// Componente con Estado 
-		class ComponentStateFul extends React.Component { 
-			constructor(...props) { 
-			super(...props); // Constructor del padre 
-			this.state = {...} } render () { ... } 
-		}); 
-			
-		// Afuera de la definición de las clases 
-		ComponentStateFul.propTypes = {...} 
-		ComponentStateFul.defaultProps = {...} 
-		export default ComponentStateFul; 
+```javascript
+	// Componente con Estado 
+	class ComponentStateFul extends React.Component { 
+		constructor(...props) { 
+		super(...props); // Constructor del padre 
+		this.state = {...} } render () { ... } 
+	}); 
 		
-		------------------------------------------------ 
-		
-		// Componente sin Estado (Función) - return y {} 
-		const ComponentStateLess = (props) => { return (<div>test</div>) }; 
-		export default ComponentStateLess; 
-		
-		------------------------------------------------ 
-		
-		// Componente sin Estado (HTML) - solo () 
-		const ComponentStateLess = (props) => ( <div>test</div> ); 
-		export default ComponentStateLess;
-	````
-		
+	// Afuera de la definición de las clases 
+	ComponentStateFul.propTypes = {...} 
+	ComponentStateFul.defaultProps = {...} 
+	export default ComponentStateFul; 
+	
+	------------------------------------------------ 
+	
+	// Componente sin Estado (Función) - return y {} 
+	const ComponentStateLess = (props) => { return (<div>test</div>) }; 
+	export default ComponentStateLess; 
+	
+	------------------------------------------------ 
+	
+	// Componente sin Estado (HTML) - solo () 
+	const ComponentStateLess = (props) => ( <div>test</div> ); 
+	export default ComponentStateLess;
+```
+	
 		
 - Javascript
 
-  ````javascript
-  // Generar estructura a partir de JS Nativo
-  // Es necesario generar etiqueta por etiqueta por medio del createElement
-  var image = React.createElement(
-  "img",
-  { src: "assets/imageSVG.svg", className: "test", width: 200 },
-  null
-  ),
-  title = React.createElement(
-  "figcaption",
-  { clasName: "textFigCaption" },
-  "React"
-  ),
-  logo = React.createElement("figure", { clasName: "logo" }, [image, title]);
+```javascript
+	// Generar estructura a partir de JS Nativo
+	// Es necesario generar etiqueta por etiqueta por medio del createElement
+	var image = React.createElement(
+	"img",
+	{ src: "assets/imageSVG.svg", className: "test", width: 200 },
+	null
+	),
+	title = React.createElement(
+	"figcaption",
+	{ clasName: "textFigCaption" },
+	"React"
+	),
+	logo = React.createElement("figure", { clasName: "logo" }, [image, title]);
 
-      		ReactDOM.render(logo, document.getElementById("appReactJS"));
-      	```
+      	ReactDOM.render(logo, document.getElementById("appReactJS"));
+```
 
-      	```html
-      		<!-- HTML generado -->
-      		<div id="appReactJS">
-      			<figure clasname="logo">
-      				<img src="assets/imageSVG.svg" class="test" width="200">
-      				<figcaption clasname="textFigCaption">React</figcaption>
-      			</figure>
-      		</div>
-      	```
-
-  ````
+```html
+	<!-- HTML generado -->
+	<div id="appReactJS">
+		<figure clasname="logo">
+			<img src="assets/imageSVG.svg" class="test" width="200">
+			<figcaption clasname="textFigCaption">React</figcaption>
+		</figure>
+	</div>
+```
 
 - JXS y EcmaScript ES5
 
 - JXS y EcmaScript ES7
 
-	````javascript	
+	```javascript	
 		// Componente con Estado 
 		class ComponentStateFul extends React.Component { 
 			static propTypes = {...} // Es la diferencia con ES6 
@@ -313,7 +309,7 @@ ReactDOM.render(<MyApp name="Camilo" />, document.getElementById("appReact"));
 			
 		// Componente sin Estado 
 		const ComponentStateLess = (props) => {};`
-
+	```
 
 ### Ejemplo SPA
 
@@ -371,50 +367,50 @@ ReactDOM.render(<Logo />, document.getElementById("appReactJSX"));
 
 - desde const JS
 	
-	```javascript
-		// data/courses.js
-		export const courses = [
-		  { id: 1, name: "React", teacher: "Juan" },
-		  { id: 2, name: "Drupal", teacher: "Luis" },
-		];
-		
-		-------------------------------------------
-		
-		// components/index.jsx
-		import { courses } from "../data/courses"; 	// Importar datos 
-	```
+```javascript
+	// data/courses.js
+	export const courses = [
+	  { id: 1, name: "React", teacher: "Juan" },
+	  { id: 2, name: "Drupal", teacher: "Luis" },
+	];
+	
+	-------------------------------------------
+	
+	// components/index.jsx
+	import { courses } from "../data/courses"; 	// Importar datos 
+```
 	
 - desde JSON
 
-	```javascript
-		// data/courses.json
-		[
-		  { "id": 1, "name": "React", "teacher": "Juan" },
-		  { "id": 2, "name": "Drupal", "teacher": "Luis" },
-		]
-		
-		-------------------------------------------
-		
-		// components/index.jsx
-		import courses from "../data/courses.json";
-	```
+```javascript
+	// data/courses.json
+	[
+	  { "id": 1, "name": "React", "teacher": "Juan" },
+	  { "id": 2, "name": "Drupal", "teacher": "Luis" },
+	]
+	
+	-------------------------------------------
+	
+	// components/index.jsx
+	import courses from "../data/courses.json";
+```
 	
 - desde JSON con KEY
 
-	```javascript
-		// data/coursesWithKey.json
-		{
-		  "courses": [
-			{ "id": 1, "name": "React", "teacher": "Juan" },
-			{ "id": 2, "name": "Drupal", "teacher": "Luis" }
-		  ]
-		}
-		
-		-------------------------------------------
-		
-		// components/index.jsx
-		import {courses} from "../data/coursesWithKey.json";
-	```
+```javascript
+	// data/coursesWithKey.json
+	{
+	  "courses": [
+		{ "id": 1, "name": "React", "teacher": "Juan" },
+		{ "id": 2, "name": "Drupal", "teacher": "Luis" }
+	  ]
+	}
+	
+	-------------------------------------------
+	
+	// components/index.jsx
+	import {courses} from "../data/coursesWithKey.json";
+```
 
 El caso de asignar los datos se realizan desde el constructor 
 - No requiere indicar la extensión cuando es **JS** o **JSX**

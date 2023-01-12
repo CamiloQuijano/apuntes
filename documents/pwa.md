@@ -25,7 +25,7 @@ Web Hibridas
 	
 Native Bridge
 - Ejemplo **React Native** **NativeScript**
-- Código Javascript | typescript | Interfaz en html
+- Código Javascript - typescript - Interfaz en html
 
 PWA
 - Descargada desde el navegador

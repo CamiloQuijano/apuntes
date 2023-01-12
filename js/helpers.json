@@ -297,6 +297,57 @@ helpers = [
         ]
     },
     {
+        "title": "Amazon",
+        "url": "documents\/amazon.html#amazon",
+        "subnivels": [
+            {
+                "title": "EC2",
+                "url": "documents\/amazon.html#ec2",
+                "subnivels": []
+            },
+            {
+                "title": "RDS (DB)",
+                "url": "documents\/amazon.html#rds-%28db%29",
+                "subnivels": []
+            },
+            {
+                "title": "ElasticCache (Redis)",
+                "url": "documents\/amazon.html#elasticcache-%28redis%29",
+                "subnivels": []
+            },
+            {
+                "title": "S3",
+                "url": "documents\/amazon.html#s3",
+                "subnivels": []
+            },
+            {
+                "title": "SES (Correos)",
+                "url": "documents\/amazon.html#ses-%28correos%29",
+                "subnivels": []
+            },
+            {
+                "title": "Cloudfront: Encargada de propagaci\u00f3n de carpetas CDN",
+                "url": "documents\/amazon.html#cloudfront%3A-encargada-de-propagaci%C3%B3n-de-carpetas-cdn",
+                "subnivels": []
+            },
+            {
+                "title": "Iam: Cuentas de acceso",
+                "url": "documents\/amazon.html#iam%3A-cuentas-de-acceso",
+                "subnivels": []
+            },
+            {
+                "title": "Route53: Gesti\u00f3n de dominios",
+                "url": "documents\/amazon.html#route53%3A-gesti%C3%B3n-de-dominios",
+                "subnivels": []
+            },
+            {
+                "title": "VPC: Red virtual interna",
+                "url": "documents\/amazon.html#vpc%3A-red-virtual-interna",
+                "subnivels": []
+            }
+        ]
+    },
+    {
         "title": "Angular JS",
         "url": "documents\/angular.html#angular-js",
         "subnivels": [
@@ -492,6 +543,199 @@ helpers = [
         ]
     },
     {
+        "title": "Typescript",
+        "url": "documents\/angularIo.html#typescript",
+        "subnivels": []
+    },
+    {
+        "title": "Angular IO",
+        "url": "documents\/angularIo.html#angular-io",
+        "subnivels": [
+            {
+                "title": "Instalar Angular CLI - comandos",
+                "url": "documents\/angularIo.html#instalar-angular-cli---comandos",
+                "subnivels": []
+            },
+            {
+                "title": "ngStyle - ngFor",
+                "url": "documents\/angularIo.html#ngstyle---ngfor",
+                "subnivels": []
+            },
+            {
+                "title": "ngIf - elseBlock - thenBlock",
+                "url": "documents\/angularIo.html#ngif---elseblock---thenblock",
+                "subnivels": []
+            },
+            {
+                "title": "Apps Requeridas",
+                "url": "documents\/angularIo.html#apps-requeridas",
+                "subnivels": []
+            },
+            {
+                "title": "Estructura proyecto",
+                "url": "documents\/angularIo.html#estructura-proyecto",
+                "subnivels": []
+            },
+            {
+                "title": "Estructura componente:",
+                "url": "documents\/angularIo.html#estructura-componente%3A",
+                "subnivels": []
+            },
+            {
+                "title": "Component",
+                "url": "documents\/angularIo.html#component",
+                "subnivels": []
+            },
+            {
+                "title": "Imprimir variables - objetos",
+                "url": "documents\/angularIo.html#imprimir-variables---objetos",
+                "subnivels": []
+            },
+            {
+                "title": "Ejemplo nuevo Componente",
+                "url": "documents\/angularIo.html#ejemplo-nuevo-componente",
+                "subnivels": []
+            },
+            {
+                "title": "Crear componente por CLI",
+                "url": "documents\/angularIo.html#crear-componente-por-cli",
+                "subnivels": []
+            },
+            {
+                "title": "String Interpolation - imprimir variable",
+                "url": "documents\/angularIo.html#string-interpolation---imprimir-variable",
+                "subnivels": []
+            },
+            {
+                "title": "Property Binding",
+                "url": "documents\/angularIo.html#property-binding",
+                "subnivels": []
+            },
+            {
+                "title": "Class Binding",
+                "url": "documents\/angularIo.html#class-binding",
+                "subnivels": []
+            },
+            {
+                "title": "Style Binding",
+                "url": "documents\/angularIo.html#style-binding",
+                "subnivels": []
+            },
+            {
+                "title": "Event Binding click mouseover",
+                "url": "documents\/angularIo.html#event-binding-click-mouseover",
+                "subnivels": []
+            },
+            {
+                "title": "Event Filtering",
+                "url": "documents\/angularIo.html#event-filtering",
+                "subnivels": []
+            },
+            {
+                "title": "Template Variable",
+                "url": "documents\/angularIo.html#template-variable",
+                "subnivels": []
+            },
+            {
+                "title": "Two way to binding ngModel",
+                "url": "documents\/angularIo.html#two-way-to-binding-ngmodel",
+                "subnivels": []
+            },
+            {
+                "title": "Servicios HTTP ngFor",
+                "url": "documents\/angularIo.html#servicios-http-ngfor",
+                "subnivels": []
+            },
+            {
+                "title": "Dependency Injection",
+                "url": "documents\/angularIo.html#dependency-injection",
+                "subnivels": [
+                    {
+                        "title": "Dependencia en componente - solo uso en modulo",
+                        "url": "documents\/angularIo.html#dependencia-en-componente---solo-uso-en-modulo",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Dependencia en modulo - general",
+                        "url": "documents\/angularIo.html#dependencia-en-modulo---general",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Dependencia desde el servicio - general",
+                        "url": "documents\/angularIo.html#dependencia-desde-el-servicio---general",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Implementar Boostrap",
+                "url": "documents\/angularIo.html#implementar-boostrap",
+                "subnivels": []
+            },
+            {
+                "title": "Reactive Forms",
+                "url": "documents\/angularIo.html#reactive-forms",
+                "subnivels": []
+            },
+            {
+                "title": "Content Projection ng-content and Slot Content Projection",
+                "url": "documents\/angularIo.html#content-projection-ng-content-and-slot-content-projection",
+                "subnivels": []
+            },
+            {
+                "title": "Construir app para producci\u00f3n build - subir a firebase",
+                "url": "documents\/angularIo.html#construir-app-para-producci%C3%B3n-build---subir-a-firebase",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "AngularIO - PWA",
+        "url": "documents\/angularIoPWA.html#angulario---pwa",
+        "subnivels": [
+            {
+                "title": "Convertir app Angular a PWA",
+                "url": "documents\/angularIoPWA.html#convertir-app-angular-a-pwa",
+                "subnivels": []
+            },
+            {
+                "title": "Cache de assets",
+                "url": "documents\/angularIoPWA.html#cache-de-assets",
+                "subnivels": []
+            },
+            {
+                "title": "Configurar cache de request",
+                "url": "documents\/angularIoPWA.html#configurar-cache-de-request",
+                "subnivels": []
+            },
+            {
+                "title": "Crear bot\u00f3n de Instalaci\u00f3n",
+                "url": "documents\/angularIoPWA.html#crear-bot%C3%B3n-de-instalaci%C3%B3n",
+                "subnivels": []
+            },
+            {
+                "title": "Gestionar actualizaciones autom\u00e1ticamente",
+                "url": "documents\/angularIoPWA.html#gestionar-actualizaciones-autom%C3%A1ticamente",
+                "subnivels": []
+            },
+            {
+                "title": "Push notificaciones",
+                "url": "documents\/angularIoPWA.html#push-notificaciones",
+                "subnivels": []
+            },
+            {
+                "title": "Push notificaciones - Enviar",
+                "url": "documents\/angularIoPWA.html#push-notificaciones---enviar",
+                "subnivels": []
+            },
+            {
+                "title": "Instalar PWA en IOS",
+                "url": "documents\/angularIoPWA.html#instalar-pwa-en-ios",
+                "subnivels": []
+            }
+        ]
+    },
+    {
         "title": "Backbone",
         "url": "documents\/backbone.html#backbone",
         "subnivels": [
@@ -573,6 +817,98 @@ helpers = [
         ]
     },
     {
+        "title": "Windows",
+        "url": "documents\/cmd.html#windows",
+        "subnivels": [
+            {
+                "title": "windows+r",
+                "url": "documents\/cmd.html#windows%2Br",
+                "subnivels": [],
+                "tags": [
+                    "cmd",
+                    "comandos",
+                    "temp",
+                    "prefetch",
+                    "eventvwr",
+                    "limpieza"
+                ]
+            },
+            {
+                "title": "CMD",
+                "url": "documents\/cmd.html#cmd",
+                "subnivels": [
+                    {
+                        "title": "Mover archivos entre carpetas x consola",
+                        "url": "documents\/cmd.html#mover-archivos-entre-carpetas-x-consola",
+                        "subnivels": []
+                    }
+                ],
+                "tags": [
+                    "cmd",
+                    "cd",
+                    "ipconfig",
+                    "comandos"
+                ]
+            },
+            {
+                "title": "netstat",
+                "url": "documents\/cmd.html#netstat",
+                "subnivels": [],
+                "tags": [
+                    "cmd",
+                    "netstat",
+                    "taskkill",
+                    "port"
+                ]
+            },
+            {
+                "title": "Revisar nombre de un servidor en dominio",
+                "url": "documents\/cmd.html#revisar-nombre-de-un-servidor-en-dominio",
+                "subnivels": [],
+                "tags": [
+                    "cmd",
+                    "nslookup"
+                ]
+            },
+            {
+                "title": "Gulp inicio-singes",
+                "url": "documents\/cmd.html#gulp-inicio-singes",
+                "subnivels": []
+            },
+            {
+                "title": "Guardar listado de archivos de una carpeta a un archivo",
+                "url": "documents\/cmd.html#guardar-listado-de-archivos-de-una-carpeta-a-un-archivo",
+                "subnivels": []
+            },
+            {
+                "title": "FINDSTR",
+                "url": "documents\/cmd.html#findstr",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "CSS",
+        "url": "documents\/css.html#css",
+        "subnivels": [
+            {
+                "title": "Esconder contenido de palabras largar (nowrap)",
+                "url": "documents\/css.html#esconder-contenido-de-palabras-largar-%28nowrap%29",
+                "subnivels": []
+            },
+            {
+                "title": "Imagen background",
+                "url": "documents\/css.html#imagen-background",
+                "subnivels": []
+            },
+            {
+                "title": "Estilos para resoluciones especificas",
+                "url": "documents\/css.html#estilos-para-resoluciones-especificas",
+                "subnivels": []
+            }
+        ]
+    },
+    {
         "title": "Excel",
         "url": "documents\/excel.html#excel",
         "subnivels": [
@@ -604,6 +940,68 @@ helpers = [
                     "excel",
                     "CONCATENAR"
                 ]
+            }
+        ]
+    },
+    {
+        "title": "Firebase",
+        "url": "documents\/firebase.html#firebase",
+        "subnivels": [
+            {
+                "title": "Comandos",
+                "url": "documents\/firebase.html#comandos",
+                "subnivels": []
+            },
+            {
+                "title": "Crear nuevo proyecto y montarlo en entorno https",
+                "url": "documents\/firebase.html#crear-nuevo-proyecto-y-montarlo-en-entorno-https",
+                "subnivels": []
+            },
+            {
+                "title": "Bug con redireccionamientos estaticos en SPA angular",
+                "url": "documents\/firebase.html#bug-con-redireccionamientos-estaticos-en-spa-angular",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "Generics",
+        "url": "documents\/generics.html#generics",
+        "subnivels": [
+            {
+                "title": "Netbeans (Templates Code)",
+                "url": "documents\/generics.html#netbeans-%28templates-code%29",
+                "subnivels": []
+            },
+            {
+                "title": "Software",
+                "url": "documents\/generics.html#software",
+                "subnivels": []
+            },
+            {
+                "title": "Programaci\u00f3n en l\u00ednea",
+                "url": "documents\/generics.html#programaci%C3%B3n-en-l%C3%ADnea",
+                "subnivels": []
+            },
+            {
+                "title": "Metodos HTTP",
+                "url": "documents\/generics.html#metodos-http",
+                "subnivels": []
+            },
+            {
+                "title": "Uso Comun PHP",
+                "url": "documents\/generics.html#uso-comun-php",
+                "subnivels": []
+            },
+            {
+                "title": "Comentar bloque funcional",
+                "url": "documents\/generics.html#comentar-bloque-funcional",
+                "subnivels": []
+            },
+            {
+                "title": "Logs de errores",
+                "url": "documents\/generics.html#logs-de-errores",
+                "subnivels": []
             }
         ]
     },
@@ -750,6 +1148,41 @@ helpers = [
         ]
     },
     {
+        "title": "GITHUB",
+        "url": "documents\/github.html#github",
+        "subnivels": []
+    },
+    {
+        "title": "Paso a produccion",
+        "url": "documents\/github.html#paso-a-produccion",
+        "subnivels": [
+            {
+                "title": "Subir a produccion de repositorio github a github-pages",
+                "url": "documents\/github.html#subir-a-produccion-de-repositorio-github-a-github-pages",
+                "subnivels": [],
+                "tags": [
+                    "github",
+                    "github-pages"
+                ]
+            },
+            {
+                "title": "Subir a produccion de repositorio github a netlify",
+                "url": "documents\/github.html#subir-a-produccion-de-repositorio-github-a-netlify",
+                "subnivels": [
+                    {
+                        "title": "Error build script returned nox-zero exit code",
+                        "url": "documents\/github.html#error-build-script-returned-nox-zero-exit-code",
+                        "subnivels": []
+                    }
+                ],
+                "tags": [
+                    "github",
+                    "netlify"
+                ]
+            }
+        ]
+    },
+    {
         "title": "GLOSARIO",
         "url": "documents\/glosary.html#glosario",
         "subnivels": [
@@ -768,6 +1201,16 @@ helpers = [
                 "url": "documents\/glosary.html#crm---customer-relationship-management",
                 "subnivels": []
             }
+        ]
+    },
+    {
+        "title": "Grunt",
+        "url": "documents\/grunt.html#grunt",
+        "subnivels": [],
+        "tags": [
+            "npm",
+            "grunt",
+            "minimificar"
         ]
     },
     {
@@ -834,6 +1277,124 @@ helpers = [
                     "meta",
                     "tags"
                 ]
+            }
+        ]
+    },
+    {
+        "title": "IONIC",
+        "url": "documents\/ionic.html#ionic",
+        "subnivels": [
+            {
+                "title": "Comandos consola ionic",
+                "url": "documents\/ionic.html#comandos-consola-ionic",
+                "subnivels": []
+            },
+            {
+                "title": "Crear Proyecto ionic",
+                "url": "documents\/ionic.html#crear-proyecto-ionic",
+                "subnivels": []
+            },
+            {
+                "title": "Iniciar proyecto ionic",
+                "url": "documents\/ionic.html#iniciar-proyecto-ionic",
+                "subnivels": []
+            },
+            {
+                "title": "Herramientas necesarias - sugeridas",
+                "url": "documents\/ionic.html#herramientas-necesarias---sugeridas",
+                "subnivels": []
+            },
+            {
+                "title": "Estructura proyecto ionic",
+                "url": "documents\/ionic.html#estructura-proyecto-ionic",
+                "subnivels": []
+            },
+            {
+                "title": "Cambiar estilos en generales",
+                "url": "documents\/ionic.html#cambiar-estilos-en-generales",
+                "subnivels": []
+            },
+            {
+                "title": "Generar APK",
+                "url": "documents\/ionic.html#generar-apk",
+                "subnivels": [
+                    {
+                        "title": "En caso de generar error de gradle:",
+                        "url": "documents\/ionic.html#en-caso-de-generar-error-de-gradle%3A",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Componente",
+                "url": "documents\/ionic.html#componente",
+                "subnivels": [
+                    {
+                        "title": "Estructura de un componente:",
+                        "url": "documents\/ionic.html#estructura-de-un-componente%3A",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Crear componente consola",
+                        "url": "documents\/ionic.html#crear-componente-consola",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Incluir nuevo componente a tabs",
+                        "url": "documents\/ionic.html#incluir-nuevo-componente-a-tabs",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Incluir botones",
+                        "url": "documents\/ionic.html#incluir-botones",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Incluir iconos en header",
+                        "url": "documents\/ionic.html#incluir-iconos-en-header",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Estilos a partir de atributos propios de ionic",
+                "url": "documents\/ionic.html#estilos-a-partir-de-atributos-propios-de-ionic",
+                "subnivels": []
+            },
+            {
+                "title": "Cambiar color header - tabs",
+                "url": "documents\/ionic.html#cambiar-color-header---tabs",
+                "subnivels": []
+            },
+            {
+                "title": "Ionic cards con imagen",
+                "url": "documents\/ionic.html#ionic-cards-con-imagen",
+                "subnivels": []
+            },
+            {
+                "title": "Ionic card listas",
+                "url": "documents\/ionic.html#ionic-card-listas",
+                "subnivels": []
+            },
+            {
+                "title": "Ionic Lista din\u00e1mica ngFor ngStyle",
+                "url": "documents\/ionic.html#ionic-lista-din%C3%A1mica-ngfor-ngstyle",
+                "subnivels": []
+            },
+            {
+                "title": "Ionic Navegacion redireccionar - cargar otra pagina click",
+                "url": "documents\/ionic.html#ionic-navegacion-redireccionar---cargar-otra-pagina-click",
+                "subnivels": []
+            },
+            {
+                "title": "Ionic Navegacion redireccionar con par\u00e1metros",
+                "url": "documents\/ionic.html#ionic-navegacion-redireccionar-con-par%C3%A1metros",
+                "subnivels": []
+            },
+            {
+                "title": "Iniciar proyecto ionic - recargas",
+                "url": "documents\/ionic.html#iniciar-proyecto-ionic---recargas",
+                "subnivels": []
             }
         ]
     },
@@ -1352,6 +1913,22 @@ helpers = [
         ]
     },
     {
+        "title": "Lighthouse",
+        "url": "documents\/lighthouse.html#lighthouse",
+        "subnivels": [
+            {
+                "title": "Automatizaci\u00f3n",
+                "url": "documents\/lighthouse.html#automatizaci%C3%B3n",
+                "subnivels": []
+            },
+            {
+                "title": "Consola",
+                "url": "documents\/lighthouse.html#consola",
+                "subnivels": []
+            }
+        ]
+    },
+    {
         "title": "Linux",
         "url": "documents\/linux.html#linux",
         "subnivels": [
@@ -1451,6 +2028,11 @@ helpers = [
         ]
     },
     {
+        "title": "Mongo DB",
+        "url": "documents\/mongodb.html#mongo-db",
+        "subnivels": []
+    },
+    {
         "title": "MySQL",
         "url": "documents\/mySQL.html#mysql",
         "subnivels": [
@@ -1479,6 +2061,27 @@ helpers = [
                     "CURRENT_TIMESTAMP",
                     "AUTO_INCREMENT"
                 ]
+            }
+        ]
+    },
+    {
+        "title": "Node JS",
+        "url": "documents\/node.html#node-js",
+        "subnivels": [
+            {
+                "title": "Instalar nodeJS",
+                "url": "documents\/node.html#instalar-nodejs",
+                "subnivels": []
+            },
+            {
+                "title": "Estructura",
+                "url": "documents\/node.html#estructura",
+                "subnivels": []
+            },
+            {
+                "title": "version instalada node js",
+                "url": "documents\/node.html#version-instalada-node-js",
+                "subnivels": []
             }
         ]
     },
@@ -1862,6 +2465,11 @@ helpers = [
                         "subnivels": []
                     },
                     {
+                        "title": "Update - con base en valor en db",
+                        "url": "documents\/phpCodeigniter.html#update---con-base-en-valor-en-db",
+                        "subnivels": []
+                    },
+                    {
                         "title": "Update batch",
                         "url": "documents\/phpCodeigniter.html#update-batch",
                         "subnivels": []
@@ -1914,6 +2522,389 @@ helpers = [
         ]
     },
     {
+        "title": "PHP Laravel",
+        "url": "documents\/phpLaravel.html#php-laravel",
+        "subnivels": [
+            {
+                "title": "Comandos \u00fatiles",
+                "url": "documents\/phpLaravel.html#comandos-%C3%BAtiles",
+                "subnivels": []
+            },
+            {
+                "title": "Funciones \u00fatiles",
+                "url": "documents\/phpLaravel.html#funciones-%C3%BAtiles",
+                "subnivels": []
+            },
+            {
+                "title": "Software Sugerido",
+                "url": "documents\/phpLaravel.html#software-sugerido",
+                "subnivels": []
+            },
+            {
+                "title": "Iniciar proyecto por consola - wammp",
+                "url": "documents\/phpLaravel.html#iniciar-proyecto-por-consola---wammp",
+                "subnivels": []
+            },
+            {
+                "title": "ARTISAN",
+                "url": "documents\/phpLaravel.html#artisan",
+                "subnivels": []
+            },
+            {
+                "title": "Directorios",
+                "url": "documents\/phpLaravel.html#directorios",
+                "subnivels": []
+            },
+            {
+                "title": "Routes",
+                "url": "documents\/phpLaravel.html#routes",
+                "subnivels": [
+                    {
+                        "title": "Estructura de rutas (Crud)",
+                        "url": "documents\/phpLaravel.html#estructura-de-rutas-%28crud%29",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Validaci\u00f3n de sesi\u00f3n",
+                        "url": "documents\/phpLaravel.html#validaci%C3%B3n-de-sesi%C3%B3n",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Poner login como ruta por defecto",
+                        "url": "documents\/phpLaravel.html#poner-login-como-ruta-por-defecto",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Controladores",
+                "url": "documents\/phpLaravel.html#controladores",
+                "subnivels": []
+            },
+            {
+                "title": "Blade template",
+                "url": "documents\/phpLaravel.html#blade-template",
+                "subnivels": [
+                    {
+                        "title": "Instalacion de librerias e incluir en template backbone - underscore",
+                        "url": "documents\/phpLaravel.html#instalacion-de-librerias-e-incluir-en-template-backbone---underscore",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Iteraciones for - foreach",
+                "url": "documents\/phpLaravel.html#iteraciones-for---foreach",
+                "subnivels": []
+            },
+            {
+                "title": "Uso @INCLUDE",
+                "url": "documents\/phpLaravel.html#uso-%40include",
+                "subnivels": []
+            },
+            {
+                "title": "Validaciones en vistar con ruta",
+                "url": "documents\/phpLaravel.html#validaciones-en-vistar-con-ruta",
+                "subnivels": []
+            },
+            {
+                "title": "Estructura estilos y JS",
+                "url": "documents\/phpLaravel.html#estructura-estilos-y-js",
+                "subnivels": [
+                    {
+                        "title": "CSS - Compilaci\u00f3n SCSS",
+                        "url": "documents\/phpLaravel.html#css---compilaci%C3%B3n-scss",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "JS - compilaci\u00f3n",
+                "url": "documents\/phpLaravel.html#js---compilaci%C3%B3n",
+                "subnivels": []
+            },
+            {
+                "title": "Im\u00e1genes",
+                "url": "documents\/phpLaravel.html#im%C3%A1genes",
+                "subnivels": []
+            },
+            {
+                "title": "Sistema de autenticaci\u00f3n",
+                "url": "documents\/phpLaravel.html#sistema-de-autenticaci%C3%B3n",
+                "subnivels": []
+            },
+            {
+                "title": "Configurar Database",
+                "url": "documents\/phpLaravel.html#configurar-database",
+                "subnivels": []
+            },
+            {
+                "title": "MIGRACIONES",
+                "url": "documents\/phpLaravel.html#migraciones",
+                "subnivels": [
+                    {
+                        "title": "Migrar estructura de la DB al archivo vacio",
+                        "url": "documents\/phpLaravel.html#migrar-estructura-de-la-db-al-archivo-vacio",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Borra-Recrea estructura DB",
+                        "url": "documents\/phpLaravel.html#borra-recrea-estructura-db",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Agregar columna sin eliminar registros",
+                        "url": "documents\/phpLaravel.html#agregar-columna-sin-eliminar-registros",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Eliminar columna",
+                        "url": "documents\/phpLaravel.html#eliminar-columna",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Modelos",
+                "url": "documents\/phpLaravel.html#modelos",
+                "subnivels": [
+                    {
+                        "title": "Crear modelo por consola",
+                        "url": "documents\/phpLaravel.html#crear-modelo-por-consola",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Consultas a modelos",
+                        "url": "documents\/phpLaravel.html#consultas-a-modelos",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Eliminar un registro e imagen (Back)",
+                        "url": "documents\/phpLaravel.html#eliminar-un-registro-e-imagen-%28back%29",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Estructura modelo",
+                "url": "documents\/phpLaravel.html#estructura-modelo",
+                "subnivels": []
+            },
+            {
+                "title": "En caso de error 1054 Unknown column 'updated_at' in 'field list'",
+                "url": "documents\/phpLaravel.html#en-caso-de-error-1054-unknown-column-%27updated_at%27-in-%27field-list%27",
+                "subnivels": []
+            },
+            {
+                "title": "En caso de error Illegal offset type al actualizar registro con doble primary key",
+                "url": "documents\/phpLaravel.html#en-caso-de-error-illegal-offset-type-al-actualizar-registro-con-doble-primary-key",
+                "subnivels": []
+            },
+            {
+                "title": "Relaciones",
+                "url": "documents\/phpLaravel.html#relaciones",
+                "subnivels": [
+                    {
+                        "title": "Relaci\u00f3n 1-M (Inversa)",
+                        "url": "documents\/phpLaravel.html#relaci%C3%B3n-1-m-%28inversa%29",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "TINKERS",
+                "url": "documents\/phpLaravel.html#tinkers",
+                "subnivels": [
+                    {
+                        "title": "Insertar datos",
+                        "url": "documents\/phpLaravel.html#insertar-datos",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Factories",
+                "url": "documents\/phpLaravel.html#factories",
+                "subnivels": [
+                    {
+                        "title": "Insertar datos masivamente para testeo",
+                        "url": "documents\/phpLaravel.html#insertar-datos-masivamente-para-testeo",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Crear factory",
+                        "url": "documents\/phpLaravel.html#crear-factory",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "FORMULARIOS",
+                "url": "documents\/phpLaravel.html#formularios",
+                "subnivels": [
+                    {
+                        "title": "Incluir Token de seguridad csrf",
+                        "url": "documents\/phpLaravel.html#incluir-token-de-seguridad-csrf",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Validar formularios",
+                        "url": "documents\/phpLaravel.html#validar-formularios",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Mostrar errores en caso de que no supere las validaciones",
+                        "url": "documents\/phpLaravel.html#mostrar-errores-en-caso-de-que-no-supere-las-validaciones",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Mostrar respuesta exitosa uso flasdata",
+                        "url": "documents\/phpLaravel.html#mostrar-respuesta-exitosa-uso-flasdata",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Procesar imagenes con storeAs",
+                "url": "documents\/phpLaravel.html#procesar-imagenes-con-storeas",
+                "subnivels": []
+            },
+            {
+                "title": "Enlazar imagen en vista",
+                "url": "documents\/phpLaravel.html#enlazar-imagen-en-vista",
+                "subnivels": []
+            },
+            {
+                "title": "Acceder a informaci\u00f3n de la sesi\u00f3n",
+                "url": "documents\/phpLaravel.html#acceder-a-informaci%C3%B3n-de-la-sesi%C3%B3n",
+                "subnivels": []
+            },
+            {
+                "title": "Redireccionar",
+                "url": "documents\/phpLaravel.html#redireccionar",
+                "subnivels": []
+            },
+            {
+                "title": "Renderizar c\u00f3digo HTML",
+                "url": "documents\/phpLaravel.html#renderizar-c%C3%B3digo-html",
+                "subnivels": []
+            },
+            {
+                "title": "Validaci\u00f3n de sessi\u00f3n",
+                "url": "documents\/phpLaravel.html#validaci%C3%B3n-de-sessi%C3%B3n",
+                "subnivels": []
+            },
+            {
+                "title": "HELPERS",
+                "url": "documents\/phpLaravel.html#helpers",
+                "subnivels": []
+            },
+            {
+                "title": "Paginaci\u00f3n",
+                "url": "documents\/phpLaravel.html#paginaci%C3%B3n",
+                "subnivels": [
+                    {
+                        "title": "Paginaci\u00f3n Simple",
+                        "url": "documents\/phpLaravel.html#paginaci%C3%B3n-simple",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Personalizar paginaci\u00f3n",
+                        "url": "documents\/phpLaravel.html#personalizar-paginaci%C3%B3n",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Actualizar version framework",
+                "url": "documents\/phpLaravel.html#actualizar-version-framework",
+                "subnivels": [
+                    {
+                        "title": "Cambio de 6.x a 7.x",
+                        "url": "documents\/phpLaravel.html#cambio-de-6.x-a-7.x",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Curso de Blogs - proyecto",
+                "url": "documents\/phpLaravel.html#curso-de-blogs---proyecto",
+                "subnivels": []
+            },
+            {
+                "title": "Respuesta JSON petici\u00f3n AJAX",
+                "url": "documents\/phpLaravel.html#respuesta-json-petici%C3%B3n-ajax",
+                "subnivels": []
+            },
+            {
+                "title": "Ejemplo estructuracion consultas BUILDER con JOIN",
+                "url": "documents\/phpLaravel.html#ejemplo-estructuracion-consultas-builder-con-join",
+                "subnivels": [
+                    {
+                        "title": "builder select from join",
+                        "url": "documents\/phpLaravel.html#builder-select-from-join",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "builder select from leftJoin on doble valor",
+                        "url": "documents\/phpLaravel.html#builder-select-from-leftjoin-on-doble-valor",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "builder select from where orWhere",
+                        "url": "documents\/phpLaravel.html#builder-select-from-where-orwhere",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "builder consultar solo un registro select from where first",
+                        "url": "documents\/phpLaravel.html#builder-consultar-solo-un-registro-select-from-where-first",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "builder insert",
+                        "url": "documents\/phpLaravel.html#builder-insert",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "builder Update Actualizar",
+                        "url": "documents\/phpLaravel.html#builder-update-actualizar",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Funcion ejemplo que actualiza-crea registro si no existe",
+                        "url": "documents\/phpLaravel.html#funcion-ejemplo-que-actualiza-crea-registro-si-no-existe",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Imprimir ultima consulta realizada",
+                        "url": "documents\/phpLaravel.html#imprimir-ultima-consulta-realizada",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Configurar ruta por defecto - homeURI",
+                "url": "documents\/phpLaravel.html#configurar-ruta-por-defecto---homeuri",
+                "subnivels": []
+            },
+            {
+                "title": "Configurar redireccionar usuarios no autenticados",
+                "url": "documents\/phpLaravel.html#configurar-redireccionar-usuarios-no-autenticados",
+                "subnivels": []
+            },
+            {
+                "title": "Textos validaciones lenguaje espanol",
+                "url": "documents\/phpLaravel.html#textos-validaciones-lenguaje-espanol",
+                "subnivels": []
+            },
+            {
+                "title": "Texto dinamicos traduccions lenguaje espanol",
+                "url": "documents\/phpLaravel.html#texto-dinamicos-traduccions-lenguaje-espanol",
+                "subnivels": []
+            }
+        ]
+    },
+    {
         "title": "PWA Aplicaciones Web Progresivas",
         "url": "documents\/pwa.html#pwa-aplicaciones-web-progresivas",
         "subnivels": [
@@ -1934,11 +2925,6 @@ helpers = [
                 ]
             }
         ]
-    },
-    {
-        "title": "Menu",
-        "url": "documents\/reactJS.html#menu",
-        "subnivels": []
     },
     {
         "title": "REACT JS",
@@ -2076,6 +3062,98 @@ helpers = [
                 "url": "documents\/reactJS.html#proyectos-con-c%C3%B3digo-ejemplo",
                 "subnivels": []
             }
+        ],
+        "tags": [
+            "curso",
+            "menu"
+        ]
+    },
+    {
+        "title": "React Native",
+        "url": "documents\/reactNative.html#react-native",
+        "subnivels": [
+            {
+                "title": "ES6 Ecma Script 6",
+                "url": "documents\/reactNative.html#es6-ecma-script-6",
+                "subnivels": []
+            },
+            {
+                "title": "Instalar React Native",
+                "url": "documents\/reactNative.html#instalar-react-native",
+                "subnivels": [
+                    {
+                        "title": "Instalar nvm - Node version Managment LINUX",
+                        "url": "documents\/reactNative.html#instalar-nvm---node-version-managment-linux",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Instalar nvm - Node version Managment WINDOWS",
+                        "url": "documents\/reactNative.html#instalar-nvm---node-version-managment-windows",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Instalar JDK",
+                        "url": "documents\/reactNative.html#instalar-jdk",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "MVN Comandos",
+                "url": "documents\/reactNative.html#mvn-comandos",
+                "subnivels": []
+            },
+            {
+                "title": "Crear maquina virtual android Studio",
+                "url": "documents\/reactNative.html#crear-maquina-virtual-android-studio",
+                "subnivels": []
+            },
+            {
+                "title": "Instalar react-native globalmente",
+                "url": "documents\/reactNative.html#instalar-react-native-globalmente",
+                "subnivels": []
+            },
+            {
+                "title": "Crear proyecto partiendo de react-native global",
+                "url": "documents\/reactNative.html#crear-proyecto-partiendo-de-react-native-global",
+                "subnivels": []
+            },
+            {
+                "title": "Instalar expo globalmente",
+                "url": "documents\/reactNative.html#instalar-expo-globalmente",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "Seguridad Inform\u00e1tica",
+        "url": "documents\/security.html#seguridad-inform%C3%A1tica",
+        "subnivels": []
+    },
+    {
+        "title": "SYMFONY",
+        "url": "documents\/symfony.html#symfony",
+        "subnivels": [
+            {
+                "title": "ACTUALIZAR PAQUETES",
+                "url": "documents\/symfony.html#actualizar-paquetes",
+                "subnivels": []
+            },
+            {
+                "title": "ACCESO A SERVER DESDE SYMFONY CONTROLLER (Nombre)",
+                "url": "documents\/symfony.html#acceso-a-server-desde-symfony-controller-%28nombre%29",
+                "subnivels": []
+            },
+            {
+                "title": "Ruta actual",
+                "url": "documents\/symfony.html#ruta-actual",
+                "subnivels": []
+            },
+            {
+                "title": "Metodo",
+                "url": "documents\/symfony.html#metodo",
+                "subnivels": []
+            }
         ]
     },
     {
@@ -2144,6 +3222,63 @@ helpers = [
         "title": "Underscore.string",
         "url": "documents\/underscore.html#underscore.string",
         "subnivels": []
+    },
+    {
+        "title": "Virtual Host",
+        "url": "documents\/virtualHost.html#virtual-host",
+        "subnivels": [
+            {
+                "title": "VirtualHost SSL",
+                "url": "documents\/virtualHost.html#virtualhost-ssl",
+                "subnivels": []
+            },
+            {
+                "title": "VirtualHost Error 403",
+                "url": "documents\/virtualHost.html#virtualhost-error-403",
+                "subnivels": []
+            },
+            {
+                "title": "VirtualHost Default",
+                "url": "documents\/virtualHost.html#virtualhost-default",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "Visual Studio Code",
+        "url": "documents\/visualStudio.html#visual-studio-code",
+        "subnivels": [
+            {
+                "title": "Shottcuts",
+                "url": "documents\/visualStudio.html#shottcuts",
+                "subnivels": []
+            },
+            {
+                "title": "Comandos Consola",
+                "url": "documents\/visualStudio.html#comandos-consola",
+                "subnivels": []
+            },
+            {
+                "title": "Extensiones sugeridas",
+                "url": "documents\/visualStudio.html#extensiones-sugeridas",
+                "subnivels": []
+            },
+            {
+                "title": "Cambiar shortcurs",
+                "url": "documents\/visualStudio.html#cambiar-shortcurs",
+                "subnivels": []
+            },
+            {
+                "title": "Habilitar shell command Code",
+                "url": "documents\/visualStudio.html#habilitar-shell-command-code",
+                "subnivels": []
+            },
+            {
+                "title": "Integrar terminar comandos",
+                "url": "documents\/visualStudio.html#integrar-terminar-comandos",
+                "subnivels": []
+            }
+        ]
     },
     {
         "title": "Vue",
@@ -2306,5 +3441,26 @@ helpers = [
                 ]
             }
         ]
+    },
+    {
+        "title": "Wordpress",
+        "url": "documents\/wordpress.html#wordpress",
+        "subnivels": [
+            {
+                "title": "Plugins",
+                "url": "documents\/wordpress.html#plugins",
+                "subnivels": []
+            }
+        ]
+    },
+    {
+        "title": "Yarn",
+        "url": "documents\/yarn-npm.html#yarn",
+        "subnivels": []
+    },
+    {
+        "title": "NPM Node Package Managment",
+        "url": "documents\/yarn-npm.html#npm-node-package-managment",
+        "subnivels": []
     }
 ]
