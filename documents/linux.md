@@ -17,6 +17,7 @@
 	rm nombre-de-archivo   			Borrar un archivo
 	rm -f nombre-de-archivo			Fuerza el borrado de un archivo
 	cp nombreArchivo nombreCopia   	Copia un archivo
+	mv arch1.text archiv2.text		Mover un archivo
 	find nombre-de-archivo 			Busca un archivo
 	wget enlace    					Descarga un archivo
 	wget -c enlace 					Continua una descarga parada
@@ -54,6 +55,17 @@
 	du   					Muestra el espacio usado en una carpeta
 	free 					Muestra la memoria y uso de SWAP
 	whereis nombrePrograma	Muestra dónde puede estar un programa
+```
+
+## Editor de texto VIM
+
+```bash
+	ESC		Habilitar modo comando
+	:q		Salir
+	:q!		Salir sin guardar
+	:wq		Guardar archivo actual y salir
+	:x		Guardar y salir
+	:qa		Salir y cerrar todos los archivos
 ```
 
 ## Comandos Permisos

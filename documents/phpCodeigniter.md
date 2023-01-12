@@ -80,6 +80,14 @@ https://codeigniter.com/userguide3/database/query_builder.html
 	->get();
 ```
 
+### Ejemplo orwhere
+```php
+	$this->db
+		->where('name !=', $name);
+		->or_where('id >', $id);  
+	// Salida: WHERE name != 'Joe' OR id > 50
+```
+
 ### Ejemplo like en consultar
 ```php
 	$builder->like('title', 'match', 'before'); // Produces: WHERE `title` LIKE '%match' ESCAPE '!'

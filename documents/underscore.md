@@ -24,6 +24,12 @@ Implementación:
 	let serials = _.pluck($scope.dtSerials.rows, 'codSerie');
 ```
 
+## Consultar si un valor esta contenido en un arreglo
+###### Tags: `underscore` `js` `contains`
+```js
+	_.contains([1, 2, 3], 3); 	-- true
+```
+
 ## Iterar arreglo objetos
 ###### Tags: `underscore` `js` `each`
 

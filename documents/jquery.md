@@ -58,6 +58,13 @@
     });
 ```
 
+## Buscar en DOM por nombre
+###### Tags: `jquery` `find` `name`
+
+```js	
+    var name2 = $('#referrerRequestForm').find('input[name=contactName]').val();
+```
+
 
 ## Animacion para moverse a un elemento
 ###### Tags: `jquery` `event` `animate` `scroll`
@@ -85,4 +92,24 @@
 ```js	
     $("#forpag").val('0');
     $("#forpag option[value='0']").attr('selected', true);
+```
+
+
+### Imprimir 
+###### Tags: `jquery` `print` `media` `val`
+
+```js	
+    <script>
+        $('.printClick').click(function(){
+            window.print();
+        });
+	</script>
+
+	<style type="text/css">
+		@media print {
+			footer, .noprint {  
+				display: none !important
+			}
+		}
+	</style>
 ```

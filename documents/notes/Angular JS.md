@@ -1,33 +1,35 @@
-
-{% raw %}
+---
+title: Angular JS
+tags: [Import-225d]
+created: '2022-01-11T02:34:45.485Z'
+modified: '2022-06-28T22:27:00.172Z'
+---
 
 [`Volver`](../index.html)
 
 # Angular JS
 
-[`Documentación angular 1`](https://angularjs.org/)
-[`Documentación angular 2`](https://angular.io/docs/ts/latest/)
+Documentación angular1	https://angularjs.org/  
+Documentación angular2	https://angular.io/docs/ts/latest/
 
-- Aplicación completa – parecido a node , 
-- amd(asynchronous Module Definition) forma de estructura 
-- (arquitectura del framework) inicial de todos los archivos.
-- Patron de diseño : MVVM (Módelo, Vista, Vista-Modelo)
+Aplicación completa – parecido a node , amd(asynchronous Module Definition) forma de estructura (arquitectura del framework) inicial de todos los archivos.
+
+Patron de diseño : MVVM (Módelo, Vista, Vista-Modelo)
 
 ```javascript
 	(function () {
-		angular
-			.module('angular-app', [ // Nombre aplicación
-				'ngRoute', // Paquete de control de rutas – Altactic no se usa, channeldir si.
-				'angular-app.controllers', // Importación de secciones , mismo nombre asignado en achivo de controllers.js
-				'angular-app.directives',
-				'angular-app.filters',
-				'angular-app.services'
-			])
-			.config(["$interpolateProvider", function($interpolateProvider){
-				$interpolateProvider
-					.startSymbol('[[')
-					.endSymbol(']]');
-			}]);
+	angular.module('angular-app', [ // Nombre aplicación
+		'ngRoute', // Paquete de control de rutas – Altactic no se usa, channeldir si.
+		'angular-app.controllers', // Importación de secciones , mismo nombre asignado en achivo de controllers.js
+		'angular-app.directives',
+		'angular-app.filters',
+		'angular-app.services'
+	])
+	.config(["$interpolateProvider", function($interpolateProvider){
+			$interpolateProvider
+				.startSymbol('[[')
+				.endSymbol(']]');
+		}]);
 	})();
 ```
 
@@ -44,19 +46,17 @@ Descargar:
 [`Descargar 1.5 min.js`](libraries/angular1.5.min.zip)  - Sugerida  
 [`Descargar 1.8 min.js`](libraries/angular1.8.min.zip)  
 
-
 ```html
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 	<div ng-app="reloadApp" ng-cloak>
 		<div ng-controller="ReportController">
-			{{ holamundo }}
-			{{ content $scope }}
+			{{ content $scope }} 
+			{{ holamundo }} 
 		</div>
 	</div>
 ```
 
-
-Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. datatables, charts, etc.
+Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. datatables|charts
 
 ```javascript
 	angular
@@ -72,34 +72,24 @@ Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. dat
 ### Filtro Formato Dinero
 ###### Tags: `filters` `currency`
 
-```js
-	{{ 10000 | currency : "" : 0 }}           	// 10,000
-	{{ 10000 | currency : '$' : 0 }}          	// $10,000 
-	{{ 10000 | currency : '$' : 2 }}          	// $10,000.00 
-	{{ 10000 | currency : 'Rs.' : 2 }}        	// Rs.10,000.00
-	{{ 10000 | currency : 'USD $' : 2 }}      	// USD $10,000.00
-	{{ 10000 | currency : '#' : 3 }}          	// #10,000.000
-	{{ 10000 | currency : 'ANYTHING: ' : 5 }} 	// ANYTHING: 10,000.00000
+```html
+	{{10000 | currency : "" : 0}}           // 10,000
+	{{10000 | currency : '$' : 0}}          // $10,000 
+	{{10000 | currency : '$' : 2}}          // $10,000.00 
+	{{10000 | currency : 'Rs.' : 2}}        // Rs.10,000.00
+	{{10000 | currency : 'USD $' : 2}}      // USD $10,000.00
+	{{10000 | currency : '#' : 3}}          // #10,000.000
+	{{10000 | currency : 'ANYTHING: ' : 5}} // ANYTHING: 10,000.00000
 ```
 
 ### filtros date - number
 ###### Tags: `filters` `date` `number`
 
-```js
-	{{ doc.date|date:'dd/MM/yyyy' }}	// Formato Fecha 
-	{{ val | number }}                      // Formato número sin decimales
-	{{ val | number:2 }}                    // Formato número indicando cantidad de decimales
-```
-
-
-### Validar si valor esta incluido en un arreglo
-###### Tags: `includes` `in_array`
-
-```js
-	{{ myArrayList.includes(object.id) }}	
-	{{ ['A', 'B'].includes('A') }}
-```
-
+```html
+	{{ doc.date|date:'dd/MM/yyyy' }}			// Formato Fecha 
+	{{val | number}}							// Formato número sin decimales
+	{{val | number:2 }} 						// Formato número indicando cantidad de decimales
+```	
 
 ### filtro rango (crear)
 ###### Tags: `angular` `filters` `range`
@@ -117,15 +107,12 @@ Implementar filtro de Rangos
 				return input;
 			};
 		})
-		.controller('issuanceController', ['$scope', ($scope) => {
-				$scope.holamundo = 'Contenido variable';
-			}
-		]);
+		.controller("issuanceController" ...
 ```
 
 Uso 
 ```html
-	<div ng-repeat="n in [] | range:100" ></div>
+	ng-repeat="n in [] | range:100"
 ```	
 
 
@@ -133,8 +120,8 @@ Uso
 ###### Tags: `ng-app` `ng-controller` `ng-cloak`
 
 ```js
-	ng-app			// Nombre aplicación general
-	ng-contoller		// Nombre Controlador
+	ng-app  		// Nombre aplicación general
+	ng-contoller	// Nombre Controlador
 	ng-cloak		// Para no mostrar estructura angular al cargar la vista | clase (d-none ó ng-cloak)
 ```
 
@@ -147,11 +134,13 @@ Uso
 	angular
 		.module('reloadApp', ['datatables'])
 		.controller('initControllerList', ['$scope', '$timeout', ($scope, $timeout) => {
+
 			$timeout(() => {
 				$scope.formChangeStatus.typeId = 2;
 			}, 5000) 
 	]);
 ```
+
 
 
 ## Actualizar scope en JQUERY ($apply)
@@ -175,7 +164,7 @@ Descargar:
 
 Incluir en sección de scripts del template 
 ```html
-    <!-- datatables jquery -->
+	<!-- datatables jquery -->
     <link href="<?php echo base_url('resources/plugins/datatables/media/css/jquery.dataTables.css') ?>" rel="stylesheet" type="text/css">
     <script src="<?php echo base_url('resources/plugins/datatables/media/js/jquery.dataTables.js') ?>" type="text/javascript" language="javascript"></script>
     <script src="<?php echo base_url('resources/plugins/datatables/extensions/Buttons/js/dataTables.buttons.min.js'); ?>"></script>
@@ -481,7 +470,3 @@ Capturar información de Formulario HTML para envío por angular
 Altactic: Notificaciones
 Channeldir: Notificaciones y Chat
 app.js →  Principal
-
-{% endraw %}
-
-    

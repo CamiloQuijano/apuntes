@@ -16,14 +16,15 @@
 
 ```js
 	FECHA = '1/01/2023';
-	=TEXTO(FECHA|"yyyy")            // Año              	Salida: 2022
-	=TEXTO(FECHA|"mm")              // Periodo          	Salida: 01
-	=TEXTO(FECHA|"mmmm")            // Mes              	Salida: enero
-	=TEXTO(FECHA;"aaaa")            // Día              	Salida: viernes
-	=TEXTO(FECHA|"dd/mm/yyyy")      // Formato fecha    	Salida: 01/01/2022
-	=TEXTO(FECHA;"yyyy-mm-dd")      // Formato fecha    	Salida: 2022-08-12
-	=TEXTO(FECHA;"yy-mm-dd")        // Formato fecha    	Salida: 22-08-12
-	=HOY()                          // Fecha actual     	Salida: 2/01/2022
+	=TEXTO(FECHA;"yyyy")            	// Año              	Salida: 2022
+	=TEXTO(FECHA;"mm")              	// Periodo          	Salida: 01
+	=TEXTO(FECHA;"mmmm")            	// Mes              	Salida: enero
+	=TEXTO(FECHA;"aaaa")            	// Día              	Salida: viernes
+	=TEXTO(FECHA;"dd/mm/yyyy")      	// Formato fecha    	Salida: 01/01/2022
+	=TEXTO(FECHA;"yyyy-mm-dd")      	// Formato fecha    	Salida: 2022-08-12
+	=TEXTO(FECHA;"yy-mm-dd")        	// Formato fecha    	Salida: 22-08-12
+	=TEXTO(FECHA;"dd/mm/yyyy HH:MM")	// Formato fecha    	Salida: 22/08/12 05:10
+	=HOY()                          	// Fecha actual     	Salida: 2/01/2022
 ```
 
 ## Concatenar textos

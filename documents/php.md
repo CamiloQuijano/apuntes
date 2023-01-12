@@ -429,16 +429,34 @@ https://www.php.net/manual/es/datetime.createfromformat.php
 
 
 ## implode Unir elementos de un arreglo
+
 ```php
 $arr = array('Hello','World!','Beautiful','Day!');
 echo implode("-",$arr);					// Hello-World-Beautiful-Day!
 ```
 
-## explode convertir  variable string en array
+## Convertir variable string en array
+###### Tags: `php` `explode`
+
 ```php
-$str = "Hello world. Beautiful day.";
-print_r (explode(" ",$str));			// Array ( [0] => Hello [1] => world. [2] => Beautiful [3] => day.)
+	$str = "Hello world. Beautiful day.";
+	print_r (explode(" ",$str));			
+	// Array ( [0] => Hello [1] => world. [2] => Beautiful [3] => day.)
+
+	// Example 1
+	$pizza  = "piece1 piece2 piece3 piece4 piece5 piece6";
+	$pieces = explode(" ", $pizza);
+	echo $pieces[0]; // piece1
+	echo $pieces[1]; // piece2
+
+	// Example 2
+	$data = "foo:*:1023:1000::/home/foo:/bin/sh";
+	list($user, $pass, $uid, $gid, $gecos, $home, $shell) = explode(":", $data);
+	echo $user; // foo
+	echo $pass; // *
+
 ```
+
 
 ### strip_tags Eliminar contenido html-php en variables
 Esta función intenta devolver una cadena con todos los bytes NULL, etiquetas HTML y PHP despojadas de un determinado str. Utiliza la misma máquina de estado de eliminación de etiquetas que la función fgetss () .

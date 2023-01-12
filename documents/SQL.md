@@ -58,6 +58,18 @@
 	SELECT UPPER('SQL Example');		-- SQL EXAMPLE
 ```
 
+## Redondear
+###### Tags: `SQL` `CEILING` `FLOOR`
+```sql	
+	-- Hacia arriba
+	SELECT CEILING(25.75) AS CeilValue;		-- 26
+	SELECT CEILING(25.1) AS CeilValue;		-- 26
+	
+	-- Hacia abajo
+	SELECT FLOOR(25.75) AS CeilValue;		-- 25
+	SELECT FLOOR(25.1) AS CeilValue;		-- 25
+```
+
 
 ## Validar si una columna contiene un texto especifico charIndex
 ```sql	
@@ -143,13 +155,28 @@ Ejemplos implementados
 	SELECT DATEADD(DAY, -1, getdate())      		-- Resta 1 dia a la fecha actual
 ```
 
+## Validar si valor es fecha
+###### Tags: `SQL` `ISDATE`
+```sql
+	SELECT ISDATE('2017');				-- 1
+	SELECT ISDATE('25-08-2017');		-- 1
+	SELECT ISDATE('25/08/2017');		-- 1
+	SELECT ISDATE('04/06/2018 04:40');	-- 1
+	SELECT ISDATE('20220103');			-- 1
+	SELECT ISDATE('Hello world!');		-- 0
+	SELECT ISDATE('2017-08-25');		-- 0
+	SELECT ISDATE('44792.40186'); 		-- 0  
+```
+
 ## Validar contenido numerico de columna
 ###### Tags: `SQL` `ISNUMERIC`
 ```sql
-	SELECT ISNUMERIC('ABC')			-- 0
-	SELECT ISNUMERIC('ABC123') 		-- 0
 	SELECT ISNUMERIC(112)  			-- 1
 	SELECT ISNUMERIC(112.5)			-- 1
+	SELECT ISNUMERIC(60.000)  		-- 1
+	SELECT ISNUMERIC('ABC')			-- 0
+	SELECT ISNUMERIC('ABC123') 		-- 0
+	SELECT ISNUMERIC(NULL)   		-- 0
 ```
 
 ## Redondear un numero
@@ -158,6 +185,19 @@ Ejemplos implementados
 	ROUND(748.58, -1)   		-- 750.00
 	ROUND(748.58, -2)   		-- 700.00
 	ROUND(748.58, -3)   		-- ERROR - No es posible redondear a esta precisión
+```
+
+## Quitar espacio vacio al texto a la derecha e izquierda
+###### Tags: `SQL` `RTRIM` `LTRIM`
+```sql
+	SELECT LTRIM(RTRIM('        Ejemplo de quitar espacios en SQL server        '));
+	-- Salida: 'Ejemplo de quitar espacios en SQL server'
+
+	SELECT LTRIM('   Ejemplo de quitar espacios en SQL server     ');
+	-- Salida: 'Ejemplo de quitar espacios en SQL server     '
+
+	SELECT RTRIM('        Ejemplo de quitar espacios en SQL server        ');
+	-- Salida: '        Ejemplo de quitar espacios en SQL server'
 ```
 
 ## Sp_help - Estructura de una tabla
@@ -292,6 +332,8 @@ Ejemplos implementados
 ```
 
 ## Crear tabla
+###### Tags: `SQL` `TABLE` `CREATE`
+
 ```sql
 	CREATE TABLE crm_clienteContactos ( 
 	  id BIGINT NOT NULL IDENTITY(1,1) PRIMARY KEY,
@@ -307,9 +349,24 @@ Ejemplos implementados
 	  eliminado BIT DEFAULT 0,
 	  FOREIGN KEY (clienteId) REFERENCES crm_cliente(id)
 	); 
-```	
+	
+	CREATE TABLE trans_transaccionCuerpo(
+		id INT PRIMARY KEY IDENTITY(0,1),
+		cabezaId INT FOREIGN KEY REFERENCES trans_transaccionCabeza(id),
+		productoId INT FOREIGN KEY REFERENCES inv_producto(id),
+		nombreProducto VARCHAR(50),
+		valor MONEY,
+		usuarioId INT FOREIGN KEY REFERENCES usu_usuario(id),
+		fechaCreacion DATE DEFAULT GETDATE()
+	)
+	
+```
+
+
 
 ## Crear vistas
+###### Tags: `SQL` `VIEW` `CREATE`
+
 ```sql
 	CREATE VIEW V_ListaAccesorioxSucursal_new AS
 	SELECT l.id, gr.codSuc
