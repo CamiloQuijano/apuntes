@@ -19,11 +19,20 @@
 	rm nombre-de-archivo            Borrar un archivo
 	rm -f nombre-de-archivo         Fuerza el borrado de un archivo
 	cp nombreArchivo nombreCopia    Copia un archivo
-	mv arch1.text archiv2.text      Mover un archivo
+	mv arch1.text archiv2.text      Mover un archivo | Cambiar nombre de archivo
 	find nombre-de-archivo          Busca un archivo
 	wget enlace                     Descarga un archivo
 	wget -c enlace                  Continua una descarga parada
 ```
+
+## Comandos Permisos
+```bash
+	sudo chgrp camiloquijano archivoname            Cambio propietario archivo GRUPO
+	sudo chown camiloquijano archivoname            Cambio propietario archivo
+	Chmod 750                                       Permisos WEB
+	Chmod 770                                       Permisos WEB tmpl
+	sudo chmod 750 -R carpeta_name                  Permisos Recursivos. -R: Carpetas recursivas
+```  
 
 ## Comandos Procesos
 
@@ -32,6 +41,14 @@
 	top         		Muestra todos los procesos en funcionamiento
 	kill pid    		Mata un proceso con un PID concreto. Verás el PID de un proceso con top
 ```
+
+
+## Rutas Importantes
+
+```linux
+	Raiz Apache www					/var/www/html
+```
+
 
 ## Atajos al escribir comandos
 
@@ -74,14 +91,11 @@
 	:qa		Salir y cerrar todos los archivos
 ```
 
-## Comandos Permisos
+## Editor de texto GEDIT
+
 ```bash
-	sudo chgrp camiloquijano archivoname            Cambio propietario archivo GRUPO
-	sudo chown camiloquijano archivoname            Cambio propietario archivo
-	Chmod 750                                       Permisos WEB
-	Chmod 770                                       Permisos WEB tmpl
-	sudo chmod 750 -R carpeta_name                  Permisos Recursivos. -R: Carpetas recursivas
-```  
+	sudo gedit nombrearchivo.config		 			Abrir archivos
+```
 
 ## Instalar sublime3
 ```bash
@@ -89,6 +103,80 @@
 	sudo apt-get update
 	sudo apt-get install sublime-text-installer
 ```  
+
+## LINUX con Codeigniter 
+
+### Nombramiento de Archivos
+###### Tags: `codeigniter` 
+
+- Los nombres de los archivos deben estar en mayúscula. Por ejemplo: Myclass.php
+- Las declaraciones de clase deben estar en mayúscula. Por ejemplo: clase Myclass
+- Los nombres de las clases y los nombres de los archivos deben coincidir.
+
+```php
+	class Someclass {
+		public function some_method() {
+		}
+	}
+```
+
+- Llamado de clases 'someclass' es el nombre del archivo, sin la extensión de archivo ".php". Puede enviar   
+  el nombre del archivo en mayúsculas o minúsculas. A CodeIgniter no le importa.
+  
+```php
+	$this->load->library('someclass');
+```
+
+### Error index.php o htaccess
+###### Tags: `codeigniter` `AllowOverride` `htaccess` `VirtualHost`
+
+En caso de error 404 cuando se trata de acceder a una ruta sin el index.php
+
+1. Validar Config.php, que las config se encuentren asi:
+```php
+	$config['index_page'] = ""
+	$config['uri_protocol'] = "REQUEST_URI"
+```
+
+2. Validar el .htaccess del root del proyecto tenga esta contenido
+```htaccess
+	<IfModule mod_rewrite.c>
+		RewriteEngine On
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteCond %{REQUEST_FILENAME} !-d
+		RewriteRule ^(.*)$ index.php/$1 [L] 
+	</IfModule>
+```
+
+3. Editar archivo de configuración 
+sudo gedit /etc/apache2/sites-enabled/000-default.conf
+
+4. Incluir el AllowOverride all
+```config
+	VirtualHost *:80>
+		<Directory /var/www/html>
+			AuthType Basic
+			AuthName "Restricted Content"
+			AuthUserFile /etc/apache2/.htpasswd
+			Require valid-user
+			Options +ExecCGI
+			DirectoryIndex index.php
+			AllowOverride all
+		</Directory>
+		DocumentRoot /var/www/html
+```
+	
+5. Reset el apache2
+sudo service apache2 restart
+
+
+## Habilitar/Instalar header mod_headers
+
+```bash
+	a2enmod headers
+	apache2 -k graceful
+	sudo service apache2 restart
+```
 
 ## LINUX INCLUIR VIRTUAL HOST
 - En etc/apache2/sites-avaliables incluir el archivo con el nuevo hosting virtual 
