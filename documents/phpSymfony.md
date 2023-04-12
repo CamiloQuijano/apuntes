@@ -79,11 +79,11 @@ Páginas para actualizar paquetes|vendors y revisar últimas versiones y requeri
 ### Traducciones
 
 ```twig
-	{% trans from "label" %}opciones{% endtrans %} 
+	{ % trans from "label" % }opciones{ % endtrans % } 
 	{{ 'eliminar'|trans({}, 'label') }} 
 	
 	// Con parametro
-	minutes: '{% trans with {'%d%': '%d'} from "label" %}%d%.minutos{% endtrans %}' 
+	minutes: '{ % trans with {'%d%': '%d'} from "label" % }%d%.minutos{ % endtrans % }' 
 ```
 
 ### Iterar Objetos o arrays
