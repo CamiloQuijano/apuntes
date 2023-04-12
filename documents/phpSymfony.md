@@ -69,11 +69,11 @@ Páginas para actualizar paquetes|vendors y revisar últimas versiones y requeri
 
 ### Funciones Generales
 ```twig
-	{ { app.request.basepath  } } 				//AppSource/web 
-	{ { app.request.baseurl  } } 				//AppSource/web/app_dev.php 
-	{ { app.request.requestUri  } } 			//AppSource/web/app_dev.php/cuentas 
-	{ { app.request.host } } 					// localhost 
-	{ { app.request.schemeAndHttpHost  } } 		// Ej. http://localhost 
+	{ { app.request.basepath  } }               //AppSource/web 
+	{ { app.request.baseurl  } }                //AppSource/web/app_dev.php 
+	{ { app.request.requestUri  } }             //AppSource/web/app_dev.php/cuentas 
+	{ { app.request.host } }                    // localhost 
+	{ { app.request.schemeAndHttpHost  } }      // Ej. http://localhost 
 ``` 
 
 ### Traducciones
