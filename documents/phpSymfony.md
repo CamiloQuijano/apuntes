@@ -78,9 +78,10 @@ Páginas para actualizar paquetes|vendors y revisar últimas versiones y requeri
 
 ### Traducciones
 
+Se separan la estructura de twig por error en deploy 
 ```twig
 	{ % trans from "label" % }opciones{ % endtrans % } 
-	{{ 'eliminar'|trans({}, 'label') }} 
+	{ { 'eliminar' | trans({}, 'label') } } 
 	
 	// Con parametro
 	minutes: '{ % trans with {'%d%': '%d'} from "label" % }%d%.minutos{ % endtrans % }' 
