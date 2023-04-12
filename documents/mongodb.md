@@ -2,6 +2,8 @@
 
 # Mongo DB
 
+- [Instuctivo - Notas](mongoDb/mongoDb.pdf)
+
 Versión de authSchema - Necesario en min. 3 para mongoDB3.0
 
 ```bash

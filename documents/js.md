@@ -625,9 +625,36 @@ Js:
 
 
 ## LOCALSTORAGE
+
 ```js
-    localStorage.clear()				// Limpiar contenido
+    localStorage.clear()					// Limpiar contenido
+	localStorage.removeItem('chatLS');  	// Elimina el elemento 
+	localStorage.setItem('chatLS', 'x');  	// Asignar valor a una variable 
+	var foo = localStorage.getItem('foo'); 	//Contenido de una variable 
 ```
+
+### Validación exceso de tamaño localStorage 
+```js
+	try { 
+		localStorage.setItem('foo', 'bar'); 
+	} catch (e) { 
+		if (e == QUOTA_EXCEEDED_ERR) { 
+			alert('el almacén local excede el tamaño máximo permitido'); 
+		} 
+	} 
+```
+ 
+### Validación de si navegador soporta localStorage 
+```js
+	function isLocalStorageAvailable() { 
+		try { 
+			return 'localStorage' in window && window['localStorage'] !== null; 
+		} catch (e) { 
+			return false; 
+		} 
+	} 
+```
+ 
 
 ## JAlert
 

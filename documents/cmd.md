@@ -26,12 +26,23 @@ Limpieza de archivos temporales
 Comandos básicos 
 
 ```bash
-	d: (enter)                  Cambiar de unidad de disco duro 
-	cd folder1/folder2          Moverse entre directorios
-	cd ../../folder3            Moverse entre directorios (Volver directorios)
-	diskmgmt.msc                Administrador de Discos
-	ipconfig /flushdns          Borrar cache DNS PC 
-	gpupdate /force             Actualizar Directivas
+	d: (enter)                  	Cambiar de unidad de disco duro 
+	cd ..                       	Volver nive anterior 
+	cd folder1/folder2          	Moverse entre directorios
+	cd ../../folder3            	Moverse entre directorios (Volver directorios)
+	diskmgmt.msc                	Administrador de Discos
+	ipconfig /flushdns          	Borrar cache DNS PC 
+	gpupdate /force             	Actualizar Directivas
+	wmic os get osarchitecture  	Versión de Windows,  Indica si el sistema es de 32 o 64 Bits 
+	move C:\foldera C:\folderb  	Mover el contenido de una carpeta a otra 
+	md data                     	Crear una carpeta en windows 
+```
+
+### Realizar busqueda por consola
+```bash
+	* /S (subniveles) 
+	* /M (Muestra solo el nombre del archivo en donde se encuentra la coincidencia) 
+	findstr /S /M "textoAConsultar" src/* 
 ```
 
 ### Mover archivos entre carpetas x consola

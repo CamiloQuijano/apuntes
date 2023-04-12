@@ -5,11 +5,23 @@
 - [`Descargar versiones de PHP`](https://windows.php.net/download/#php-5.4)
 
 ## Configuaciones - Php.ini 
+###### Tags: `php` `upload_max_filesize` `post_max_size`
 
 ```php
 	upload_max_filesize         // Peso máximo de archivos a subir
 	post_max_size               // Peso máximo de archivos a subir por POST 
 ```
+
+
+## Funciones generales 
+###### Tags: `php` `set_time_limit` `error_reporting` `date_default_timezone_set`
+
+```php
+	set_time_limit(0); 								// No limite de tiempo 
+	error_reporting(true); 							// Log de errores
+	date_default_timezone_set('America/Bogota');	// Configurar Zona horaria
+```
+
 
 ## Establecer Configuraciones tiempo ejecución memoria limite
 ```php
@@ -327,7 +339,14 @@ Documentación: https://www.php.net/manual/es/function.round.php
         echo $i;
     }
     // Salida 1, 2, 3, 4, 5
+	
+	// Iteración miltinivel
+	for (j = 0; j < 5; j++) {  
+		for (i = 0; i < 5; i++) {  
+		} 
+	} 
 ```
+
 
 ## Funciones
 
@@ -357,10 +376,17 @@ Documentación: https://www.php.net/manual/es/function.round.php
 ```
 
 ### Fecha y Hora - modificar horas
-###### Tags: `php` `datetime` `modify`
+###### Tags: `php` `datetime` `modify` `strtotime`
 ```php		
 	$dateDocument = new DateTime($docHead['fecCrea']);      // 2022-01-12 05:45:39.064809
 	$dateDocument->modify("2 hour");                        // 2022-01-12 07:45:39.064809
+	
+	$fechaactual = date('y-m-d H:i:s'); 
+	$fechaactual = date('y-m-d H:i:s', strtotime("$fechaactual -3 minutes")); 
+	
+	// Fecha actual menos N minutos 
+	$fecha = strtotime('-7 day', strtotime(date('Y-m-d')));// 7 dias atras        
+	date('Y-m-d', $fecha); 
 ```
 
 ### Crear fecha a partir de formato 
@@ -525,6 +551,68 @@ Parámetros de función fputcsv
 	*/
 ```
 
+### Crear imagen con texto
+###### Tags: `php` `explode`
+
+```php
+	$long = strlen($nombre_usuario); // Longitud de cadena de caracteres 
+
+	// Imagen, tamaño(1-5), cordenada eje X, cordenada eje Y, Texto a incluir, color a incluir (imagecolorallocate) 
+	imagestring($destino, $tama_font, $cord_x, $cord_y, $nombre_usuario, $blue); 
+	imagefontwidth($tama_font) // Tamaño width de letra, dependiendo el tamaño 
+
+	// Create some colors 
+	$white = imagecolorallocate($destino, 255, 255, 255); 
+	$grey = imagecolorallocate($destino, 128, 128, 128); 
+	$black = imagecolorallocate($destino, 0, 0, 0); 
+	$naranja = imagecolorallocate($destino, 220, 210, 60); 
+	$blue = imagecolorallocate($destino, 0, 0, 255); 
+
+	// Crear instancias de imagen base 
+	$origen = imagecreatefrompng($ruta_certificado);  
+	$w = imagesx($origen); 
+	$h = imagesy($origen); 
+
+	// Copiar Dimensiones y estructura de imagen Base 
+	$destino = imagecreatetruecolor($w, $h); 
+	imagecopy($destino, $origen, 0, 0, 0, 0, $w, $h); 
+
+	// Fuente para certificado y colores de texto 
+	$font = $security->getParameter('ruta_certificados').'EdwardianScriptITC.ttf'; 
+	$white = imagecolorallocate($destino, 255, 255, 255); 
+	$black = imagecolorallocate($destino, 0, 0, 0); 
+
+	/** 
+	 * @var $nombre_usuario = Texto 1 a agregar a la imagen (Nombre del usuario) 
+	 * @var $font_size = Tamaño del texto a agregar 
+	 * @var $bbox = imagettfbbox retorna tamaño del contenedor (Caja circundante) del texto a agregar teniendo en cuenta tamaño, fuente, y texto 
+	 * @var $w_img = Ancho del contenedor 
+	 * @var $y_img = Alto del contenedor 
+	 * @var $aux_widht_rest = Ancho disponible de la imagen (tenido en cuenta para centrar texto) 
+	 * @var $cord_x = Inicio de impresion del texto (Dividido en dos para centrar) EJE X 
+	 * @var $cord_y = Inicio de impresion del texto (Dividido en dos para centrar) EJE Y 
+	 * imagettftext incluye el texto en las cordenadas especificadas, tamaño, color (imagecolorallocate), fuente. 
+	 */ 
+	$nombre_usuario = 'Camilo Texto Prueba large'; 
+	$font_size = 30; 
+	$bbox = imagettfbbox($font_size, 0, $font, $nombre_usuario); 
+	$w_img = $bbox[2] - $bbox[0]; // Ancho 
+	$y_img = $bbox[1] - $bbox[5]; // Alto 
+	$aux_widht_rest = imagesx($destino) - $w_img; 
+	$cord_x = ($aux_widht_rest) / 2; 
+	$cord_y = ($h/2); 
+	imagettftext($destino, $font_size, 0, $cord_x, $cord_y, $black, $font, $nombre_usuario); 
+
+	// Imprimir y liberar memoria 
+	header('Content-Type: image/png'); 
+	imagepng($destino); 
+	imagedestroy($destino); 
+
+	// Guardar imagen creada 
+	imagepng($destino, $security->getParameter('ruta_certificados').'testIII.png'); 
+	imagedestroy($destino); 
+```
+ 
 
 ## PHP Excel
 
