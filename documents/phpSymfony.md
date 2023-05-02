@@ -57,46 +57,47 @@ Páginas para actualizar paquetes|vendors y revisar últimas versiones y requeri
 
 ## Ruta actual 
 ```twig
-	{{ app.request.get('_route') }}
+	{ { app.request.get('_route') } }
 ```
 
 ## Metodo
 ```twig
-	{{ app.request.method }} 
+	{ { app.request.method } } 
 ```
 
 ## Twig
 
 ### Funciones Generales
 ```twig
-	{{ app.request.basepath  }} 			//AppSource/web 
-	{{ app.request.baseurl  }} 				//AppSource/web/app_dev.php 
-	{{ app.request.requestUri  }} 			//AppSource/web/app_dev.php/cuentas 
-	{{ app.request.host }} 					// localhost 
-	{{ app.request.schemeAndHttpHost  }} 	// Ej. http://localhost 
+	{ { app.request.basepath  } }               //AppSource/web 
+	{ { app.request.baseurl  } }                //AppSource/web/app_dev.php 
+	{ { app.request.requestUri  } }             //AppSource/web/app_dev.php/cuentas 
+	{ { app.request.host } }                    // localhost 
+	{ { app.request.schemeAndHttpHost  } }      // Ej. http://localhost 
 ``` 
 
 ### Traducciones
 
+Se separan la estructura de twig por error en deploy 
 ```twig
-	{% trans from "label" %}opciones{% endtrans %} 
-	{{ 'eliminar'|trans({}, 'label') }} 
+	{ % trans from "label" % }opciones{ % endtrans % } 
+	{ { 'eliminar' | trans({}, 'label') } } 
 	
 	// Con parametro
-	minutes: '{% trans with {'%d%': '%d'} from "label" %}%d%.minutos{% endtrans %}' 
+	minutes: '{ % trans with {'%d%': '%d'} from "label" % }%d%.minutos{ % endtrans % }' 
 ```
 
 ### Iterar Objetos o arrays
 
 ```twig
-	{% if product %} 
-		{% for key, p in product %} 
-			PRODUCTO {{key}} - {{p.name}} <br> 
-			{% for keyi, h in p.history %} 
-				{{ dump(h) }}  
-			{% endfor %} 
-		{% endfor %} 
-	{% endif %} 
+	{ % if product % } 
+		{ % for key, p in product % } 
+			PRODUCTO { { key } } - { { p.name } } <br> 
+			{ % for keyi, h in p.history % } 
+				{ { dump(h) } }  
+			{ % endfor % } 
+		{ % endfor % } 
+	{ % endif % } 
 ```
  
 

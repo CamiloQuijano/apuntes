@@ -65,6 +65,16 @@ helpers = [
                 ]
             },
             {
+                "title": "Redondear",
+                "url": "documents\/SQL.html#redondear",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "CEILING",
+                    "FLOOR"
+                ]
+            },
+            {
                 "title": "Validar si una columna contiene un texto especifico charIndex",
                 "url": "documents\/SQL.html#validar-si-una-columna-contiene-un-texto-especifico-charindex",
                 "subnivels": []
@@ -131,6 +141,15 @@ helpers = [
                 ]
             },
             {
+                "title": "Validar si valor es fecha",
+                "url": "documents\/SQL.html#validar-si-valor-es-fecha",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "ISDATE"
+                ]
+            },
+            {
                 "title": "Validar contenido numerico de columna",
                 "url": "documents\/SQL.html#validar-contenido-numerico-de-columna",
                 "subnivels": [],
@@ -146,6 +165,16 @@ helpers = [
                 "tags": [
                     "SQL",
                     "ISNUMERIC"
+                ]
+            },
+            {
+                "title": "Quitar espacio vacio al texto a la derecha e izquierda",
+                "url": "documents\/SQL.html#quitar-espacio-vacio-al-texto-a-la-derecha-e-izquierda",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "RTRIM",
+                    "LTRIM"
                 ]
             },
             {
@@ -233,12 +262,22 @@ helpers = [
             {
                 "title": "Crear tabla",
                 "url": "documents\/SQL.html#crear-tabla",
-                "subnivels": []
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "TABLE",
+                    "CREATE"
+                ]
             },
             {
                 "title": "Crear vistas",
                 "url": "documents\/SQL.html#crear-vistas",
-                "subnivels": []
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "VIEW",
+                    "CREATE"
+                ]
             },
             {
                 "title": "Proceso SQL",
@@ -385,6 +424,15 @@ helpers = [
                             "filters",
                             "date",
                             "number"
+                        ]
+                    },
+                    {
+                        "title": "Validar si valor esta incluido en un arreglo",
+                        "url": "documents\/angular.html#validar-si-valor-esta-incluido-en-un-arreglo",
+                        "subnivels": [],
+                        "tags": [
+                            "includes",
+                            "in_array"
                         ]
                     },
                     {
@@ -837,6 +885,11 @@ helpers = [
                 "title": "CMD",
                 "url": "documents\/cmd.html#cmd",
                 "subnivels": [
+                    {
+                        "title": "Realizar busqueda por consola",
+                        "url": "documents\/cmd.html#realizar-busqueda-por-consola",
+                        "subnivels": []
+                    },
                     {
                         "title": "Mover archivos entre carpetas x consola",
                         "url": "documents\/cmd.html#mover-archivos-entre-carpetas-x-consola",
@@ -1446,6 +1499,16 @@ helpers = [
                 ]
             },
             {
+                "title": "Buscar en DOM por nombre",
+                "url": "documents\/jquery.html#buscar-en-dom-por-nombre",
+                "subnivels": [],
+                "tags": [
+                    "jquery",
+                    "find",
+                    "name"
+                ]
+            },
+            {
                 "title": "Animacion para moverse a un elemento",
                 "url": "documents\/jquery.html#animacion-para-moverse-a-un-elemento",
                 "subnivels": [],
@@ -1478,6 +1541,17 @@ helpers = [
                             "jquery",
                             "select",
                             "selected",
+                            "val"
+                        ]
+                    },
+                    {
+                        "title": "Imprimir",
+                        "url": "documents\/jquery.html#imprimir",
+                        "subnivels": [],
+                        "tags": [
+                            "jquery",
+                            "print",
+                            "media",
                             "val"
                         ]
                     }
@@ -1812,7 +1886,18 @@ helpers = [
             {
                 "title": "LOCALSTORAGE",
                 "url": "documents\/js.html#localstorage",
-                "subnivels": []
+                "subnivels": [
+                    {
+                        "title": "Validaci\u00f3n exceso de tama\u00f1o localStorage",
+                        "url": "documents\/js.html#validaci%C3%B3n-exceso-de-tama%C3%B1o-localstorage",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Validaci\u00f3n de si navegador soporta localStorage",
+                        "url": "documents\/js.html#validaci%C3%B3n-de-si-navegador-soporta-localstorage",
+                        "subnivels": []
+                    }
+                ]
             },
             {
                 "title": "JAlert",
@@ -1938,8 +2023,18 @@ helpers = [
                 "subnivels": []
             },
             {
+                "title": "Comandos Permisos",
+                "url": "documents\/linux.html#comandos-permisos",
+                "subnivels": []
+            },
+            {
                 "title": "Comandos Procesos",
                 "url": "documents\/linux.html#comandos-procesos",
+                "subnivels": []
+            },
+            {
+                "title": "Rutas Importantes",
+                "url": "documents\/linux.html#rutas-importantes",
                 "subnivels": []
             },
             {
@@ -1953,13 +2048,48 @@ helpers = [
                 "subnivels": []
             },
             {
-                "title": "Comandos Permisos",
-                "url": "documents\/linux.html#comandos-permisos",
+                "title": "Editor de texto VIM",
+                "url": "documents\/linux.html#editor-de-texto-vim",
+                "subnivels": []
+            },
+            {
+                "title": "Editor de texto GEDIT",
+                "url": "documents\/linux.html#editor-de-texto-gedit",
                 "subnivels": []
             },
             {
                 "title": "Instalar sublime3",
                 "url": "documents\/linux.html#instalar-sublime3",
+                "subnivels": []
+            },
+            {
+                "title": "LINUX con Codeigniter",
+                "url": "documents\/linux.html#linux-con-codeigniter",
+                "subnivels": [
+                    {
+                        "title": "Nombramiento de Archivos",
+                        "url": "documents\/linux.html#nombramiento-de-archivos",
+                        "subnivels": [],
+                        "tags": [
+                            "codeigniter"
+                        ]
+                    },
+                    {
+                        "title": "Error index.php o htaccess",
+                        "url": "documents\/linux.html#error-index.php-o-htaccess",
+                        "subnivels": [],
+                        "tags": [
+                            "codeigniter",
+                            "AllowOverride",
+                            "htaccess",
+                            "VirtualHost"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Habilitar\/Instalar header mod_headers",
+                "url": "documents\/linux.html#habilitarinstalar-header-mod_headers",
                 "subnivels": []
             },
             {
@@ -1970,6 +2100,140 @@ helpers = [
             {
                 "title": "ELIMINAR CACHE DE ELASTIC CACHE DE AWS (exclusivamente cache)",
                 "url": "documents\/linux.html#eliminar-cache-de-elastic-cache-de-aws-%28exclusivamente-cache%29",
+                "subnivels": []
+            },
+            {
+                "title": "LAMPP SERVER",
+                "url": "documents\/linux.html#lampp-server",
+                "subnivels": [
+                    {
+                        "title": "Instalaci\u00f3n",
+                        "url": "documents\/linux.html#instalaci%C3%B3n",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Iniciar\/Detener",
+                        "url": "documents\/linux.html#iniciardetener",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Extensiones",
+                        "url": "documents\/linux.html#extensiones",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Habilitar mod_rewrite",
+                        "url": "documents\/linux.html#habilitar-mod_rewrite",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "AB APACHE",
+                        "url": "documents\/linux.html#ab-apache",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "XHPROF",
+                        "url": "documents\/linux.html#xhprof",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "ubuntu 12.04 (https:\/\/groups.drupal.org\/node\/82889)",
+                        "url": "documents\/linux.html#ubuntu-12.04-%28https%3Agroups.drupal.orgnode82889%29",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "ubuntu 13.10",
+                        "url": "documents\/linux.html#ubuntu-13.10",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "phpDocumentor",
+                        "url": "documents\/linux.html#phpdocumentor",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "CURL",
+                        "url": "documents\/linux.html#curl",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "GIT",
+                        "url": "documents\/linux.html#git",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "TERMINATOR",
+                        "url": "documents\/linux.html#terminator",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "NETBEANS",
+                        "url": "documents\/linux.html#netbeans",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "MYSQL WORKBENCH",
+                        "url": "documents\/linux.html#mysql-workbench",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "FILEZILA",
+                        "url": "documents\/linux.html#filezila",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "XAMPP FOR LINUX 1.8.2",
+                "url": "documents\/linux.html#xampp-for-linux-1.8.2",
+                "subnivels": [
+                    {
+                        "title": "Instalaci\u00f3n",
+                        "url": "documents\/linux.html#instalaci%C3%B3n",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Iniciar\/Detener",
+                        "url": "documents\/linux.html#iniciardetener",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Archivos y directorios importantes",
+                        "url": "documents\/linux.html#archivos-y-directorios-importantes",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Par\u00e1metros Iniciar\/Detener",
+                        "url": "documents\/linux.html#par%C3%A1metros-iniciardetener",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "MEMCACHED Y MEMCACHE",
+                "url": "documents\/linux.html#memcached-y-memcache",
+                "subnivels": [
+                    {
+                        "title": "Instalaci\u00f3n para XAMPP FOR LINUX (lampp)",
+                        "url": "documents\/linux.html#instalaci%C3%B3n-para-xampp-for-linux-%28lampp%29",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "APC",
+                "url": "documents\/linux.html#apc",
+                "subnivels": [
+                    {
+                        "title": "Instalacion para XAMPP FOR LINUX (lampp) http:\/\/www.samclarke.com\/2011\/10\/install-apc-with-xampp-on-linux\/",
+                        "url": "documents\/linux.html#instalacion-para-xampp-for-linux-%28lampp%29-http%3Awww.samclarke.com201110install-apc-with-xampp-on-linux",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Otras formas de instalar lampp server",
+                "url": "documents\/linux.html#otras-formas-de-instalar-lampp-server",
                 "subnivels": []
             }
         ]
@@ -2092,7 +2356,23 @@ helpers = [
             {
                 "title": "Configuaciones - Php.ini",
                 "url": "documents\/php.html#configuaciones---php.ini",
-                "subnivels": []
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "upload_max_filesize",
+                    "post_max_size"
+                ]
+            },
+            {
+                "title": "Funciones generales",
+                "url": "documents\/php.html#funciones-generales",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "set_time_limit",
+                    "error_reporting",
+                    "date_default_timezone_set"
+                ]
             },
             {
                 "title": "Establecer Configuraciones tiempo ejecuci\u00f3n memoria limite",
@@ -2307,7 +2587,8 @@ helpers = [
                         "tags": [
                             "php",
                             "datetime",
-                            "modify"
+                            "modify",
+                            "strtotime"
                         ]
                     },
                     {
@@ -2367,8 +2648,8 @@ helpers = [
                 "subnivels": []
             },
             {
-                "title": "explode convertir  variable string en array",
-                "url": "documents\/php.html#explode-convertir--variable-string-en-array",
+                "title": "Convertir variable string en array",
+                "url": "documents\/php.html#convertir-variable-string-en-array",
                 "subnivels": [
                     {
                         "title": "strip_tags Eliminar contenido html-php en variables",
@@ -2384,7 +2665,20 @@ helpers = [
                         "title": "Crear archivo PLANO txt - csv fputcsv",
                         "url": "documents\/php.html#crear-archivo-plano-txt---csv-fputcsv",
                         "subnivels": []
+                    },
+                    {
+                        "title": "Crear imagen con texto",
+                        "url": "documents\/php.html#crear-imagen-con-texto",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "explode"
+                        ]
                     }
+                ],
+                "tags": [
+                    "php",
+                    "explode"
                 ]
             },
             {
@@ -2437,6 +2731,11 @@ helpers = [
                     {
                         "title": "Ejemplo group_start en consultar",
                         "url": "documents\/phpCodeigniter.html#ejemplo-group_start-en-consultar",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ejemplo orwhere",
+                        "url": "documents\/phpCodeigniter.html#ejemplo-orwhere",
                         "subnivels": []
                     },
                     {
@@ -2905,6 +3204,169 @@ helpers = [
         ]
     },
     {
+        "title": "PHP Symfony",
+        "url": "documents\/phpSymfony.html#php-symfony",
+        "subnivels": [
+            {
+                "title": "ACTUALIZAR PAQUETES",
+                "url": "documents\/phpSymfony.html#actualizar-paquetes",
+                "subnivels": []
+            },
+            {
+                "title": "Acceso a nombre del servidor en controlador",
+                "url": "documents\/phpSymfony.html#acceso-a-nombre-del-servidor-en-controlador",
+                "subnivels": []
+            },
+            {
+                "title": "Clases",
+                "url": "documents\/phpSymfony.html#clases",
+                "subnivels": []
+            },
+            {
+                "title": "Traducciones",
+                "url": "documents\/phpSymfony.html#traducciones",
+                "subnivels": []
+            },
+            {
+                "title": "Redireccionar",
+                "url": "documents\/phpSymfony.html#redireccionar",
+                "subnivels": []
+            },
+            {
+                "title": "Renderizar",
+                "url": "documents\/phpSymfony.html#renderizar",
+                "subnivels": []
+            },
+            {
+                "title": "Ruta actual",
+                "url": "documents\/phpSymfony.html#ruta-actual",
+                "subnivels": []
+            },
+            {
+                "title": "Metodo",
+                "url": "documents\/phpSymfony.html#metodo",
+                "subnivels": []
+            },
+            {
+                "title": "Twig",
+                "url": "documents\/phpSymfony.html#twig",
+                "subnivels": [
+                    {
+                        "title": "Funciones Generales",
+                        "url": "documents\/phpSymfony.html#funciones-generales",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Traducciones",
+                        "url": "documents\/phpSymfony.html#traducciones",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Iterar Objetos o arrays",
+                        "url": "documents\/phpSymfony.html#iterar-objetos-o-arrays",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "MAILGUN: Env\u00edo de correos electr\u00f3nicos",
+                "url": "documents\/phpSymfony.html#mailgun%3A-env%C3%ADo-de-correos-electr%C3%B3nicos",
+                "subnivels": []
+            },
+            {
+                "title": "Database",
+                "url": "documents\/phpSymfony.html#database",
+                "subnivels": [
+                    {
+                        "title": "Conexi\u00f3n a doctrine, servicio de control de la DB por medio de las entidades",
+                        "url": "documents\/phpSymfony.html#conexi%C3%B3n-a-doctrine%2C-servicio-de-control-de-la-db-por-medio-de-las-entidades",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Consultar sencilla aplicando filtro y Orden",
+                        "url": "documents\/phpSymfony.html#consultar-sencilla-aplicando-filtro-y-orden",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Consultar compuestas",
+                        "url": "documents\/phpSymfony.html#consultar-compuestas",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Acceder a fechas y formato de db",
+                "url": "documents\/phpSymfony.html#acceder-a-fechas-y-formato-de-db",
+                "subnivels": [
+                    {
+                        "title": "Insertar fecha datetime",
+                        "url": "documents\/phpSymfony.html#insertar-fecha-datetime",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "insert",
+                            "datetime",
+                            "entity"
+                        ]
+                    },
+                    {
+                        "title": "Insert masivo",
+                        "url": "documents\/phpSymfony.html#insert-masivo",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "insert",
+                            "native",
+                            "masive"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "php",
+                    "format"
+                ]
+            },
+            {
+                "title": "Database Mongo",
+                "url": "documents\/phpSymfony.html#database-mongo",
+                "subnivels": [
+                    {
+                        "title": "Consultar en mongoDB con Equals",
+                        "url": "documents\/phpSymfony.html#consultar-en-mongodb-con-equals",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "equals",
+                            "mongo",
+                            "doctrine"
+                        ]
+                    },
+                    {
+                        "title": "Consultar en mongo con Find",
+                        "url": "documents\/phpSymfony.html#consultar-en-mongo-con-find",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "find",
+                            "mongo",
+                            "doctrine"
+                        ]
+                    },
+                    {
+                        "title": "Consultar en mongo completa",
+                        "url": "documents\/phpSymfony.html#consultar-en-mongo-completa",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "mongo",
+                            "doctrine"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "title": "PWA Aplicaciones Web Progresivas",
         "url": "documents\/pwa.html#pwa-aplicaciones-web-progresivas",
         "subnivels": [
@@ -3131,32 +3593,6 @@ helpers = [
         "subnivels": []
     },
     {
-        "title": "SYMFONY",
-        "url": "documents\/symfony.html#symfony",
-        "subnivels": [
-            {
-                "title": "ACTUALIZAR PAQUETES",
-                "url": "documents\/symfony.html#actualizar-paquetes",
-                "subnivels": []
-            },
-            {
-                "title": "ACCESO A SERVER DESDE SYMFONY CONTROLLER (Nombre)",
-                "url": "documents\/symfony.html#acceso-a-server-desde-symfony-controller-%28nombre%29",
-                "subnivels": []
-            },
-            {
-                "title": "Ruta actual",
-                "url": "documents\/symfony.html#ruta-actual",
-                "subnivels": []
-            },
-            {
-                "title": "Metodo",
-                "url": "documents\/symfony.html#metodo",
-                "subnivels": []
-            }
-        ]
-    },
-    {
         "title": "Typescript",
         "url": "documents\/typescript.html#typescript",
         "subnivels": [
@@ -3194,6 +3630,16 @@ helpers = [
                     "underscore",
                     "js",
                     "pluck"
+                ]
+            },
+            {
+                "title": "Consultar si un valor esta contenido en un arreglo",
+                "url": "documents\/underscore.html#consultar-si-un-valor-esta-contenido-en-un-arreglo",
+                "subnivels": [],
+                "tags": [
+                    "underscore",
+                    "js",
+                    "contains"
                 ]
             },
             {
