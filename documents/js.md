@@ -102,6 +102,14 @@
     fruits = fruits.filter(Boolean);
 ```
 
+### Consultar elemento en un array
+###### Tags: `js` `array` `in_array`
+```js
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	fruits.includes('Banana') // True
+	fruits.includes('Bananas') // False
+```
+
 
 ### Setear variable a formato float - quitar decimales
 ###### Tags: `js` `parseFloat` `format` `numero`

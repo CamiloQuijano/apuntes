@@ -2,6 +2,15 @@
 
 # Amazon
 
+## Conectarse a una instancia de Linux en amazon
+###### Tags: `AMAZON` `LINUX` `WINSCP`
+
+```linux
+	WIN SCP
+	
+	CTRL + ALT + H				Mostrar archivos ocultos
+```
+
 ## EC2
 
 Para crear una instancia de 0

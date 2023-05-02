@@ -4,6 +4,13 @@
 
 - [Instalar Ubuntu 13.0](linux/InstalarUbuntu.pdf)
 
+## Rutas Importantes
+
+```linux
+	Raiz Apache www                    /var/www/html
+	Logs de errores de apache          /var/log/apache2/error.log (Debian y Ubuntu)
+```
+
 ## Comandos Carpeta / Archivos
 
 ```bash
@@ -41,14 +48,6 @@
 	top         		Muestra todos los procesos en funcionamiento
 	kill pid    		Mata un proceso con un PID concreto. Verás el PID de un proceso con top
 ```
-
-
-## Rutas Importantes
-
-```linux
-	Raiz Apache www					/var/www/html
-```
-
 
 ## Atajos al escribir comandos
 
@@ -89,6 +88,16 @@
 	:wq		Guardar archivo actual y salir
 	:x		Guardar y salir
 	:qa		Salir y cerrar todos los archivos
+```
+
+## Editor de texto NANO
+
+```bash
+
+	// Comandos
+	sudo nano nombrearchivo			// Abrir un archivo
+	
+	SALIR	ctl+z + Y
 ```
 
 ## Editor de texto GEDIT

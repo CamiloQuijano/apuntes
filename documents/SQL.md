@@ -21,12 +21,39 @@
 	SET IDENTITY_INSERT NombreTabla OFF;	-- Habilitar
 ```
 
+## Actualizar lenguaje de sesion
+###### Tags: `SQL` `SET` `LANGUAGE`
+
+```sql
+	 SET LANGUAGE Spanish; 
+```
+
 ## Datediff - Diferencias entre fechas - timestamp
+###### Tags: `SQL` `DATEDIFF`
+
 ```sql	
+	-- En SELECT
+	SELECT DATEDIFF(year, '2017/08/25', '2023/08/25') AS DateDiff; 
+	-- 6 (Años)
+	
+	-- En FILTRO
 	SELECT *
 	FROM v_AyudaVentasRecargasPendientes
 	WHERE (cat_dis = '002' AND DATEDIFF(hour, fecCrea, getdate()) >= 72) 
 	   OR (cat_dis = '001' AND DATEDIFF(hour, fecCrea, getdate()) >= 480)
+```
+```bash
+	year, yyyy, yy       Year
+	quarter, qq, q       Quarter
+	month, mm, m         Month
+	dayofyear            Day of the year
+	day, dy, y           Day
+	week, ww, wk         Week
+	weekday, dw, w       Weekday
+	hour, hh             Hour
+	minute, mi, n        Minute
+	second, ss, s        Second
+	millisecond, ms      Millisecond
 ```
 
 ## Rellenar de 0 a la izquierda
@@ -59,15 +86,28 @@
 ```
 
 ## Redondear
-###### Tags: `SQL` `CEILING` `FLOOR`
+###### Tags: `SQL` `CEILING` `FLOOR` `ROUND`
 ```sql	
 	-- Hacia arriba
-	SELECT CEILING(25.75) AS CeilValue;		-- 26
-	SELECT CEILING(25.1) AS CeilValue;		-- 26
+	CEILING(25.75);		-- 26
+	CEILING(25.1);		-- 26
 	
 	-- Hacia abajo
-	SELECT FLOOR(25.75) AS CeilValue;		-- 25
-	SELECT FLOOR(25.1) AS CeilValue;		-- 25
+	FLOOR(25.75);		-- 25
+	FLOOR(25.1);		-- 25
+	
+	-- Estandar
+	ROUND(25.75, 0);    -- 26
+	ROUND(25.4, 0);     -- 25
+	ROUND(748.58, -1)   -- 750.00
+	ROUND(748.58, -2)   -- 700.00
+	ROUND(748.58, -3)   -- ERROR - No es posible redondear a esta precisión
+```
+
+## Promedio
+###### Tags: `SQL` `AVG`
+```sql
+	SELECT AVG(Price) FROM Products;
 ```
 
 
@@ -177,14 +217,6 @@ Ejemplos implementados
 	SELECT ISNUMERIC('ABC')			-- 0
 	SELECT ISNUMERIC('ABC123') 		-- 0
 	SELECT ISNUMERIC(NULL)   		-- 0
-```
-
-## Redondear un numero
-###### Tags: `SQL` `ISNUMERIC`
-```sql
-	ROUND(748.58, -1)   		-- 750.00
-	ROUND(748.58, -2)   		-- 700.00
-	ROUND(748.58, -3)   		-- ERROR - No es posible redondear a esta precisión
 ```
 
 ## Quitar espacio vacio al texto a la derecha e izquierda
@@ -332,7 +364,7 @@ Ejemplos implementados
 ```
 
 ## Crear tabla
-###### Tags: `SQL` `TABLE` `CREATE`
+###### Tags: `SQL` `TABLE` `CREATE` `UNIQUE`
 
 ```sql
 	CREATE TABLE crm_clienteContactos ( 
@@ -343,7 +375,7 @@ Ejemplos implementados
 	  cargo VARCHAR(50) NOT NULL, 
 	  direccion VARCHAR(60) NOT NULL, 
 	  telefono VARCHAR(20) NOT NULL, 
-	  email VARCHAR(30) NOT NULL, 
+	  email VARCHAR(30) NOT NULL UNIQUE, 
 	  imagen VARCHAR(20) NULL,
 	  fechaCreacion DATETIME NULL DEFAULT GETDATE(), 
 	  eliminado BIT DEFAULT 0,
@@ -447,6 +479,23 @@ Ejemplos implementados
 	DECLARE documentsRelacionados CURSOR FOR   
 	SELECT * FROM inv_cabezaDocumentoRelacionado WHERE cabezaId = @idcabeza;
 	SET @rowsDocumentsRel = @@ROWCOUNT;
+```
+
+## Collation
+###### Tags: `SQL` `COLLATION`
+
+### Consultar collation actual de una db
+
+```sql
+	SELECT name, collation_name FROM sys.databases WHERE name = 'db_name';
+	-- Modern_Spanish_CI_AS
+```
+
+### Actualizar collation
+
+```sql
+	ALTER DATABASE CURRENT COLLATE Modern_Spanish_100_CI_AS;
+	ALTER DATABASE CURRENT COLLATE Latin1_general_CI_AI;
 ```
 
 ## SQL - Errores

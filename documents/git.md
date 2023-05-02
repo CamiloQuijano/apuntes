@@ -48,6 +48,7 @@
     git log --since=1.month.ago --until=2.weeks.ago     	Muestra consignaciones de hace 1 mes hasta hace 2 semanas
     git log --since=2000-01-01 --until=2012-12-21       	Muestra consignaciones entre dos fechas
     git log --oneline --graph --all                     	Muestra consignaciones por linea, estructura gráfica de ramas
+	git log -m --name-only --first-parent                   Archivos del primer padre, para casos con mezclas
 ``` 
 
 ## Diff - Comparaciones

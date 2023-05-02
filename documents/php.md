@@ -252,6 +252,7 @@ Pasar valor a float, entero en caso de no tener decimales
     is_numeric('32')   		// True
     is_numeric(0)  			// True
     is_numeric(32.5)   		// True
+	is_numeric('-123')      // True
     is_numeric(true)   		// False
     is_numeric(null)   		// False
     is_numeric('abc')  		// False
@@ -373,6 +374,7 @@ Documentación: https://www.php.net/manual/es/function.round.php
 	date('H:m:s \m \i\s\ \m\o\n\t\h');      // 17:03:18 m is month
 	date("H:i:s");                          // 17:16:18
 	date("Y-m-d H:i:s");                    // 2001-03-10 17:16:18 (el formato DATETIME de MySQL)
+	date('d/m/Y H:i:s');                    // 10-03-2021 17:16:18 (el formato DATETIME de SQL)
 ```
 
 ### Fecha y Hora - modificar horas
