@@ -3,15 +3,21 @@
 # PHP Codeigniter
 
 ## Funciones generales die | version | profile 
-
+###### Tags: `php` `comandos` `constantes` `version` `profile` `log_message` `last_query` 
 ```php
-	log_message("error","QUERY ::: ".$this->db->last_query());          // Log de últma consulta
-	log_message('error', "response ::: ".json_encode($_POST));          // Log de array 
-	die($this->db->last_query());                                       // Imprimir última consulta (matar proceso)
-	echo $this->db->last_query()."<hr/>";                               // Imprimir última consulta
-	echo CI_VERSION                                                     // Versión codeigniter
-	$this->output->enable_profiler(TRUE);                               // Habilitar profiler de codeigniter 
+	// Imprimir LOGS
+	log_message("error","QUERY ::: ".$this->db->last_query());   // Últma consulta
+	log_message('error', "response ::: ".json_encode($_POST));   // Print Array 
+	
+	// Imprimir Ultima Consulta
+	die($this->db->last_query());  
+	echo $this->db->last_query()."<hr/>";	
+	
+	// Constantes | Profiles
+	echo CI_VERSION                                          // Versión codeigniter
+	$this->output->enable_profiler(TRUE);                    // Habilitar profiler
 ```
+
 
 ## Transacciones
 

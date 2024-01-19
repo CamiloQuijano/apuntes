@@ -32,17 +32,30 @@
 	wget -c enlace                  Continua una descarga parada
 ```
 
+
 ## Comandos Permisos
+###### Tags: `chmod` `chown` `chgrp`  
 ```bash
+	sudo su                                         Cambiar conexión a usuario ADMINISTRADOR
 	sudo chgrp camiloquijano archivoname            Cambio propietario archivo GRUPO
 	sudo chown camiloquijano archivoname            Cambio propietario archivo
 	Chmod 750                                       Permisos WEB
 	Chmod 770                                       Permisos WEB tmpl
 	sudo chmod 750 -R carpeta_name                  Permisos Recursivos. -R: Carpetas recursivas
+	
+	sudo chown -R <usuario> <carpeta>               Cambiar propietario de CARPETA
+	sudo chown -R ubuntu public_html/               Cambiar propietario de CARPETA (EJEMPLO)
+```  
+
+
+## Comandos PHP  
+```bash
+	php -v                                    Versión de php 
+	php -m                                    Listado de librerias 
+	dpkg --get-selections | grep -i php       Listado de instalaciones realizadas (filtra php)
 ```  
 
 ## Comandos Procesos
-
 ```bash
 	ps          		Muestra los procesos activos
 	top         		Muestra todos los procesos en funcionamiento
@@ -445,3 +458,20 @@ sudo apt-get install mysql-server
 sudo apt-get install php5-* (mod-php5) 
 sudo service apache2 restart 
 	
+	
+## Error de conexion SSH repositorios
+	
+1. Copiar contenido de SSH de carpeta  
+	/home/ubuntu/.ssh/
+
+2. En caso de error por permisos  
+	@@@@@@@@@@@@@@@@@@@@@@@  
+	@ WARNING: UNPROTECTED PRIVATE KEY FILE! @  
+	@@@@@@@@@@@@@@@@@@@@@@@  
+	Permissions 0664 for '/home/ubuntu/.ssh/id_rsa' are too open.  
+	It is required that your private key files are NOT accessible by others.  
+	This private key will be ignored.  
+	Load key "/home/ubuntu/.ssh/id_rsa": bad permissions  
+
+3. Solución por permisos  
+	chmod 600 ~/.ssh/id_rsa
