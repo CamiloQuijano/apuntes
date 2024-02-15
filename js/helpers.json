@@ -22,9 +22,23 @@ helpers = [
                 ]
             },
             {
+                "title": "Actualizar lenguaje de sesion",
+                "url": "documents\/SQL.html#actualizar-lenguaje-de-sesion",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "SET",
+                    "LANGUAGE"
+                ]
+            },
+            {
                 "title": "Datediff - Diferencias entre fechas - timestamp",
                 "url": "documents\/SQL.html#datediff---diferencias-entre-fechas---timestamp",
-                "subnivels": []
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "DATEDIFF"
+                ]
             },
             {
                 "title": "Rellenar de 0 a la izquierda",
@@ -71,7 +85,17 @@ helpers = [
                 "tags": [
                     "SQL",
                     "CEILING",
-                    "FLOOR"
+                    "FLOOR",
+                    "ROUND"
+                ]
+            },
+            {
+                "title": "Promedio",
+                "url": "documents\/SQL.html#promedio",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "AVG"
                 ]
             },
             {
@@ -152,15 +176,6 @@ helpers = [
             {
                 "title": "Validar contenido numerico de columna",
                 "url": "documents\/SQL.html#validar-contenido-numerico-de-columna",
-                "subnivels": [],
-                "tags": [
-                    "SQL",
-                    "ISNUMERIC"
-                ]
-            },
-            {
-                "title": "Redondear un numero",
-                "url": "documents\/SQL.html#redondear-un-numero",
                 "subnivels": [],
                 "tags": [
                     "SQL",
@@ -266,7 +281,8 @@ helpers = [
                 "tags": [
                     "SQL",
                     "TABLE",
-                    "CREATE"
+                    "CREATE",
+                    "UNIQUE"
                 ]
             },
             {
@@ -314,6 +330,26 @@ helpers = [
                 ]
             },
             {
+                "title": "Collation",
+                "url": "documents\/SQL.html#collation",
+                "subnivels": [
+                    {
+                        "title": "Consultar collation actual de una db",
+                        "url": "documents\/SQL.html#consultar-collation-actual-de-una-db",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Actualizar collation",
+                        "url": "documents\/SQL.html#actualizar-collation",
+                        "subnivels": []
+                    }
+                ],
+                "tags": [
+                    "SQL",
+                    "COLLATION"
+                ]
+            },
+            {
                 "title": "SQL - Errores",
                 "url": "documents\/SQL.html#sql---errores",
                 "subnivels": []
@@ -339,6 +375,16 @@ helpers = [
         "title": "Amazon",
         "url": "documents\/amazon.html#amazon",
         "subnivels": [
+            {
+                "title": "Conectarse a una instancia de Linux en amazon",
+                "url": "documents\/amazon.html#conectarse-a-una-instancia-de-linux-en-amazon",
+                "subnivels": [],
+                "tags": [
+                    "AMAZON",
+                    "LINUX",
+                    "WINSCP"
+                ]
+            },
             {
                 "title": "EC2",
                 "url": "documents\/amazon.html#ec2",
@@ -1659,6 +1705,16 @@ helpers = [
                         ]
                     },
                     {
+                        "title": "Consultar elemento en un array",
+                        "url": "documents\/js.html#consultar-elemento-en-un-array",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "array",
+                            "in_array"
+                        ]
+                    },
+                    {
                         "title": "Setear variable a formato float - quitar decimales",
                         "url": "documents\/js.html#setear-variable-a-formato-float---quitar-decimales",
                         "subnivels": [],
@@ -2018,6 +2074,11 @@ helpers = [
         "url": "documents\/linux.html#linux",
         "subnivels": [
             {
+                "title": "Rutas Importantes",
+                "url": "documents\/linux.html#rutas-importantes",
+                "subnivels": []
+            },
+            {
                 "title": "Comandos Carpeta \/ Archivos",
                 "url": "documents\/linux.html#comandos-carpeta--archivos",
                 "subnivels": []
@@ -2033,11 +2094,6 @@ helpers = [
                 "subnivels": []
             },
             {
-                "title": "Rutas Importantes",
-                "url": "documents\/linux.html#rutas-importantes",
-                "subnivels": []
-            },
-            {
                 "title": "Atajos al escribir comandos",
                 "url": "documents\/linux.html#atajos-al-escribir-comandos",
                 "subnivels": []
@@ -2050,6 +2106,11 @@ helpers = [
             {
                 "title": "Editor de texto VIM",
                 "url": "documents\/linux.html#editor-de-texto-vim",
+                "subnivels": []
+            },
+            {
+                "title": "Editor de texto NANO",
+                "url": "documents\/linux.html#editor-de-texto-nano",
                 "subnivels": []
             },
             {
