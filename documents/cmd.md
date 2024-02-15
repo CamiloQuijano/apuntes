@@ -26,7 +26,8 @@ Limpieza de archivos temporales
 Comandos básicos 
 
 ```bash
-	d: (enter)                  	Cambiar de unidad de disco duro 
+	D: (enter)                  	Cambiar de unidad de disco duro (Letra de unidad)
+	dir                             Listado de archivos
 	cd ..                       	Volver nive anterior 
 	cd folder1/folder2          	Moverse entre directorios
 	cd ../../folder3            	Moverse entre directorios (Volver directorios)
@@ -36,6 +37,9 @@ Comandos básicos
 	wmic os get osarchitecture  	Versión de Windows,  Indica si el sistema es de 32 o 64 Bits 
 	move C:\foldera C:\folderb  	Mover el contenido de una carpeta a otra 
 	md data                     	Crear una carpeta en windows 
+	del <ruta_archivo>              Eliminar un archivo  
+	rmdir <ruta>                    Eliminar carpeta (vacia)
+	rmdir <ruta> /s                 Eliminar carpetas con subniveles
 ```
 
 ### Realizar busqueda por consola
@@ -46,8 +50,16 @@ Comandos básicos
 ```
 
 ### Mover archivos entre carpetas x consola
+###### Tags: `cmd` `robocopy` `xcopy`
 ```bash
 	robocopy /s /R:3 carpetaorigen carpetadestino
+```
+```bash
+	xcopy <origen> <destino> <propiedades>            Estructura
+	xcopy "archivo.nsp" C:\BACKUP /I                  Copiar un archivo
+	xcopy C:\CARPETA\* E:\BACKUP /s/i                 Copiar una carpeta y subcarpetas
+	
+	
 ```
 
 ## netstat
