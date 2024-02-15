@@ -53,6 +53,7 @@
 	php -v                                    Versión de php 
 	php -m                                    Listado de librerias 
 	dpkg --get-selections | grep -i php       Listado de instalaciones realizadas (filtra php)
+	sudo apt-cache policy php7.2-zip          Características de la libreria
 ```  
 
 ## Comandos Procesos

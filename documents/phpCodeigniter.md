@@ -94,18 +94,56 @@ https://codeigniter.com/userguide3/database/query_builder.html
 	// Salida: WHERE name != 'Joe' OR id > 50
 ```
 
-### Ejemplo like en consultar
+### Ejemplo like en consultar - like
 ```php
-	$builder->like('title', 'match', 'before');      // Produces: WHERE `title` LIKE '%match' ESCAPE '!'
-	$builder->like('title', 'match', 'after');       // Produces: WHERE `title` LIKE 'match%' ESCAPE '!'
-	$builder->like('title', 'match', 'both');        // Produces: WHERE `title` LIKE '%match%' ESCAPE '!'
+	$builder->like('title', 'match', 'before');      
+	// Produces: WHERE `title` LIKE '%match' ESCAPE '!' 
+	
+	$builder->like('title', 'match', 'after');       
+	// Produces: WHERE `title` LIKE 'match%' ESCAPE '!' 
+	
+	$builder->like('title', 'match', 'both');        
+	// Produces: WHERE `title` LIKE '%match%' ESCAPE '!' 
 ```
 
-### Ejemplo no like en consultar
+### Ejemplo no like en consultar - not_like
 ```php
-	$builder->not_like('title', 'match', 'before');    // Produces: WHERE `title` NOT LIKE '%match' ESCAPE '!'
-	$builder->not_like('title', 'match', 'after');     // Produces: WHERE `title` NOT LIKE 'match%' ESCAPE '!'
-	$builder->not_like('title', 'match', 'both');      // Produces: WHERE `title` NOT LIKE '%match%' ESCAPE '!'
+	$builder->not_like('title', 'match', 'before');    
+	// Produces: WHERE `title` NOT LIKE '%match' ESCAPE '!' 
+	
+	$builder->not_like('title', 'match', 'after');     
+	// Produces: WHERE `title` NOT LIKE 'match%' ESCAPE '!' 
+	
+	$builder->not_like('title', 'match', 'both');      
+	// Produces: WHERE `title` NOT LIKE '%match%' ESCAPE '!'
+```
+
+### Ejemplo where in en consultar - where_in
+```php
+	$names = array('Frank', 'Todd', 'James');
+	$this->db->where_in('username', $names);            
+	// Produces: WHERE username IN ('Frank', 'Todd', 'James')
+```
+
+### Ejemplo or where in en consultar - or_where_in
+```php
+	$names = array('Frank', 'Todd', 'James');
+	$this->db->or_where_in('username', $names);         
+	// Produces: OR username IN ('Frank', 'Todd', 'James')
+```
+
+### Ejemplo where not in en consultar - where_not_in
+```php
+	$names = array('Frank', 'Todd', 'James');
+	$this->db->where_not_in('username', $names);        
+	// Produces: WHERE username NOT IN ('Frank', 'Todd', 'James')
+```
+
+### Ejemplo or where not in en consultar - or_where_not_in
+```php
+	$names = array('Frank', 'Todd', 'James');
+	$this->db->or_where_not_in('username', $names);     
+	// Produces: OR username NOT IN ('Frank', 'Todd', 'James')
 ```
 
 ### delete

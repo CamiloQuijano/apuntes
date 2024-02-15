@@ -101,7 +101,7 @@ Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. dat
 ```
 
 
-### filtro rango (crear)
+### filtro rango - crear
 ###### Tags: `angular` `filters` `range`
 
 Implementar filtro de Rangos
@@ -403,9 +403,24 @@ Capturar información de Formulario HTML para envío por angular
 		ng-model="typeSelected" ng-init="typeSelected=''">
 		<option value=""> Seleccione un tipo...</option>
 	</select>
-
-
 ```
+
+
+## Input tipo rango
+###### Tags: `range` `input`
+
+```html
+	<input type="range" name="range" ng-model="value" min="{{min}}"  max="{{max}}">
+```
+```javascript
+	$scope.value = 75;
+    $scope.min = 10;
+    $scope.max = 90;
+```
+
+Resultado:  
+![img1]
+
 
 ## ng-repeat
 ###### Tags: `angular` `ng-repeat` `range`
@@ -482,6 +497,7 @@ Altactic: Notificaciones
 Channeldir: Notificaciones y Chat
 app.js →  Principal
 
+[img1]: angular/range.png "Input Rango"
+
 {% endraw %}
 
-    

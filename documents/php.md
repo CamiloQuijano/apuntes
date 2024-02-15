@@ -24,6 +24,7 @@
 
 
 ## Establecer Configuraciones tiempo ejecución memoria limite
+###### Tags: `php` `max_execution_time` `memory_limit` `buffer`
 ```php
 	ini_set("max_execution_time", 8500);                        	// Mas tiempo para ejecución
 	ini_set("memory_limit", "6048M");                           	// Mas memoria
@@ -195,6 +196,20 @@ Validar variable boleana, asi venga en texto true false
 ```
 
 
+## Validar correo 
+###### Tags: `php` `filter_var` `FILTER_VALIDATE_EMAIL`
+
+Validar variable contenga estructura correo valida
+
+```php
+	$email  = 'holamundo';
+	$validEmail = filter_var($email, FILTER_VALIDATE_EMAIL);      // false
+	
+	$email  = 'test@test.com';
+	$validEmail = filter_var($email, FILTER_VALIDATE_EMAIL);      // true
+```
+
+
 ## Setear variable string a entero 
 ###### Tags: `php` `intval`
 
@@ -230,6 +245,19 @@ Pasar valor a float, entero en caso de no tener decimales
     floatval("1234.56789");          // 1234.56789
     floatval("1234.56789Hello");     // 1234.56789
     floatval("Hello1234.56789");     // 0
+```
+
+
+## Setear variable a string
+###### Tags: `php` `strval` `string`
+
+Pasar valor a string, incluso números lo deja de tipo strint
+```php
+    strval("Hello");             // "Hello" 
+    strval("1234.56789");        // "1234.56789" 
+    strval("1234.56789Hello");   // "1234.56789Hello" 
+	strval("Hello1234.56789");   // "1234.56789" 
+	strval(1234);                // "1234"
 ```
 
 
@@ -378,10 +406,21 @@ Documentación: https://www.php.net/manual/es/function.round.php
 ```
 
 ### Fecha y Hora - modificar horas
-###### Tags: `php` `datetime` `modify` `strtotime`
+###### Tags: `php` `datetime` `modify` `strtotime` `hour` `days` `month`
 ```php		
+    // Modificar horas
 	$dateDocument = new DateTime($docHead['fecCrea']);      // 2022-01-12 05:45:39.064809
 	$dateDocument->modify("2 hour");                        // 2022-01-12 07:45:39.064809
+	
+	// Modificar dias 
+	$dateDocument = new DateTime($docHead['fecCrea']);      // 2022-02-12 05:45:39.064809
+	$dateDocument->modify("-30 days");                      // 2022-01-12 05:45:39.064809
+	$formatnew = $dateDocument->format('d/m/Y');            // 12/01/2022
+	
+	// Modificar meses
+	$dateDocument = new DateTime($docHead['fecCrea']);      // 2022-02-12 05:45:39.064809
+	$dateDocument->modify("-1 month");                      // 2022-01-12 05:45:39.064809
+	$formatnew = $dateDocument->format('d/m/Y');            // 12/01/2022
 	
 	$fechaactual = date('y-m-d H:i:s'); 
 	$fechaactual = date('y-m-d H:i:s', strtotime("$fechaactual -3 minutes")); 

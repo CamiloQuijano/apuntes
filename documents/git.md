@@ -64,6 +64,7 @@
     git blame <archivo> --date short    	Para conocer las historia de un cambio que no se entiende
     git diff 4fb063f..f5a6ff9           	Mostrar diferencias usando los identificadores SHA de dos consignaciones	
     git diff --name-only log..log       	Mostrar diferencias entre consignaciones (Nombres de archivos)
+	git diff --color-words                  Poner en color diferente los cambios 
 ``` 
 
 ## Add - Agregar archivos al escenario
