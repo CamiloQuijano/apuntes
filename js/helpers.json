@@ -248,6 +248,15 @@ helpers = [
                 ]
             },
             {
+                "title": "Actualizar a partir de un select con JOIN",
+                "url": "documents\/SQL.html#actualizar-a-partir-de-un-select-con-join",
+                "subnivels": [],
+                "tags": [
+                    "UPDATE",
+                    "JOIN"
+                ]
+            },
+            {
                 "title": "Orden registros a partir de CASE WHEN multiple",
                 "url": "documents\/SQL.html#orden-registros-a-partir-de-case-when-multiple",
                 "subnivels": [],
@@ -265,9 +274,39 @@ helpers = [
                 "subnivels": []
             },
             {
-                "title": "Alter table Foreign key - Constraint",
-                "url": "documents\/SQL.html#alter-table-foreign-key---constraint",
-                "subnivels": []
+                "title": "Agregar llave foranea a columna",
+                "url": "documents\/SQL.html#agregar-llave-foranea-a-columna",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "table",
+                    "alter",
+                    "add",
+                    "foreign"
+                ]
+            },
+            {
+                "title": "Eliminar Constraint a tabla",
+                "url": "documents\/SQL.html#eliminar-constraint-a-tabla",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "table",
+                    "alter",
+                    "drop",
+                    "constraint"
+                ]
+            },
+            {
+                "title": "Actualizar valor por defecto de una columna",
+                "url": "documents\/SQL.html#actualizar-valor-por-defecto-de-una-columna",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "table",
+                    "alter",
+                    "default"
+                ]
             },
             {
                 "title": "Actualizar primary keys tabla - llave compuesta",
@@ -293,6 +332,16 @@ helpers = [
                     "SQL",
                     "VIEW",
                     "CREATE"
+                ]
+            },
+            {
+                "title": "Sacar Backup de DB",
+                "url": "documents\/SQL.html#sacar-backup-de-db",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "task",
+                    "script"
                 ]
             },
             {
@@ -368,6 +417,40 @@ helpers = [
                     "SQL_Latin1_General_CP1_CI_AS",
                     "Modern_Spanish_CI_AS"
                 ]
+            },
+            {
+                "title": "Consultas de administracion",
+                "url": "documents\/SQL.html#consultas-de-administracion",
+                "subnivels": [
+                    {
+                        "title": "Consulta tamano de db y tablas",
+                        "url": "documents\/SQL.html#consulta-tamano-de-db-y-tablas",
+                        "subnivels": [],
+                        "tags": [
+                            "tables",
+                            "size"
+                        ]
+                    },
+                    {
+                        "title": "Consulta vistas que estan usando una tabla en especifico",
+                        "url": "documents\/SQL.html#consulta-vistas-que-estan-usando-una-tabla-en-especifico",
+                        "subnivels": [],
+                        "tags": [
+                            "tables",
+                            "views",
+                            "referenced_entity_name"
+                        ]
+                    },
+                    {
+                        "title": "Represamiento de consultas - matarlas",
+                        "url": "documents\/SQL.html#represamiento-de-consultas---matarlas",
+                        "subnivels": [],
+                        "tags": [
+                            "tables",
+                            "kill"
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -375,6 +458,11 @@ helpers = [
         "title": "Amazon",
         "url": "documents\/amazon.html#amazon",
         "subnivels": [
+            {
+                "title": "Conectarse a una instancia mediante putty",
+                "url": "documents\/amazon.html#conectarse-a-una-instancia-mediante-putty",
+                "subnivels": []
+            },
             {
                 "title": "Conectarse a una instancia de Linux en amazon",
                 "url": "documents\/amazon.html#conectarse-a-una-instancia-de-linux-en-amazon",
@@ -482,13 +570,24 @@ helpers = [
                         ]
                     },
                     {
-                        "title": "filtro rango (crear)",
-                        "url": "documents\/angular.html#filtro-rango-%28crear%29",
+                        "title": "filtro rango - crear",
+                        "url": "documents\/angular.html#filtro-rango---crear",
                         "subnivels": [],
                         "tags": [
                             "angular",
                             "filters",
                             "range"
+                        ]
+                    },
+                    {
+                        "title": "filtro imprimir html",
+                        "url": "documents\/angular.html#filtro-imprimir-html",
+                        "subnivels": [],
+                        "tags": [
+                            "angular",
+                            "filters",
+                            "html",
+                            "trustAsHtml"
                         ]
                     }
                 ]
@@ -580,6 +679,15 @@ helpers = [
                 "title": "Select options con flitro",
                 "url": "documents\/angular.html#select-options-con-flitro",
                 "subnivels": []
+            },
+            {
+                "title": "Input tipo rango",
+                "url": "documents\/angular.html#input-tipo-rango",
+                "subnivels": [],
+                "tags": [
+                    "range",
+                    "input"
+                ]
             },
             {
                 "title": "ng-repeat",
@@ -890,7 +998,32 @@ helpers = [
             {
                 "title": "Modal",
                 "url": "documents\/boostrap.html#modal",
-                "subnivels": []
+                "subnivels": [
+                    {
+                        "title": "Estructura de boton y modal",
+                        "url": "documents\/boostrap.html#estructura-de-boton-y-modal",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Caracteristicas de modal",
+                        "url": "documents\/boostrap.html#caracteristicas-de-modal",
+                        "subnivels": [],
+                        "tags": [
+                            "modal",
+                            "static",
+                            "keyboard"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Evento al cerrar el modal",
+                "url": "documents\/boostrap.html#evento-al-cerrar-el-modal",
+                "subnivels": [],
+                "tags": [
+                    "modal",
+                    "hidden"
+                ]
             }
         ]
     },
@@ -939,7 +1072,12 @@ helpers = [
                     {
                         "title": "Mover archivos entre carpetas x consola",
                         "url": "documents\/cmd.html#mover-archivos-entre-carpetas-x-consola",
-                        "subnivels": []
+                        "subnivels": [],
+                        "tags": [
+                            "cmd",
+                            "robocopy",
+                            "xcopy"
+                        ]
                     }
                 ],
                 "tags": [
@@ -1340,6 +1478,17 @@ helpers = [
                     "form",
                     "submit",
                     "img"
+                ]
+            },
+            {
+                "title": "Tablas",
+                "url": "documents\/html.html#tablas",
+                "subnivels": [],
+                "tags": [
+                    "html",
+                    "table",
+                    "colspan",
+                    "rowspan"
                 ]
             },
             {
@@ -1871,11 +2020,6 @@ helpers = [
                 "subnivels": []
             },
             {
-                "title": "Evento al cerrar el modal",
-                "url": "documents\/js.html#evento-al-cerrar-el-modal",
-                "subnivels": []
-            },
-            {
                 "title": "request http ajax simple",
                 "url": "documents\/js.html#request-http-ajax-simple",
                 "subnivels": []
@@ -2079,6 +2223,11 @@ helpers = [
                 "subnivels": []
             },
             {
+                "title": "Comandos Apache",
+                "url": "documents\/linux.html#comandos-apache",
+                "subnivels": []
+            },
+            {
                 "title": "Comandos Carpeta \/ Archivos",
                 "url": "documents\/linux.html#comandos-carpeta--archivos",
                 "subnivels": []
@@ -2086,6 +2235,16 @@ helpers = [
             {
                 "title": "Comandos Permisos",
                 "url": "documents\/linux.html#comandos-permisos",
+                "subnivels": [],
+                "tags": [
+                    "chmod",
+                    "chown",
+                    "chgrp"
+                ]
+            },
+            {
+                "title": "Comandos PHP",
+                "url": "documents\/linux.html#comandos-php",
                 "subnivels": []
             },
             {
@@ -2122,6 +2281,27 @@ helpers = [
                 "title": "Instalar sublime3",
                 "url": "documents\/linux.html#instalar-sublime3",
                 "subnivels": []
+            },
+            {
+                "title": "Configurar php.ini",
+                "url": "documents\/linux.html#configurar-php.ini",
+                "subnivels": [],
+                "tags": [
+                    "php.ini",
+                    "timezone",
+                    "post_max_size",
+                    "upload_max_filesize",
+                    "max_input_vars"
+                ]
+            },
+            {
+                "title": "Certificado sobre linux",
+                "url": "documents\/linux.html#certificado-sobre-linux",
+                "subnivels": [],
+                "tags": [
+                    "ssl",
+                    "virtualhost"
+                ]
             },
             {
                 "title": "LINUX con Codeigniter",
@@ -2296,6 +2476,11 @@ helpers = [
                 "title": "Otras formas de instalar lampp server",
                 "url": "documents\/linux.html#otras-formas-de-instalar-lampp-server",
                 "subnivels": []
+            },
+            {
+                "title": "Error de conexion SSH repositorios",
+                "url": "documents\/linux.html#error-de-conexion-ssh-repositorios",
+                "subnivels": []
             }
         ]
     },
@@ -2427,18 +2612,44 @@ helpers = [
             {
                 "title": "Funciones generales",
                 "url": "documents\/php.html#funciones-generales",
-                "subnivels": [],
+                "subnivels": [
+                    {
+                        "title": "general llave unica",
+                        "url": "documents\/php.html#general-llave-unica",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "uniqid"
+                        ]
+                    },
+                    {
+                        "title": "Generar un numero aleatorio",
+                        "url": "documents\/php.html#generar-un-numero-aleatorio",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "rand"
+                        ]
+                    }
+                ],
                 "tags": [
                     "php",
                     "set_time_limit",
                     "error_reporting",
-                    "date_default_timezone_set"
+                    "date_default_timezone_set",
+                    "sleep"
                 ]
             },
             {
                 "title": "Establecer Configuraciones tiempo ejecuci\u00f3n memoria limite",
                 "url": "documents\/php.html#establecer-configuraciones-tiempo-ejecuci%C3%B3n-memoria-limite",
-                "subnivels": []
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "max_execution_time",
+                    "memory_limit",
+                    "buffer"
+                ]
             },
             {
                 "title": "Imprimir variables - arreglos - json",
@@ -2557,6 +2768,16 @@ helpers = [
                 ]
             },
             {
+                "title": "Validar correo",
+                "url": "documents\/php.html#validar-correo",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "filter_var",
+                    "FILTER_VALIDATE_EMAIL"
+                ]
+            },
+            {
                 "title": "Setear variable string a entero",
                 "url": "documents\/php.html#setear-variable-string-a-entero",
                 "subnivels": [],
@@ -2572,6 +2793,16 @@ helpers = [
                 "tags": [
                     "php",
                     "floatval"
+                ]
+            },
+            {
+                "title": "Setear variable a string",
+                "url": "documents\/php.html#setear-variable-a-string",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "strval",
+                    "string"
                 ]
             },
             {
@@ -2649,7 +2880,10 @@ helpers = [
                             "php",
                             "datetime",
                             "modify",
-                            "strtotime"
+                            "strtotime",
+                            "hour",
+                            "days",
+                            "month"
                         ]
                     },
                     {
@@ -2762,7 +2996,16 @@ helpers = [
             {
                 "title": "Funciones generales die | version | profile",
                 "url": "documents\/phpCodeigniter.html#funciones-generales-die-%7C-version-%7C-profile",
-                "subnivels": []
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "comandos",
+                    "constantes",
+                    "version",
+                    "profile",
+                    "log_message",
+                    "last_query"
+                ]
             },
             {
                 "title": "Transacciones",
@@ -2800,13 +3043,33 @@ helpers = [
                         "subnivels": []
                     },
                     {
-                        "title": "Ejemplo like en consultar",
-                        "url": "documents\/phpCodeigniter.html#ejemplo-like-en-consultar",
+                        "title": "Ejemplo like en consultar - like",
+                        "url": "documents\/phpCodeigniter.html#ejemplo-like-en-consultar---like",
                         "subnivels": []
                     },
                     {
-                        "title": "Ejemplo no like en consultar",
-                        "url": "documents\/phpCodeigniter.html#ejemplo-no-like-en-consultar",
+                        "title": "Ejemplo no like en consultar - not_like",
+                        "url": "documents\/phpCodeigniter.html#ejemplo-no-like-en-consultar---not_like",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ejemplo where in en consultar - where_in",
+                        "url": "documents\/phpCodeigniter.html#ejemplo-where-in-en-consultar---where_in",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ejemplo or where in en consultar - or_where_in",
+                        "url": "documents\/phpCodeigniter.html#ejemplo-or-where-in-en-consultar---or_where_in",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ejemplo where not in en consultar - where_not_in",
+                        "url": "documents\/phpCodeigniter.html#ejemplo-where-not-in-en-consultar---where_not_in",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Ejemplo or where not in en consultar - or_where_not_in",
+                        "url": "documents\/phpCodeigniter.html#ejemplo-or-where-not-in-en-consultar---or_where_not_in",
                         "subnivels": []
                     },
                     {
