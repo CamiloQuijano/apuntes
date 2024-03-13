@@ -86,9 +86,9 @@ Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. dat
 ###### Tags: `filters` `date` `number`
 
 ```js
-	{{ doc.date|date:'dd/MM/yyyy' }}	// Formato Fecha 
-	{{ val | number }}                      // Formato número sin decimales
-	{{ val | number:2 }}                    // Formato número indicando cantidad de decimales
+	{{ doc.date|date:'dd/MM/yyyy' }}     // Formato Fecha 
+	{{ val | number }}                   // Formato número sin decimales
+	{{ val | number:2 }}                 // Formato número indicando cantidad de decimales
 ```
 
 
@@ -116,17 +116,28 @@ Implementar filtro de Rangos
 				}
 				return input;
 			};
-		})
-		.controller('issuanceController', ['$scope', ($scope) => {
-				$scope.holamundo = 'Contenido variable';
-			}
-		]);
+		});
+``` 
+```html 
+	<div ng-repeat="n in [] | range:100" ></div>
 ```
 
-Uso 
+
+### filtro imprimir html
+###### Tags: `angular` `filters` `html` `trustAsHtml`
+
+```javascript
+	angular
+		.module("configurationApp",[])
+		.filter("trust", ['$sce', function($sce) {
+			return function(htmlCode){
+			  return $sce.trustAsHtml(htmlCode);
+			}
+		}])
+```
 ```html
-	<div ng-repeat="n in [] | range:100" ></div>
-```	
+	<p ng-bind-html="config.example | trust"></p>
+```
 
 
 ## atributos ng
@@ -413,7 +424,7 @@ Capturar información de Formulario HTML para envío por angular
 	<input type="range" name="range" ng-model="value" min="{{min}}"  max="{{max}}">
 ```
 ```javascript
-	$scope.value = 75;
+    $scope.value = 75;
     $scope.min = 10;
     $scope.max = 90;
 ```

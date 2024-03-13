@@ -32,6 +32,8 @@ Implementación:
 	
 ## Modal
 
+### Estructura de boton y modal 
+
 ```html
 	<!-- Button trigger modal -->
 	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -59,6 +61,32 @@ Implementación:
 	  </div>
 	</div>
 ```
+
+### Caracteristicas de modal
+###### Tags: `modal` `static` `keyboard`
+
+```html
+	<a data-controls-modal="your_div_id" data-backdrop="static" data-keyboard="false" href="#">
+```
+```js
+	$('#idDelModal').modal({backdrop: 'static', keyboard: false})
+```
+
+`backdrop:static` No permite que se cierre el modal al dar clic por fuera  
+`keyboard:false`  Cancela cierre de modal con tecla ESC
+
+documentación https://getbootstrap.com/docs/3.4/javascript/
+
+## Evento al cerrar el modal
+###### Tags: `modal` `hidden` 
+
+```js
+    // Evento al cerrar el modal
+    $('#myModal').on('hidden.bs.modal', function () {
+        // do something…
+    });				
+```
+
 
 # Librerias
 

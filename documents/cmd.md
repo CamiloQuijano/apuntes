@@ -51,16 +51,27 @@ Comandos básicos
 
 ### Mover archivos entre carpetas x consola
 ###### Tags: `cmd` `robocopy` `xcopy`
-```bash
-	robocopy /s /R:3 carpetaorigen carpetadestino
-```
+
+Copiar 
+
 ```bash
 	xcopy <origen> <destino> <propiedades>            Estructura
 	xcopy "archivo.nsp" C:\BACKUP /I                  Copiar un archivo
 	xcopy C:\CARPETA\* E:\BACKUP /s/i                 Copiar una carpeta y subcarpetas
-	
-	
 ```
+```bash
+	robocopy /s /R:3 carpetaorigen carpetadestino
+```
+
+Mover 
+
+```bash
+	robocopy <origen> <destino> <propiedades>            Estructura
+	robocopy K:\foldera C:\folderb /r:2 /s /MOVE         Ejemplo 
+```
+- /MOVE -> Incluye ruta y nombre de archivos de subcarpetas
+- /r:2 -> Nombre de archivos de carpeta principal sin ruta 
+- /s -> Sin b incluye fecha hora 
 
 ## netstat
 ###### Tags: `cmd` `netstat` `taskkill` `port`

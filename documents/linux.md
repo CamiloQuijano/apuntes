@@ -9,84 +9,112 @@
 ```linux
 	Raiz Apache www                    /var/www/html
 	Logs de errores de apache          /var/log/apache2/error.log (Debian y Ubuntu)
+	Archivo php.ini                    /etc/php/7.2/apache/php.ini  
+	Carpeta certificados SSL           /etc/ssl/
+```
+
+## Comandos Apache
+
+```bash
+	sudo service apache2 restart        # Reiniciar Apache  
 ```
 
 ## Comandos Carpeta / Archivos
 
 ```bash
-	ls                              Lista de carpetas
-	ls -al                          Lista de carpetas con archivos ocultos
-	cd nombre-de-carpeta            Ir a una carpeta concreta
-	cd                              Volver a la carpeta Home
-	cd –                            Volver a la carpeta anterior
-	pwd                             Mostrar la carpeta donde te encuentras
-	mkdir nombre-de-carpeta         Crear una carpeta nueva
-	rm -r nombre-de-carpeta         Borrar una carpeta
-	rm -rf nombre-de-carpeta        Fuerza el borrado de una carpeta
-	rm nombre-de-archivo            Borrar un archivo
-	rm -f nombre-de-archivo         Fuerza el borrado de un archivo
-	cp nombreArchivo nombreCopia    Copia un archivo
-	mv arch1.text archiv2.text      Mover un archivo | Cambiar nombre de archivo
-	find nombre-de-archivo          Busca un archivo
-	wget enlace                     Descarga un archivo
-	wget -c enlace                  Continua una descarga parada
+	ls                              # Lista de carpetas
+	ls -al                          # Lista de carpetas con archivos ocultos
+	cd nombre-de-carpeta            # Ir a una carpeta concreta
+	cd                              # Volver a la carpeta Home
+	cd –                            # Volver a la carpeta anterior
+	pwd                             # Mostrar la carpeta donde te encuentras
+	mkdir nombre-de-carpeta         # Crear una carpeta nueva
+	rm -r nombre-de-carpeta         # Borrar una carpeta
+	rm -rf nombre-de-carpeta        # Fuerza el borrado de una carpeta
+	rm nombre-de-archivo            # Borrar un archivo
+	rm -f nombre-de-archivo         # Fuerza el borrado de un archivo
+	cp nombreArchivo nombreCopia    # Copia un archivo
+	mv arch1.text archiv2.text      # Mover un archivo | Cambiar nombre de archivo
+	find nombre-de-archivo          # Busca un archivo
+	wget enlace                     # Descarga un archivo
+	wget -c enlace                  # Continua una descarga parada
 ```
 
 
 ## Comandos Permisos
 ###### Tags: `chmod` `chown` `chgrp`  
 ```bash
-	sudo su                                         Cambiar conexión a usuario ADMINISTRADOR
-	sudo chgrp camiloquijano archivoname            Cambio propietario archivo GRUPO
-	sudo chown camiloquijano archivoname            Cambio propietario archivo
-	Chmod 750                                       Permisos WEB
-	Chmod 770                                       Permisos WEB tmpl
-	sudo chmod 750 -R carpeta_name                  Permisos Recursivos. -R: Carpetas recursivas
+	sudo su                                    # Cambiar conexión a usuario ADMINISTRADOR
+	sudo chgrp camiloquijano archivoname       # Cambio propietario archivo GRUPO
+	Chmod 750                                  # Permisos WEB
+	Chmod 770                                  # Permisos WEB tmpl
+	sudo chmod 750 -R carpeta_name             # Permisos Recursivos. -R: Carpetas recursivas
 	
-	sudo chown -R <usuario> <carpeta>               Cambiar propietario de CARPETA
-	sudo chown -R ubuntu public_html/               Cambiar propietario de CARPETA (EJEMPLO)
+	# Cambiar propietario de archivo 
+	sudo chown <usuario> <archivo>             # Estructura
+	sudo chown ubuntu config/constants.php     # Ejemplo
+
+	# Cambiar propietario de CARPETA
+	sudo chown -R <usuario> <carpeta>          # Estructura
+	sudo chown -R ubuntu public_html/          # Ejemplo
 ```  
+Estructura generales
+```bash 
+	Valor        Numérico	Explicación
+	rw——-        600	    El propietario puede leer y escribir.
+	rw-r–r–      644	    El propietario puede leer y escribir, el grupo y otros pueden leer.
+	rw-rw-rw-    666	    El propietario, el grupo y otros pueden leer y escribir.
+	rwx——        700	    El propietario puede leer, escribir y ejecutar, el grupo y otros no pueden hacer nada con el archivo.
+	rwx–x–x      711	    El propietario puede leer, escribir y ejecutar, el grupo y otros pueden ejecutar.
+	rwxr-xr-x    755	    El propietario puede leer, escribir y ejecutar, el grupo y otros pueden leer y ejecutar.
+	rwxrwxrwx    777	    EL propietario, el grupo y otros pueden leer, escribir y ejecutar.
+```
+
+
+
+
 
 
 ## Comandos PHP  
 ```bash
-	php -v                                    Versión de php 
-	php -m                                    Listado de librerias 
-	dpkg --get-selections | grep -i php       Listado de instalaciones realizadas (filtra php)
-	sudo apt-cache policy php7.2-zip          Características de la libreria
+	php -v                                    # Versión de php 
+	php -m                                    # Listado de librerias 
+	dpkg --get-selections | grep -i php       # Listado de instalaciones realizadas (filtra php)
+	sudo apt-cache policy php7.2-zip          # Características de la libreria
 ```  
 
 ## Comandos Procesos
 ```bash
-	ps          		Muestra los procesos activos
-	top         		Muestra todos los procesos en funcionamiento
-	kill pid    		Mata un proceso con un PID concreto. Verás el PID de un proceso con top
+	ps          		# Muestra los procesos activos
+	top         		# Muestra todos los procesos en funcionamiento
+	kill pid    		# Mata un proceso con un PID concreto. Verás el PID de un proceso con top
 ```
 
 ## Atajos al escribir comandos
 
 ```bash
-	CTRL + C        	Para el comando activo
-	CTRL + W        	Borra una palabra de la línea actual
-	CTRL + U        	Borra toda la línea
-	!!              	Repite el último comando
-	Flecha arriba   	Recupera el último comando para editarlo
-	exit            	Sale de la sesión
+	CTRL + C        	# Para el comando activo
+	CTRL + W        	# Borra una palabra de la línea actual
+	CTRL + U        	# Borra toda la línea
+	!!              	# Repite el último comando
+	Flecha arriba   	# Recupera el último comando para editarlo
+	exit            	# Sale de la sesión
 ```
 
 ## Comandos Información del sistema
 
 ```bash
-	arch                    	Muestra la arquitectura (x86, ARM,…)
-	date                    	Muestra la fecha y hora
-	cal                     	Muestra el calendario del mes en curso
-	uname -a                	Muestra información del núcleo (kernel)
-	cat /proc/cpuinfo       	Muestra información de la CPU
-	cat /proc/meminfo       	Muestra información de la memoria
-	df                      	Muestra el espacio usado del disco
-	du                      	Muestra el espacio usado en una carpeta
-	free                    	Muestra la memoria y uso de SWAP
-	whereis nombrePrograma  	Muestra dónde puede estar un programa
+	arch                    	                 # Muestra la arquitectura (x86, ARM,…)
+	date                    	                 # Muestra la fecha y hora del servidor
+	cal                     	                 # Muestra el calendario del mes en curso
+	uname -a                	                 # Muestra información del núcleo (kernel)
+	cat /proc/cpuinfo       	                 # Muestra información de la CPU
+	cat /proc/meminfo       	                 # Muestra información de la memoria
+	df                      	                 # Muestra el espacio usado del disco
+	du                      	                 # Muestra el espacio usado en una carpeta
+	free                    	                 # Muestra la memoria y uso de SWAP
+	whereis nombrePrograma  	                 # Muestra dónde puede estar un programa
+	timedatectl set-timezone America/Bogota      # cambiar la zona horaria linux
 ```
 
 ## Editor de texto VIM
@@ -126,6 +154,58 @@
 	sudo apt-get update
 	sudo apt-get install sublime-text-installer
 ```  
+
+
+## Configurar php.ini 
+###### Tags: `php.ini` `timezone` `post_max_size` `upload_max_filesize` `max_input_vars`  
+
+Ubicación archivo:  
+/etc/php/7.2/apache/php.ini  
+
+```bash
+	-- LINE: 934
+	;date.timezone =
+	date.timezone = "America/Bogota"
+
+	-- line 669
+	post_max_size = 8M
+	post_max_size = 64M
+
+	-- LINE 822
+	upload_max_filesize = 2M
+	upload_max_filesize = 64M
+
+	-- LINE 398
+	;max_input_vars = 1000
+	max_input_vars = 5000
+	
+	-- Reiniciar apache
+	sudo service apache2 restart
+```  
+
+
+## Certificado sobre linux
+###### Tags: `ssl` `virtualhost` 
+
+```bash
+	# ubicación carpeta certificados  
+	etc/ssl
+
+	# Incluir en VIRTUALHOST  
+	SSLCertificateFile	/etc/ssl/certs/test-selfsigned.crt  
+	SSLCertificateKeyFile	/etc/ssl/certs/test-selfsigned.key  
+
+	# Permisos Originales de carpeta  
+	sudo chmod 755 -R /certs  
+	sudo chmod 710 -R /private  
+
+	# entrar a carpeta y cambiar temporalmente los permisos mientras 
+	# pega los certificados posteriormente revertir a los orginales  
+	sudo chmod 777 -R /certs	(cambio temporal)  
+
+	# Reset apache  
+	sudo service apache2 restart  
+```
 
 ## LINUX con Codeigniter 
 
@@ -387,19 +467,19 @@ pear install phpdoc/phpDocumentor-alpha
  
 ### Parámetros Iniciar/Detener 
 
-start Starts XAMPP. 
-stop Stops XAMPP. 
-restart Stops and starts XAMPP. 
-startapache Starts only the Apache. 
+start Starts XAMPP.  
+stop Stops XAMPP.  
+restart Stops and starts XAMPP.  
+startapache Starts only the Apache.  
 
-startssl Starts the Apache SSL support. This command activates the SSL support permanently, e.g. if you restarts XAMPP in the future SSL will stay activated. 
-startmysql Starts only the MySQL database.  
-startftp Starts the ProFTPD server. Via FTP you can upload files for your web server (user "nobody", password "lampp"). This command activates the ProFTPD permanently, e.g. if you restarts XAMPP in the future FTP will stay activated. 
-stopapache Stops the Apache.  
-stopssl Stops the Apache SSL support. This command deactivates the SSL support permanently, e.g. if you restarts XAMPP in the future SSL will stay deactivated. 
+startssl Starts the Apache SSL support. This command activates the SSL support permanently, e.g. if you restarts XAMPP in the future SSL will stay activated.  
+startmysql Starts only the MySQL database.   
+startftp Starts the ProFTPD server. Via FTP you can upload files for your web server (user "nobody", password "lampp"). This command activates the ProFTPD permanently, e.g. if you restarts XAMPP in the future FTP will stay activated.  
+stopapache Stops the Apache.   
+stopssl Stops the Apache SSL support. This command deactivates the SSL support permanently, e.g. if you restarts XAMPP in the future SSL will stay deactivated.  
 stopmysql Stops the MySQL database.  
-stopftp Stops the ProFTPD server. This command deactivates the ProFTPD permanently, e.g. if you restarts XAMPP in the future FTP will stay deactivated. 
-security Starts a small security check programm.  
+stopftp Stops the ProFTPD server. This command deactivates the ProFTPD permanently, e.g. if you restarts XAMPP in the future FTP will stay deactivated.  
+security Starts a small security check programm.   
 
  
 ## MEMCACHED Y MEMCACHE 

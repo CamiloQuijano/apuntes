@@ -244,8 +244,8 @@ Ejemplos implementados
 		
 ## Sys tables - Consultar por nombres de tablas-vistas
 ```sql
-	SELECT name FROM Singes.sys.tables WHERE name LIKE '%TABLA%'
-	SELECT name FROM Singes.sys.views WHERE name LIKE '%TABLA%'
+	SELECT name FROM db.sys.tables WHERE name LIKE '%TABLA%'
+	SELECT name FROM db.sys.views WHERE name LIKE '%TABLA%'
 ```
 	
 ## Crear una tabla a partir de otra
@@ -255,8 +255,8 @@ Ejemplos implementados
 	FROM WEB_TMP_CARGUE_lfrodriguez;
 
 	-- Sin Información
-	SELECT * INTO "inv_Item_homologo" 
-	FROM SINGES.."inv_Item_homologo" where id = 0
+	SELECT * INTO "inv_Item_homologo1" 
+	FROM "inv_Item_homologo" where id = 0
 ```
 
 ## Crear una tabla temporal - validar existencia previa
@@ -310,6 +310,18 @@ Ejemplos implementados
 	ORDER by codigo
 ```
 
+## Actualizar a partir de un select con JOIN
+###### Tags: `UPDATE` `JOIN`
+
+```sql
+	UPDATE inv_cuerpo
+	SET puntosItem = 9.7 
+	FROM inv_cuerpo cue 
+	JOIN inv_cabeza cab ON cab.id = cue.idcabeza  
+	WHERE cab.numDoc = 'TN6238' AND cue.tipVen = 10
+```
+
+
 ## Orden registros a partir de CASE WHEN multiple
 ###### Tags: `ORDER` `CASE` `WHEN` `THEN` `END`
 
@@ -340,18 +352,30 @@ Ejemplos implementados
 	ALTER TABLE inv_listaPreciosCabeza ALTER COLUMN ip VARCHAR(20);
 	
 	-- Eliminar columna
-	ALTER TABLE Singes..portal_mantenimientoPcHvCab DROP COLUMN usu_modifica ;
+	ALTER TABLE portal_mantenimientoPcHvCab DROP COLUMN usu_modifica ;
 ```
 
-## Alter table Foreign key - Constraint
+## Agregar llave foranea a columna
+###### Tags: `SQL` `table` `alter` `add` `foreign`
 ```sql
-	-- Agregar Foreign key a tabla existente
-	ALTER TABLE Singes..crm_proyectos 
+	ALTER TABLE crm_proyectos 
 	ADD FOREIGN KEY (nodoIdAsignado) REFERENCES com_nodoComisiones(id)
-	
+```
+
+## Eliminar Constraint a tabla
+###### Tags: `SQL` `table` `alter` `drop` `constraint` 
+```sql
 	-- Eliminar UNIQUE KEY
 	ALTER TABLE portal_mantenimientoHardwareTipo 
 	DROP CONSTRAINT UQ__portal_m__298336B621DEBDAB;
+```
+
+## Actualizar valor por defecto de una columna
+###### Tags: `SQL` `table` `alter` `default`
+```sql
+	-- Agregar Foreign key a tabla existente
+	ALTER TABLE inv_ReferenciaRelacional 
+	ADD DEFAULT 0 FOR importante;
 ```
 
 ## Actualizar primary keys tabla - llave compuesta
@@ -396,7 +420,6 @@ Ejemplos implementados
 ```
 
 
-
 ## Crear vistas
 ###### Tags: `SQL` `VIEW` `CREATE`
 
@@ -409,6 +432,22 @@ Ejemplos implementados
 	WHERE (l.estado = 1) AND (l.idTipoLista IN (2, 3))
 	GROUP BY l.id, gr.codSuc
 ```
+
+
+## Sacar Backup de DB
+###### Tags: `SQL` `task` `script`
+
+Generar Backup de una tabla  
+
+1. Haga clic derecho en la base de datos 
+2. Seleccione Tareas -> Generar scripts
+3. (Haga clic en Siguiente si aparece la pantalla de introducción)
+4. Seleccione "Seleccionar objetos de base de datos específicos"
+5. Elija los objetos para generar scripts (tablas, procedimientos almacenados, etc.)
+6. Haga clic en Siguiente y luego especifique el nombre del archivo de salida.
+7. Esto generará solo los esquemas. Si también desea generar scripts de datos, haga clic en el botón Avanzado y desplácese hacia abajo hasta "Tipos de datos para script" y cámbielo de "Solo esquema" a "Solo datos" o "Esquema y datos".
+8. Haga clic en Finalizar para generar el script. 
+
 
 ## Proceso SQL 
 
@@ -526,4 +565,69 @@ CREATE TABLE #CORREOS_VALIDAR (
 	id int NOT NULL IDENTITY(1,1) PRIMARY KEY, 
 	correo VARCHAR(80) COLLATE DATABASE_DEFAULT,
 );
+```
+
+## Consultas de administracion
+
+### Consulta tamano de db y tablas
+###### Tags: `tables` `size` 
+
+```sql
+	SELECT 
+	t.NAME AS Tabla,
+	s.Name AS Esquema,
+	p.rows AS NumeroDeFilas,
+	convert(int,((SUM(a.total_pages) * 8) / 1024.00)) AS TotalEspacio_MB_INT,
+	CAST(ROUND(((SUM(a.total_pages) * 8) / 1024.00), 2) AS NUMERIC(36, 2)) AS TotalEspacio_MB,
+	CAST(ROUND(((SUM(a.used_pages) * 8) / 1024.00), 2) AS NUMERIC(36, 2)) AS EspacioUtilizado_MB, 
+	CAST(ROUND(((SUM(a.total_pages) - SUM(a.used_pages)) * 8) / 1024.00, 2) AS NUMERIC(36, 2)) AS EspacioNoUtilizado_MB
+	FROM
+	sys.tables t
+	INNER JOIN sys.indexes i ON t.OBJECT_ID = i.object_id
+	INNER JOIN sys.partitions p ON i.object_id = p.OBJECT_ID AND i.index_id = p.index_id
+	INNER JOIN sys.allocation_units a ON p.partition_id = a.container_id
+	LEFT OUTER JOIN sys.schemas s ON t.schema_id = s.schema_id
+	GROUP BY t.Name, s.Name, p.Rows
+	ORDER BY TotalEspacio_MB desc
+```
+
+
+### Consulta vistas que estan usando una tabla en especifico
+###### Tags: `tables` `views` `referenced_entity_name`
+
+```sql
+	-- Consultas
+	SELECT TOP 10 v.name, d.referenced_entity_name
+	FROM sys.sql_expression_dependencies d
+	JOIN sys.views v ON v.object_id = d.referencing_id
+	WHERE d.referenced_entity_name = 'inv_rankit'
+	
+	-- Tablas relacionadas
+	SELECT definition FROM sys.objects 
+	JOIN object_id = object_id('dbo.v_referenciaCaracteristicas') and type = 'V'
+
+	SELECT TOP 10 * FROM sys.objects
+	SELECT TOP 10 * FROM sys.objects where object_id = 8207833 
+	SELECT TOP 10 * FROM sys.objects where principal_id = 8207833 
+	SELECT TOP 10 * FROM sys.views where object_id = 8207833 
+	SELECT TOP 10 * FROM sys.sql_modules  where object_id = 8207833  
+	SELECT TOP 10 * FROM sys.sql_expression_dependencies WHERE referencing_id = '8207833'
+```
+
+### Represamiento de consultas - matarlas
+###### Tags: `tables` `kill` 
+
+```sql
+	SELECT sqltext.TEXT,
+	req.session_id,
+	req.status,
+	req.command,
+	req.cpu_time,
+	req.total_elapsed_time
+	FROM sys.dm_exec_requests req
+	CROSS APPLY sys.dm_exec_sql_text(sql_handle) AS sqltext
+	ORDER BY req.total_elapsed_time
+	
+	-- Matar una consulta en especifico
+	KILL 136
 ```

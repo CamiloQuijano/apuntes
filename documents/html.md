@@ -35,6 +35,26 @@
     </form>
 ```
 
+## Tablas
+###### Tags: `html` `table` `colspan` `rowspan`
+
+Agrupa cabezote horizontalmente (2 lineas)  
+```html
+	<tr>
+		<th colspan="2">Name</th>
+		<th>Age</th>
+	</tr>
+```
+
+Agrupa cabezote verticalmente (2 lineas)  
+```html
+	<tr>
+		<th rowspan="2">Phone</th>
+		<td>555-1234</td>
+	  </tr>
+```
+
+  
 ## Asignar rol de un elemento a otro
 ```html
     <!-- El span tomar características de botton -->

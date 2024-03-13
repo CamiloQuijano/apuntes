@@ -431,19 +431,12 @@ Es similar al while, pero se ejecuta la primera condición asi no cumpla el whil
     $('#formscheduleedit').trigger('reset');
 ```
 
-					
+ 
 ## Reiniciar Select2 change
 ```js
     $("#scheduleStatusEdit").val('').trigger('change'); 
 ```
 
-## Evento al cerrar el modal
-```js
-    // Evento al cerrar el modal
-    $('#myModal').on('hidden.bs.modal', function () {
-        // do something…
-    });				
-```
 
 ## request http ajax simple
 ```js

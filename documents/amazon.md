@@ -2,6 +2,13 @@
 
 # Amazon
 
+## Conectarse a una instancia mediante putty
+
+Instructivo de Conectarse a la instancia de Linux desde Windows mediante  
+PuTTY - Amazon Elastic Compute Cloud v2  
+- [Conectase a instancia mediante putty](aws/ConectarseInstanciaLinux.pdf)
+
+
 ## Conectarse a una instancia de Linux en amazon
 ###### Tags: `AMAZON` `LINUX` `WINSCP`
 
@@ -64,7 +71,7 @@ IMPORTANTE: En caso de Channeldir no reiniciar nodo “redis-db-beta”, ya que 
 En caso de multiples nodos, para reiniciar un único nodo (cache), seleccionar el cluster, el nodo y haciendo uso de ENDPOINT del nodo a traves de EC2, nos conectamos al nodo exclusivamente asi:
 
 ```console
-redis-cli -h name_endpoint	
+	redis-cli -h name_endpoint	
 	redis-cli: Cliente de redis
 	-h: hosting
 	name_endpoint: nombre del hosting o nodo

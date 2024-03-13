@@ -14,12 +14,31 @@
 
 
 ## Funciones generales 
-###### Tags: `php` `set_time_limit` `error_reporting` `date_default_timezone_set`
+###### Tags: `php` `set_time_limit` `error_reporting` `date_default_timezone_set` `sleep`
 
 ```php
 	set_time_limit(0); 								// No limite de tiempo 
 	error_reporting(true); 							// Log de errores
 	date_default_timezone_set('America/Bogota');	// Configurar Zona horaria
+	sleep(3);                                       // Tiempo de espera - 3 segundos
+```
+
+
+### general llave unica
+###### Tags: `php` `uniqid` 
+```php
+	echo uniqid();
+	// Salida: 64ad96558863d
+	// Salida: 64ad969589b3d
+```
+
+### Generar un numero aleatorio
+###### Tags: `php` `rand` 
+
+Estructura rand(min, max)  
+```php
+	rand(5, 15)			// Salida: 6 
+	rand(5, 15)			// Salida: 10 
 ```
 
 
