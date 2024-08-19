@@ -375,6 +375,15 @@ helpers = [
                             "ROWCOUNT",
                             "CURSOR"
                         ]
+                    },
+                    {
+                        "title": "Guardar log de proceso con mensaje estructurado y cantidad de registros",
+                        "url": "documents\/SQL.html#guardar-log-de-proceso-con-mensaje-estructurado-y-cantidad-de-registros",
+                        "subnivels": [],
+                        "tags": [
+                            "sql",
+                            "CONCAT"
+                        ]
                     }
                 ]
             },
@@ -538,6 +547,32 @@ helpers = [
                 ]
             },
             {
+                "title": "eventos",
+                "url": "documents\/angular.html#eventos",
+                "subnivels": [
+                    {
+                        "title": "Blur",
+                        "url": "documents\/angular.html#blur",
+                        "subnivels": [],
+                        "tags": [
+                            "angular",
+                            "events",
+                            "blur"
+                        ]
+                    },
+                    {
+                        "title": "Focus",
+                        "url": "documents\/angular.html#focus",
+                        "subnivels": [],
+                        "tags": [
+                            "angular",
+                            "events",
+                            "focus"
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "filtros",
                 "url": "documents\/angular.html#filtros",
                 "subnivels": [
@@ -551,13 +586,31 @@ helpers = [
                         ]
                     },
                     {
-                        "title": "filtros date - number",
-                        "url": "documents\/angular.html#filtros-date---number",
+                        "title": "filtros Formato fecha|",
+                        "url": "documents\/angular.html#filtros-formato-fecha%7C",
                         "subnivels": [],
                         "tags": [
                             "filters",
-                            "date",
+                            "date"
+                        ]
+                    },
+                    {
+                        "title": "filtros Formato numeros",
+                        "url": "documents\/angular.html#filtros-formato-numeros",
+                        "subnivels": [],
+                        "tags": [
+                            "filters",
                             "number"
+                        ]
+                    },
+                    {
+                        "title": "filtros texto mayuscula - minuscula",
+                        "url": "documents\/angular.html#filtros-texto-mayuscula---minuscula",
+                        "subnivels": [],
+                        "tags": [
+                            "filters",
+                            "lowercase",
+                            "uppercase"
                         ]
                     },
                     {
@@ -1337,6 +1390,16 @@ helpers = [
                 "subnivels": []
             },
             {
+                "title": "Crear estuctura de repositorio de una cuenta a otra",
+                "url": "documents\/git.html#crear-estuctura-de-repositorio-de-una-cuenta-a-otra",
+                "subnivels": [],
+                "tags": [
+                    "git",
+                    "clone",
+                    "mirror"
+                ]
+            },
+            {
                 "title": "Guias de ejemplo",
                 "url": "documents\/git.html#guias-de-ejemplo",
                 "subnivels": [
@@ -1704,6 +1767,40 @@ helpers = [
                 ]
             },
             {
+                "title": "Agregar contenido en un Id o Clase - antes o despues",
+                "url": "documents\/jquery.html#agregar-contenido-en-un-id-o-clase---antes-o-despues",
+                "subnivels": [],
+                "tags": [
+                    "jquery",
+                    "append",
+                    "prepend"
+                ]
+            },
+            {
+                "title": "Convertir string a JSON",
+                "url": "documents\/jquery.html#convertir-string-a-json",
+                "subnivels": [],
+                "tags": [
+                    "jquery",
+                    "parse",
+                    "stringify"
+                ]
+            },
+            {
+                "title": "Crear un Objeto",
+                "url": "documents\/jquery.html#crear-un-objeto",
+                "subnivels": [],
+                "tags": [
+                    "jquery",
+                    "Object"
+                ]
+            },
+            {
+                "title": "Eliminar o agregar clase",
+                "url": "documents\/jquery.html#eliminar-o-agregar-clase",
+                "subnivels": []
+            },
+            {
                 "title": "Animacion para moverse a un elemento",
                 "url": "documents\/jquery.html#animacion-para-moverse-a-un-elemento",
                 "subnivels": [],
@@ -1811,6 +1908,38 @@ helpers = [
                         ]
                     },
                     {
+                        "title": "JS Validar mes - incluir 0 antes en caso de que aplique",
+                        "url": "documents\/js.html#js-validar-mes---incluir-0-antes-en-caso-de-que-aplique",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "new",
+                            "date",
+                            "getMonth",
+                            "cero"
+                        ]
+                    },
+                    {
+                        "title": "Formato fecha de unix a string",
+                        "url": "documents\/js.html#formato-fecha-de-unix-a-string",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "date",
+                            "replace"
+                        ]
+                    },
+                    {
+                        "title": "Cambiar slash por lineas en fecha",
+                        "url": "documents\/js.html#cambiar-slash-por-lineas-en-fecha",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "date",
+                            "replace"
+                        ]
+                    },
+                    {
                         "title": "Unificar dos objetos en uno",
                         "url": "documents\/js.html#unificar-dos-objetos-en-uno",
                         "subnivels": [],
@@ -1913,7 +2042,12 @@ helpers = [
                     {
                         "title": "Date",
                         "url": "documents\/js.html#date",
-                        "subnivels": []
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "date",
+                            "timestamp"
+                        ]
                     },
                     {
                         "title": "Date unix",
@@ -1949,6 +2083,16 @@ helpers = [
                         "title": "Iteracion For",
                         "url": "documents\/js.html#iteracion-for",
                         "subnivels": []
+                    },
+                    {
+                        "title": "Remplazar",
+                        "url": "documents\/js.html#remplazar",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "replace",
+                            "sanizar"
+                        ]
                     },
                     {
                         "title": "Iteracion While",
@@ -2106,6 +2250,16 @@ helpers = [
                     {
                         "title": "jalert con btn de aceptar y callback",
                         "url": "documents\/js.html#jalert-con-btn-de-aceptar-y-callback",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Implementaci\u00f3n funcion success",
+                        "url": "documents\/js.html#implementaci%C3%B3n-funcion-success",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Cerrar un jalert de forma automatica",
+                        "url": "documents\/js.html#cerrar-un-jalert-de-forma-automatica",
                         "subnivels": []
                     }
                 ]
@@ -2327,6 +2481,11 @@ helpers = [
                         ]
                     }
                 ]
+            },
+            {
+                "title": "Habilitar Error de lectura htaccess",
+                "url": "documents\/linux.html#habilitar-error-de-lectura-htaccess",
+                "subnivels": []
             },
             {
                 "title": "Habilitar\/Instalar header mod_headers",
@@ -2824,6 +2983,15 @@ helpers = [
                 ]
             },
             {
+                "title": "Valor positivo de un numero",
+                "url": "documents\/php.html#valor-positivo-de-un-numero",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "abs"
+                ]
+            },
+            {
                 "title": "Redondear un numero",
                 "url": "documents\/php.html#redondear-un-numero",
                 "subnivels": [],
@@ -2844,10 +3012,25 @@ helpers = [
             {
                 "title": "Iteracion",
                 "url": "documents\/php.html#iteracion",
-                "subnivels": [],
-                "tags": [
-                    "php",
-                    "for"
+                "subnivels": [
+                    {
+                        "title": "For",
+                        "url": "documents\/php.html#for",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "for"
+                        ]
+                    },
+                    {
+                        "title": "While",
+                        "url": "documents\/php.html#while",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "while"
+                        ]
+                    }
                 ]
             },
             {
@@ -2945,6 +3128,15 @@ helpers = [
             {
                 "title": "Convertir variable string en array",
                 "url": "documents\/php.html#convertir-variable-string-en-array",
+                "subnivels": [],
+                "tags": [
+                    "php",
+                    "explode"
+                ]
+            },
+            {
+                "title": "Revertir texto",
+                "url": "documents\/php.html#revertir-texto",
                 "subnivels": [
                     {
                         "title": "strip_tags Eliminar contenido html-php en variables",
@@ -2962,6 +3154,24 @@ helpers = [
                         "subnivels": []
                     },
                     {
+                        "title": "Crear carpeta",
+                        "url": "documents\/php.html#crear-carpeta",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "mkdir"
+                        ]
+                    },
+                    {
+                        "title": "Copiar archivo",
+                        "url": "documents\/php.html#copiar-archivo",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "copy"
+                        ]
+                    },
+                    {
                         "title": "Crear imagen con texto",
                         "url": "documents\/php.html#crear-imagen-con-texto",
                         "subnivels": [],
@@ -2973,7 +3183,7 @@ helpers = [
                 ],
                 "tags": [
                     "php",
-                    "explode"
+                    "strrev"
                 ]
             },
             {
@@ -2981,11 +3191,42 @@ helpers = [
                 "url": "documents\/php.html#php-excel",
                 "subnivels": [
                     {
+                        "title": "Crear Imagen en excel",
+                        "url": "documents\/php.html#crear-imagen-en-excel",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "phpexcel",
+                            "imagecreatefrom"
+                        ]
+                    },
+                    {
+                        "title": "Insertar Fila",
+                        "url": "documents\/php.html#insertar-fila",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "phpexcel",
+                            "insertNewRowBefore"
+                        ]
+                    },
+                    {
                         "title": "Exportar excel cvs con numeros grandes formato texto",
                         "url": "documents\/php.html#exportar-excel-cvs-con-numeros-grandes-formato-texto",
                         "subnivels": []
                     }
+                ],
+                "tags": [
+                    "php",
+                    "phpexcel",
+                    "format",
+                    "autosize"
                 ]
+            },
+            {
+                "title": "Funciones - consulta par - impar",
+                "url": "documents\/php.html#funciones---consulta-par---impar",
+                "subnivels": []
             }
         ]
     },
@@ -3570,7 +3811,13 @@ helpers = [
                 "title": "Metodo",
                 "url": "documents\/phpSymfony.html#metodo",
                 "subnivels": []
-            },
+            }
+        ]
+    },
+    {
+        "title": "Rutas - Manejo de ruta con parametros en JS",
+        "url": "documents\/phpSymfony.html#rutas---manejo-de-ruta-con-parametros-en-js",
+        "subnivels": [
             {
                 "title": "Twig",
                 "url": "documents\/phpSymfony.html#twig",
@@ -3688,6 +3935,10 @@ helpers = [
                     }
                 ]
             }
+        ],
+        "tags": [
+            "symfony",
+            "route"
         ]
     },
     {
@@ -3715,6 +3966,21 @@ helpers = [
     {
         "title": "REACT JS",
         "url": "documents\/reactJS.html#react-js",
+        "subnivels": [
+            {
+                "title": "Ejemplo estructura inicial",
+                "url": "documents\/reactJS.html#ejemplo-estructura-inicial",
+                "subnivels": [],
+                "tags": [
+                    "curso",
+                    "menu"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "REACT JS - CURSO",
+        "url": "documents\/reactJS.html#react-js---curso",
         "subnivels": [
             {
                 "title": "HERRAMIENTAS SUGERIDAS",
@@ -3964,6 +4230,36 @@ helpers = [
                     "underscore",
                     "js",
                     "contains"
+                ]
+            },
+            {
+                "title": "Validar si una variable es boleana",
+                "url": "documents\/underscore.html#validar-si-una-variable-es-boleana",
+                "subnivels": [],
+                "tags": [
+                    "underscore",
+                    "js",
+                    "isBoolean"
+                ]
+            },
+            {
+                "title": "Validar si una variable es arreglo",
+                "url": "documents\/underscore.html#validar-si-una-variable-es-arreglo",
+                "subnivels": [],
+                "tags": [
+                    "underscore",
+                    "js",
+                    "isArray"
+                ]
+            },
+            {
+                "title": "Validar si una variable es objeto",
+                "url": "documents\/underscore.html#validar-si-una-variable-es-objeto",
+                "subnivels": [],
+                "tags": [
+                    "underscore",
+                    "js",
+                    "isObject"
                 ]
             },
             {
