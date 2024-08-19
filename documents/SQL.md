@@ -183,6 +183,7 @@ Ejemplos implementados
 	SELECT CONVERT(VARCHAR(50), getdate(), 121)             -- Formato 2020-09-09 17:59:04.387
 	SELECT CONVERT(VARCHAR(50), getdate(), 103)             -- Formato 09/09/2020
 	SELECT CONVERT(VARCHAR(50), fecCrea, 20)                -- Formato 2021-10-29 08:55:02
+	SELECT CONVERT(VARCHAR(10), getdate(), 126)             -- Formato 2021-10-29 
 ```
 
 ## Incremetar o restar dias a una fecha
@@ -519,6 +520,16 @@ Generar Backup de una tabla
 	DECLARE documentsRelacionados CURSOR FOR   
 	SELECT * FROM inv_cabezaDocumentoRelacionado WHERE cabezaId = @idcabeza;
 	SET @rowsDocumentsRel = @@ROWCOUNT;
+```
+
+### Guardar log de proceso con mensaje estructurado y cantidad de registros
+###### Tags: `sql` `CONCAT` 
+```sql
+	DECLARE @countRows INT;
+	DECLARE @response VARCHAR(200);
+	SELECT @countRows = count(id) from reporte_documentosPendientesXEmitir
+	SET @response = CONCAT('{', '"status":200,"message":"JOB Docs Pendientes x emitir", "registros": "', @countRows, '"}')
+	INSERT INTO log_procesosAutomaticos (proceso, respuesta, fecha) VALUES ('singes_reportDocumentPendindEmit', @response, getdate())
 ```
 
 ## Collation

@@ -11,12 +11,15 @@
 	Logs de errores de apache          /var/log/apache2/error.log (Debian y Ubuntu)
 	Archivo php.ini                    /etc/php/7.2/apache/php.ini  
 	Carpeta certificados SSL           /etc/ssl/
+	Configuraciones APACHE             /etc/apache2/apache2.conf
+	Carpera SSH                        /home/ubuntu/.ssh
 ```
 
 ## Comandos Apache
 
 ```bash
 	sudo service apache2 restart        # Reiniciar Apache  
+	sudo /etc/init.d/apache2 restart    # Reiniciar Apache (Opc2)
 ```
 
 ## Comandos Carpeta / Archivos
@@ -271,6 +274,22 @@ sudo gedit /etc/apache2/sites-enabled/000-default.conf
 	
 5. Reset el apache2
 sudo service apache2 restart
+
+
+## Habilitar Error de lectura htaccess
+```bash
+	# PASO 1: abrir archivo de apache 
+	sudo nano /etc/apache2/apache2.conf
+	 
+	# PAS2 : Actualizar configuración de www 
+	AllowOverride All (Cambio en archivo)
+
+	# PASO3: Enabled apache mod rewrite (Command)
+	sudo a2enmod rewrite
+
+	# PASO4: Restart Apache (Command)
+	sudo /etc/init.d/apache2 restart
+```
 
 
 ## Habilitar/Instalar header mod_headers

@@ -227,6 +227,23 @@ diferente, reemplace id_rsa en el comando con el nombre de su archivo de clave p
 	- /c/xampp/htdocs/portalSinges/proyectoXYZ
 	- git remote add origin //192.168.90.100/htdocs/git_repository/proyectoXYZ
 	
+	
+## Crear estuctura de repositorio de una cuenta a otra
+###### Tags: `git` `clone` `mirror`  
+	
+```bash
+	# 1. clonar el repositorio
+	git clone --mirror https://github.com/awslabs/aws-demo-php-simple-app.git aws-codecommit-demo
+
+	# 2. acceder a estructura clonada
+	cd aws-codecommit-demo
+	
+	# 3. realizar push a repositorio nuevo
+	git push https://git-codecommit.us-east-2.amazonaws.com/v1/repos/MyClonedRepository --all
+	git push https://git-codecommit.us-east-2.amazonaws.com/v1/repos/MyClonedRepository --tags
+```
+	
+	
 ## Guias de ejemplo
 
 ### Clonar un repositorio

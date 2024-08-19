@@ -28,6 +28,29 @@ Implementación:
 	_.contains([1, 2, 3], 3); 	-- true
 ```
 
+## Validar si una variable es boleana
+###### Tags: `underscore` `js` `isBoolean`
+```js
+	_.isBoolean(null); 		-- false
+	_.isBoolean(true); 		-- true
+```
+
+## Validar si una variable es arreglo
+###### Tags: `underscore` `js` `isArray`
+
+```js
+	(function(){ return _.isArray(arguments); })();		-- false
+	_.isArray([1,2,3]);									-- true
+```
+
+## Validar si una variable es objeto
+###### Tags: `underscore` `js` `isObject`
+
+```js
+	_.isObject({});				-- true
+	_.isObject(1)				-- false
+```
+
 ## Iterar arreglo objetos
 ###### Tags: `underscore` `js` `each`
 

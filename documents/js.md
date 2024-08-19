@@ -56,6 +56,37 @@
     var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
 ```
 
+### JS Validar mes - incluir 0 antes en caso de que aplique
+###### Tags: `js` `new` `date` `getMonth` `cero`
+```js
+	var dateNow = new Date();
+	var month = (dateNow.getMonth() < 9 ? '0': '') + (dateNow.getMonth() + 1);
+	var month = ("0" + (this.getMonth() + 1)).slice(-2);
+	
+	// salida 04 | 11
+```
+
+### Formato fecha de unix a string
+###### Tags: `js` `date` `replace`
+```js	
+	var DatePry = new Date(dateformatunix * 1000);  
+	var aux_dia = (((DatePry.getDate()) > 9) ? DatePry.getDate() : '0' + (DatePry.getDate())); 
+	var aux_mes = (((DatePry.getMonth() +1 ) > 9) ? DatePry.getMonth() + 1 : '0' + (DatePry.getMonth() + 1)); 
+	var str_date = aux_dia +"/"+ aux_mes +"/"+DatePry.getFullYear();  
+```
+
+### Cambiar slash por lineas en fecha
+###### Tags: `js` `date` `replace`
+
+Al trabajar con fechas en javascript y pasar un string es necesario que el formato de la fecha vaya con / y no con -, esta funcion cambia estos valores. 
+```js	
+	new Date(dashToSlash(string)); 
+	function dashToSlash(string) {  
+		var response = string.replace(/-/g,"/"); //The slash-g bit says: do this more than once  
+		return response;  
+	} 
+```
+
 ### Unificar dos objetos en uno
 ###### Tags: `js` `mezclar` `unir` `extend` `objects`
 ```js
@@ -181,6 +212,7 @@ Alert "Hello" every 3 seconds (3000 milliseconds):
 ```
 
 ### Date 
+###### Tags: `js` `date` `timestamp`
 ```js
     var d = new Date();
     getFullYear()       // Get the year as a four digit number (yyyy)
@@ -190,9 +222,10 @@ Alert "Hello" every 3 seconds (3000 milliseconds):
     getMinutes()        // Get the minute (0-59)
     getSeconds()        // Get the second (0-59)
     getMilliseconds()   // Get the millisecond (0-999)
-    getTime()           // Get the time (milliseconds since January 1, 1970)
+    getTime()           // Get the time (milliseconds since January 1, 1970) - TimeStamp
     getDay()            // Get the weekday as a number (0-6)
-    Date.now()          // Get the time. ECMAScript 5.
+    now()               // Get the time. ECMAScript 5.
+	d.toString('MMM dd, yyyy hh:mm'); // Formato requerido 
 ```
 
 ### Date unix
@@ -242,6 +275,29 @@ Alert "Hello" every 3 seconds (3000 milliseconds):
     // Variable tipo array
     var arreglo = [1,2,3,4,5];
     console.log(arrrglo[0]) // Imprimirá el 1 - el indice parte de 0
+	
+	// Variable tipo array (Ejemplo 2)
+	var cars=new Array(); 
+	cars[0]="Saab"; 
+	cars[1]="Volvo"; 
+	cars[2]="BMW"; 
+	
+	// Variable tipo array (Ejemplo 3)
+	var cars=new Array("Saab","Volvo","BMW");          // condensed array
+	var cars=["Saab","Volvo","BMW"];                   // literal array
+
+	// Variable booleana
+	var x=true; 
+	var y=false; 
+	
+	// Variable numérica
+	var x1=34.10;      // Written with decimals 
+	var x2=34;         // Written without decimals 
+	
+	// Objeto
+	var person={firstname:"John", lastname:"Doe", id:5566}; 
+	name=person.lastname; 
+	name=person["lastname"]; 
 ```
 
 ### Condicionales
@@ -283,6 +339,20 @@ Alert "Hello" every 3 seconds (3000 milliseconds):
     }
 
     // Salida: 1	2	3	4 	5
+```
+
+### Remplazar
+###### Tags: `js` `replace` `sanizar`
+
+```js	
+	// Remplazar primer coincidencia dentro de un texto por otro 
+	aux_texto = aux_texto.replace(mencion_texto, enlace_usuario); 
+	
+	// Remplazar todas las coincidencia dentro de un texto por otro 
+	aux_texto = aux_texto.replace(new RegExp(mencion_texto, 'g'), enlace_usuario); 
+	
+	// Quitar strips HTML (Etiquetas html a un texto) 
+	var StrippedString = OriginalString.replace(/(<([^>]+)>)/ig,""); 
 ```
 
 ### Iteracion While
@@ -682,7 +752,7 @@ Js:
     }
 ```
 
-Implementación funcion success
+### Implementación funcion success
 
 ```js
     /**
@@ -697,6 +767,13 @@ Implementación funcion success
         var callback = (typeof callback !== 'undefined') ? callback : function() {}
         showAlert(title, msg, 'green', callback);
     }
+```
+
+### Cerrar un jalert de forma automatica
+
+```js
+    var currentAlert = $.jAlert('current');
+	currentAlert.closeAlert();
 ```
 
 

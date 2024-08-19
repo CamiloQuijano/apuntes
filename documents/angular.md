@@ -67,6 +67,23 @@ Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. dat
 		]);
 ```
 
+## eventos
+
+### Blur
+###### Tags: `angular` `events` `blur`
+```html
+	<input ng-blur="count = count + 1" ng-init="count=0" />
+	<h1>{{count}}</h1>
+```
+
+### Focus
+###### Tags: `angular` `events` `focus`
+```html
+	<input ng-focus="count = count + 1" ng-init="count=0" />
+	<h1>{{count}}</h1>
+```
+
+
 ## filtros 
 
 ### Filtro Formato Dinero
@@ -82,15 +99,25 @@ Entre los [] posterior al modulo, se incluyen las librerías adicionales Ej. dat
 	{{ 10000 | currency : 'ANYTHING: ' : 5 }} 	// ANYTHING: 10,000.00000
 ```
 
-### filtros date - number
-###### Tags: `filters` `date` `number`
-
+### filtros Formato fecha|
+###### Tags: `filters` `date`
 ```js
 	{{ doc.date|date:'dd/MM/yyyy' }}     // Formato Fecha 
+```
+
+### filtros Formato numeros
+###### Tags: `filters` `number`
+```js
 	{{ val | number }}                   // Formato número sin decimales
 	{{ val | number:2 }}                 // Formato número indicando cantidad de decimales
 ```
 
+### filtros texto mayuscula - minuscula
+###### Tags: `filters` `lowercase` `uppercase`
+```js
+	{{ row.tercero | lowercase }}     // Formato Mínuscula 
+	{{ row.tercero | uppercase  }}    // Formato Mayúscula 
+```
 
 ### Validar si valor esta incluido en un arreglo
 ###### Tags: `includes` `in_array`

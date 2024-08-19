@@ -305,6 +305,14 @@ Pasar valor a string, incluso números lo deja de tipo strint
     is_numeric('abc')  		// False
 ```
 
+## Valor positivo de un numero
+###### Tags: `php` `abs`
+```php
+    abs(6.7)    // 6.7
+	abs(-6.7)   // 6.7
+	abs(-3)     // 3
+	abs(3)      // 3
+```
 
 ## Redondear un numero
 ###### Tags: `php` `round` `PHP_ROUND_HALF_UP` `PHP_ROUND_HALF_DOWN` `PHP_ROUND_HALF_EVEN` `PHP_ROUND_HALF_ODD`
@@ -381,6 +389,8 @@ Documentación: https://www.php.net/manual/es/function.round.php
 ```
 
 ## Iteracion
+
+### For
 ###### Tags: `php` `for` 
 ```php
     for ($i = 1; $i <= 5; $i++) {
@@ -393,6 +403,23 @@ Documentación: https://www.php.net/manual/es/function.round.php
 		for (i = 0; i < 5; i++) {  
 		} 
 	} 
+```
+
+### While
+###### Tags: `php` `while` 
+```php
+	// Ejemplo 1
+	$i = 1;
+	while ($i <= 10) {
+		echo $i++;  
+	}
+	
+	// Ejemplo 2
+	$i = 1;
+	while ($i <= 10):
+		echo $i;
+		$i++;
+	endwhile;
 ```
 
 
@@ -542,6 +569,13 @@ echo implode("-",$arr);					// Hello-World-Beautiful-Day!
 ```
 
 
+## Revertir texto
+###### Tags: `php` `strrev`
+```php
+	strrev("Hello world!"); // outputs "!dlrow olleH"
+```
+
+
 ### strip_tags Eliminar contenido html-php en variables
 Esta función intenta devolver una cadena con todos los bytes NULL, etiquetas HTML y PHP despojadas de un determinado str. Utiliza la misma máquina de estado de eliminación de etiquetas que la función fgetss () .
 
@@ -611,6 +645,21 @@ Parámetros de función fputcsv
 	*/
 ```
 
+### Crear carpeta
+###### Tags: `php` `mkdir`
+```php
+	$pathFolderSub = '/nivel1/nivel2/nivel3';
+	if(!mkdir($pathFolderSub, 0775)) { throw new Exception("Proceso Imágenes: Ocurrio un error al crear la carpeta {$folder}"); }
+```
+
+### Copiar archivo
+###### Tags: `php` `copy`
+```php
+	$fichero = 'ejemplo.txt';
+	$nuevo_fichero = 'ejemplo.txt.bak';
+	if (!copy($fichero, $nuevo_fichero)) { throw new Exception("Proceso Imágenes: Ocurrio un error al copiar imagen {$folder}/{$file}"); }
+```
+
 ### Crear imagen con texto
 ###### Tags: `php` `explode`
 
@@ -675,6 +724,7 @@ Parámetros de función fputcsv
  
 
 ## PHP Excel
+###### Tags: `php` `phpexcel` `format` `autosize`
 
 ```php		
 	// PHPEXCEL - Recorrer abecedario 
@@ -686,6 +736,35 @@ Parámetros de función fputcsv
 	$Sheet->getStyle($lastCol.'2:'.$lastCol.($row-1))->getNumberFormat()->setFormatCode('0.00'); 
 ```
 
+### Crear Imagen en excel
+###### Tags: `php` `phpexcel` `imagecreatefrom`
+
+Crear imagen en excel
+```php
+	$gdImage = imagecreatefromjpeg('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+	//$gdImage = imagecreatefromjpeg($datos[13]);
+	$objDrawing = new PHPExcel_Worksheet_MemoryDrawing();
+	$objDrawing->setImageResource($gdImage);
+	//$objDrawing->setName('Sample image');
+	//$objDrawing->setDescription('Sample image');
+	//$objDrawing->setRenderingFunction(PHPExcel_Worksheet_MemoryDrawing::RENDERING_JPEG);
+	//$objDrawing->setMimeType(PHPExcel_Worksheet_MemoryDrawing::MIMETYPE_DEFAULT);
+	//$objDrawing->setHeight(0.44);
+	$objDrawing->setwidth(130);
+	$objDrawing->setOffsetX(10); //pixels
+	$objDrawing->setOffsetY(10); //pixels
+	$objDrawing->setCoordinates('B19');
+	$objDrawing->setWorksheet($objPHPExcel->getActiveSheet());
+```
+
+### Insertar Fila
+###### Tags: `php` `phpexcel` `insertNewRowBefore`
+```php
+	// Insertar lineas (primer parametro fila | segundo, cantidad)
+	$objWorksheet = $objPHPExcel->getActiveSheet();
+	$objWorksheet->insertNewRowBefore(20, 5);
+```
+
 ### Exportar excel cvs con numeros grandes formato texto
 
 Al exportar a excel sea por csv o directamente de la librería, para números grandes y evitar que el formato se dañe al abrir el archivo
@@ -695,3 +774,14 @@ Al exportar a excel sea por csv o directamente de la librería, para números gr
 ```
 
 <style> body { tab-size: 4; } </style>
+
+
+## Funciones - consulta par - impar
+```php
+
+	-- Par
+	if(($i % 2) == 0) { echo 'Par'; }
+	
+	-- Impar
+	if(($i % 2) != 0) { echo 'Impar'; }
+```

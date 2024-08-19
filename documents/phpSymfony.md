@@ -65,6 +65,13 @@ Páginas para actualizar paquetes|vendors y revisar últimas versiones y requeri
 	{ { app.request.method } } 
 ```
 
+# Rutas - Manejo de ruta con parametros en JS
+###### Tags: `symfony` `route`
+```js
+	var route = '{{ path('Cuenta_ctausuarios_perfil', {'id': "ID_USUARIO"}) }}'; 
+	acceso_usuario = route.replace("ID_USUARIO", id); 
+```
+
 ## Twig
 
 ### Funciones Generales

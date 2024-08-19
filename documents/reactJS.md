@@ -1,6 +1,42 @@
 ﻿[`Volver`](../index.html)
 
-# REACT JS
+# REACT JS 
+## Ejemplo estructura inicial
+
+```html
+	<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+		<title>My First React Example</title>
+	  </head>
+	  <body>
+		<div id="greeting-div"></div>
+
+		<script src="https://fb.me/react-15.0.0.js"></script>
+		<script src="https://fb.me/react-dom-15.0.0.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+		<script type="text/babel">
+		  var Greeting = React.createClass({
+			render: function() {
+			  return (
+				<p>Hello, Universe</p>
+			  )
+			}
+		  });
+
+		  ReactDOM.render(
+			<Greeting/>,
+			document.getElementById('greeting-div')
+		  );
+		</script>
+	  </body>
+	</html>
+```
+
+
+###### Tags: `curso` `menu`
+
+# REACT JS - CURSO
 ###### Tags: `curso` `menu`
 
 Libreria JavaScript OpenSource diseñada para crear interfaz de usuarios

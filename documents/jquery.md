@@ -65,6 +65,41 @@
     var name2 = $('#referrerRequestForm').find('input[name=contactName]').val();
 ```
 
+## Agregar contenido en un Id o Clase - antes o despues
+###### Tags: `jquery` `append` `prepend`
+```js
+	// Despues del existente 
+	$("#containerchat").append("Some appended text."); 
+	
+	// Antes del existente 
+	$("#containerchat").prepend("Some appended text."); 
+```
+
+## Convertir string a JSON
+###### Tags: `jquery` `parse` `stringify`
+```js
+	// De string a JSON
+	var obj = JSON.parse(string); 
+	
+	// De JSON a string
+	var stringJSON=JSON.stringify(obj); 
+```
+
+## Crear un Objeto
+###### Tags: `jquery` `Object`
+```js
+	var objectnew = new Object(); 
+```
+
+## Eliminar o agregar clase
+```js
+	// Eliminar una clase 
+	$('#elementid').removeClass('chg_padding_close');  
+	
+	// Agregar una clase 
+	$('#elementid').addClass('chg_padding_close');  
+```
+
 
 ## Animacion para moverse a un elemento
 ###### Tags: `jquery` `event` `animate` `scroll`
