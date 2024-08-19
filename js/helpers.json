@@ -4183,6 +4183,147 @@ helpers = [
         "subnivels": []
     },
     {
+        "title": "SINGES",
+        "url": "documents\/singes.html#singes",
+        "subnivels": [
+            {
+                "title": "Mostrar errores consola",
+                "url": "documents\/singes.html#mostrar-errores-consola",
+                "subnivels": []
+            },
+            {
+                "title": "Consultas comunes",
+                "url": "documents\/singes.html#consultas-comunes",
+                "subnivels": []
+            },
+            {
+                "title": "WEBSTORE",
+                "url": "documents\/singes.html#webstore",
+                "subnivels": []
+            },
+            {
+                "title": "Actualizar Directivas (CMD)",
+                "url": "documents\/singes.html#actualizar-directivas-%28cmd%29",
+                "subnivels": []
+            },
+            {
+                "title": "htaccess implementaci\u00f3n",
+                "url": "documents\/singes.html#htaccess-implementaci%C3%B3n",
+                "subnivels": []
+            },
+            {
+                "title": "Acceso sesion singes",
+                "url": "documents\/singes.html#acceso-sesion-singes",
+                "subnivels": []
+            },
+            {
+                "title": "IE TAB",
+                "url": "documents\/singes.html#ie-tab",
+                "subnivels": []
+            },
+            {
+                "title": "Estructura elementos formularios Singes",
+                "url": "documents\/singes.html#estructura-elementos-formularios-singes",
+                "subnivels": [
+                    {
+                        "title": "File",
+                        "url": "documents\/singes.html#file",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Select",
+                        "url": "documents\/singes.html#select",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Text",
+                        "url": "documents\/singes.html#text",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Textarea",
+                        "url": "documents\/singes.html#textarea",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Button Submit",
+                "url": "documents\/singes.html#button-submit",
+                "subnivels": [
+                    {
+                        "title": "Checkbox List",
+                        "url": "documents\/singes.html#checkbox-list",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Radio List",
+                        "url": "documents\/singes.html#radio-list",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Reset formulario input file js",
+                "url": "documents\/singes.html#reset-formulario-input-file-js",
+                "subnivels": []
+            },
+            {
+                "title": "Modal",
+                "url": "documents\/singes.html#modal",
+                "subnivels": [
+                    {
+                        "title": "Apertura modal por JS",
+                        "url": "documents\/singes.html#apertura-modal-por-js",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Apertura modal desde html toggle",
+                        "url": "documents\/singes.html#apertura-modal-desde-html-toggle",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Estructura modal - formulario",
+                        "url": "documents\/singes.html#estructura-modal---formulario",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Estructura modal - footer",
+                        "url": "documents\/singes.html#estructura-modal---footer",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Modal no pertimir cerrar backdrop static",
+                        "url": "documents\/singes.html#modal-no-pertimir-cerrar-backdrop-static",
+                        "subnivels": []
+                    },
+                    {
+                        "title": "Modal Tamano",
+                        "url": "documents\/singes.html#modal-tamano",
+                        "subnivels": []
+                    }
+                ]
+            },
+            {
+                "title": "Estructura vista formulario busqueda con render en angular",
+                "url": "documents\/singes.html#estructura-vista-formulario-busqueda-con-render-en-angular",
+                "subnivels": []
+            },
+            {
+                "title": "Ejemplo Controlador con control try-catch y retorno json",
+                "url": "documents\/singes.html#ejemplo-controlador-con-control-try-catch-y-retorno-json",
+                "subnivels": [],
+                "tags": [
+                    "try",
+                    "catch",
+                    "controller",
+                    "documentacion",
+                    "json"
+                ]
+            }
+        ]
+    },
+    {
         "title": "Typescript",
         "url": "documents\/typescript.html#typescript",
         "subnivels": [
