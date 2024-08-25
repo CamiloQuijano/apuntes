@@ -84,7 +84,7 @@ Páginas para actualizar paquetes|vendors y revisar últimas versiones y requeri
 ``` 
 
 ### Traducciones
-
+###### Tags: `twig` `trans`
 Se separan la estructura de twig por error en deploy 
 ```twig
 	{ % trans from "label" % }opciones{ % endtrans % } 
@@ -95,7 +95,7 @@ Se separan la estructura de twig por error en deploy
 ```
 
 ### Iterar Objetos o arrays
-
+###### Tags: `twig` `for`
 ```twig
 	{ % if product % } 
 		{ % for key, p in product % } 
@@ -105,6 +105,14 @@ Se separan la estructura de twig por error en deploy
 			{ % endfor % } 
 		{ % endfor % } 
 	{ % endif % } 
+```
+
+## Filtro de fecha
+###### Tags: `twig` `date`
+```twig
+	{% if entity.cuentaVencimiento %}
+		{ { entity.cuentaVencimiento|date('Y-m-d H:i:s') } }
+	{% endif %}
 ```
  
 
@@ -247,3 +255,47 @@ Consulta a ID
 ```php 
 	$product = $this->get('doctrine_mongodb')->getManager()->getRepository('CuentaBundle:Chat'); 
 ``` 
+
+
+## Material de apoyo
+###### Tags: `symfony` `manuals` `consola` 
+
+Documentación | Instructivos | Consola  
+[`Consola Symfony`](phpSymfony/manuals/ConsolaSymfony.docx)  
+[`Estandares desarrollo Symfony`](phpSymfony/manuals/EstandaresDesarrolloSymfony-Altactic.docx)  
+[`Maestros del web Symfony`](phpSymfony/manuals/MaestrosWebSymfony.php)  
+[`Manual Symfony2 ES`](phpSymfony/manuals/ManualSymfony2ES.pdf)  
+[`Pasos para actualizar versión de proyectos`](phpSymfony/manuals/Pasos para actualizar versión de proyectos.doc)  
+[`SYMFONY 2`](phpSymfony/manuals/SYMFONY2.docx)  
+[`SYMFONY BOOK 2.0`](phpSymfony/manuals/SymfonyBook2.0.pdf)  
+[`SYMFONY BOOK 2.1`](phpSymfony/manuals/SymfonyBook2.1.pdf)  
+[`SYMFONY (PPT)`](phpSymfony/manuals/SYMFONY.ppt)  
+
+
+## Ejemplos 
+###### Tags: `symfony` `crud` `print` `PDF`
+
+[`Ejemplo estructura CRUD`](phpSymfony/examples/structureCrud.zip)  
+[`Ejemplo Imprimir PDF con Header - Footer`](phpSymfony/examples/htmlTwigImprimirPDFconheader-footer.html.twig)  
+
+### Pasos para actualizar versión de proyectos
+###### Tags: `symfony`
+
+Pasos para actualizar versión de proyectos
+1. cambiar el nombre del proyecto actual (para que no sea el mismo del nuevo)  
+2. crear un proyecto nuevo con el nombre del proyecto  
+3. configurar proyecto con el nombre de la base de datos  
+4. registrar por consola los bundles del proyecto antiguo  
+5. copiar los archivos adicionales de la carpeta web y exteriores del proyecto  
+6. copiar la carpeta de servicios   
+7. actualizar el archivo app/config/config.yml y app/config/routing.yml  
+	1. descomentar la linea translator y poner el valo de fallback en “es”  
+	2. cambiar default_locale:  es_CO  
+	3. agregar servicios  
+8. copiar las vistas principales de app/Resources/views  
+9. copiar los controladores de los bundles  
+10. copiar el archivo routing.yml de cada bundle  
+11. copiar los recursos de los bundles  
+12. copiar la carpeta entity del bundle DataBundle  
+13. copiar la carpeta AT/DataBundle/Resources/config/doctrine  
+14. probar primero el entorno de producción, si no es necesario eliminar la cache  

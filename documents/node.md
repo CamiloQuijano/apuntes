@@ -32,3 +32,26 @@ NODE: make test
 	node -v
 	node --version
 ```
+
+## Instalar forever via NPM para ejecucion de proceso
+###### Tags: `nodejs` `npm` `forever` 
+
+- [Documentación Paquete Forever](https://www.npmjs.com/package/forever )
+
+```bash
+	sudo npm install -g forever               # Instalar forever
+	forever list                              # Lista
+	forever stop [id]                         # Parar el proceso del id indicado 
+	forever stop *                            # Para todos los procesos
+	forever start -al notijs.log server.js	  # Iniciar proceso indicando archivo de log y archivo node a arrancar 
+```
+
+## Instalar stylus
+###### Tags: `npm` `stylus` 
+```bash
+	npm install stylus -g 
+	npm install NIB -g 
+	stylus -u nib -c -w -o css/ stylus/altactic.styl 
+```
+
+<style> body { tab-size: 4; } </style>
