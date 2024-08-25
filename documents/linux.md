@@ -13,6 +13,7 @@
 	Carpeta certificados SSL           /etc/ssl/
 	Configuraciones APACHE             /etc/apache2/apache2.conf
 	Carpera SSH                        /home/ubuntu/.ssh
+	Carpera SSH                        ~/.ssh
 ```
 
 ## Comandos Apache
@@ -41,8 +42,15 @@
 	find nombre-de-archivo          # Busca un archivo
 	wget enlace                     # Descarga un archivo
 	wget -c enlace                  # Continua una descarga parada
+	cat <name_archivo>              # Ver contenido del archivo
 ```
 
+## Comandos de Consulta
+```bash
+	grep -rn "texto" ruta/*
+	-n: Número de línea
+	-r : Recursivo
+```
 
 ## Comandos Permisos
 ###### Tags: `chmod` `chown` `chgrp`  
@@ -73,10 +81,11 @@ Estructura generales
 	rwxrwxrwx    777	    EL propietario, el grupo y otros pueden leer, escribir y ejecutar.
 ```
 
-
-
-
-
+## Generar key SSH
+```bash
+	cd ~/.ssh       Directorio de keys de ubuntu
+	ssh-keygen      Generar key nueva
+```
 
 ## Comandos PHP  
 ```bash
@@ -91,6 +100,7 @@ Estructura generales
 	ps          		# Muestra los procesos activos
 	top         		# Muestra todos los procesos en funcionamiento
 	kill pid    		# Mata un proceso con un PID concreto. Verás el PID de un proceso con top
+	htop                # Ver grafica de procesadores / ram
 ```
 
 ## Atajos al escribir comandos
@@ -125,9 +135,14 @@ Estructura generales
 ```bash
 	// Instalar
 	sudo apt-get install vim 
+	
+	// Abrir archivo
+	vim <filename>
 
 	// Comandos
-	ESC		Habilitar modo comando
+	ESC		Habilitar modo comando - salir
+	i       Insertar
+	:undo   Atras
 	:q		Salir
 	:q!		Salir sin guardar
 	:wq		Guardar archivo actual y salir

@@ -9,6 +9,7 @@
 	appwiz.cpl          Programas y características
 	msconfig            Configuraciones del sistema
 	regedit             Editor de registros
+	slmgr.vbs -xpr      Validar si el windows 8 esta activo
 ```
 
 Limpieza de archivos temporales

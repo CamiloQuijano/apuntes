@@ -133,6 +133,7 @@
 ## Tags - Etiquetas Versiones
 ```bash
     git tag                             	Muestra las etiquetas creadas
+	git tags								Listado de tags
     git tag -a <nombre> -m "<mensaje>"  	Crear una etiqueta
     git push --tags                     	Subir etiquetas a remoto
     git checkout <nombretag>            	Volver a como estaba el código cuando se liberó con una etiqueta especifica

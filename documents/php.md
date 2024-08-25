@@ -112,6 +112,27 @@ Para búsqueda key en array **by-dimencional**
 	$key = array_search(102, array_column($userdb, 'uid'));	// $clave = 2;
 ```	
 
+### Comparar arreglos - identificar diferencias
+###### Tags: `php` `array` `array diff`
+```php
+	$a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+	$a2=array("e"=>"red","f"=>"green","g"=>"blue");
+
+	$result=array_diff($a1,$a2);
+	print_r($result); 
+	// SALIDA: Array ( [d] => yellow )
+```
+
+### Comparar arreglos - identificar similitudes
+###### Tags: `php` `array` `array_intersect`
+```php
+	$a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+	$a2=array("e"=>"red","f"=>"green","g"=>"blue");
+
+	$result=array_intersect($a1,$a2);
+	print_r($result);
+	// SALIDA: red, green, blue
+```
 
 ### Quitar elementos vacios de un arreglo
 ###### Tags: `php` `array` `array_filter` 
