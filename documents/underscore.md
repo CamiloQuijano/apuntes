@@ -16,6 +16,23 @@ Implementación:
     var total = _.reduce(response.data.items, function(memo, item){ return memo + parseInt(item.price); }, 0); 
 ```
 
+## Ordenar Objeto 
+###### Tags: `underscore` `js` `sortBy`
+```js
+    _.sortBy([1, 2, 3, 4, 5, 6], function(num){ return Math.sin(num); });
+	=> [5, 4, 6, 3, 1, 2]
+
+	-- Orden Ascendente
+	var stooges = [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}];
+	_.sortBy(stooges, 'name');
+	=> [{name: 'curly', age: 60}, {name: 'larry', age: 50}, {name: 'moe', age: 40}];
+
+	-- Orden Descendente
+	var stooges = [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}];
+	_.sortBy(stooges, 'name', 'desc').reverse();
+	=> [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}];
+```
+
 ## Array column en JS 
 ###### Tags: `underscore` `js` `pluck`
 ```js

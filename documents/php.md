@@ -110,18 +110,20 @@ Para búsqueda key en array **by-dimencional**
 	];
 	$key = array_search(101, array_column($userdb, 'uid'));	// $clave = 1;
 	$key = array_search(102, array_column($userdb, 'uid'));	// $clave = 2;
-```	
+```
+
 
 ### Comparar arreglos - identificar diferencias
-###### Tags: `php` `array` `array diff`
-```php
-	$a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
-	$a2=array("e"=>"red","f"=>"green","g"=>"blue");
+###### Tags: `php` `array` `array_diff` 
 
-	$result=array_diff($a1,$a2);
-	print_r($result); 
+```php
+    $a1 = array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+	$a2 = array("e"=>"red","f"=>"green","g"=>"blue");
+	$result = array_diff($a1,$a2);
+
 	// SALIDA: Array ( [d] => yellow )
 ```
+
 
 ### Comparar arreglos - identificar similitudes
 ###### Tags: `php` `array` `array_intersect`
@@ -146,6 +148,21 @@ Eliminará del arreglo null, ceros, string vacios.
     array([0] => "Rose", [2] => "Hibiscus", [4] => "Tulip", [6] => "Sun Flower" )
 ```
 
+### Buscar si un valor esta en un arreglo
+###### Tags: `php` `array` `in_array` 
+
+```php
+    $people = array("Peter", "Joe", "Glenn", "Cleveland");
+
+	if (in_array("Glenn", $people)) {
+		echo "Match found";
+	} 
+	else {
+		echo "Match not found";
+	}
+  
+	// salida: Match found
+```
 
 ### Cantidad de caracteres variable string
 ###### Tags: `php` `strlen` `longitud` 

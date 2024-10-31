@@ -28,13 +28,19 @@
 	 SET LANGUAGE Spanish; 
 ```
 
+
 ## Datediff - Diferencias entre fechas - timestamp
 ###### Tags: `SQL` `DATEDIFF`
 
 ```sql	
+
+	-- En formato UNIX / Milisegundos 
+	select DATEDIFF(s, '1970-01-01', GETUTCDATE()) 
+	-- SALIDA: formato unix 1726506108 (2024-09-16 14:01:48.563)
+	
 	-- En SELECT
 	SELECT DATEDIFF(year, '2017/08/25', '2023/08/25') AS DateDiff; 
-	-- 6 (Años)
+	-- SALIDA: 6 (Años)
 	
 	-- En FILTRO
 	SELECT *
@@ -60,6 +66,19 @@
 ```sql	
 	SELECT REPLACE(STR('20', 3), SPACE(1), '0');
 ```
+
+## Consultar y remplazar secciones de texto
+###### Tags: `SQL` `REPLACE` `LIKE`
+```sql	
+	SELECT * FROM menu WHERE ruta LIKE '%portalA/accesoA/%' -- Antes
+	SELECT * FROM menu WHERE ruta LIKE '%portalB/accesoB/%' -- Despues 
+	
+	-- 1er: la columna a modificar, 2do: Valor actual, 3ro: Valor a cambiar
+	UPDATE menu SET ruta = REPLACE(ruta, 'portalA/accesoA/', 'portalB/accesoB/') 
+	WHERE ruta LIKE '%portalA/accesoA/%'
+```
+
+
 
 ## Len - Consultar por cantidad de caracteres
 ```sql
@@ -138,6 +157,15 @@
 ```sql
 	SELECT FORMAT(25000, 'C' ,'En-Us')		-- $25,000.00
 ```
+
+## Cambiar Formato fecha con datepart
+###### Tags: `SQL` `FORMAT` `DATEPART` `MILLISECOND` `HOUR` `MINUTE` 
+```sql
+	SELECT DATEPART(MILLISECOND, GETDATE())    -- 450
+	SELECT DATEPART(HOUR, GETDATE())           -- 13
+	SELECT DATEPART(MINUTE, GETDATE())         -- 55
+```
+
 
 ## Cambiar Formato fecha con format
 ###### Tags: `SQL` `getdate` `FORMAT` `dd/MM/yyyy, hh:mm:ss`

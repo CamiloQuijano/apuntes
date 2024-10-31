@@ -107,6 +107,8 @@ Se debe encontrar dentro del mismo dominio
 	npm install gulp-plumber    // Instalar dependencia gulp
 	npm install gulp-sass       // Instalar dependencia gulp
 	
+	npm i gulp-cli@2.3.0 -g		// En caso de error en gulp instalar version 2.3.0
+	
 	// Para Singes es necesario ubicarse en la carpeta resources
 	gulp scripts                // Ejecutar scripts gulp
 	gulp styles                 // Ejecutar estilos gulp

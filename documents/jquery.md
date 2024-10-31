@@ -58,6 +58,13 @@
     });
 ```
 
+## Seleccionar primer Tab
+###### Tags: `jquery` `first` `tabs` `javascript`
+
+```js	
+    $("#myTab li:first a").click();
+```
+
 ## Buscar en DOM por nombre
 ###### Tags: `jquery` `find` `name`
 
@@ -109,6 +116,11 @@
     $("html, body").animate({ scrollTop: $('#documentsContractsContent').offset().top - 50 }, 1000);
 ```
 
+## Esconder o mostrar elemento 
+###### Tags: `jquery` `event` `toggle`
+```js	
+$(".showDetailContent").toggle();
+```
 
 ## Select
 ###### Tags: `jquery`

@@ -331,15 +331,24 @@ Alert "Hello" every 3 seconds (3000 milliseconds):
     }
 ```
 
-### Iteracion For 
+### Iterar arreglo
+###### Tags: `js` `for` `forEach`
+
+For
 ```js	
     var arreglo = [1,2,3,4,5];
     for(var i=0; i<5; i++) {
         console.log(arreglo[i]);
     }
-
     // Salida: 1	2	3	4 	5
 ```
+
+forEach
+```js	
+	const fruits = ["apple", "orange", "cherry"];
+	fruits.forEach(myFunction);
+```
+
 
 ### Remplazar
 ###### Tags: `js` `replace` `sanizar`
