@@ -46,6 +46,16 @@ helpers = [
                 "subnivels": []
             },
             {
+                "title": "Consultar y remplazar secciones de texto",
+                "url": "documents\/SQL.html#consultar-y-remplazar-secciones-de-texto",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "REPLACE",
+                    "LIKE"
+                ]
+            },
+            {
                 "title": "Len - Consultar por cantidad de caracteres",
                 "url": "documents\/SQL.html#len---consultar-por-cantidad-de-caracteres",
                 "subnivels": []
@@ -128,6 +138,19 @@ helpers = [
                     "SQL",
                     "FORMAT",
                     "currency"
+                ]
+            },
+            {
+                "title": "Cambiar Formato fecha con datepart",
+                "url": "documents\/SQL.html#cambiar-formato-fecha-con-datepart",
+                "subnivels": [],
+                "tags": [
+                    "SQL",
+                    "FORMAT",
+                    "DATEPART",
+                    "MILLISECOND",
+                    "HOUR",
+                    "MINUTE"
                 ]
             },
             {
@@ -1279,6 +1302,11 @@ helpers = [
                 "subnivels": []
             },
             {
+                "title": "Estandar variables funciones constantes",
+                "url": "documents\/generics.html#estandar-variables-funciones-constantes",
+                "subnivels": []
+            },
+            {
                 "title": "Uso Comun PHP",
                 "url": "documents\/generics.html#uso-comun-php",
                 "subnivels": []
@@ -1506,6 +1534,16 @@ helpers = [
     {
         "title": "Grunt",
         "url": "documents\/grunt.html#grunt",
+        "subnivels": [],
+        "tags": [
+            "npm",
+            "grunt",
+            "minimificar"
+        ]
+    },
+    {
+        "title": "Comandos generales",
+        "url": "documents\/grunt.html#comandos-generales",
         "subnivels": [],
         "tags": [
             "npm",
@@ -1757,6 +1795,17 @@ helpers = [
                 ]
             },
             {
+                "title": "Seleccionar primer Tab",
+                "url": "documents\/jquery.html#seleccionar-primer-tab",
+                "subnivels": [],
+                "tags": [
+                    "jquery",
+                    "first",
+                    "tabs",
+                    "javascript"
+                ]
+            },
+            {
                 "title": "Buscar en DOM por nombre",
                 "url": "documents\/jquery.html#buscar-en-dom-por-nombre",
                 "subnivels": [],
@@ -1809,6 +1858,16 @@ helpers = [
                     "event",
                     "animate",
                     "scroll"
+                ]
+            },
+            {
+                "title": "Esconder o mostrar elemento",
+                "url": "documents\/jquery.html#esconder-o-mostrar-elemento",
+                "subnivels": [],
+                "tags": [
+                    "jquery",
+                    "event",
+                    "toggle"
                 ]
             },
             {
@@ -2080,9 +2139,14 @@ helpers = [
                         "subnivels": []
                     },
                     {
-                        "title": "Iteracion For",
-                        "url": "documents\/js.html#iteracion-for",
-                        "subnivels": []
+                        "title": "Iterar arreglo",
+                        "url": "documents\/js.html#iterar-arreglo",
+                        "subnivels": [],
+                        "tags": [
+                            "js",
+                            "for",
+                            "forEach"
+                        ]
                     },
                     {
                         "title": "Remplazar",
@@ -2387,6 +2451,11 @@ helpers = [
                 "subnivels": []
             },
             {
+                "title": "Comandos de Consulta",
+                "url": "documents\/linux.html#comandos-de-consulta",
+                "subnivels": []
+            },
+            {
                 "title": "Comandos Permisos",
                 "url": "documents\/linux.html#comandos-permisos",
                 "subnivels": [],
@@ -2395,6 +2464,11 @@ helpers = [
                     "chown",
                     "chgrp"
                 ]
+            },
+            {
+                "title": "Generar key SSH",
+                "url": "documents\/linux.html#generar-key-ssh",
+                "subnivels": []
             },
             {
                 "title": "Comandos PHP",
@@ -2730,6 +2804,26 @@ helpers = [
                     "CURRENT_TIMESTAMP",
                     "AUTO_INCREMENT"
                 ]
+            },
+            {
+                "title": "Ordenar Resultados dinamicamente",
+                "url": "documents\/mySQL.html#ordenar-resultados-dinamicamente",
+                "subnivels": [],
+                "tags": [
+                    "mysql",
+                    "ORDERBY"
+                ]
+            },
+            {
+                "title": "Agregar columna y relacion a tabla existente",
+                "url": "documents\/mySQL.html#agregar-columna-y-relacion-a-tabla-existente",
+                "subnivels": [],
+                "tags": [
+                    "mysql",
+                    "CONSTRAINT",
+                    "FOREIGN",
+                    "REFERENCES"
+                ]
             }
         ]
     },
@@ -2751,6 +2845,25 @@ helpers = [
                 "title": "version instalada node js",
                 "url": "documents\/node.html#version-instalada-node-js",
                 "subnivels": []
+            },
+            {
+                "title": "Instalar forever via NPM para ejecucion de proceso",
+                "url": "documents\/node.html#instalar-forever-via-npm-para-ejecucion-de-proceso",
+                "subnivels": [],
+                "tags": [
+                    "nodejs",
+                    "npm",
+                    "forever"
+                ]
+            },
+            {
+                "title": "Instalar stylus",
+                "url": "documents\/node.html#instalar-stylus",
+                "subnivels": [],
+                "tags": [
+                    "npm",
+                    "stylus"
+                ]
             }
         ]
     },
@@ -2853,6 +2966,26 @@ helpers = [
                         ]
                     },
                     {
+                        "title": "Comparar arreglos - identificar diferencias",
+                        "url": "documents\/php.html#comparar-arreglos---identificar-diferencias",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "array",
+                            "array_diff"
+                        ]
+                    },
+                    {
+                        "title": "Comparar arreglos - identificar similitudes",
+                        "url": "documents\/php.html#comparar-arreglos---identificar-similitudes",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "array",
+                            "array_intersect"
+                        ]
+                    },
+                    {
                         "title": "Quitar elementos vacios de un arreglo",
                         "url": "documents\/php.html#quitar-elementos-vacios-de-un-arreglo",
                         "subnivels": [],
@@ -2860,6 +2993,16 @@ helpers = [
                             "php",
                             "array",
                             "array_filter"
+                        ]
+                    },
+                    {
+                        "title": "Buscar si un valor esta en un arreglo",
+                        "url": "documents\/php.html#buscar-si-un-valor-esta-en-un-arreglo",
+                        "subnivels": [],
+                        "tags": [
+                            "php",
+                            "array",
+                            "in_array"
                         ]
                     },
                     {
@@ -3830,13 +3973,30 @@ helpers = [
                     {
                         "title": "Traducciones",
                         "url": "documents\/phpSymfony.html#traducciones",
-                        "subnivels": []
+                        "subnivels": [],
+                        "tags": [
+                            "twig",
+                            "trans"
+                        ]
                     },
                     {
                         "title": "Iterar Objetos o arrays",
                         "url": "documents\/phpSymfony.html#iterar-objetos-o-arrays",
-                        "subnivels": []
+                        "subnivels": [],
+                        "tags": [
+                            "twig",
+                            "for"
+                        ]
                     }
+                ]
+            },
+            {
+                "title": "Filtro de fecha",
+                "url": "documents\/phpSymfony.html#filtro-de-fecha",
+                "subnivels": [],
+                "tags": [
+                    "twig",
+                    "date"
                 ]
             },
             {
@@ -3933,6 +4093,36 @@ helpers = [
                             "doctrine"
                         ]
                     }
+                ]
+            },
+            {
+                "title": "Material de apoyo",
+                "url": "documents\/phpSymfony.html#material-de-apoyo",
+                "subnivels": [],
+                "tags": [
+                    "symfony",
+                    "manuals",
+                    "consola"
+                ]
+            },
+            {
+                "title": "Ejemplos",
+                "url": "documents\/phpSymfony.html#ejemplos",
+                "subnivels": [
+                    {
+                        "title": "Pasos para actualizar versi\u00f3n de proyectos",
+                        "url": "documents\/phpSymfony.html#pasos-para-actualizar-versi%C3%B3n-de-proyectos",
+                        "subnivels": [],
+                        "tags": [
+                            "symfony"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "symfony",
+                    "crud",
+                    "print",
+                    "PDF"
                 ]
             }
         ],
@@ -4178,6 +4368,14 @@ helpers = [
         ]
     },
     {
+        "title": "Redis",
+        "url": "documents\/redis.html#redis",
+        "subnivels": [],
+        "tags": [
+            "redis"
+        ]
+    },
+    {
         "title": "Seguridad Inform\u00e1tica",
         "url": "documents\/security.html#seguridad-inform%C3%A1tica",
         "subnivels": []
@@ -4351,6 +4549,16 @@ helpers = [
                     "underscore",
                     "js",
                     "reduce"
+                ]
+            },
+            {
+                "title": "Ordenar Objeto",
+                "url": "documents\/underscore.html#ordenar-objeto",
+                "subnivels": [],
+                "tags": [
+                    "underscore",
+                    "js",
+                    "sortBy"
                 ]
             },
             {
